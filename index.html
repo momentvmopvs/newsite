@@ -63,6 +63,9 @@
 	<link property="stylesheet" rel='stylesheet' id='mediaelement-css' href='./wp-includes/js/mediaelement/mediaelementplayer-legacy.min1f61.css?ver=4.2.17' type='text/css' media='all' />
 	<link property="stylesheet" rel='stylesheet' id='wp-mediaelement-css' href='./wp-includes/js/mediaelement/wp-mediaelement.min4118.css?ver=6.2.6' type='text/css' media='all' />
 	<link property="stylesheet" rel='stylesheet' id='palladio-responsive-css' href='./wp-content/themes/palladio/css/responsive4118.css?ver=6.2.6' type='text/css' media='all' />
+	<!--adições-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<!--fim das adições-->
 	<script type='text/javascript' src='./wp-includes/js/jquery/jquery.min5aed.js?ver=3.6.4' id='jquery-core-js'></script>
 	<script type='text/javascript' src='./wp-includes/js/jquery/jquery-migrate.min6b00.js?ver=3.4.0' id='jquery-migrate-js'></script>
 	<link rel="https://api.w.org/" href="./wp-json/index.html" /><link rel="alternate" type="application/json" href="./wp-json/wp/v2/pages/331.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
@@ -76,71 +79,121 @@
 	<link rel="icon" href="./wp-content/uploads/2023/08/mo-icon-32x32.png" sizes="32x32" />
 	<link rel="icon" href="./wp-content/uploads/2023/08/mo-icon-192x192.png" sizes="192x192" />
 	<link rel="apple-touch-icon" href="./wp-content/uploads/2023/08/mo-icon-180x180.png" />
-	<meta name="msapplication-TileImage" content="./wp-content/uploads/2023/08/mo-icon-270x270.png" />
+	<meta name="msapplication-TileImage" content="https://momentvmopvs.com/wp-content/uploads/2023/08/mo-icon-270x270.png" />
 	<script>function setREVStartSize(e){
+				//window.requestAnimationFrame(function() {
+					window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+					window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+					try {
+						var pw = document.getElementById(e.c).parentNode.offsetWidth,
+							newh;
+						pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+						e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+						e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+						e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+						e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+						e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+						e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+						e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+						if(e.layout==="fullscreen" || e.l==="fullscreen")
+							newh = Math.max(e.mh,window.RSIH);
+						else{
+							e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+							for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+							e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+							e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+							for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+												
+							var nl = new Array(e.rl.length),
+								ix = 0,
+								sl;
+							e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+							e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+							e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+							e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+							for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+							sl = nl[0];
+							for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+							var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+							newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+						}
+						var el = document.getElementById(e.c);
+						if (el!==null && el) el.style.height = newh+"px";
+						el = document.getElementById(e.c+"_wrapper");
+						if (el!==null && el) {
+							el.style.height = newh+"px";
+							el.style.display = "block";
+						}
+					} catch(e){
+						console.log("Failure at Presize of Slider:" + e)
+					}
+				//});
 			};</script>
-<style type="text/css" id="wp-custom-css">
-	.scheme_default .sc_layouts_row_type_narrow .socials_wrap .social_item .social_icon, .scheme_default.sc_layouts_row_type_narrow .socials_wrap .social_item .social_icon {
+			<style type="text/css" id="wp-custom-css">
+				.scheme_default .sc_layouts_row_type_narrow .socials_wrap .social_item .social_icon, .scheme_default.sc_layouts_row_type_narrow .socials_wrap .social_item .social_icon {
 		background-color: transparent;
 		color: #000000;
 		background: #fff !important;
 		padding: 5px 10px;
 		border-radius: 20px;
 	}
+
 	.post-type-archive-cpt_services .sc_services_item_info {
 		display: none;
 	}
+
 	.page-id-171 a.eg-palladio-skin-element-1 {
 		display: none;
 	}
+
+
 	i.vc_tta-controls-icon.vc_tta-controls-icon-chevron {
 		border: none !important;
 	}
 	.vc_tta.vc_tta-accordion .vc_tta-panel-heading .vc_tta-controls-icon {
 		width: 1.6667em;
 		height: 1.6667em;
+		
 	}
 	form.search_form {
 		display: none;
 	}
+
 	@media(max-width:1000px){
 		div#sc_promo_1081692616 {
 		margin-left: 30px !important;
-	}	
 	}
-	@media(min-width:1000px){	
+		
+		
+	}
+
+	@media(min-width:1000px){
+		
 		.scheme_default .sc_promo.color_style_default
 	{
 		margin-left: 130px !important;
 	}
+		
 	}
 			</style>
 			<style type="text/css" data-type="vc_custom-css">.sc_title.sc_title_row {
-		display: inline-grid;	
+		
+		
+		
+		display: inline-grid;
+		
 	}
+
 	.sc_title.sc_title_row .sc_title_subtitle {
+	
 		-webkit-justify-content: left;
+	
 	}</style>
 	<style type="text/css" data-type="vc_shortcodes-custom-css">
 	.vc_custom_1595583547410{padding-top: 7em !important;}
 	.vc_custom_1595583656196{margin-top: 7em !important;padding-top: 7em !important;padding-bottom: 6em !important;background-color: #f6f6f6 !important;}
-	.vc_custom_1691766543623{padding-top: 7em !important;}
-	.vc_custom_1691766543623{padding-top: 7em !important;}
-	.vc_custom_1691601949489{padding-bottom: 4em !important;}
-	.vc_custom_1691940253489{background-color: rgba(206,206,206,0.22) !important;*background-color: rgb(206,206,206) !important;}
-	.vc_custom_1691940528308{margin-top: 0px !important;padding-top: 50px !important;padding-bottom: 50px !important;}
-	.vc_custom_1691766038362{margin-top: 2.9em !important;}
-	.vc_custom_1691939890713{margin-top: 100px !important;margin-left: 0px !important;}
-	.vc_custom_1504101274782{margin-bottom: 3em !important;}
-	.vc_custom_1504101283055{margin-bottom: 3em !important;}</style><noscript><style> 
-	.wpb_animate_when_almost_visible { opacity: 1; }
-	</style>
-</noscript>
-<style type="text/css" id="trx_addons-inline-styles-inline-css">
-	.vc_custom_1504101111040{padding-right: 5.8rem !important;padding-left: 5.8rem !important;}
-	.vc_custom_1503583583329{padding-right: 5rem !important;padding-left: 5.8rem !important;}
-	.vc_custom_1691574922413{padding-right: 0.5em !important;}
-	.vc_custom_1691574896046{padding-right: 0.5em !important;}
+	.vc_custom_1691766543623{padding-top: 7em !important;}.vc_custom_1691766543623{padding-top: 7em !important;}
+	.vc_custom_1691601949489{padding-bottom: 4em !important;}.vc_custom_1691940253489{background-color: rgba(206,206,206,0.22) !important;*background-color: rgb(206,206,206) !important;}.vc_custom_1691940528308{margin-top: 0px !important;padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1691766038362{margin-top: 2.9em !important;}.vc_custom_1691939890713{margin-top: 100px !important;margin-left: 0px !important;}.vc_custom_1504101274782{margin-bottom: 3em !important;}.vc_custom_1504101283055{margin-bottom: 3em !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><style type="text/css" id="trx_addons-inline-styles-inline-css">.vc_custom_1504101111040{padding-right: 5.8rem !important;padding-left: 5.8rem !important;}.vc_custom_1503583583329{padding-right: 5rem !important;padding-left: 5.8rem !important;}.vc_custom_1691574922413{padding-right: 0.5em !important;}.vc_custom_1691574896046{padding-right: 0.5em !important;}
 	.vc_custom_1515775796549{padding-top: 5.6em !important;padding-bottom: 1em !important;background-color: #ffffff !important;}
 	.vc_custom_1500387194305{padding-top: 1em !important;padding-bottom: 1em !important;background-color: #ffffff !important;}
 	.vc_custom_1515776500487{padding-right: 5% !important;}</style><style id='rs-plugin-settings-inline-css' type='text/css'>
@@ -165,10 +218,103 @@
 		#rev_slider_1_2_wrapper
 		.custom.tparrows.tp-rightarrow:before{content:'\e825'}
 	</style></head>
-	<body class="home body_style_wide scheme_default header_style_header-custom-29">
-		<div class="body_wrap">
+	<body class="home page-template-default page page-id-331 frontpage body_tag scheme_default blog_mode_home body_style_wide  is_stream blog_style_excerpt sidebar_hide expand_content remove_margins header_style_header-custom-29 header_position_default menu_style_ menu_style_default no_layout wpb-js-composer js-comp-ver-6.10.0 vc_responsive">
+		<!--tarja preta alternativa-->
+<!-- TARJA PRETA FIXA NO TOPO -->
+<!-- Font Awesome para os ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Google Fonts -->
+<link property="stylesheet" rel='stylesheet' id='palladio-font-google_fonts-css' href='http://fonts.googleapis.com/css?family=Inconsolata%3A400%2C700%7CPoppins%3A400%2C600%2C700&amp;subset=latin%2Clatin-ext&amp;ver=6.2.6' type='text/css' media='all' />
+
+<style>
+  .top-bar {
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .top-bar-left {
+    text-align: left;
+    flex: 1;
+  }
+
+  .top-bar-left h6 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #fff;
+  }
+
+  .top-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+  }
+
+  .top-bar-right a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .top-bar-right a:hover {
+    color: #1db954;
+  }
+
+  @media (max-width: 768px) {
+    .top-bar {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+
+    .top-bar-left,
+    .top-bar-right {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+</style>
+
+
+<!-- TARJA PRETA COM SLOGAN ESQUERDA -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <h6>Transformando espaços.<br>Envelopar é uma arte.</h6>
+  </div>
+  <div class="top-bar-right">
+    <a href="https://wa.me/+5511940881109" target="_blank">
+      <i class="fab fa-whatsapp"></i> <strong>(11) 94088-1109</strong>
+    </a>
+	<a href="mailto:momentvmopvs@gmail.com">momentvmopvs@gmail.com
+	</a>
+    <a href="https://instagram.com/momentvm.opvs" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</div>
+
+
+
+		<!--<div class="body_wrap">
+
 			<div class="page_wrap">
-				<header class="top_panel scheme_default">
+				<header class="top_panel top_panel_custom top_panel_custom_29 top_panel_custom_header-short-2-rows without_bg_image scheme_default">
 					<div class="vc_row wpb_row vc_row-fluid vc_custom_1504101111040 sc_layouts_row sc_layouts_row_type_narrow sc_layouts_hide_on_mobile scheme_dark">
 					<div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column sc_layouts_column_align_center sc_layouts_column_icons_position_left">
 					<div class="vc_column-inner">
@@ -177,7 +323,7 @@
 					<div class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column sc_layouts_column_align_left sc_layouts_column_icons_position_left">
 					<div class="vc_column-inner">
 					<div class="wpb_wrapper">
-		<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_text_column wpb_content_element " >
 			<div class="wpb_wrapper">
 				<h6>Transformando espaços.<br/>Envelopar é uma arte.</h6>
 			</div>
@@ -192,8 +338,8 @@
 							<span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-phone-1"></span>
 							<span class="sc_layouts_item_details sc_layouts_iconed_text_details">
 								<span class="sc_layouts_item_details_line2 sc_layouts_iconed_text_line2">+5511940881109</span>
-							</span>
-						</a></div></div>
+							</span><!-- /.sc_layouts_iconed_text_details 
+						</a></div><!-- /.sc_layouts_iconed_text </div>
 		<div class="wpb_text_column wpb_content_element">
 			<div class="wpb_wrapper">
 				<p><a href="mailto:momentvmopvs@gmail.com">momentvmopvs@gmail.com </a></p>
@@ -211,7 +357,7 @@
 									</span>
 								</span>
 							</a>
-						</div></div><!-- /.contacts_wrap --></aside></div></div></div></div></div></div></div></div></div></div>
+						</div></div>--><!-- /.contacts_wrap --></aside></div></div></div></div></div></div></div></div></div></div>
 					<div class="vc_row wpb_row vc_row-fluid vc_custom_1503583583329 sc_layouts_row sc_layouts_row_type_narrow sc_layouts_row_fixed">
 						<div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
 						<div class="vc_column-inner">
