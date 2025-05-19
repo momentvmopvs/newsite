@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Momentvm Opvs - Envelopamento em São Paulo Capital.</title>
-
+  <link rel="icon" href="images/mo-icon-32x32.png" type="image/png">
   <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Poppins:400,600,700&subset=latin,latin-ext" />
 
   <!-- Ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="conteudo/css/estilo.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<!-- Swiper JS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 <script>
@@ -27,9 +31,6 @@
     });
   });
 </script>
-<body>
-
-  <!-- Cabeçalho fixo -->
   <header class="header">
     <div class="top-bar">
       <div>Transformando espaços.<br>Envelopar é uma arte.</div>
@@ -42,127 +43,27 @@
 	<div class="navbar">
     <div class="navbar-content">
   <a href="#home" class="logo">
-    <img src="images/logo-momentum-opus-1.jpg" alt="Logo">
+    <img src="images/mo-logo-1.png" alt="Logo">
   </a>
 <button class="menu-toggle">&#9776;</button>
-  <!-- Menu de navegação -->
+
   <nav id="navbarMenu">
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="/sobre.html">Sobre</a></li>
-      <li><a href="/servicos.html">Nossos Serviços</a></li>
-      <li><a href="/faq.html">Perguntas Frequentes</a></li>
+      <li><a href="#home" class="link ativo">Home</a></li>
+      <li><a href="/sobre.html" class="link">Sobre</a></li>
+      <li><a href="/servicos.html" class="link">Nossos Serviços</a></li>
+      <li><a href="/faq.html" class="link">Perguntas Frequentes</a></li>
     </ul>
-	
   </nav>
-
 </div></div>
-
   </header>
-
-  <!-- Carrossel Swiper -->
-  <div class="swiper-container" id="home">
-  <div class="swiper-wrapper">
-
-<<<<<<< HEAD
-    <!-- Slide 1 -->
-    <div class="swiper-slide">
-  <img src="Kitchen-Cabinet-service-image-2.jpg" alt="Slide 1">
-  <div class="slide-content">
-	<div class="slide-overlay">
-    <div class="slide-text">
-      <h3 class="slide-title">Renovação de Ambientes<br> Acabamento Premium</h3>
-      <a href="#sobre" class="slide-button">Saiba mais</a>
-    </div>
-=======
-  .top-bar-left h6 {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.4;
-    color: #fff;
-  }
-
-  .top-bar-right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    white-space: nowrap;
-  }
-
-  .top-bar-right a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: inherit;
-    font-weight: normal;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-
-  .top-bar-right a:hover {
-    color: #c1b700;
-  }
-
-  @media (max-width: 768px) {
-    .top-bar {
-      flex-direction: column;
-      text-align: center;
-      gap: 10px;
-    }
-
-    .top-bar-left,
-    .top-bar-right {
-      text-align: center;
-      justify-content: center;
-    }
-  }
-</style>
-
-
-<!-- TARJA PRETA COM SLOGAN ESQUERDA -->
-<div class="top-bar">
-  <div class="top-bar-left">
-    <h6>Transformando espaços.<br>Envelopar é uma arte.</h6>
->>>>>>> 0050994e86d92e32ad2706c848c80c70d5969303
-  </div>
-</div>
-</div>
-   <!-- Slide 2 -->
-    <div class="swiper-slide">
-  <img src="Kitchen-Cabinet-service-image-2.jpg" alt="Slide 1">
-  <div class="slide-overlay">
-    <div class="slide-text">
-      <h3 class="slide-title">Comunicação Visual<br>Projetos Especiais</h3>
-      <a href="#sobre" class="slide-button">Nossos Serviços</a>
-    </div>
-  </div>
-</div>
-
-    <!-- Slide 3 -->
-    <div class="swiper-slide">
-  <img src="Kitchen-Cabinet-service-image-2.jpg" alt="Slide 1">
-  <div class="slide-overlay">
-    <div class="slide-text">
-      <h3 class="slide-title">Transforme o seu<br>
-								Espaço hoje mesmo!</h3>
-      <a href="#sobre" class="slide-button">Contate-nos</a>
-    </div>
-  </div>
-</div>
-
-  </div>
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div>
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
+  document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper-container', {
       loop: true,
       autoplay: {
-        delay: 4000,
+        delay: 6000, // aumenta o tempo entre slides
+        disableOnInteraction: false,
       },
       pagination: {
         el: '.swiper-pagination',
@@ -173,11 +74,49 @@
         prevEl: '.swiper-button-prev',
       },
     });
-	
-  </script>
-<!-- Fonte do Google -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Poppins:400,600,700&subset=latin,latin-ext" />
+  });
+</script>
 
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+  		<img src="Kitchen-Cabinet-service-image-2.jpg" alt="Slide 1">
+  		<div class="slide-content">
+			<div class="slide-overlay">
+    			<div class="slide-text">
+      			<h3 class="slide-title">Renovação de Ambientes<br> Acabamento Premium</h3>
+      			<a href="sobre.html" class="slide-button">Saiba mais</a>
+    			</div>
+			</div>
+		</div>
+	</div>
+    <div class="swiper-slide">
+  		<img src="Kitchen-Cabinet-service-image-2.jpg" alt="Slide 1">
+  		<div class="slide-content">
+			<div class="slide-overlay">
+    			<div class="slide-text">
+      			<h3 class="slide-title">Comunicação Visual<br>Projetos Especiais</h3>
+      			<a href="servicos.html" class="slide-button">Nossos Serviços</a>
+    			</div>
+  			</div>
+		</div>
+	</div>
+    <div class="swiper-slide">
+    	<img src="Kitchen-Cabinet-service-image-2.jpg" alt="Slide 3">
+    	<div class="slide-content">
+			<div class="slide-overlay">
+    			<div class="slide-text">
+        		<h3 class="slide-title">Transforme o seu<br>Espaço hoje mesmo!</h3>
+        		<a href="https://wa.me/+5511940881109" class="slide-button">Contate-nos</a>
+        		</div>
+      		</div>
+    	</div>
+  	</div></div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  </div>
+  </div>
 <section class="intro-servicos">
   <div class="container intro-flex">
     <div class="intro-texto">
@@ -204,7 +143,7 @@
         <div class="imagem-overlay">
           <img src="Kitchen-Cabinet-service-image-2.jpg" alt="Serviço 1">
           <div class="conteudo">
-            <a href="servico1.html" class="botao">Móveis</a>
+            <a href="moveis.html" class="botao">Móveis</a>
           </div>
         </div>
       </div>
@@ -212,7 +151,7 @@
         <div class="imagem-overlay">
           <img src="Kitchen-Cabinet-service-image-2.jpg" alt="Serviço 2">
           <div class="conteudo">
-            <a href="servico2.html" class="botao">Veículos</a>
+            <a href="veiculos.html" class="botao">Veículos</a>
           </div>
         </div>
       </div>
@@ -220,7 +159,7 @@
         <div class="imagem-overlay">
           <img src="Kitchen-Cabinet-service-image-2.jpg" alt="Serviço 3">
           <div class="conteudo">
-            <a href="servico3.html" class="botao">Paredes</a>
+            <a href="paredes.html" class="botao">Paredes</a>
           </div>
         </div>
       </div>
@@ -228,20 +167,20 @@
         <div class="imagem-overlay">
           <img src="Kitchen-Cabinet-service-image-2.jpg" alt="Serviço 4">
           <div class="conteudo">
-            <a href="servico4.html" class="botao">Portas</a>
+            <a href="portas.html" class="botao">Portas</a>
           </div>
         </div>
       </div>
     </div>
 
     <div class="botao-central">
-      <a href="todos-servicos.html" class="botao2">Todos os serviços</a>
+      <a href="servicos.html" class="botao2">Todos os serviços</a>
     </div>
   </div>
 </section>
 <section class="final">
 	<div class="intro-texto">
-      <h2>Você pensa, nós tornamos realidade.</h2>
+      <h2>Você imagina, nós tornamos realidade.</h2>
     </div>
 </section>
 <footer class="footer">
@@ -252,25 +191,24 @@
 	<div class="footer-servicos">
       <div class="coluna-servicos">
         <ul>
-          <li><a href="#">Móveis</a></li>
-          <li><a href="#">Paredes</a></li>
-          <li><a href="#">Portas</a></li>
-          <li><a href="#">Veículos</a></li>
-          <li><a href="#">Insulfilm/Jateados</a></li>
+          <li><a href="moveis.html">Móveis</a></li>
+          <li><a href="paredes.html">Paredes</a></li>
+          <li><a href="portas.html">Portas</a></li>
+          <li><a href="veiculos.html">Veículos</a></li>
+          <li><a href="peliculas.html">Insulfilm/Jateados</a></li>
         </ul>
       </div>
       <div class="coluna-servicos">
         <ul>
-          <li><a href="#">Totens/Equipamentos</a></li>
-          <li><a href="#">Fachadas</a></li>
-          <li><a href="#">Eletrodomésticos</a></li>
-          <li><a href="#">Projetos Especiais</a></li>
-          <li><a href="#">Letras em Acrílico</a></li>
+          <li><a href="totens.html">Totens/Equipamentos</a></li>
+          <li><a href="fachadas.html">Fachadas</a></li>
+          <li><a href="eletrodomesticos.html">Eletrodomésticos</a></li>
+          <li><a href="especiais.html">Projetos Especiais</a></li>
+          <li><a href="acrilico.html">Letras em Acrílico</a></li>
         </ul>
       </div>
     </div>
 	</div>
-<<<<<<< HEAD
   <div class="footer-bottom">
 	<div class="linha-footer"></div>
     <p>Whatsapp: (11) 94088-1109 - Instagram: @momentvm.opvs - Email: momentvmopvs@gmail.com<br>Av. Eng. Heitor Antonio Eiras Garcia, 6363 - CEP 05564-200 - São Paulo, SP.<br>© 2025 Momentvm Opvs® — Todos os direitos reservados.</p>
@@ -278,574 +216,3 @@
 </footer>	
 </body>
 </html>
-=======
-
-				<div class="page_content_wrap scheme_default">
-
-									<div class="content_wrap">
-					
-										
-
-						<div class="content">
-											
-
-	<article id="post-331" class="post_item_single post_type_page post-331 page type-page status-publish hentry">
-
-		
-		<div class="post_content entry-content">
-			<section class="wpb-content-wrapper"><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left"><div class="vc_column-inner"><div class="wpb_wrapper"><a id="sc_anchor_1"
-			title="" 
-			class="sc_anchor sc_anchor_default" data-icon="" data-url=""></a><div class="wpb_revslider_element wpb_content_element">
-				<!-- START Home 1 1 REVOLUTION SLIDER 6.6.11 --><p class="rs-p-wp-fix"></p>
-				<rs-module-wrap id="rev_slider_2_1_wrapper" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
-					<rs-module id="rev_slider_2_1" style="" data-version="6.6.11">
-						<rs-slides style="overflow: hidden; position: absolute;">
-							<rs-slide style="position: absolute;" data-key="rs-4" data-title="Slide" data-thumb="wp-content/uploads/2023/8/room-1.jpg" data-anim="ms:600;" data-in="o:0;" data-out="a:false;">
-								<img src="wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" title="Kitchen 1 Shadowed" width="2560" height="1707" class="rev-slidebg tp-rs-img rs-lazyload" img data-lazyload="wp-content/uploads/2023/08/room-1.jpg" data-no-retina><!--//momentvmopvs.com/wp-content/uploads/2023/08/Kitchen-1-Shadowed-scaled.jpg-->
-	<!--
-								--><rs-layer
-									id="slider-2-slide-4-layer-1" 
-									data-type="text"
-									data-color="#ffffff"
-									data-xy="x:31px;y:c;yo:-62px;"
-									data-text="s:90;l:100;fw:700;a:inherit;"
-									data-dim="w:939px;"
-									data-frame_999="o:0;st:w;sR:8700;"
-									data-loop_0="y:-10;"
-									data-loop_999="y:10;sp:6000;e:power0.out;yym:t;yys:t;yyf:t;"
-									style="z-index:6;font-family:'Poppins';"
-								>Soluções em Renovação<br> 
-								de Ambientes 
-								</rs-layer><!--
-
-								--><rs-layer
-									id="slider-2-slide-4-layer-2" 
-									data-type="text"
-									data-color="#ffffff"
-									data-xy="x:30px;y:c;yo:95px;"
-									data-text="l:22;a:inherit;"
-									data-frame_999="o:0;st:w;sR:8700;"
-									style="z-index:7;font-family:'Open Sans';"
-								><a href="about%20us/index.html" id="sc_button_156896321" class="sc_button color_style_dark sc_button_simple_line sc_button_size_normal sc_button_icon_left"><span class="sc_button_text"><span class="sc_button_title">Sobre</span></span><!-- /.sc_button_text --></a><!-- /.sc_button --> 
-								</rs-layer><!--
-	-->						</rs-slide>
-							<rs-slide style="position: absolute;" data-key="rs-5" data-title="Slide" data-thumb="wp-content/uploads/2023/08/especiais.jpg" data-in="o:0;" data-out="a:false;">
-								<img src="wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" title="Bathroom 1 Shadowed" width="2560" height="1710" class="rev-slidebg tp-rs-img rs-lazyload" img data-lazyload="wp-content/uploads/2023/08/especiais.jpg" data-no-retina>
-	<!--
-								--><rs-layer
-									id="slider-2-slide-5-layer-1" 
-									data-type="text"
-									data-color="#ffffff"
-									data-xy="x:31px;y:c;yo:-62px;"
-									data-text="s:90;l:100;fw:700;a:inherit;"
-									data-frame_999="o:0;st:w;sR:8700;"
-									data-loop_0="y:-10;"
-									data-loop_999="y:10;sp:6000;e:power0.out;yym:t;yys:t;yyf:t;"
-									style="z-index:5;font-family:'Poppins';"
-								>Comunicação Visual<br>
-								Projetos Especiais 
-								</rs-layer><!--
-
-								--><rs-layer
-									id="slider-2-slide-5-layer-2" 
-									data-type="text"
-									data-color="#ffffff"
-									data-xy="x:30px;y:c;yo:95px;"
-									data-text="l:22;a:inherit;"
-									data-frame_999="o:0;st:w;sR:8700;"
-									style="z-index:6;font-family:'Open Sans';"
-								><a href="services/index.html" id="sc_button_751412696" class="sc_button color_style_dark sc_button_simple_line sc_button_size_normal sc_button_icon_left"><span class="sc_button_text"><span class="sc_button_title">Nossos Serviços</span></span><!-- /.sc_button_text --></a><!-- /.sc_button --> 
-								</rs-layer><!--
-	-->						</rs-slide>
-							<rs-slide style="position: absolute;" data-key="rs-6" data-title="Slide" data-thumb="wp-content/uploads/2023/08/room-1.jpg" data-in="o:0;" data-out="a:false;">
-								<img src="wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" title="Kitchen Cabinet 1 shadowed" width="2560" height="1440" class="rev-slidebg tp-rs-img rs-lazyload" img data-lazyload="wp-content/uploads/2023/08/itjoias.jpg" data-no-retina>
-	<!--
-								--><rs-layer
-									id="slider-2-slide-6-layer-1" 
-									data-type="text"
-									data-color="#ffffff"
-									data-xy="x:31px;y:c;yo:-62px;"
-									data-text="s:90;l:100;fw:700;a:inherit;"
-									data-frame_999="o:0;st:w;sR:8700;"
-									data-loop_0="y:-10;"
-									data-loop_999="y:10;sp:6000;e:power0.out;yym:t;yys:t;yyf:t;"
-									style="z-index:5;font-family:'Poppins';"
-								>Transforme o seu<br>
-								Espaço hoje mesmo! 
-								</rs-layer><!--
-
-								--><rs-layer
-									id="slider-2-slide-6-layer-2" 
-									data-type="text"
-									data-color="#ffffff"
-									data-xy="x:30px;y:c;yo:95px;"
-									data-text="l:22;a:inherit;"
-									data-frame_999="o:0;st:w;sR:8700;"
-									style="z-index:6;font-family:'Open Sans';"
-								><a href="tel:+5511940881109" id="sc_button_1192820703" class="sc_button color_style_dark sc_button_simple_line sc_button_size_normal sc_button_icon_left">
-									<span class="sc_button_text"><span class="sc_button_title">Contate-nos</span></span><!-- /.sc_button_text --></a><!-- /.sc_button --> 
-								</rs-layer><!--
-	-->						</rs-slide>
-						</rs-slides>
-					</rs-module>
-					<script>
-						setREVStartSize({c: 'rev_slider_2_1',rl:[1240,1024,778,480],el:[749],gw:[1240],gh:[749],type:'standard',justify:'',layout:'fullwidth',mh:"0"});if (window.RS_MODULES!==undefined && window.RS_MODULES.modules!==undefined && window.RS_MODULES.modules["revslider21"]!==undefined) {window.RS_MODULES.modules["revslider21"].once = false;window.revapi2 = undefined;if (window.RS_MODULES.checkMinimal!==undefined) window.RS_MODULES.checkMinimal()}
-					</script>
-				</rs-module-wrap>
-				<!-- END REVOLUTION SLIDER -->
-	</div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid studio_2columns_section vc_custom_1595583547410 vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-md-offset-0 vc_col-sm-offset-0 sc_layouts_column_icons_position_left"><div class="vc_column-inner"><div class="wpb_wrapper"><a id="sc_anchor_2"
-			title="" 
-			class="sc_anchor sc_anchor_default" data-icon="" data-url=""></a><div  id="sc_promo_1680645839" 
-		class="sc_promo align_text color_style_default sc_promo_default sc_promo_size_small sc_promo_no_paddings sc_promo_image_position_right"><div class="sc_promo_image" style="background-image:url(wp-content/uploads/2023/08/Kitchen-4-1-scaled.jpg);width:50%;right: 0;"></div>
-		<div class="sc_promo_text" style="width: 50%;float: left;">
-				<div class="sc_promo_text_inner sc_content_width_50%" style="">
-				<h6 class="sc_item_subtitle sc_promo_subtitle sc_align_left sc_item_title_style_default"></h6>
-				<h3 class="sc_item_title sc_promo_title sc_align_left sc_item_title_style_default sc_item_title_tag">Especialistas em adesivos e revestimentos</h3>
-				<div class="sc_item_descr sc_promo_descr sc_align_left"><p><span style="font-size:18px;">Conheça nosso serviço premium em envelopamento. Transforme paredes, 
-					pisos, móveis e ambientes residenciais ou corporativos com nossos materiais de alta qualidade, encante-se com acabamentos artísticos e um serviço rápido 
-					e limpo. Renove seus ambientes – descubra a mágica do envelopamento artístico.</span></p>
-	</div></div>
-			</div><!-- /.sc_promo_text --></div><!-- /.sc_promo --></div></div></div></div>
-			<div class="vc_row-full-width vc_clearfix"></div>
-			<div class="vc_row wpb_row vc_row-fluid">
-				<div class="wpb_column vc_column_container vc_col-sm-3 vc_col-has-fill sc_layouts_column_icons_position_left">
-				<div class="vc_column-inner vc_custom_1691940253489">
-				<!--<div class="wpb_wrapper">
-				<div class="sc_item_button sc_button_wrap sc_align_left">
-				<a href="about-us-style-1/index.html" id="sc_button_1785893999" class="sc_button color_style_default sc_button_simple_line  vc_custom_1691940528308 sc_button_size_large sc_button_icon_left">
-				<span class="sc_button_text sc_align_left">
-				<span class="sc_button_title">About us</span></span></.sc_button_text --></a><!-- /.sc_button --></div><!-- /.sc_item_button --></div></div></div>
-			<div class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column_icons_position_left">
-				<div class="vc_column-inner">
-				<div class="wpb_wrapper"></div></div></div>
-			<div class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column_icons_position_left">
-				<div class="vc_column-inner">
-				<div class="wpb_wrapper"></div></div></div>
-			<div class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column_icons_position_left">
-				<div class="vc_column-inner">
-				<div class="wpb_wrapper"></div></div></div></div>
-			<div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1595583656196 vc_row-has-fill">
-				<div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
-				<div class="vc_column-inner">
-				<div class="wpb_wrapper">
-				<a id="sc_anchor_3"
-			title="" 
-			class="sc_anchor sc_anchor_default" data-icon="" data-url=""></a><div id="sc_title_710086416"
-			class="sc_title color_style_default sc_title_row"><h6 class="sc_item_subtitle sc_title_subtitle sc_align_left sc_item_title_style_row"></h6>
-			<h3 class="sc_item_title sc_title_title sc_align_left sc_item_title_style_row sc_item_title_tag">Nossos Serviços</h3></div><!-- /.sc_title --><div id="sc_services_54329829" class="sc_services color_style_default sc_services_default sc_services_featured_top"><div class="sc_services_columns_wrap sc_item_columns sc_item_columns_2 trx_addons_columns_wrap columns_padding_bottom"><div class="trx_addons_column-1_2"><div class="sc_services_item custom without_content with_image sc_services_item_featured_top">
-		<div class="sc_services_item_wrap_featured">
-			<div class="post_featured with_thumb hover_ sc_services_item_thumb"><img width="760" height="428" src="wp-content/uploads/2017/06/Cabinet-1-760x428.jpg" class="attachment-palladio-thumb-big size-palladio-thumb-big wp-post-image" alt="Envelopamento de armários" decoding="async" srcset="wp-content/uploads/2017/06/Cabinet-1-760x428.jpg 760w, wp-content/uploads/2017/06/Cabinet-1-1170x658.jpg 1170w, wp-content/uploads/2017/06/Cabinet-1-270x152.jpg 270w" sizes="(max-width: 760px) 100vw, 760px" /><a href="services/armarios/index.html" aria-hidden="true" class="icons"></a></div>        <div class="sc_services_item_header">
-				<h6 class="sc_services_item_title">Móveis<span class="sc_services_item_title_line"></span><span class="sc_services_item_title_icon"></span></h6>
-			</div>
-		</div>
-		</div>
-	</div><div class="trx_addons_column-1_2"><div class="sc_services_item custom without_content with_image sc_services_item_featured_top">
-		<div class="sc_services_item_wrap_featured">
-			<div class="post_featured with_thumb hover_ sc_services_item_thumb"><img width="760" height="428" src="wp-content/uploads/2017/06/Vehicle-1-760x428.jpg" class="attachment-palladio-thumb-big size-palladio-thumb-big wp-post-image" alt="Envelopamento de veículos" decoding="async" loading="lazy" srcset="wp-content/uploads/2017/06/Vehicle-1-760x428.jpg 760w, wp-content/uploads/2017/06/Vehicle-1-1170x658.jpg 1170w, wp-content/uploads/2017/06/Vehicle-1-270x152.jpg 270w" sizes="(max-width: 760px) 100vw, 760px" /><a href="services/veiculos/index.html" aria-hidden="true" class="icons"></a></div>        <div class="sc_services_item_header">
-				<h6 class="sc_services_item_title">Veículos<span class="sc_services_item_title_line"></span><span class="sc_services_item_title_icon"></span></h6>
-			</div>
-		</div>
-		</div>
-	</div><div class="trx_addons_column-1_2"><div class="sc_services_item custom without_content with_image sc_services_item_featured_top">
-		<div class="sc_services_item_wrap_featured">
-			<div class="post_featured with_thumb hover_ sc_services_item_thumb"><img width="760" height="428" src="wp-content/uploads/2017/06/Paredes-1-760x428.jpg" class="attachment-palladio-thumb-big size-palladio-thumb-big wp-post-image" alt="Papel de parede com adesivo impresso" decoding="async" loading="lazy" srcset="wp-content/uploads/2017/06/Paredes-1-760x428.jpg 760w, wp-content/uploads/2017/06/paredes-1-1170x658.jpg 1170w" sizes="(max-width: 760px) 100vw, 760px" /><a href="services/paredes/index.html" aria-hidden="true" class="icons"></a></div>        <div class="sc_services_item_header">
-				<h6 class="sc_services_item_title">Paredes<span class="sc_services_item_title_line"></span><span class="sc_services_item_title_icon"></span></h6>
-			</div>
-		</div>
-		</div>
-	</div><div class="trx_addons_column-1_2"><div class="sc_services_item custom without_content with_image sc_services_item_featured_top">
-		<div class="sc_services_item_wrap_featured">
-			<div class="post_featured with_thumb hover_ sc_services_item_thumb"><img width="760" height="428" src="wp-content/uploads/2017/06/Portas-1-760x428.jpg" class="attachment-palladio-thumb-big size-palladio-thumb-big wp-post-image" alt="Envelopamento de portas" decoding="async" loading="lazy" srcset="wp-content/uploads/2017/06/Portas-1-760x428.jpg 760w, wp-content/uploads/2017/06/Portas-1-1170x658.jpg 1170w, wp-content/uploads/2017/06/Portas-1-270x152.jpg 270w" sizes="(max-width: 760px) 100vw, 760px" /><a href="services/portas/index.html" aria-hidden="true" class="icons"></a></div>        <div class="sc_services_item_header">
-				<h6 class="sc_services_item_title">Portas<span class="sc_services_item_title_line"></span><span class="sc_services_item_title_icon"></span></h6>
-			</div>
-		</div>
-		</div>
-	</div></div></div><!-- /.sc_services -->
-	<div class="sc_item_button sc_button_wrap sc_align_center">
-		<a href="service/index.html" id="sc_button_634285758" class="sc_button color_style_default sc_button_simple_line  vc_custom_1691766038362 sc_button_size_large sc_button_icon_left">
-			<span class="sc_button_text">
-				<span class="sc_button_title">Todos os Serviços</span></span><!-- /.sc_button_text --></a><!-- /.sc_button --></div><!-- /.sc_item_button --></div></div></div></div>
-	<div class="vc_row-full-width vc_clearfix"></div>
-	<div class="vc_row wpb_row vc_row-fluid vc_custom_1691766543623">
-		<div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
-			<div class="vc_column-inner">
-				<div class="wpb_wrapper">
-					<div class="sc_promo_text_inner sc_align_left sc_content_width_100%" style="">
-					<h3 class="sc_item_title sc_promo_title sc_align_left sc_item_title_style_default sc_item_title_tag">Você imagina. Nós tornamos realidade.</h3>
-		<br></div></div></div>
-	</div>
-	<div class="vc_row wpb_row vc_row-fluid vc_custom_1691766543623">
-		<div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
-			<div class="vc_column-inner">
-				<div class="wpb_wrapper">
-					<!--<div id="sc_title_566803087" class="sc_title color_style_default sc_title_row">
-						<h6 class="sc_item_subtitle sc_title_subtitle sc_align_left sc_item_title_style_row">03</h6><h3 class="sc_item_title sc_title_title sc_align_left sc_item_title_style_row sc_item_title_tag">Nossa Arte</h3></div>< /.sc_title -->
-				<!-- START Projects Gallery REVOLUTION SLIDER 6.6.11 ><p class="rs-p-wp-fix"></p>
-				<rs-module-wrap id="rev_slider_1_2_wrapper" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
-					<rs-module id="rev_slider_1_2" style="" data-version="6.6.11">
-						<rs-slides style="overflow: hidden; position: absolute;">
-							<rs-slide style="position: absolute;" data-key="rs-3" data-title="Slide" data-thumb="../wp-content/uploads/2024/01/Backsplash-Before-After-100x50.png" data-in="o:0;" data-out="a:false;">
-								<img src="wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" title="Backsplash Before-After" width="1920" height="1080" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//momentvmopvs.com/wp-content/uploads/2024/01/Backsplash-Before-After.png" data-no-retina>
-	<>						</rs-slide>
-							<rs-slide style="position: absolute;" data-key="rs-7" data-title="Slide" data-thumb="../wp-content/uploads/2024/01/29-Boulevard-Before-After-Photo-100x50.png" data-in="o:0;" data-out="a:false;">
-								<img src="wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" title="29 Boulevard Before After Photo" width="1920" height="1080" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//momentvmopvs.com/wp-content/uploads/2024/01/29-Boulevard-Before-After-Photo.png" data-no-retina>
-	<!>						</rs-slide>
-							<rs-slide style="position: absolute;" data-key="rs-9" data-title="Slide" data-thumb="../wp-content/uploads/2023/08/Kitchen-Wrapping-Arabian-Ranches-Before-and-After-scaled-100x50.jpeg" data-in="o:0;" data-out="a:false;">
-								<img src="wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" title="Kitchen Wrapping Arabian Ranches Before and After" width="2560" height="1489" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//momentvmopvs.com/wp-content/uploads/2023/08/Kitchen-Wrapping-Arabian-Ranches-Before-and-After-scaled.jpeg" data-no-retina>
-	<!->						</rs-slide>
-						</rs-slides>
-					</rs-module>
-					<script>
-						setREVStartSize({c: 'rev_slider_1_2',rl:[1240,1024,778,480],el:[749],gw:[1240],gh:[749],type:'standard',justify:'',layout:'fullwidth',mh:"0"});if (window.RS_MODULES!==undefined && window.RS_MODULES.modules!==undefined && window.RS_MODULES.modules["revslider12"]!==undefined) {window.RS_MODULES.modules["revslider12"].once = false;window.revapi1 = undefined;if (window.RS_MODULES.checkMinimal!==undefined) window.RS_MODULES.checkMinimal()}
-					</script>
-				</rs-module-wrap>
-				< END REVOLUTION SLIDER -->
-	</div></div></div></div><!--<div class="vc_row wpb_row vc_row-fluid vc_custom_1691766543623">
-		<div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
-			<div class="vc_column-inner">
-				<div class="wpb_wrapper">
-					<div class="sc_promo_text_inner sc_align_left sc_content_width_100%" style="">
-					<h3 class="sc_item_title sc_promo_title sc_align_left sc_item_title_style_default sc_item_title_tag">Você imagina. Nós tornamos realidade.</h3>
-		<br></div></div></div>
-	</div>--></div></div></div>
-	</section>	</div><!-- .entry-content -->
-
-		
-	</article>
-					
-						</div><!-- </.content> -->
-
-						</div><!-- </.content_wrap> -->			</div><!-- </.page_content_wrap> -->
-
-				<footer class="footer_wrap footer_custom footer_custom_580 footer_custom_footer-standard scheme_default">
-		<div class="vc_row wpb_row vc_row-fluid vc_custom_1515775796549 vc_row-has-fill sc_layouts_row sc_layouts_row_type_normal"><div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="sc_content_1358715559"
-			class="sc_content color_style_default sc_content_default sc_content_width_1_1 sc_float_center">
-			<div class="sc_content_container"><div class="vc_row wpb_row vc_inner vc_row-fluid">
-				<div class="wpb_column vc_column_container vc_col-sm-4 sc_layouts_column_icons_position_left">
-					<div class="vc_column-inner vc_custom_1515776500487"><div class="wpb_wrapper">
-						<div class="sc_layouts_item">
-							<div id="widget_contacts_1835791506" class="widget_area sc_widget_contacts vc_widget_contacts wpb_content_element"><aside id="widget_contacts_1835791506_widget" class="widget widget_contacts"><div class="contacts_wrap">
-								<div class="contacts_logo"><img src="wp-content/uploads/2023/08/mo-logo-1.png" alt="" width="638" height="134"></div></div><!-- /.contacts_wrap --></aside></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 sc_layouts_column_icons_position_left"><div class="vc_column-inner"><div class="wpb_wrapper"><div  class="vc_wp_custommenu wpb_content_element"><div class="widget widget_nav_menu">
-									<h2 class="widgettitle">Nossos Serviços</h2>
-							<div class="menu-footer-menu-1-container">
-								<ul id="menu-footer-menu-1" class="menu">
-									<li id="menu-item-930" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-930">
-										<a href="services/armarios/index.html">Móveis</a>
-											<ul class="sub-menu">
-	<li id="menu-item-952" class="menu-item menu-item-type-post_type menu-item-object-cpt_services menu-item-has-children menu-item-952">
-		<a href="services/veiculos/index.html">Veículos</a>
-		<ul class="sub-menu">
-			<li id="menu-item-953" class="menu-item menu-item-type-post_type menu-item-object-cpt_services menu-item-953">
-				<a href="services/paredes/index.html">Paredes</a></li>
-		</ul>
-	</li>
-		<li id="menu-item-931" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-931">
-			<a href="services/portas/index.html">Portas</a></li>
-			<li id="menu-item-932" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-932">
-				<a href="services/peliculas/index.html">Insulfilm/Jateados</a></li>
-	</ul>
-	</li>
-	<li id="menu-item-932" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-932">
-		<a href="services/Totens/index.html">Totens/Equipamentos</a>
-	<ul class="sub-menu">
-		<li id="menu-item-933" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-933">
-			<a href="services/Fachadas/index.html">Fachadas</a></li>
-		<li id="menu-item-954" class="menu-item menu-item-type-post_type menu-item-object-cpt_services menu-item-954">
-			<a href="services/Eletrodomesticos/index.html">Eletrodomésticos</a></li>
-		<li id="menu-item-955" class="menu-item menu-item-type-post_type menu-item-object-cpt_services menu-item-955">
-			<a href="services/especiais/index.html">Especiais</a></li>
-		<li id="menu-item-956" class="menu-item menu-item-type-post_type menu-item-object-cpt_services menu-item-956">
-			<a href="services/letras-acrilico/index.html">Letras/Acrílico</a></li>
-	</ul>
-	</li>
-	</ul></div></div></div></div></div></div>
-	<div class="wpb_column vc_column_container vc_col-sm-4 sc_layouts_column_icons_position_left">
-		<div class="vc_column-inner"><div class="wpb_wrapper">
-			<div class="sc_layouts_item">
-			<div id="widget_contacts_1798964696" class="widget_area sc_widget_contacts vc_widget_contacts wpb_content_element">
-				<aside id="widget_contacts_1798964696_widget" class="widget widget_contacts">
-					<div class="contacts_wrap">
-						<div class="contacts_socials socials_wrap">
-						<a target="_blank" href="https://www.instagram.com/momentvm.opvs/" class="social_item social_item_style_icons social_item_type_icons"><span class="social_icon social_instagramm"><span class="icon-instagramm"></span></span></a></div></div><!-- /.contacts_wrap --></aside></div></div></div></div></div></div></div></div><!-- /.sc_content --></div></div></div></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1500387194305 vc_row-has-fill sc_layouts_row sc_layouts_row_type_compact"><div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="sc_content_221082063"
-			class="sc_content color_style_default sc_content_default sc_content_width_1_1 sc_float_center">
-			<div class="sc_content_container">
-				<div  class="vc_wp_text wpb_content_element">
-					<div class="widget widget_text">			<div class="textwidget" style="text-align: center;"><p>Whatsapp: 11 94088-1109 - Email:momentvmopvs@gmail.com<br>Av. Eng. Heitor Antonio Eiras Garcia, 6363 - loja 5 - Jd. Esmeralda - São Paulo - SP - CEP 05564-200<br>Momentvm Opvs © 2025. Todos os Direitos Reservados.</p>
-
-	</div>
-			</div></div></div></div><!-- /.sc_content --></div></div></div></div></footer><!-- /.footer_wrap -->
-
-			</div><!-- /.page_wrap -->
-
-		</div><!-- /.body_wrap -->
-
-		
-		
-			<script>
-				window.RS_MODULES = window.RS_MODULES || {};
-				window.RS_MODULES.modules = window.RS_MODULES.modules || {};
-				window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
-				window.RS_MODULES.defered = true;
-				window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
-				window.RS_MODULES.type = 'compiled';
-			</script>
-					<script>
-				var ajaxRevslider;
-				function rsCustomAjaxContentLoadingFunction() {
-					// CUSTOM AJAX CONTENT LOADING FUNCTION
-					ajaxRevslider = function(obj) {
-					
-						// obj.type : Post Type
-						// obj.id : ID of Content to Load
-						// obj.aspectratio : The Aspect Ratio of the Container / Media
-						// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
-						
-						var content	= '';
-						var data	= {
-							action:			'revslider_ajax_call_front',
-							client_action:	'get_slider_html',
-							token:			'dcc5f07fb8',
-							type:			obj.type,
-							id:				obj.id,
-							aspectratio:	obj.aspectratio
-						};
-						
-						// SYNC AJAX REQUEST
-						jQuery.ajax({
-							type:		'post',
-							url:		'https://momentvmopvs.com/wp-admin/admin-ajax.php',
-							dataType:	'json',
-							data:		data,
-							async:		false,
-							success:	function(ret, textStatus, XMLHttpRequest) {
-								if(ret.success == true)
-									content = ret.data;								
-							},
-							error:		function(e) {
-								console.log(e);
-							}
-						});
-						
-						// FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
-						return content;						 
-					};
-					
-					// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
-					var ajaxRemoveRevslider = function(obj) {
-						return jQuery(obj.selector + ' .rev_slider').revkill();
-					};
-
-
-					// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION				
-					if (jQuery.fn.tpessential !== undefined) 					
-						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') 
-							jQuery.fn.tpessential.defaults.ajaxTypes.push({type: 'revslider', func: ajaxRevslider, killfunc: ajaxRemoveRevslider, openAnimationSpeed: 0.3});   
-							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
-							// func: the Function Name which is Called once the Item with the Post Type has been clicked
-							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
-							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)					
-				}
-				
-				var rsCustomAjaxContent_Once = false
-				if (document.readyState === "loading") 
-					document.addEventListener('readystatechange',function(){
-						if ((document.readyState === "interactive" || document.readyState === "complete") && !rsCustomAjaxContent_Once) {
-							rsCustomAjaxContent_Once = true;
-							rsCustomAjaxContentLoadingFunction();
-						}
-					});
-				else {
-					rsCustomAjaxContent_Once = true;
-					rsCustomAjaxContentLoadingFunction();
-				}					
-			</script>
-			<!-- Instagram Feed JS -->
-	<script type="text/javascript">
-	var sbiajaxurl = "wp-admin/admin-ajax.html";
-	</script>
-	<link href="https://fonts.googleapis.com/css?family=Poppins:700%7COpen+Sans:400%7CRoboto:400&amp;display=swap" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
-
-	<script>
-			if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
-	</script>
-				<link rel="preload" as="font" id="rs-icon-set-revicon-woff" href="wp-content/plugins/revslider/public/assets/fonts/revicons/revicons90c6.woff?5510888" type="font/woff" crossorigin="anonymous" media="all" />
-	<link property="stylesheet" rel='stylesheet' id='vc_font_awesome_5_shims-css' href='wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/v4-shims.minf7be.css?ver=6.10.0' type='text/css' media='all' />
-	<link property="stylesheet" rel='stylesheet' id='vc_font_awesome_5-css' href='wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/all.minf7be.css?ver=6.10.0' type='text/css' media='all' />
-	<link property="stylesheet" rel='stylesheet' id='rs-plugin-settings-css' href='wp-content/plugins/revslider/public/assets/css/rs668eb.css?ver=6.6.11' type='text/css' media='all' />
-
-	<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/swv/js/indexf2b4.js?ver=5.7.7' id='swv-js'></script>
-	<script type='text/javascript' id='contact-form-7-js-extra'>
-	/* <![CDATA[ */
-	var wpcf7 = {"api":{"root":"https:\/\/momentvmopvs.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
-	/* ]]> */
-	</script>
-	<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/indexf2b4.js?ver=5.7.7' id='contact-form-7-js'></script>
-	<script type='text/javascript' src='wp-content/plugins/revslider/public/assets/js/rbtools.min68eb.js?ver=6.6.11' defer async id='tp-tools-js'></script>
-	<script type='text/javascript' src='wp-content/plugins/revslider/public/assets/js/rs6.min68eb.js?ver=6.6.11' defer async id='revmin-js'></script>
-	<script type='text/javascript' src='wp-content/plugins/trx_addons/js/swiper/swiper.jquery.min.js' id='swiperslider-js'></script>
-	<script type='text/javascript' src='wp-content/plugins/trx_addons/js/magnific/jquery.magnific-popup.min.js' id='magnific-popup-js'></script>
-	<script type='text/javascript' id='trx_addons-js-extra'>
-	/* <![CDATA[ */
-	var TRX_ADDONS_STORAGE = {"ajax_url":"https:\/\/momentvmopvs.com\/wp-admin\/admin-ajax.php","ajax_nonce":"40f430bae9","site_url":"https:\/\/momentvmopvs.com","post_id":"331","vc_edit_mode":"0","popup_engine":"magnific","animate_inner_links":"0","user_logged_in":"0","email_mask":"^([a-zA-Z0-9_\\-]+\\.)*[a-zA-Z0-9_\\-]+@[a-z0-9_\\-]+(\\.[a-z0-9_\\-]+)*\\.[a-z]{2,6}$","msg_ajax_error":"Invalid server answer!","msg_magnific_loading":"Loading image","msg_magnific_error":"Error loading image","msg_error_like":"Error saving your like! Please, try again later.","msg_field_name_empty":"The name can't be empty","msg_field_email_empty":"Too short (or empty) email address","msg_field_email_not_valid":"Invalid email address","msg_field_text_empty":"The message text can't be empty","msg_search_error":"Search error! Try again later.","msg_send_complete":"Send message complete!","msg_send_error":"Transmit failed!","ajax_views":"","menu_cache":[".menu_mobile_inner > nav > ul"],"login_via_ajax":"","msg_login_empty":"The Login field can't be empty","msg_login_long":"The Login field is too long","msg_password_empty":"The password can't be empty and shorter then 4 characters","msg_password_long":"The password is too long","msg_login_success":"Login success! The page should be reloaded in 3 sec.","msg_login_error":"Login failed!","msg_not_agree":"Please, read and check 'Terms and Conditions'","msg_email_long":"E-mail address is too long","msg_email_not_valid":"E-mail address is invalid","msg_password_not_equal":"The passwords in both fields are not equal","msg_registration_success":"Registration success! Please log in!","msg_registration_error":"Registration failed!","scroll_to_anchor":"0","update_location_from_anchor":"0","msg_sc_googlemap_not_avail":"Googlemap service is not available","msg_sc_googlemap_geocoder_error":"Error while geocode address"};
-	/* ]]> */
-	</script>
-	<script type='text/javascript' src='wp-content/plugins/trx_addons/js/trx_addons.js' id='trx_addons-js'></script>
-	<script type='text/javascript' src='wp-content/plugins/trx_addons/components/cpt/layouts/shortcodes/menu/superfish.js' id='superfish-js'></script>
-	<script type='text/javascript' id='palladio-init-js-extra'>
-	/* <![CDATA[ */
-	var PALLADIO_STORAGE = {"ajax_url":"https:\/\/momentvmopvs.com\/wp-admin\/admin-ajax.php","ajax_nonce":"40f430bae9","site_url":"https:\/\/momentvmopvs.com","theme_url":"https:\/\/momentvmopvs.com\/wp-content\/themes\/palladio","site_scheme":"scheme_default","user_logged_in":"","mobile_layout_width":"767","mobile_device":"","menu_side_stretch":"","menu_side_icons":"1","background_video":"","use_mediaelements":"1","comment_maxlength":"1000","admin_mode":"","email_mask":"^([a-zA-Z0-9_\\-]+\\.)*[a-zA-Z0-9_\\-]+@[a-z0-9_\\-]+(\\.[a-z0-9_\\-]+)*\\.[a-z]{2,6}$","strings":{"ajax_error":"Invalid server answer!","error_global":"Error data validation!","name_empty":"The name can&#039;t be empty","name_long":"Too long name","email_empty":"Too short (or empty) email address","email_long":"Too long email address","email_not_valid":"Invalid email address","text_empty":"The message text can&#039;t be empty","text_long":"Too long message text"},"alter_link_color":"#000000","button_hover":""};
-	/* ]]> */
-	</script>
-	<script type='text/javascript' src='wp-content/themes/palladio/js/__scripts.js' id='palladio-init-js'></script>
-	<script type='text/javascript' id='mediaelement-core-js-before'>
-	var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
-	</script>
-	<script type='text/javascript' src='wp-includes/js/mediaelement/mediaelement-and-player.min1f61.js?ver=4.2.17' id='mediaelement-core-js'></script>
-	<script type='text/javascript' src='wp-includes/js/mediaelement/mediaelement-migrate.min4118.js?ver=6.2.6' id='mediaelement-migrate-js'></script>
-	<script type='text/javascript' id='mediaelement-js-extra'>
-	/* <![CDATA[ */
-	var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive","audioShortcodeLibrary":"mediaelement","videoShortcodeLibrary":"mediaelement"};
-	/* ]]> */
-	</script>
-	<script type='text/javascript' src='wp-includes/js/mediaelement/wp-mediaelement.min4118.js?ver=6.2.6' id='wp-mediaelement-js'></script>
-	<script type='text/javascript' src='wp-content/plugins/js_composer/assets/js/dist/js_composer_front.minf7be.js?ver=6.10.0' id='wpb_composer_front_js-js'></script>
-	<script id="rs-initialisation-scripts">
-			var	tpj = jQuery;
-
-			var	revapi2,revapi1;
-
-			if(window.RS_MODULES === undefined) window.RS_MODULES = {};
-			if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
-			RS_MODULES.modules["revslider21"] = {once: RS_MODULES.modules["revslider21"]!==undefined ? RS_MODULES.modules["revslider21"].once : undefined, init:function() {
-				window.revapi2 = window.revapi2===undefined || window.revapi2===null || window.revapi2.length===0  ? document.getElementById("rev_slider_2_1") : window.revapi2;
-				if(window.revapi2 === null || window.revapi2 === undefined || window.revapi2.length==0) { window.revapi2initTry = window.revapi2initTry ===undefined ? 0 : window.revapi2initTry+1; if (window.revapi2initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider21"].init()}); return;}
-				window.revapi2 = jQuery(window.revapi2);
-				if(window.revapi2.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_2_1"); return;}
-				revapi2.revolutionInit({
-						revapi:"revapi2",
-						DPR:"dpr",
-						visibilityLevels:"1240,1024,778,480",
-						gridwidth:1240,
-						gridheight:749,
-						lazyType:"all",
-						spinner:"spinner0",
-						perspective:600,
-						perspectiveType:"local",
-						editorheight:"749,768,960,720",
-						responsiveLevels:"1240,1024,778,480",
-						progressBar:{disableProgressBar:true},
-						navigation: {
-							mouseScrollNavigation:false,
-							wheelCallDelay:1000,
-							onHoverStop:false,
-							touch: {
-								touchenabled:true,
-								touchOnDesktop:true
-							},
-							arrows: {
-								enable:true,
-								style:"custom",
-								left: {
-									h_align:"right",
-									v_align:"bottom",
-									h_offset:140,
-									v_offset:48
-								},
-								right: {
-									v_align:"bottom",
-									h_offset:81,
-									v_offset:48
-								}
-							}
-						},
-						viewPort: {
-							global:true,
-							globalDist:"-200px",
-							enable:false,
-							visible_area:"20%"
-						},
-						fallbacks: {
-							allowHTML5AutoPlayOnAndroid:true
-						},
-				});
-								revapi2.bind("revolution.slide.onloaded",function (e) {
-
-	revapi2.revredraw();
-
-	});
-				
-			}} // End of RevInitScript
-
-			if(window.RS_MODULES === undefined) window.RS_MODULES = {};
-			if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
-			RS_MODULES.modules["revslider12"] = {once: RS_MODULES.modules["revslider12"]!==undefined ? RS_MODULES.modules["revslider12"].once : undefined, init:function() {
-				window.revapi1 = window.revapi1===undefined || window.revapi1===null || window.revapi1.length===0  ? document.getElementById("rev_slider_1_2") : window.revapi1;
-				if(window.revapi1 === null || window.revapi1 === undefined || window.revapi1.length==0) { window.revapi1initTry = window.revapi1initTry ===undefined ? 0 : window.revapi1initTry+1; if (window.revapi1initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider12"].init()}); return;}
-				window.revapi1 = jQuery(window.revapi1);
-				if(window.revapi1.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_1_2"); return;}
-				revapi1.revolutionInit({
-						revapi:"revapi1",
-						DPR:"dpr",
-						visibilityLevels:"1240,1024,778,480",
-						gridwidth:1240,
-						gridheight:749,
-						lazyType:"all",
-						spinner:"spinner0",
-						perspective:600,
-						perspectiveType:"local",
-						editorheight:"749,768,960,720",
-						responsiveLevels:"1240,1024,778,480",
-						progressBar:{disableProgressBar:true},
-						navigation: {
-							mouseScrollNavigation:false,
-							wheelCallDelay:1000,
-							onHoverStop:false,
-							touch: {
-								touchenabled:true,
-								touchOnDesktop:true
-							},
-							arrows: {
-								enable:true,
-								style:"custom",
-								rtl:true,
-								left: {
-									h_align:"right",
-									v_align:"bottom",
-									h_offset:730,
-									v_offset:300
-								},
-								right: {
-									v_align:"bottom",
-									h_offset:440,
-									v_offset:300
-								}
-							}
-						},
-						viewPort: {
-							global:true,
-							globalDist:"-200px",
-							enable:false,
-							visible_area:"20%"
-						},
-						fallbacks: {
-							allowHTML5AutoPlayOnAndroid:true
-						},
-				});
-								revapi1.bind("revolution.slide.onloaded",function (e) {
-
-	revapi1.revredraw();
-
-	});
-				
-			}} // End of RevInitScript
-
-			if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
-		</script>
-	<a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up" title="Scroll to top"></a>
-	</body>
-
-	<!-- Mirrored from momentvmopvs.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 May 2025 20:17:09 GMT -->
-	</html>
-
-	<!-- Page cached by LiteSpeed Cache 6.5.4 on 2025-05-03 15:42:48 -->
->>>>>>> 0050994e86d92e32ad2706c848c80c70d5969303

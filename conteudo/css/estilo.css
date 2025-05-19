@@ -106,11 +106,53 @@ nav ul li a:hover {
   color: #000;
   cursor: pointer;
 }
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a.link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  padding: 8px 0;
+  display: inline-block;
+  position: relative;
+}
+
+.menu a.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.menu a.link:hover::after {
+  width: 100%;
+}
+
+.menu a.link.ativo::after {
+  width: 100% !important;
+  background-color: #000;
+}
+
 /* ======================= SLIDER ======================= */
 .swiper-container {
  max-width: 100%;
   margin: 0 auto;
-  height: 100hv; /* ou qualquer altura que desejar */
+  height: 100vh; /* ou qualquer altura que desejar */
   overflow: hidden;
   position: relative;
 }
@@ -198,22 +240,22 @@ display:inline-block;
   font-family: 'Inconsolata', sans-serif;
 }
 .swiper-pagination-bullet {
-  background-color: #fff !important; /* ou qualquer cor desejada */
-  opacity: 0.6;
+  background-color: #ffffff00 !important; /* ou qualquer cor desejada */
+  opacity: none;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #bc9000 !important; /* cor da bolinha ativa */
-  opacity: 1;
+  background-color: #bc900000 !important; /* cor da bolinha ativa */
+  opacity: none;
 }
 .swiper-button-next,
 .swiper-button-prev {
-  color: #fff; /* ou qualquer cor que quiser */
+  color: #fff !important; /* ou qualquer cor que quiser */
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  color: #bc9000; /* cor ao passar o mouse */
+  color: #bc9000 !important; /* cor ao passar o mouse */
 }
 /* =======================CONTAINERS E GRID ======================= */
 .container {
