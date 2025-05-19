@@ -1,67 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Momentvm Opvs - Envelopamento em São Paulo Capital.</title>
-  <link rel="icon" href="images/mo-icon-32x32.png" type="image/png">
-  <!-- Swiper CSS -->
-  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Envelopamento | Comunicação Visual | Fachadas | Letras-caixa | Acrílico em São Paulo Capital</title>
+<meta name="description" content="Momentvm Opvs oferece serviços de envelopamento em São Paulo Capital, com qualidade e profissionalismo.">
+<meta name="keywords" content="envelopamento, São Paulo, Momentvm Opvs, serviços de envelopamento">
+<link rel="icon" href="images/mo-icon-32x32.png" type="ícone Momentvm Opvs">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Poppins:400,600,700&subset=latin,latin-ext" />
-
-  <!-- Ícones -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="conteudo/css/estilo.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
-<!-- Swiper JS -->
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="conteudo/css/estilo.css">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
 </head>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector("nav");
-
-    toggle.addEventListener("click", function () {
-      nav.classList.toggle("active");
-    });
-  });
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav-link");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const id = entry.target.getAttribute("id");
-
-            navLinks.forEach((link) => {
-              link.classList.remove("active");
-
-              if (link.getAttribute("href") === `#${id}`) {
-                link.classList.add("active");
-              }
-            });
-          }
-        });
-      },
-      {
-        threshold: 0.2, // 20% da seção visível já conta
-      }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-  });
-</script>
-
-  <header class="header">
+<header class="header">
     <div class="top-bar">
       <div>Transformando espaços.<br>Envelopar é uma arte.</div>
       <div class="contacts">
@@ -79,32 +32,13 @@
   <nav id="navbarMenu">
     <ul>
       <li><a href="#home" class="/newsite/home.html">Home</a></li>
-      <li><a href="/newsite/sobre.html">Sobre</a></li>
+      <li><a href="/newsite/sobre.html">Conheça a MO</a></li>
       <li><a href="/newsite/servicos.html">Nossos Serviços</a></li>
       <li><a href="/newsite/faq.html">Perguntas Frequentes</a></li>
     </ul>
   </nav>
 </div></div>
   </header>
-  <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper-container', {
-      loop: true,
-      autoplay: {
-        delay: 6000, // aumenta o tempo entre slides
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  });
-</script>
 <section id="home">
 <div class="swiper-container">
   <div class="swiper-wrapper">
@@ -242,9 +176,68 @@
 	</div>
   <div class="footer-bottom">
 	<div class="linha-footer"></div>
-    <p>Whatsapp: (11) 94088-1109<br>Av. Eng. Heitor Antonio Eiras Garcia, 6363 - CEP 05564-200 - São Paulo, SP.<br>© 2025 Momentvm Opvs® — Todos os direitos reservados.</p>
+    <p>Whatsapp: (11) 94088-1109<br>Av. Eng. Heitor Antonio Eiras Garcia, 6363 - CEP 05564-200 - São Paulo, SP.<br><span style="color:rgb(130, 130, 130)"> 2025 Momentvm Opvs® — Todos os direitos reservados.</span></p>
   </div>
 </footer>	
 </section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+
+    toggle.addEventListener("click", function () {
+      nav.classList.toggle("active");
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute("id");
+
+            navLinks.forEach((link) => {
+              link.classList.remove("active");
+
+              if (link.getAttribute("href") === `#${id}`) {
+                link.classList.add("active");
+              }
+            });
+          }
+        });
+      },
+      {
+        threshold: 0.2, // 20% da seção visível já conta
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+  });
+</script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 6000, // aumenta o tempo entre slides
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  });
+</script>
 </body>
 </html>
