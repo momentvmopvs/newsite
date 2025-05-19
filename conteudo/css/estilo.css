@@ -46,7 +46,17 @@ h1, h2, h3, h4, h5 {
 }
 
 .top-bar .contacts a:hover {
+  font-size: 105%;
   color: #ffffff; /* nova cor da fonte ao passar o mouse */
+}
+
+.instagram-icon i {
+  font-size: 25px; /* ou 40px, 50px... como preferir */
+  color: #bc9000; /* opcional: cor do ícone */
+}
+.instagram-icon i:hover {
+  font-size: 27px; /* ou 40px, 50px... como preferir */
+  color: #ffffff; /* opcional: cor do ícone */
 }
 
 /* ======================= HEADER / NAVBAR ======================= */
