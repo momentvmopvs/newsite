@@ -107,47 +107,11 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-.menu ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  padding: 0;
-  margin: 0;
+.nav-link.active {
+  color: #bc9000; /* cor quando ativo */
+  font-weight: bold;
+  border-bottom: 2px solid #bc9000; /* ou outro estilo */
 }
-
-.menu li {
-  position: relative;
-}
-
-.menu a.link {
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-  padding: 8px 0;
-  display: inline-block;
-  position: relative;
-}
-
-.menu a.link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: #000;
-  transition: width 0.3s ease;
-}
-
-.menu a.link:hover::after {
-  width: 100%;
-}
-
-.menu a.link.ativo::after {
-  width: 100% !important;
-  background-color: #000;
-}
-
 /* ======================= SLIDER ======================= */
 .swiper-container {
  max-width: 100%;

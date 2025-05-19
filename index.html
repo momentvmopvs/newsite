@@ -31,6 +31,36 @@
     });
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute("id");
+
+            navLinks.forEach((link) => {
+              link.classList.remove("active");
+
+              if (link.getAttribute("href") === `#${id}`) {
+                link.classList.add("active");
+              }
+            });
+          }
+        });
+      },
+      {
+        threshold: 0.2, // 20% da seção visível já conta
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+  });
+</script>
+
   <header class="header">
     <div class="top-bar">
       <div>Transformando espaços.<br>Envelopar é uma arte.</div>
@@ -49,7 +79,7 @@
 
   <nav id="navbarMenu">
     <ul>
-      <li><a href="/newsite/home.html">Home</a></li>
+      <li><a href="#home" class="/newsite/home.html">Home</a></li>
       <li><a href="/newsite/sobre.html">Sobre</a></li>
       <li><a href="/newsite/servicos.html">Nossos Serviços</a></li>
       <li><a href="/newsite/faq.html">Perguntas Frequentes</a></li>
@@ -76,7 +106,7 @@
     });
   });
 </script>
-
+<section id="home">
 <div class="swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
@@ -117,7 +147,8 @@
   <div class="swiper-button-prev"></div>
   </div>
   </div>
-<section class="intro-servicos">
+</section>
+<section id="intro" class="intro-servicos">
   <div class="container intro-flex">
     <div class="intro-texto">
       <div class="linha-topo"></div>
@@ -132,7 +163,7 @@
   </div>
 </section>
 
-<section class="servicos">
+<section id="servicos" class="servicos">
   <div class="container">
 	<div class="intro-texto">
       <div class="linha-topo"></div>
@@ -183,6 +214,7 @@
       <h2>Você imagina, nós tornamos realidade.</h2>
     </div>
 </section>
+<section id="footer">
 <footer class="footer">
   <div class="container-footer">
     <div class="footer-logo">
@@ -214,5 +246,6 @@
     <p>Whatsapp: (11) 94088-1109 - <br>Av. Eng. Heitor Antonio Eiras Garcia, 6363 - CEP 05564-200 - São Paulo, SP.<br>© 2025 Momentvm Opvs® — Todos os direitos reservados.</p>
   </div>
 </footer>	
+</section>
 </body>
 </html>
