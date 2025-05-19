@@ -59,6 +59,19 @@ h1, h2, h3, h4, h5 {
   color: #ffffff; /* opcional: cor do ícone */
 }
 
+.envelope-icon i {
+  font-size: 25px; /* ou 40px, 50px... como preferir */
+  color: #bc9000; /* opcional: cor do ícone */
+}
+.envelope-icon i:hover {
+  font-size: 27px; /* ou 40px, 50px... como preferir */
+  color: #ffffff; /* opcional: cor do ícone */
+}
+
+.logo {
+  font-size: 35px; /* ou 40px, 50px... como preferir */
+  align-items: center;
+}
 /* ======================= HEADER / NAVBAR ======================= */
 .header {
   position: fixed;
@@ -69,7 +82,7 @@ h1, h2, h3, h4, h5 {
 
 .navbar {
   display: fixed;
-  justify-content: space-between;
+  text-align: center;
   align-items: center;
   background-color: #fff;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -452,7 +465,7 @@ display:inline-block;
 .linha-topo2 {
   width: 150px;
   height: 1px;
-  background-color: #494949;
+  background-color: #49494900;
   margin-bottom: 20px;
   margin-top: 30px;
 }
@@ -561,7 +574,7 @@ display:inline-block;
 }
 
 .coluna-servicos li {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .coluna-servicos a {
@@ -594,7 +607,6 @@ display:inline-block;
 }
 
 /* ======================= RESPONSIVO ======================= */
-
 /* Menu mobile toggle */
 @media (max-width: 1024px) {
   .navbar-content {
@@ -707,7 +719,8 @@ display:inline-block;
 
   .footer-servicos {
     justify-content: center;
-    gap: 40px;
+    flex-direction:column;
+    gap: 0px;
   }
 
   .footer-logo img {
