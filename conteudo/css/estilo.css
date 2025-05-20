@@ -18,11 +18,18 @@ body {
 
 /* ======================= TEXTO E FONTES ======================= */
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
+  color:#0B004A;
 }
 
+h5 {
+  margin-bottom: 10px;
+  line-height: 1;
+  margin-top: 15px;
+  color:#0B004A;
+}
 .texto-geral {
   font-family: 'Inconsolata', sans-serif;
   color: #4a4a4a;
@@ -31,16 +38,16 @@ h1, h2, h3, h4, h5 {
 /* ======================= TOP BAR ======================= */
 .top-bar {
   display: flex;
-  color:#bc9000;
+  color:#B87800;
   justify-content: space-between;
   align-items: center;
   padding: 8px 20px;
-  background-color: #000345;
+  background-color: #0B004A;
   z-index: 999;
 }
 
 .top-bar .contacts a {
-  color: #bc9000;
+  color: #B87800;
   margin-left: 15px;
   text-decoration: none;
 }
@@ -52,7 +59,7 @@ h1, h2, h3, h4, h5 {
 
 .instagram-icon i {
   font-size: 25px; /* ou 40px, 50px... como preferir */
-  color: #bc9000; /* opcional: cor do ícone */
+  color: #B87800; /* opcional: cor do ícone */
 }
 .instagram-icon i:hover {
   font-size: 27px; /* ou 40px, 50px... como preferir */
@@ -61,7 +68,7 @@ h1, h2, h3, h4, h5 {
 
 .envelope-icon i {
   font-size: 25px; /* ou 40px, 50px... como preferir */
-  color: #bc9000; /* opcional: cor do ícone */
+  color: #B87800; /* opcional: cor do ícone */
 }
 .envelope-icon i:hover {
   font-size: 27px; /* ou 40px, 50px... como preferir */
@@ -118,7 +125,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #bc9000;
+  color: #B87800;
 }
 
 .menu-toggle {
@@ -131,9 +138,9 @@ nav ul li a:hover {
 }
 
 .nav-link.active {
-  color: #bc9000; /* cor quando ativo */
+  color: #B87800; /* cor quando ativo */
   font-weight: bold;
-  border-bottom: 2px solid #bc9000; /* ou outro estilo */
+  border-bottom: 2px solid #B87800; /* ou outro estilo */
 }
 
 @keyframes floatIn {
@@ -280,8 +287,8 @@ nav ul li a:hover {
   z-index: 11;
 }
 .slide-button:hover {
-  background-color: #000345;
-  color: #bc9000;
+  background-color: #0B004A;
+  color: #B87800;
 }
 
 .slide-overlay {
@@ -309,6 +316,7 @@ nav ul li a:hover {
 display:inline-block;
   font-size: 5rem;
   font-weight: 800;
+  color: white !important;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 10px;
   text-align:left;
@@ -327,7 +335,7 @@ display:inline-block;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #bc900000 !important; /* cor da bolinha ativa */
+  background-color: #B8780000 !important; /* cor da bolinha ativa */
   opacity: none;
 }
 .swiper-button-next,
@@ -337,7 +345,7 @@ display:inline-block;
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  color: #bc9000 !important; /* cor ao passar o mouse */
+  color: #B87800 !important; /* cor ao passar o mouse */
 }
 /* =======================CONTAINERS E GRID ======================= */
 .container {
@@ -413,8 +421,8 @@ display:inline-block;
 .botao,
 .botao.grande {
   position: absolute;
-  background-color: #bc9000;      /* Dourado elegante */
-  color: #000345;
+  background-color: #B87800;      /* Dourado elegante */
+  color: #0B004A;
   padding: 12px 30px;
   bottom: 30px;
   border: none;
@@ -426,8 +434,8 @@ display:inline-block;
   z-index:10;
 }
 .botao2 {
-   background-color: #bc9000;      /* Dourado elegante */
-  color: #000345;
+   background-color: #B87800;      /* Dourado elegante */
+  color: #0B004A;
   padding: 12px 30px;
   bottom: 30px;
   border: none;
@@ -439,12 +447,12 @@ display:inline-block;
   z-index:10;
 }
 .botao:hover {
-  background-color: #000345;
+  background-color: #0B004A;
   color:#fff;
 }
 
 .botao2:hover {
-  background-color: #000345;
+  background-color: #0B004A;
   color:#fff;
 }
 .botao-central {
@@ -482,7 +490,7 @@ display:inline-block;
 .intro-texto h2 {
   margin-bottom: 20px;
   line-height: 1.2;
-  color:#000345;
+  color:#0B004A;
 }
 
 .intro-texto p {
@@ -532,13 +540,7 @@ display:inline-block;
 .sobre-texto h2 {
   margin-bottom: 20px;
   line-height: 1.2;
-  color:#000345;
-}
-
-.sobre-texto p {
-  font-family: 'Inconsolata', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  color:#0B004A;
 }
 
 .sobre-imagem {
@@ -581,7 +583,7 @@ display:inline-block;
 .faq-titulo {
   font-size: 2.5rem;
   font-family: 'Poppins', sans-serif;
-  color: #000345;
+  color: #0B004A;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -598,7 +600,7 @@ display:inline-block;
   font-size: 1.25rem;
   font-weight: 600;
   font-family: 'Inconsolata', sans-serif;
-  color: #000345;
+  color: #0B004A;
   text-align: left;
   padding: 15px;
   cursor: pointer;
@@ -633,7 +635,7 @@ display:inline-block;
 /* ===== FOOTER ===== */
 .footer {
   background-color: #ededed;
-  color: #000345;
+  color: #0B004A;
   padding: 40px 20px;
 }
 
@@ -674,13 +676,13 @@ display:inline-block;
 }
 
 .coluna-servicos a {
-  color: #000345;
+  color: #0B004A;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .coluna-servicos a:hover {
-  color: #bc9000;
+  color: #B87800;
 }
 .footer-bottom {
   text-align: center;
