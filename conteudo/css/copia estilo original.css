@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .logo {
-  font-size: 5px; /* ou 40px, 50px... como preferir */
+  font-size: 35px; /* ou 40px, 50px... como preferir */
   align-items: center;
 }
 /* ======================= HEADER / NAVBAR ======================= */
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5 {
   justify-content: space-between;
 }
 .navbar .logo img {
-  height: 40px;
+  height: 60px;
 }
 
 nav ul {
