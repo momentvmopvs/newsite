@@ -207,97 +207,119 @@
 </script>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org/",
-  "@type": "Service",
-  "name": "Envelopamento de Móveis",
-  "image": "https://momentvmopvs.com/images/Cabinet-1-1170x658.jpg",
-  "description": "Envelopamento de móveis",
-  "brand": {
-    "@type": "Brand",
-    "name": "Momentvm Opvs"
-  },
-  "@type": "Service",
-  "name": "Papel de Parede",
-  "image": "https://momentvmopvs.com/images/Paredes-1-1170x658.jpg",
-  "description": "papel de parede",
-  "brand": {
-    "@type": "Brand",
-    "name": "Momentvm Opvs"
-  },
-  "@type": "Service",
-  "name": "Envelopamento de Portas",
-  "image": "https://momentvmopvs.com/images/Portas-1-1170x658.jpg",
-  "description": "Envelopamento de portas",
-  "brand": {
-    "@type": "Brand",
-    "name": "Momentvm Opvs"
-  },
-  "@type": "Service",
-  "name": "Envelopamento de Veículos",
-  "image": "https://momentvmopvs.com/images/Vehicle-1-1170x658.jpg",
-  "description": "Envelopamento de veículos",
-  "brand": {
-    "@type": "Brand",
-    "name": "Momentvm Opvs"
-  },
-  "@type": "Service",
-  "name": "Insulfilm e Jateados",
-  "image": "https://momentvmopvs.com/images/Peliculas-1-1170x658.jpg",
-  "description": "Películas Insulfilm e Jateados",
-  "brand": {
-    "@type": "Brand",
-    "name": "Momentvm Opvs"
-  },
-  "@type": "Service",
-  "name": "Envelopamento de Totens",
-  "image": "https://momentvmopvs.com/images/Totens-1-1170x658.jpg",
-  "description": "Envelopamento de totens",
-  "brand": {
-    "@type": "Brand",
-    "name": "Momentvm Opvs"
-  },
-  "@type": "Service",
-  "name": "Fachadas em ACM",
-  "image": "https://momentvmopvs.com/images/Fachadas-6-1170x658.jpg",
-  "description": "Fachadas em ACM",
-  "brand": {
-    "@type": "Brand",
-    "name": "Momentvm Opvs"
-  },
-  "@type": "Service",
-  "name": "Envelopamento de Eletrodomésticos",
-  "image": "https://momentvmopvs.com/images/Eletrodomesticos-1-1170x658.jpg",
-  "description": "Envelopamento de eletrodomésticos",
-  "brand": {
-    "@type": "Brand",
-    "name": "Momentvm Opvs"
-  },
-  "@type": "Service",
-  "name": "Fachadas em ACM",
-  "image": "https://momentvmopvs.com/images/Fachadas-6-1170x658.jpg",
-  "description": "Fachadas em ACM",
-  "brand": {
-    "@type": "Brand",
-    "name": "Momentvm Opvs"
-  },
-  "@type": "Service",
-  "name": "Projetos Especiais e Cenografia",
-  "image": "https://momentvmopvs.com/images/especiais-7-1170x658.jpg",
-  "description": "Projetos especiais e cenografia",
-  "brand": {
-    "@type": "Brand",
-    "name": "Momentvm Opvs"
-  },
-  "@type": "Service",
-  "name": "Letras em acrílico e corte-laser",
-  "image": "https://momentvmopvs.com/images/letras-1-1170x658.jpg",
-  "description": "Letras em acrílico e corte-laser",
-  "brand": {
-    "@type": "Brand",
-    "name": "Momentvm Opvs"
-  }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Envelopamento de Móveis",
+      "image": "https://momentvmopvs.com/images/Cabinet-1-1170x658.jpg",
+      "description": "Envelopamento de móveis",
+      "url": "https://momentvmopvs.com/envelopamento-de-moveis",
+      "areaServed": {
+        "@type": "Place",
+        "name": "São Paulo, SP"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "Momentvm Opvs",
+        "url": "https://momentvmopvs.com"
+      },
+      "priceRange": "R$"
+    },
+    {
+      "@type": "Service",
+      "name": "Papel de Parede",
+      "image": "https://momentvmopvs.com/images/Paredes-1-1170x658.jpg",
+      "description": "Aplicação de papel de parede decorativo.",
+      "url": "https://momentvmopvs.com/papel-de-parede",
+      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
+      "provider": { "@type": "Organization", "name": "Momentvm Opvs", "url": "https://momentvmopvs.com" },
+      "priceRange": "R$"
+    },
+    {
+      "@type": "Service",
+      "name": "Envelopamento de Portas",
+      "image": "https://momentvmopvs.com/images/Portas-1-1170x658.jpg",
+      "description": "Envelopamento decorativo de portas.",
+      "url": "https://momentvmopvs.com/envelopamento-de-portas",
+      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
+      "provider": { "@type": "Organization", "name": "Momentvm Opvs", "url": "https://momentvmopvs.com" },
+      "priceRange": "R$"
+    },
+    {
+      "@type": "Service",
+      "name": "Envelopamento de Veículos",
+      "image": "https://momentvmopvs.com/images/Vehicle-1-1170x658.jpg",
+      "description": "Envelopamento automotivo para proteção e personalização.",
+      "url": "https://momentvmopvs.com/envelopamento-de-veiculos",
+      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
+      "provider": { "@type": "Organization", "name": "Momentvm Opvs", "url": "https://momentvmopvs.com" },
+      "priceRange": "R$$$"
+    },
+    {
+      "@type": "Service",
+      "name": "Insulfilm e Jateados",
+      "image": "https://momentvmopvs.com/images/Peliculas-1-1170x658.jpg",
+      "description": "Instalação de películas decorativas e funcionais.",
+      "url": "https://momentvmopvs.com/insulfilm-jateados",
+      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
+      "provider": { "@type": "Organization", "name": "Momentvm Opvs", "url": "https://momentvmopvs.com" },
+      "priceRange": "R$$"
+    },
+    {
+      "@type": "Service",
+      "name": "Envelopamento de Totens",
+      "image": "https://momentvmopvs.com/images/Totens-1-1170x658.jpg",
+      "description": "Envelopamento para sinalização e publicidade em totens.",
+      "url": "https://momentvmopvs.com/totens",
+      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
+      "provider": { "@type": "Organization", "name": "Momentvm Opvs", "url": "https://momentvmopvs.com" },
+      "priceRange": "R$$"
+    },
+    {
+      "@type": "Service",
+      "name": "Fachadas em ACM",
+      "image": "https://momentvmopvs.com/images/Fachadas-6-1170x658.jpg",
+      "description": "Fachadas modernas em ACM para comércios e empresas.",
+      "url": "https://momentvmopvs.com/fachadas-acm",
+      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
+      "provider": { "@type": "Organization", "name": "Momentvm Opvs", "url": "https://momentvmopvs.com" },
+      "priceRange": "R$$$"
+    },
+    {
+      "@type": "Service",
+      "name": "Envelopamento de Eletrodomésticos",
+      "image": "https://momentvmopvs.com/images/Eletrodomesticos-1-1170x658.jpg",
+      "description": "Personalização e renovação visual de eletrodomésticos.",
+      "url": "https://momentvmopvs.com/eletrodomesticos",
+      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
+      "provider": { "@type": "Organization", "name": "Momentvm Opvs", "url": "https://momentvmopvs.com" },
+      "priceRange": "R$"
+    },
+    {
+      "@type": "Service",
+      "name": "Projetos Especiais e Cenografia",
+      "image": "https://momentvmopvs.com/images/especiais-7-1170x658.jpg",
+      "description": "Projetos personalizados para eventos, vitrines e decorações temáticas.",
+      "url": "https://momentvmopvs.com/projetos-especiais",
+      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
+      "provider": { "@type": "Organization", "name": "Momentvm Opvs", "url": "https://momentvmopvs.com" },
+      "priceRange": "Sob consulta"
+    },
+    {
+      "@type": "Service",
+      "name": "Letras em acrílico e corte-laser",
+      "image": "https://momentvmopvs.com/images/letras-1-1170x658.jpg",
+      "description": "Letras recortadas para fachadas, ambientes internos e sinalização.",
+      "url": "https://momentvmopvs.com/letras-acrilico",
+      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
+      "provider": { "@type": "Organization", "name": "Momentvm Opvs", "url": "https://momentvmopvs.com" },
+      "priceRange": "R$$"
+    }
+  ]
 }
 </script>
+
 
 </body>
 </html>
