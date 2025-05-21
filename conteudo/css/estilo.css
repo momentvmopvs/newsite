@@ -403,6 +403,17 @@ display:inline-block;
   margin-top:30px;
 }
 
+.texto-final {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height:2rem;
+  color:#4A4a4a;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+
 /* ===== OVERLAY DE IMAGEM ===== */
 .imagem-overlay {
   position: relative;
