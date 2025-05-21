@@ -972,3 +972,73 @@ display:inline-block;
     font-size: 1.1rem;
   }
 }
+
+/*script completo para o beadcumbs, para quando tiver um blog
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://momentvmopvs.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://momentvmopvs.com/blog"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Título do Post",
+  "author": {
+    "@type": "Person",
+    "name": "Seu Nome"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Momentvm Opvs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://momentvmopvs.com/logo.png"
+    }
+  },
+  "datePublished": "2024-11-15",
+  "image": "https://momentvmopvs.com/imagens/post.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://momentvmopvs.com/blog/titulo-do-post"
+  }
+}
+</script>
+breadcumb completo para serviços e produtos
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Nome do Produto",
+  "image": "https://momentvmopvs.com/imagens/produto.jpg",
+  "description": "Descrição breve do produto",
+  "brand": {
+    "@type": "Brand",
+    "name": "Momentvm Opvs"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://momentvmopvs.com/produto",
+    "priceCurrency": "BRL",
+    "price": "149.90",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+
+*/
