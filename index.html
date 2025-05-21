@@ -351,6 +351,16 @@
   ]
 }
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+
+    toggle.addEventListener("click", function () {
+      nav.classList.toggle("active");
+    });
+  });
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -442,7 +452,6 @@
     "@type": "Brand",
     "name": "Momentvm Opvs"
   }
-
 }
 </script>
 </body>
