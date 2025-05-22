@@ -662,7 +662,7 @@ display:inline-block;
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 20px;
+  bottom: 1px;
   left: 20px;
   background-color: #000cf6;
   color: rgb(255, 255, 255);
