@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   padding-top:80px;
-  margin-top: 80px; /* ajuste conforme a altura da navbar */
+  margin-top: 62px; /* ajuste conforme a altura da navbar */
 }
 
 /* ======================= TEXTO E FONTES ======================= */
@@ -59,7 +59,7 @@ h5 {
 .top-bar {
   display: flex;
   color:#B87800;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 8px 20px;
   background-color: #0B004A;
@@ -98,6 +98,8 @@ h5 {
 .logo {
   font-size: 5px; /* ou 40px, 50px... como preferir */
   align-items: center;
+  text-align: center;
+  padding-right:6rem;
 }
 /* ======================= HEADER / NAVBAR ======================= */
 .header {
@@ -124,7 +126,7 @@ h5 {
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .navbar .logo img {
   height: 40px;
@@ -194,7 +196,7 @@ nav ul li a:hover {
     transform: scale(2);
   }
 }
-
+/*
 .whatsapp-widget a {
   text-decoration: none !important;
   color: white;
@@ -206,7 +208,7 @@ nav ul li a:hover {
 }
 
 .whatsapp-float {
-  position: fixed;
+  position: relative;
   width: 60px;
   height: 60px;
   bottom: 20px;
@@ -238,7 +240,7 @@ nav ul li a:hover {
 }
 
 .whatsapp-widget i {
-  font-size: 30px;  /* ou o tamanho desejado */
+  font-size: 30px;  /* ou o tamanho desejado 
   display: block;
   line-height: 1;
   text-decoration: none !important;
@@ -258,6 +260,93 @@ nav ul li a:hover {
   border: none !important;
   outline: none !important;
 }
+
+.whatsapp-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-texto-hover {
+  visibility: hidden;
+  opacity: 0;
+  white-space: nowrap;
+  background-color: #25d366;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  position: relative;
+  top: 50%;
+  right: 10px; /* aparece à esquerda do botão 
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  z-index: 998;
+}
+
+.whatsapp-float:hover .whatsapp-texto-hover {
+  visibility: visible;
+  opacity: 1;
+}
+*/
+.whatsapp-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-float {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #006c31;
+}
+
+.whatsapp-float i {
+  z-index: 2;
+}
+
+.whatsapp-texto-hover {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  right: 70px; /* posiciona a aba à esquerda */
+  transform: translateY(-50%);
+  background-color: #006c31;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  white-space: nowrap;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1;
+}
+
+.whatsapp-float:hover .whatsapp-texto-hover {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* ======================= SLIDER ======================= */
 .swiper-container {
  max-width: 100%;
@@ -301,14 +390,14 @@ nav ul li a:hover {
   padding: 12px 25px;
   font-size: 18px;
   color: #fff;
-  background-color:transparent;
+  background-color:#0B004A;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
   z-index: 11;
 }
 .slide-button:hover {
-  background-color: #0B004A;
-  color: #B87800;
+  background-color: #B87800;
+  color: #0B004A;
 }
 
 .slide-overlay {
@@ -630,6 +719,113 @@ display:inline-block;
   height:100%;
   object-fit: cover;
   display:block;
+}
+/* ===== PARCEIRO ===== */
+
+.parceiro-bullet {
+  font-family: 'Inconsolata', sans-serif;
+  font-size:1.5rem;
+  color: #4a4a4a;
+  padding-left: 50px;
+}
+
+.parceiro {
+  font-family: 'Inconsolata', sans-serif;
+  font-size:1.5rem !important;
+  color: #4a4a4a;
+}
+
+.parceiro-final {
+  position: relative;
+  overflow: hidden;
+  text-align: center;   
+}
+
+/*WIDGET PARCEIRO*/
+.parceiro-widget a {
+  text-decoration: none !important;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  outline: none !important;
+}
+
+.parceiro-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  left: 20px;
+  background-color: #000cf6;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 999;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: floatIn 0.8s ease-out, subtleMove 2.5s infinite ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.parceiro-float:hover {
+  transform: scale(1.2);
+  background-color: #0c0064;
+  text-decoration: none !important;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  outline: none !important;
+}
+
+.parceiro-widget i {
+  font-size: 30px;  /* ou o tamanho desejado */
+  display: block;
+  line-height: 1;
+  text-decoration: none !important;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  outline: none !important;
+}
+.parceiro-widget a,
+.parceiro-widget a:hover,
+.parceiro-widget a:focus,
+.parceiro-widget a:visited {
+  text-decoration: none !important;
+  color: white;
+  border: none !important;
+  outline: none !important;
+}
+
+.parceiro-texto-hover {
+  visibility: hidden;
+  opacity: 0;
+  white-space: nowrap;
+  background-color: #0c0064;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  position: absolute;
+  left: 70px;
+  bottom: 15px;
+  z-index: 998;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.parceiro-float:hover .parceiro-texto-hover {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* ===== SERVIÇOS ===== */
