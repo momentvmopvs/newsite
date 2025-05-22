@@ -96,10 +96,10 @@ h5 {
 }
 
 .logo {
-  font-size: 5px; /* ou 40px, 50px... como preferir */
+  font-size: 0.8rem; /* ou 40px, 50px... como preferir */
   align-items: center;
   text-align: center;
-  padding-right:6rem;
+  padding-right:4rem;
 }
 /* ======================= HEADER / NAVBAR ======================= */
 .header {
