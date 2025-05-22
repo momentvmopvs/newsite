@@ -96,7 +96,7 @@ h5 {
 }
 
 .logo {
-  font-size: 0.8rem; /* ou 40px, 50px... como preferir */
+  font-size: 1rem; /* ou 40px, 50px... como preferir */
   align-items: center;
   text-align: center;
   padding-right:4rem;
@@ -107,6 +107,7 @@ h5 {
   top: 0;
   width: 100%;
   z-index: 1000;
+  padding-bottom:1rem;
 }
 
 .navbar {
@@ -129,7 +130,7 @@ h5 {
   justify-content: center;
 }
 .navbar .logo img {
-  height: 40px;
+  height: 30px;
 }
 
 nav ul {
