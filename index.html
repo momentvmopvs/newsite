@@ -275,6 +275,25 @@
 </footer>	
 </section>
 <script>
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+      // Remove o texto flutuante do botão de parceiro, se existir
+      const parceiroLabel = document.querySelector(".parceiro-label");
+      if (parceiroLabel) {
+        parceiroLabel.style.opacity = "0";
+        parceiroLabel.style.visibility = "hidden";
+      }
+
+      // Remove o texto flutuante do botão do WhatsApp, se existir
+      const whatsappLabel = document.querySelector(".whatsapp-label");
+      if (whatsappLabel) {
+        whatsappLabel.style.opacity = "0";
+        whatsappLabel.style.visibility = "hidden";
+      }
+    }
+  });
+</script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     const toggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector("nav");
