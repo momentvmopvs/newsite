@@ -925,7 +925,7 @@ display:inline-block;
 
 @media (max-width: 768px) {
   body {
-    padding-top: 120px; /* Ou mais, se o menu expandido for maior */
+    padding-top: 400px; /* Ou mais, se o menu expandido for maior */
   }
 }
 
