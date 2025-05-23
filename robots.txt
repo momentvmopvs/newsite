@@ -7,7 +7,8 @@ Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /includes/
 Disallow: /*.php$
-Disallow: /*?*
+# Disallow: /*?*   ← mantenha comentado se usar UTMs
+
 Allow: /conteudo/css/
 Allow: /conteudo/js/
 Allow: /images/
