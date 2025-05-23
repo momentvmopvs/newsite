@@ -880,6 +880,66 @@ display:inline-block;
   margin: 0 auto 20px auto; /* centraliza horizontalmente e mantém o espaço abaixo */
 }
 
+/*==========BLOG==========*/
+.botao-blog {
+  position: relative;
+  background-color: #B87800;      /* Dourado elegante */
+  color: #0B004A;
+  padding: 12px 30px;
+  bottom: 30px;
+  border: none;
+
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index:10;
+}
+.botao2-blog {
+   background-color: #B87800;      /* Dourado elegante */
+  color: #0B004A;
+  padding: 12px 30px;
+  bottom: 30px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index:10;
+}
+.botao-blog:hover {
+  background-color: #0B004A;
+  color:#fff;
+}
+
+.botao2-blog:hover {
+  background-color: #0B004A;
+  color:#fff;
+}
+.botao-central-blog {
+  margin-top: 40px;
+  text-align: center;
+  z-index:10;
+}
+
+.conteudo-blog {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
 /* ======================= RESPONSIVO ======================= */
 /* Menu mobile toggle */
 @media (max-width: 1024px) {
