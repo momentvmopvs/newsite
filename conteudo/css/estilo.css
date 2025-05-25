@@ -966,6 +966,24 @@ display:inline-block;
   padding-top: 30px;
   padding-left: 50px;
 }
+
+.blog1-icon i {
+  font-size: 25px; /* ou 40px, 50px... como preferir */
+  color: #0B004A; /* opcional: cor do ícone */
+}
+.blog1-icon i:hover {
+  font-size: 27px; /* ou 40px, 50px... como preferir */
+  color: #ffffff; /* opcional: cor do ícone */
+}
+
+.blog2-icon i {
+  font-size: 25px; /* ou 40px, 50px... como preferir */
+  color: #0B004A; /* opcional: cor do ícone */
+}
+.blog2-icon i:hover {
+  font-size: 27px; /* ou 40px, 50px... como preferir */
+  color: #ffffff; /* opcional: cor do ícone */
+}
 /* ======================= RESPONSIVO ======================= */
 /* Menu mobile toggle */
 @media (max-width: 1024px) {
