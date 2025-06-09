@@ -27,7 +27,31 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
+    <url>
+    <loc>https://momentvmopvs.com/blog.html</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <!-- Matérias do blog -->
+    <url>
+    <loc>https://momentvmopvs.com/articles/papel-de-parede-autoadesivo.html</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+    <url>
+    <loc>https://momentvmopvs.com/articles/envelopamento-de-moveis-renovacao-inteligente.html</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+    <url>
+    <loc>https://momentvmopvs.com/articles/peliculas-insulfilm-para-janelas.html</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>    
   <!-- Serviços específicos -->
   <url>
     <loc>https://momentvmopvs.com/moveis.html</loc>
