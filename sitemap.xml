@@ -33,6 +33,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+   <url>
+    <loc>https://momentvmopvs.com/parceiros.html</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <!-- Matérias do blog -->
     <url>
     <loc>https://momentvmopvs.com/articles/papel-de-parede-autoadesivo.html</loc>
