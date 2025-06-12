@@ -881,6 +881,16 @@ display:inline-block;
 }
 
 /*==========BLOG==========*/
+.top-bar-blog {
+  display: flex;
+  color:#B87800;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  background-color: #b87800;
+  z-index: 999;
+}
+
 .botao-blog {
   position: relative;
   background-color: #B87800;      /* Dourado elegante */
@@ -984,6 +994,24 @@ display:inline-block;
   font-size: 27px; /* ou 40px, 50px... como preferir */
   color: #ffffff; /* opcional: cor do ícone */
 }
+.especialblog {
+  font-size: 2rem;
+  color: black !important;
+}
+.especialh1 {
+  font-size: 2.5rem !important;
+}
+.especialh2 {
+  font-size: 2rem !important;
+}
+.especial17 {
+  font-size: 1.7rem !important;
+}
+.textobullet{
+padding-top:20px;
+font-size:1.4rem;
+}
+
 /* ======================= RESPONSIVO ======================= */
 /* Menu mobile toggle */
 @media (max-width: 1024px) {
