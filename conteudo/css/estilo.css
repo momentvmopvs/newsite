@@ -59,11 +59,14 @@ h5 {
 .top-bar {
   display: flex;
   color:#B87800;
+  width: 100%;
+  overflow:hidden;
   justify-content: center;
   align-items: center;
   padding: 8px 20px;
   background-color: #0B004A;
   z-index: 999;
+  flex-wrap: wrap;
 }
 
 .top-bar .contacts a {
@@ -1014,6 +1017,11 @@ font-size:1.4rem;
 
 /* ======================= RESPONSIVO ======================= */
 /* Menu mobile toggle */
+   @media (max-width: 768px) {
+    .top-bar {
+      padding: 4px 10px; /* Ajuste o padding para telas menores */
+    }
+  }
 @media (max-width: 1024px) {
   .navbar-content {
     flex-direction:row;
@@ -1060,10 +1068,8 @@ font-size:1.4rem;
   body {
     padding-top: 120px; /* Ou mais, se o menu expandido for maior */
   }
-}
 
 /* Telas pequenas (celulares) */
-@media (max-width: 768px) {
   .slide-title {
     font-size: 2.5rem;
     text-align: center;
