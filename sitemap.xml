@@ -10,99 +10,104 @@
 
   <!-- Páginas principais -->
   <url>
-    <loc>https://momentvmopvs.com/sobre.html</loc>
+    <loc>https://momentvmopvs.com/sobre/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://momentvmopvs.com/servicos.html</loc>
+    <loc>https://momentvmopvs.com/servicos/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://momentvmopvs.com/faq.html</loc>
+    <loc>https://momentvmopvs.com/faq/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
     <url>
-    <loc>https://momentvmopvs.com/blog.html</loc>
+    <loc>https://momentvmopvs.com/blog/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
    <url>
-    <loc>https://momentvmopvs.com/parceiros.html</loc>
+    <loc>https://momentvmopvs.com/parceiros/</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+    <loc>https://momentvmopvs.com/eletrodomesticos/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <!-- Matérias do blog -->
     <url>
-    <loc>https://momentvmopvs.com/articles/papel-de-parede-autoadesivo.html</loc>
+    <loc>https://momentvmopvs.com/articles/papel-de-parede-autoadesivo/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
     <url>
-    <loc>https://momentvmopvs.com/articles/envelopamento-de-moveis-renovacao-inteligente.html</loc>
+    <loc>https://momentvmopvs.com/articles/envelopamento-de-moveis-renovacao-inteligente/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>  
     <url>
-    <loc>https://momentvmopvs.com/articles/peliculas-insulfilm-para-janelas.html</loc>
+    <loc>https://momentvmopvs.com/articles/peliculas-insulfilm-para-janelas/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>    
       <url>
-    <loc>https://momentvmopvs.com/articles/letras-caixa-em-acrilico-para-recepcoes-de-empresas.html</loc>
+    <loc>https://momentvmopvs.com/articles/letras-caixa-em-acrilico-para-recepcoes-de-empresas/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>        
   <!-- Serviços específicos -->
   <url>
-    <loc>https://momentvmopvs.com/moveis.html</loc>
+    <loc>https://momentvmopvs.com/moveis/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://momentvmopvs.com/veiculos.html</loc>
+    <loc>https://momentvmopvs.com/veiculos/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://momentvmopvs.com/portas.html</loc>
+    <loc>https://momentvmopvs.com/portas/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://momentvmopvs.com/paredes.html</loc>
+    <loc>https://momentvmopvs.com/paredes/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://momentvmopvs.com/fachadas.html</loc>
+    <loc>https://momentvmopvs.com/fachadas/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://momentvmopvs.com/acrilico.html</loc>
+    <loc>https://momentvmopvs.com/acrilico/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://momentvmopvs.com/especiais.html</loc>
+    <loc>https://momentvmopvs.com/especiais/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
