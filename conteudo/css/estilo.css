@@ -14,6 +14,7 @@ body {
   padding: 0;
   padding-top:80px;
   margin-top: 62px; /* ajuste conforme a altura da navbar */
+  overflow-x:hidden;/*antes não tinha isso*/
 }
 
 /* ======================= TEXTO E FONTES ======================= */
@@ -133,7 +134,11 @@ h5 {
   justify-content: center;
 }
 .navbar .logo img {
-  height: 30px;
+  max-height: 30px;
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 nav ul {
@@ -447,6 +452,10 @@ display:inline-block;
   font-size: 1.5rem;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 /* ===== BOTÕES ===== */
 .botao,
 .botao.grande {
@@ -491,6 +500,11 @@ display:inline-block;
   z-index:10;
 }
 
+.botao,
+.botao2 {
+  width: 100%;
+  max-width: 300px;
+}
 /* ===== INTRO ===== */
 .intro-servicos {
   padding: 60px 20px;
@@ -1016,60 +1030,70 @@ font-size:1.4rem;
 }
 
 /* ======================= RESPONSIVO ======================= */
+
 /* Menu mobile toggle */
+@media (max-width: 768px) {
+  section:first-of-type {
+    margin-top: 80px; /* altura exata do menu*/ 
+  }
+}
    @media (max-width: 768px) {
     .top-bar {
-      padding: 4px 10px; /* Ajuste o padding para telas menores */
+      padding: 4px 10px;  /*Ajuste o padding para telas menores */
+      top: 0;
+      left: 0;
+      right: 0;
+      width: auto;
+      height: auto;
+      display:flex;
+      object-fit:contain;
+      z-index: 1000;
+      text-align:center;
+      align-items:center;
     }
   }
 @media (max-width: 1024px) {
   .navbar-content {
     flex-direction:row;
     align-items: flex-start;
-  }
-
-  .menu-toggle {
-    display: block;
-    margin-left: auto;
+    width: 100%;
   }
 
   nav {
-    display:inline;
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    flex-direction:row;
-    gap: 15px;
     background-color: #fff;
-    padding: 20px;
-    border-top: 1px solid #ccc;
+    position:relative;
+    top: 0;
+    left: 0;
+    z-index: 1000;
   }
 
   nav.active {
-    display:inline;
+    display: flex;
   }
 
   nav ul {
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   nav ul li {
     width: 100%;
+    text-align: center;
   }
 
   nav ul li a {
-    display:inline;
+    display: block;
     width: 100%;
     padding: 10px 0;
-    border-bottom: 1px solid #eee;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    padding-top: 120px; /* Ou mais, se o menu expandido for maior */
+    text-align: center;
   }
 
-/* Telas pequenas (celulares) */
   .slide-title {
     font-size: 2.5rem;
     text-align: center;
@@ -1103,7 +1127,6 @@ font-size:1.4rem;
     margin-top: 20px;
   }
 
-  @media (max-width: 768px) {
   .sobre-flex,
   .sobre-flex.invertido {
     flex-direction: column;
@@ -1119,7 +1142,6 @@ font-size:1.4rem;
   .sobre-imagem {
     text-align: center;
   }
-}
 
   .container-footer {
     flex-direction: column;
@@ -1131,7 +1153,7 @@ font-size:1.4rem;
 
   .footer-servicos {
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
     gap: 0px;
   }
 
@@ -1159,11 +1181,21 @@ font-size:1.4rem;
   }
 
   .container {
-    padding: 10px 10px;
+    padding: 10px;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .intro-texto h2 {
     font-size: 1.8rem;
+  }
+
+  .faq-titulo {
+    font-size: 2rem;
+  }
+
+  .faq-pergunta {
+    font-size: 1.1rem;
   }
 }
 
@@ -1178,7 +1210,8 @@ font-size:1.4rem;
   }
 
   .intro-texto,
-  .intro-imagem, .sobre-imagem {
+  .intro-imagem,
+  .sobre-imagem {
     width: 100%;
     text-align: center;
   }
@@ -1201,16 +1234,6 @@ font-size:1.4rem;
 
   .swiper-container {
     height: 70vh;
-  }
-}
-/*FAQ responsivo*/
-@media (max-width: 768px) {
-  .faq-titulo {
-    font-size: 2rem;
-  }
-
-  .faq-pergunta {
-    font-size: 1.1rem;
   }
 }
 

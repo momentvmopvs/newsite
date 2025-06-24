@@ -59,11 +59,14 @@ h5 {
 .top-bar {
   display: flex;
   color:#B87800;
+  width: 100%;
+  overflow:hidden;
   justify-content: center;
   align-items: center;
   padding: 8px 20px;
   background-color: #0B004A;
   z-index: 999;
+  flex-wrap: wrap;
 }
 
 .top-bar .contacts a {
@@ -881,6 +884,16 @@ display:inline-block;
 }
 
 /*==========BLOG==========*/
+.top-bar-blog {
+  display: flex;
+  color:#B87800;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  background-color: #b87800;
+  z-index: 999;
+}
+
 .botao-blog {
   position: relative;
   background-color: #B87800;      /* Dourado elegante */
@@ -958,8 +971,57 @@ display:inline-block;
   flex: 1 1 50%;
   padding-left:30px;
 }
+
+.blog-bullet {
+  font-family: 'Inconsolata', sans-serif;
+  font-size:1.5rem;
+  color: #4a4a4a;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.blog1-icon i {
+  font-size: 25px; /* ou 40px, 50px... como preferir */
+  color: #0B004A; /* opcional: cor do ícone */
+}
+.blog1-icon i:hover {
+  font-size: 27px; /* ou 40px, 50px... como preferir */
+  color: #ffffff; /* opcional: cor do ícone */
+}
+
+.blog2-icon i {
+  font-size: 25px; /* ou 40px, 50px... como preferir */
+  color: #0B004A; /* opcional: cor do ícone */
+}
+.blog2-icon i:hover {
+  font-size: 27px; /* ou 40px, 50px... como preferir */
+  color: #ffffff; /* opcional: cor do ícone */
+}
+.especialblog {
+  font-size: 2rem;
+  color: black !important;
+}
+.especialh1 {
+  font-size: 2.5rem !important;
+}
+.especialh2 {
+  font-size: 2rem !important;
+}
+.especial17 {
+  font-size: 1.7rem !important;
+}
+.textobullet{
+padding-top:20px;
+font-size:1.4rem;
+}
+
 /* ======================= RESPONSIVO ======================= */
 /* Menu mobile toggle */
+   @media (max-width: 768px) {
+    .top-bar {
+      padding: 4px 10px; /* Ajuste o padding para telas menores */
+    }
+  }
 @media (max-width: 1024px) {
   .navbar-content {
     flex-direction:row;
@@ -986,7 +1048,7 @@ display:inline-block;
   }
 
   nav ul {
-    flex-direction:row;
+   flex-direction:row;
     width: 100%;
   }
 
@@ -1006,10 +1068,8 @@ display:inline-block;
   body {
     padding-top: 120px; /* Ou mais, se o menu expandido for maior */
   }
-}
 
 /* Telas pequenas (celulares) */
-@media (max-width: 768px) {
   .slide-title {
     font-size: 2.5rem;
     text-align: center;
@@ -1043,7 +1103,6 @@ display:inline-block;
     margin-top: 20px;
   }
 
-  @media (max-width: 768px) {
   .sobre-flex,
   .sobre-flex.invertido {
     flex-direction: column;
@@ -1059,7 +1118,6 @@ display:inline-block;
   .sobre-imagem {
     text-align: center;
   }
-}
 
   .container-footer {
     flex-direction: column;
