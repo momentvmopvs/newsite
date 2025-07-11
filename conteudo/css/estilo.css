@@ -763,6 +763,39 @@ img {
 
 /* ==== FAQ ==== */
 /* FAQ SECTION */
+
+.grid-perguntas {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  text-align:center;
+}
+
+.faqbotao {
+  position: absolute;
+  background-color: rgba(200, 127, 0, 0.7);      /* Dourado elegante */
+  color: #0B004A;
+  
+  padding: 12px 30px;
+  bottom: 10px;
+  border: none;
+  font-size:0.7rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index:10;
+}
+.faqbotao:hover {
+  background-color: #0B004A;
+  color:#fff;
+}
+
+.faqbotao {
+  width: 100%;
+  max-width: 300px;
+}
+
 .faq {
   background-color: #ffffff;
   padding: 60px 20px;
@@ -1112,6 +1145,12 @@ font-size:1.4rem;
     gap: 20px;
   }
 
+  .grid-perguntas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
   .intro-flex {
     flex-direction: column;
   }
@@ -1165,6 +1204,11 @@ font-size:1.4rem;
   .botao2 {
     padding: 10px 20px;
     font-size: 0.9rem;
+  }
+
+   .faqbotao {
+    padding: 10px 20px;
+    font-size: 0.5rem;
   }
 
   .slide-button {
