@@ -70,7 +70,7 @@ h5 {
   flex-wrap: wrap;
 }
 
-.top-bar .contacts a {
+/*.top-bar .contacts a {
   color: #B87800;
   margin-left: 15px;
   text-decoration: none;
@@ -78,26 +78,26 @@ h5 {
 
 .top-bar .contacts a:hover {
   font-size: 105%;
-  color: #ffffff; /* nova cor da fonte ao passar o mouse */
+  color: #ffffff; /* nova cor da fonte ao passar o mouse
 }
 
 .instagram-icon i {
-  font-size: 25px; /* ou 40px, 50px... como preferir */
-  color: #B87800; /* opcional: cor do ícone */
+  font-size: 25px; /* ou 40px, 50px... como preferir 
+  color: #B87800; /* opcional: cor do ícone 
 }
 .instagram-icon i:hover {
-  font-size: 27px; /* ou 40px, 50px... como preferir */
-  color: #ffffff; /* opcional: cor do ícone */
+  font-size: 27px; /* ou 40px, 50px... como preferir 
+  color: #ffffff; /* opcional: cor do ícone 
 }
 
 .envelope-icon i {
-  font-size: 25px; /* ou 40px, 50px... como preferir */
-  color: #B87800; /* opcional: cor do ícone */
+  font-size: 25px; /* ou 40px, 50px... como preferir 
+  color: #B87800; /* opcional: cor do ícone 
 }
 .envelope-icon i:hover {
-  font-size: 27px; /* ou 40px, 50px... como preferir */
-  color: #ffffff; /* opcional: cor do ícone */
-}
+  font-size: 27px; /* ou 40px, 50px... como preferir 
+  color: #ffffff; /* opcional: cor do ícone 
+}*/
 
 .logo {
   font-size: 1rem; /* ou 40px, 50px... como preferir */
