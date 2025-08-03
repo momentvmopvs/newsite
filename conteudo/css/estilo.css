@@ -356,6 +356,10 @@ display:inline-block;
 .swiper-pagination-bullet {
   background-color: #ffffff00 !important; /* ou qualquer cor desejada */
   opacity: none;
+    width: 24px;
+  height: 24px;
+  margin: 0 12px; /* espaço entre eles */
+  cursor: pointer;
 }
 
 .swiper-pagination-bullet-active {
