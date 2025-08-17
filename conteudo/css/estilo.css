@@ -1261,6 +1261,10 @@ font-size:1.4rem;
     grid-template-columns: 1fr;
   }
 
+   *{
+  box-sizing: border-box;
+}
+
   .intro-flex {
     flex-direction: column;
   }
