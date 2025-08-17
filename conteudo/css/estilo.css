@@ -863,6 +863,14 @@ img {
 }
 
 /* ===== FOOTER ===== */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 40px;
+}
 .footer {
   background-color: #ededed;
   color: #0B004A;
@@ -879,20 +887,20 @@ img {
 }
 
 .footer-logo {
-  flex: 2;
-  display: flex;
+  flex: 1;
+  display:block;
   justify-content: center; /* centraliza horizontalmente */
 }
 
 .footer-logo img {
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .footer-servicos {
   flex: 2;
   display: flex;
-  justify-content: flex-end;
-  gap: 100px;
+  justify-content:flex-end;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
