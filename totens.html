@@ -177,15 +177,37 @@ Com acabamento de alto padrão, materiais resistentes a riscos e impressões em 
   </div>
   <div class="footer-bottom" style="text-align:center">
     <p>Desenvolvido por &copy; 2025 Momentvm Opvs — Todos os direitos reservados.</p>
-    <div class="footer-links">
+      <div class="footer-links">
       <a href="/Política de Privacidade.pdf">Política de Privacidade</a>
       <span>|</span>
       <a href="/Termos de Uso.pdf">Termos de Uso</a>
       <span>|</span>
       <a href="/Política de Cookies.pdf">Política de Cookies</a>
+      <span>|</span>
+      <a href="/catalogos.html"><strong>Catálogos</strong></a>
     </div>
+    <p><strong>Desenvolvido por &copy; 2025 Momentvm Opvs — Todos os direitos reservados</strong> | Site atualizado em: 
+    <span id="last-updated"></span></p>
   </div>
 </footer>	
+</section>
+<script>
+  // Pega a data de modificação do documento
+  const lastUpdated = new Date(document.lastModified);
+
+  // Formata para dia/mês/ano e hora:minuto
+  const options = {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
+  };
+
+  // Exibe no elemento <span id="last-updated">
+  document.getElementById("last-updated").textContent = 
+    lastUpdated.toLocaleDateString("pt-BR", options).replace(",", " |");
+</script>	
 <!--<script>
   document.addEventListener("DOMContentLoaded", function () {
     const toggle = document.querySelector(".menu-toggle");

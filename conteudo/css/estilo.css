@@ -1089,7 +1089,7 @@ font-size:1.4rem;
   gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 20px  40px; /* top: 60px | sides: 20px | bottom: 40px */
+  padding: 60px 0px  40px; /* top: 60px | sides: 20px | bottom: 40px */
   width: 100%;
 }
 
@@ -1134,7 +1134,7 @@ font-size:1.4rem;
 .services-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 10px;
   text-align: center;
 }
 .services-grid ul li {
@@ -1168,7 +1168,8 @@ font-size:1.4rem;
   color: #383838;
 }
 .footer-links {
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 
 }
 .footer-links a {
