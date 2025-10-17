@@ -1217,6 +1217,24 @@ font-size:1.4rem;
 }
 
 }
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: none; /* começa invisível */
+  padding: 10px 15px;
+  font-size: 14px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#backToTop:hover {
+  background: #555;
+}
 
 /* ======================= RESPONSIVO ======================= */
 
