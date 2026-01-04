@@ -303,6 +303,7 @@ nav ul li a:hover {
   .slide-title {
     font-size: 5rem;
     text-align: left;
+    line-height: 6rem; /* ou 1.1 */
   }
 }
 
