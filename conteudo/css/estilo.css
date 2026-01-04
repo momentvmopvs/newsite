@@ -283,7 +283,7 @@ nav ul li a:hover {
   padding: 12px 25px;
   font-size: 14px;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 7px;
   background-color: #0B004A;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -357,6 +357,8 @@ nav ul li a:hover {
     transform: translateX(-50%);
     margin-top: 0;
     z-index: 11;
+    padding: 12px 25px;
+    font-size: 18px;
   }
 }
 
