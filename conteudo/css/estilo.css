@@ -1064,18 +1064,18 @@ font-size:1.4rem;
 /* ======================= FOOTER ======================= */
 
 
-/* Grid 4 colunas */
+/* Grid 4 colunas 
 .footer-container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;/*repeat(4, 1fr);*/
+  grid-template-columns: 1fr 2fr 1fr;/*repeat(4, 1fr);
   gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 0px  40px; /* top: 60px | sides: 20px | bottom: 40px */
+  padding: 60px 0px  40px; /* top: 60px | sides: 20px | bottom: 40px 
   width: 100%;
 }
 
-/* Colunas */
+/* Colunas 
 .footer-col h2 {
   font-size: 1.4rem;
   margin-bottom: 15px;
