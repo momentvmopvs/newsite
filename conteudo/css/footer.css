@@ -94,6 +94,15 @@
 }
 
 @media (max-width: 768px) {
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
   .footer-icons-center {
     order: 1;
   }
@@ -102,15 +111,6 @@
   }
   .footer-address {
     order: 3;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-icons {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: nowrap;
   }
 }
 
