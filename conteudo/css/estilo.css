@@ -228,10 +228,66 @@ nav ul li a:hover {
 }
 
 /* ======================= SLIDER ======================= */
+
+/* ===============================
+   SWIPER — MOBILE FIRST
+================================ */
+
+/* Mobile (padrão) */
+.swiper-container {
+  width: 100%;
+  min-height: calc(100svh - 80px); /* header fixo */
+  height: auto;
+}
+
+.swiper-slide {
+  min-height: calc(100svh - 80px);
+}
+
+.slide-title {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.slide-subtitle {
+  font-size: 1rem;
+}
+
+.slide-button {
+  bottom: 20px;
+  font-size: 1rem;
+}
+/*Tablet*/
+@media (min-width: 768px) {
+  .swiper-container,
+  .swiper-slide {
+    min-height: calc(80svh - 80px);
+  }
+
+  .slide-title {
+    font-size: 3rem;
+  }
+
+  .slide-subtitle {
+    font-size: 1.2rem;
+  }
+}
+/*desktop*/
+@media (min-width: 1024px) {
+  .swiper-container,
+  .swiper-slide {
+    min-height: calc(100vh - 120px);
+  }
+
+  .slide-title {
+    font-size: 5rem;
+    text-align: left;
+  }
+}
+
 .swiper-container {
  max-width: 100%;
   margin: 0 auto;
-  height: 100vh; /* ou qualquer altura que desejar */
   overflow: hidden;
   position: relative;
 }
