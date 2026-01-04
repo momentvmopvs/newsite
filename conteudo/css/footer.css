@@ -66,6 +66,15 @@
 }
 
 /* Responsivo */
+
+@media (max-width: 768px) {
+.footer {
+  background-color: #0B004A;
+  padding: 40px 20px;
+  position:relative;
+}
+}
+
 @media (max-width: 768px) {
   .footer-container {
     display: flex;
