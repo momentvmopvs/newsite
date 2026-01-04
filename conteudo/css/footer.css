@@ -95,6 +95,18 @@
     gap: 20px;
     text-align: center;
   }
+
+  .footer-icons-center {
+    order: 1;
+  }
+
+  .footer-logo {
+    order: 2;
+  }
+
+  .footer-address {
+    order: 3;
+  }
 }
 
 @media (max-width: 768px) {
@@ -105,17 +117,4 @@
     flex-wrap: nowrap;
   }
 }
-
-@media (max-width: 768px) {
-  .footer-icons-center {
-    order: 1;
-  }
-  .logo-logo {
-    order: 2;
-  }
-  .footer-info {
-    order: 3;
-  }
-}
-
 /* ===== fim do novo footer ===== */
