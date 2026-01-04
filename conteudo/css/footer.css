@@ -80,6 +80,14 @@
 }
 }
 
+@media (max-width: 768px) {
+.footer-info {
+  display: flex;
+  flex-direction:row;
+  gap: 50px;
+   align-items: center;
+}
+}
 
 @media (max-width: 768px) {
   .footer-icons-center {
