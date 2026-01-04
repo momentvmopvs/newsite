@@ -230,53 +230,74 @@ nav ul li a:hover {
 /* ======================= SLIDER ======================= */
 
 /* ===============================
-   SWIPER — MOBILE FIRST
+   SWIPER — MOBILE FIRST (CORRETO)
 ================================ */
 
-/* Mobile (padrão) */
 .swiper-container {
   width: 100%;
-  min-height: calc(100svh - 80px); /* header fixo */
   height: auto;
 }
 
 .swiper-slide {
-  min-height: calc(100svh - 80px);
+  position: relative;
+  height: auto;
+}
+
+/* Imagem controla a altura */
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* Overlay */
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 20px;
+}
+
+/* Texto */
+.slide-text {
+  max-width: 90%;
 }
 
 .slide-title {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
   text-align: center;
 }
 
 .slide-subtitle {
   font-size: 1rem;
+  line-height: 1.4rem;
 }
 
+/* Botão */
 .slide-button {
-  bottom: 20px;
-  font-size: 1rem;
+  position: relative;
+  margin-top: 20px;
+  bottom: auto;
+  left: auto;
+  transform: none;
 }
 /*Tablet*/
 @media (min-width: 768px) {
-  .swiper-container,
-  .swiper-slide {
-    min-height: calc(80svh - 80px);
+  .swiper-slide img {
+    aspect-ratio: 16 / 7;
   }
 
   .slide-title {
-    font-size: 3rem;
-  }
-
-  .slide-subtitle {
-    font-size: 1.2rem;
+    font-size: 2.8rem;
   }
 }
+
 /*desktop*/
 @media (min-width: 1024px) {
   .swiper-container,
   .swiper-slide {
-    min-height: calc(100vh - 120px);
+    height: calc(100vh - 120px);
   }
 
   .slide-title {
@@ -284,6 +305,7 @@ nav ul li a:hover {
     text-align: left;
   }
 }
+
 
 .swiper-container {
  max-width: 100%;
@@ -531,6 +553,18 @@ img {
   max-width: 300px;
 }
 /* ===== INTRO ===== */
+@media (min-width: 1024px) {
+  .intro-flex,
+  .sobre-flex {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .sobre-flex.invertido {
+    flex-direction: row-reverse;
+  }
+}
+
 .intro-servicos {
   padding: 60px 20px;
   background-color: #ffffff;
@@ -661,7 +695,7 @@ img {
 
 .sobre-flex.invertido {
   flex-direction: row-reverse;
-  padding-left: 30 px;
+  padding-left: 30px;
 }
 
 .sobre-imagem img {

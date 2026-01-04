@@ -27,8 +27,7 @@ html, body {
 
 /* Intro / Sobre */
 .intro-flex,
-.sobre-flex,
-.sobre-flex.invertido {
+.sobre-flex, {
   flex-direction: column;
   text-align: center;
 }
