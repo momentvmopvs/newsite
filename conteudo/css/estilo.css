@@ -1062,78 +1062,6 @@ font-size:1.4rem;
 }
 
 /* ======================= FOOTER ======================= */
-/* Footer Container */
-.site-footer {
-  background: #6348ff;
-  color: #6348ff;
-  margin-top: 60px;
-}
-
-/* Colunas */
-.footer-col h2 {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-.footer-col h3 {
-  font-size: 1rem;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.footer-col p,
-.footer-col li {
-  font-size: 0.95rem;
-  color: #000000;
-  margin-bottom: 8px;
-}
-.footer-col a {
-  color: #000000;
-  text-decoration: none;
-}
-.footer-col a:hover {
-  text-decoration: underline;
-}
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Serviços */
-.services-title {
-  grid-column: span 2;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.services-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  text-align: center;
-}
-.services-grid ul li {
-  margin-bottom: 10px;
-}
-
-/* Logo */
-.logo-col h2 {
- flex: 1;
-  display:block;
-  justify-content: center; /* centraliza horizontalmente */
-}
-
-.logo-col img {
-  max-width: 200px;
-}
-
-
-/* Mapa */
-.map-col iframe {
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(255,255,255,0.1);
-}
 
 /* Créditos */
 .footer-bottom {
@@ -1168,30 +1096,4 @@ font-size:1.4rem;
   .footer-container {
     grid-template-columns: 1fr 1fr;
   }
-  .services-col {
-    grid-column: span 2;
-  }
- *{
-  box-sizing: border-box;
-}
-}
-
-
-#backToTop {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  display: none; /* começa invisível */
-  padding: 10px 15px;
-  font-size: 14px;
-  background: #333;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#backToTop:hover {
-  background: #555;
 }
