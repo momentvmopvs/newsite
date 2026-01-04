@@ -1240,21 +1240,7 @@ font-size:1.4rem;
     margin-top: 80px; /* altura exata do menu*/ 
   }
 }
-   @media (max-width: 768px) {
-    .top-bar {
-      padding: 4px 10px;  /*Ajuste o padding para telas menores */
-      top: 0;
-      left: 0;
-      right: 0;
-      width: auto;
-      height: auto;
-      display:flex;
-      object-fit:contain;
-      z-index: 1000;
-      text-align:center;
-      align-items:center;
-    }
-  }
+
 @media (max-width: 1024px) {
   .navbar-content {
     flex-direction:row;
