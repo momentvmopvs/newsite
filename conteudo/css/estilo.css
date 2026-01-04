@@ -1123,25 +1123,24 @@ font-size:1.4rem;
   margin-bottom: 10px;
 }
 
-/* Logo */
+/* Logo
 .logo-col h2 {
  flex: 1;
   display:block;
-  justify-content: center; /* centraliza horizontalmente */
+  justify-content: center; /* centraliza horizontalmente 
 }
 
 .logo-col img {
   max-width: 200px;
 }
 
-
-/* Mapa */
+/* Mapa 
 .map-col iframe {
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(255,255,255,0.1);
 }
 
-/* Créditos */
+/* Créditos 
 .footer-bottom {
   border-top: 1px solid rgb(57, 57, 57);
   background: #b6a9ff;
