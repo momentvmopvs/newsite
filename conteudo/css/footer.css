@@ -32,10 +32,6 @@
   max-width: 420px;
 }
 
- .footer-address {
-    max-width: 100%;
-  }
-
 .footer-icons-center  {
  position: absolute;
   left: 50%;
@@ -71,6 +67,10 @@
     align-items: center;
   }
 
+  .footer-address {
+    max-width: 100%;
+  }
+
 /* Lado direito */
 .footer-logo img {
   max-width: 180px;
@@ -85,16 +85,6 @@
   padding: 40px 20px;
   position:relative;
 }
-}
-
-
-@media (max-width: 768px) {
-  .footer-icons-center {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: nowrap;
-  }
 }
 
 @media (max-width: 768px) {
@@ -116,6 +106,26 @@
 
   .footer-address {
     order: 3;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: nowrap;
   }
 }
 /* ===== fim do novo footer ===== */
