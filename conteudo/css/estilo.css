@@ -399,6 +399,7 @@ display:inline-block;
   text-align:left;
   z-index: 10;
   animation: bounce-text 5s ease-in-out infinite;
+  background:red;
 }
 
 .slide-subtitle {
