@@ -1069,17 +1069,6 @@ font-size:1.4rem;
   margin-top: 60px;
 }
 
-/* Grid 4 colunas */
-.footer-container {
-  display: flex;
-  grid-template-columns: 1fr 2fr 1fr;/*repeat(4, 1fr);*/
-  gap: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 0px  40px; /* top: 60px | sides: 20px | bottom: 40px */
-  width: 100%;
-}
-
 /* Colunas */
 .footer-col h2 {
   font-size: 1.4rem;
