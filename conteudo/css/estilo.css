@@ -244,7 +244,7 @@ nav ul li a:hover {
 }
 
 .swiper-slide .slide-title {
-  font-size: 0.5rem;
+  font-size: 1rem;
   line-height: 1.4;
   white-space: normal;
   word-break: break-word;
@@ -271,11 +271,11 @@ nav ul li a:hover {
   max-width: 70%;
 }
 
-.slide-title {
+/*.slide-title {
   font-size: 2rem;
   line-height: 3rem;
   text-align: center;
-}
+}*/
 
 .slide-subtitle {
   font-size: 1rem;
@@ -399,7 +399,6 @@ display:inline-block;
   text-align:left;
   z-index: 10;
   animation: bounce-text 5s ease-in-out infinite;
-  background:red;
 }
 
 .slide-subtitle {
