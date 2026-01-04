@@ -30,42 +30,77 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 <link rel="stylesheet" href="../conteudo/css/estilo.css">
+<link rel="stylesheet" href="./conteudo/css/general.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="./conteudo/css/general.css"></noscript>
+<link rel="stylesheet" href="./conteudo/css/header.css">
+<link rel="stylesheet" href="./conteudo/css/footer.css">
+<link rel="stylesheet" href="./conteudo/css/responsive.css">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<script src="./conteudo/js/header.js" defer></script>
+<script src="./conteudo/js/last-updated.js" defer></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBQXH9WZ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<div class="whatsapp-widget">
-  <a href="https://wa.me/+5511940881109?text=Olá%2C%20gostaria%20de%20receber%20mais%20informações%20sobre%20seus%20serviços."
-     class="whatsapp-float"
-     target="_blank"
-     aria-label="Conversar no WhatsApp">
-    <i class="fab fa-whatsapp"></i><span class="whatsapp-texto-hover">Fale conosco no Whatsapp!</span>
-  </a>
-</div>
-<header class="header">
-    <div class="top-bar-blog">
-  <a href="#home" class="logo">
-    <img src="../images/mo-logo-header-blog.svg" alt="Logo Momentvm Opvs">
-  </a>
-    </div>
-	<div class="navbar">
-    <div class="navbar-content">
-  <nav id="navbarMenu">
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../sobre.html">Saiba Mais</a></li>
-      <li><a href="../servicos.html">Nossos Serviços</a></li>
-      <li><a href="../catalogos.html">Catálogos Virtuais</a></li>
-      <li><a href="../blog.html">Blog</a></li>
-    </ul>
-	
-  </nav>
 
-</div></div>
-  </header>
+<header class="header">
+  <div class="header-container">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="/">
+        <img src="/images/mo-logo-header.svg" alt= "Momentvm Opvs">
+      </a>
+    </div>
+
+    <!-- MENU DESKTOP -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/sobre.html">Saiba mais</a></li>
+        <li class="dropdown">
+  <a href="/servicos.html" class="dropdown-toggle">
+    O que fazemos
+  </a>
+
+  <ul class="dropdown-menu">
+    <li><a href="/fachadas.html">Fachadas em ACM</a></li>
+    <li><a href="/acrilico.html">Letras em Acrílico com LED</a></li>
+    <li><a href="/envelopamento.html">Envelopamento</a></li>
+    <li><a href="/peliculas.html">Películas Insulfilm</a></li>
+    <li><a href="/especiais.html">Projetos Especiais</a></li>
+  </ul>
+</li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- ICONES + IDIOMA -->
+    <div class="header-right">
+      <a href="https://wa.me/+5511940881109?text=Olá,%20gostaria%20de%20receber%20mais%20informações%20sobre%20seus%20serviços." target="_blank" class="icon">
+        <img src="/images/logo-whattsapp.png" alt="WhatsApp">
+      </a>
+
+      <a href="https://instagram.com/momentvm.opvs" target="_blank" class="icon">
+        <img src="/images/logo-instagram.png" alt="Instagram">
+      </a>
+      <!--div class="lang">
+        <a href="/" class="active flag"><img src="/images/br-flag.png" alt="Português"></a>
+        <a href="/en/" class="flag"><img src="/images/us-flag.png" alt="English"></a>
+      </!--div-->
+
+      <!-- HAMBURGER -->
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
 <section class="sobre-servicos">
   <div class="container sobre-flex">
     <div class="intro-texto">
@@ -138,40 +173,45 @@ Entre os principais benefícios estão:</p>
 </h5>
     </div>
     </section>
-<footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-col logo-col" style="text-align:center">
-      <h2><img src="../images/mo-logo-oficial.png" loading="lazy" alt="Logo Momentvm Opvs"></h2>
-      <p>Av. Eng. Heitor Antônio Eiras Garcia, 6363 - Jd. Esmeralda, CEP 05564-200, São Paulo - SP</p>
-      <p><i class="fa-solid fa-envelope"></i> <a href="mailto:momentvmopvs@gmail.com">momentvmopvs@gmail.com</a></p>
-      <p><i class="fab fa-whatsapp"></i><a href="https://wa.me/+5511940881109?text=Olá%2C%20gostaria%20de%20receber%20mais%20informações%20sobre%20seus%20serviços.">+55 11 94088 1109</a></p>
-    </div>
-<div class="footer-col services-col">
-      <h3 class="services-title">Nossos Serviços</h3>
-      <div class="services-grid">
-        <ul>
-          <li><a href="../moveis.html">Móveis</a></li>
-          <li><a href="../paredes.html">Paredes</a></li>
-          <li><a href="../portas.html">Portas</a></li>
-          <li><a href="../fachadas.html">Fachadas</a></li>
-          <li><a href="../veiculos.html">Veículos</a></li>
-        </ul>
-        <ul>
-          <li><a href="../eletrodomesticos.html">Eletrodomésticos</a></li>
-          <li><a href="../peliculas.html">Insulfilm/Jateados</a></li>
-          <li><a href="../totens.html">Totens/Equipamentos</a></li>
-          <li><a href="../especiais.html">Projetos Especiais</a></li>
-          <li><a href="../acrilico.html">Letras em Acrílico</a></li>
-        </ul>
+<section id="footer">
+<div class="footer-top">
+  <div class="footer-top-container">
+
+    <!-- Lado esquerdo -->
+    <div class="footer-info texto-geral">
+      <p class="footer-address">
+        Av. Eng. Heitor Antonio Eiras Garcia, 6363.<br>
+        05564-200 • Jd. Esmeralda • São Paulo • SP
+      </p>
+
+      <div class="footer-icons-center">
+        <a href="https://wa.me/+5511940881109?text=Olá,%20gostaria%20de%20receber%20mais%20informações%20sobre%20seus%20serviços." target="_blank" aria-label="WhatsApp">
+          <img src="./images/logo-whattsapp.png" alt="WhatsApp">
+        </a>
+
+        <a href="https://instagram.com/momentvm.opvs" target="_blank" aria-label="Instagram">
+          <img src="./images/logo-instagram.png" alt="Instagram">
+        </a>
+
+        <a href="mailto:momentvmopvs@gmail.com" aria-label="E-mail">
+          <img src="./images/logo-email.png" alt="E-mail">
+        </a>
+
+        <a href="https://www.google.com/maps?ll=-23.599197,-46.783962&z=11&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=12266452507739055735" target="_blank" aria-label="Localização">
+          <img src="./images/logo-local.png" alt="Localização">
+        </a>
       </div>
     </div>
-    <div class="footer-col map-col" style="text-align:center">
-      <h3>Onde Estamos</h3>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58498.29090249088!2d-46.8560595!3d-23.5991974!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5500224a2e63%3A0xaa3b3190b9fc6677!2sMomentvm%20Opvs%20-%20Papel%20de%20parede%2C%20envelopamento%2C%20adesivos%2C%20impress%C3%A3o.!5e0!3m2!1spt-BR!2sbr!4v1755453271226!5m2!1spt-BR!2sbr" width="300" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+
+    <!-- Lado direito -->
+    <div class="footer-logo">
+      <img src="./images/mo-logo-header.svg" alt="Momentvm Opvs">
     </div>
+
   </div>
-  <div class="footer-bottom" style="text-align:center">
+</div>
+
+  <div class="footer-bottom texto-geral" style="text-align:center">
       <div class="footer-links">
       <a href="/Política de Privacidade.pdf" target="_blank">Política de Privacidade</a>
       <span>|</span>
@@ -186,23 +226,6 @@ Entre os principais benefícios estão:</p>
   </div>
 </footer>	
 </section>
-<script>
-  // Pega a data de modificação do documento
-  const lastUpdated = new Date(document.lastModified);
-
-  // Formata para dia/mês/ano e hora:minuto
-  const options = {
-    day: '2-digit',
-    month: '2-digit',
-    year: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit'
-  };
-
-  // Exibe no elemento <span id="last-updated">
-  document.getElementById("last-updated").textContent = 
-    lastUpdated.toLocaleDateString("pt-BR", options).replace(",", " |");
-</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

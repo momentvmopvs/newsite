@@ -6,16 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  padding-top:80px;
-  margin-top: 62px; /* ajuste conforme a altura da navbar */
-  overflow-x:hidden;/*antes não tinha isso*/
-}
+
 
 /* ======================= TEXTO E FONTES ======================= */
 
@@ -55,6 +46,8 @@ h5 {
   font-family: 'Inconsolata', sans-serif;
   color: #4a4a4a;
 }
+
+
 
 /* ======================= TOP BAR ======================= */
 .top-bar {
@@ -157,6 +150,7 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #B87800;
+  text-decoration:underline;
 }
 
 .menu-toggle {
@@ -384,7 +378,7 @@ display:inline-block;
 
 .grid-servicos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
@@ -595,6 +589,7 @@ img {
 .sobre-servicos {
   padding: 60px 20px;
   background-color: #ffffff;
+  margin-top: 40px;
 }
 
 .sobre-flex {
@@ -746,7 +741,7 @@ img {
   position: absolute;
   left: 70px;
   bottom: 15px;
-  z-index: 998;
+  z-index: 999;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
 }
@@ -762,7 +757,7 @@ img {
   height: 1px;
   background-color: #49494900;
   margin-bottom: 20px;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 /* ==== FAQ ==== */
@@ -1077,8 +1072,8 @@ font-size:1.4rem;
 /* ======================= FOOTER ======================= */
 /* Footer Container */
 .site-footer {
-  background: #d3d3d3;
-  color: #00000000;
+  background: #6348ff;
+  color: #6348ff;
   margin-top: 60px;
 }
 
@@ -1109,11 +1104,11 @@ font-size:1.4rem;
 .footer-col p,
 .footer-col li {
   font-size: 0.95rem;
-  color: #383838;
+  color: #000000;
   margin-bottom: 8px;
 }
 .footer-col a {
-  color: #383838;
+  color: #000000;
   text-decoration: none;
 }
 .footer-col a:hover {
@@ -1162,6 +1157,7 @@ font-size:1.4rem;
 /* Créditos */
 .footer-bottom {
   border-top: 1px solid rgb(57, 57, 57);
+  background: #b6a9ff;
   justify-content: center;
   padding: 20px;
   font-size: 0.8rem;

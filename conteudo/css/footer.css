@@ -1,0 +1,83 @@
+/* ===== novo footer ===== */
+
+.footer-top {
+  background-color: #0B004A;
+  padding: 40px 20px;
+  position:relative;
+}
+
+.footer-top-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Lado esquerdo */
+.footer-info {
+  display: flex;
+  flex-direction:row;
+  gap: 50px;
+}
+
+.footer-address {
+  color: #ccc;
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 420px;
+}
+
+.footer-icons-center  {
+ position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 16px;
+}
+
+.footer-icons-center a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1c1c;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.footer-icons-center a:hover {
+  background-color: #333;
+   border-radius: 50%;
+  background-color:#ccc;
+  transition: background-color 0.3s ease;
+}
+
+.footer-icons-center img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Lado direito */
+.footer-logo img {
+  max-width: 180px;
+  height: auto;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-top-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-info {
+    align-items: center;
+  }
+
+  .footer-address {
+    max-width: 100%;
+  }
+}
+/* ===== fim do novo footer ===== */

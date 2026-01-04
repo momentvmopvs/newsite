@@ -41,35 +41,11 @@
   </url>
 <!-- Serviços específicos -->
 <url>
-    <loc>https://momentvmopvs.com/eletrodomesticos.html</loc>
-    <lastmod>2025-08-17</lastmod>
+    <loc>https://momentvmopvs.com/envelopamento.html</loc>
+    <lastmod>2026-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>        
-  <url>
-    <loc>https://momentvmopvs.com/moveis.html</loc>
-    <lastmod>2025-08-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://momentvmopvs.com/veiculos.html</loc>
-    <lastmod>2025-08-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://momentvmopvs.com/portas.html</loc>
-    <lastmod>2025-08-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://momentvmopvs.com/paredes.html</loc>
-    <lastmod>2025-08-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
   <url>
     <loc>https://momentvmopvs.com/fachadas.html</loc>
     <lastmod>2025-08-17</lastmod>
@@ -86,6 +62,12 @@
     <loc>https://momentvmopvs.com/especiais.html</loc>
     <lastmod>2025-08-17</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://momentvmopvs.com/catalogos.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>montlhy</changefreq>
     <priority>0.6</priority>
   </url>
   <!-- Matérias do blog -->
@@ -149,11 +131,5 @@
     <lastmod>2025-08-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-    <url>
-    <loc>https://momentvmopvs.com/catalogos.html</loc>
-    <lastmod>2025-09-07</lastmod>
-    <changefreq>montlhy</changefreq>
-    <priority>0.6</priority>
   </url>
 </urlset>
