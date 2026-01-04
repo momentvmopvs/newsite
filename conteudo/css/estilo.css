@@ -1180,13 +1180,12 @@ font-size:1.4rem;
   box-sizing: border-box;
 }
 }
-
-/* Mobile */
+/* Mobile
 @media (max-width: 600px) {
   .footer-container {
     grid-template-columns: 1fr;
     text-align: center;
-    padding: 30px 10px 20px; /* top: 30px | sides: 10px | bottom: 20px */
+    padding: 30px 10px 20px; /* top: 30px | sides: 10px | bottom: 20px 
   }
   .services-grid {
     display:block;
@@ -1203,7 +1202,7 @@ font-size:1.4rem;
   position: fixed;
   bottom: 20px;
   left: 20px;
-  display: none; /* começa invisível */
+  display: none; /* começa invisível
   padding: 10px 15px;
   font-size: 14px;
   background: #333;
@@ -1216,4 +1215,4 @@ font-size:1.4rem;
 
 #backToTop:hover {
   background: #555;
-}
+}*/
