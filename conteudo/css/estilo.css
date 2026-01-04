@@ -1187,24 +1187,7 @@ font-size:1.4rem;
 }
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding: 30px 10px 20px; /* top: 30px | sides: 10px | bottom: 20px */
-  }
-  .services-grid {
-    display:block;
-  }
-  .map-col iframe {
-    height: 250px;
-  }
-   *{
-  box-sizing: border-box;
-}
 
-}
 #backToTop {
   position: fixed;
   bottom: 20px;
