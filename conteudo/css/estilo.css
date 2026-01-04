@@ -279,11 +279,15 @@ nav ul li a:hover {
 /* Botão */
 .slide-button {
   position: relative;
-  margin-top: 50px;
-  bottom: auto;
-  left: auto;
-  transform: none;
+  margin-top: 40px;
+  padding: 12px 25px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0B004A;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 /*Tablet*/
 @media (min-width: 768px) {
@@ -344,19 +348,17 @@ nav ul li a:hover {
   text-align: center;
   padding: 20px;
 }
-.slide-button {
-  position: absolute;
-  bottom: 50px;               /* <--- Ajuste aqui */
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 12px 25px;
-  font-size: 18px;
-  color: #fff;
-  background-color:#0B004A;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  z-index: 11;
+@media (min-width: 1024px) {
+  .slide-button {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+    z-index: 11;
+  }
 }
+
 .slide-button:hover {
   background-color: #B87800;
   color: #0B004A;
