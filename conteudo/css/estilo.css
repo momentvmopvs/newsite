@@ -244,7 +244,7 @@ nav ul li a:hover {
 }
 
 .swiper-slide .slide-title {
-  font-size: 1rem;
+  font-size: 2rem;
   line-height: 1.4;
   white-space: normal;
   word-break: break-word;
@@ -270,12 +270,6 @@ nav ul li a:hover {
 .slide-text {
   max-width: 70%;
 }
-
-/*.slide-title {
-  font-size: 2rem;
-  line-height: 3rem;
-  text-align: center;
-}*/
 
 .slide-subtitle {
   font-size: 1rem;
