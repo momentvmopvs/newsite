@@ -1,12 +1,12 @@
 /* ===== novo footer ===== */
 
-.footer-top {
+.footer {
   background-color: #0B004A;
   padding: 40px 20px;
   position:relative;
 }
 
-.footer-top-container {
+.footer-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -67,9 +67,12 @@
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .footer-top-container {
+  .footer-container {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 20px;
   }
 
   .footer-info {
@@ -80,4 +83,26 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .footer-icons {
+    order: 1;
+  }
+  .logo-col {
+    order: 2;
+  }
+  .footer-address {
+    order: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: nowrap;
+  }
+}
+
 /* ===== fim do novo footer ===== */
