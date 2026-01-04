@@ -94,10 +94,10 @@
 }
 
 @media (max-width: 768px) {
-  .footer-icons {
+  .footer-icons-center {
     order: 1;
   }
-  .logo-col {
+  .logo-logo {
     order: 2;
   }
   .footer-address {
