@@ -282,6 +282,13 @@ nav ul li a:hover {
   left: auto;
   transform: none;
 }
+.swiper-slide .slide-title {
+  font-size: 2rem;
+  line-height: 1.4;
+  white-space: normal;
+  word-break: break-word;
+  max-width: 80%;
+}
 /*Tablet*/
 @media (min-width: 768px) {
   .swiper-slide img {
@@ -302,12 +309,11 @@ nav ul li a:hover {
     position:relative;
   }
 
-  .slide-title {
-    font-size: 4.4rem;
+  .swiper-slide .slide-title {
+    font-size: 5rem;
     text-align: left;
     line-height: 1.15;
     max-width: 80%;
-    display: block;
   }
 }
 
@@ -317,6 +323,7 @@ nav ul li a:hover {
   overflow: hidden;
   position: relative;
 }
+
 @media (min-width: 1024px) {
 .swiper-slide img{
   width: 100%;
