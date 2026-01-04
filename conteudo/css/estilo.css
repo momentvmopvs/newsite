@@ -264,8 +264,8 @@ nav ul li a:hover {
 }
 
 .slide-title {
-  font-size: 0.3rem;
-  line-height: 1rem;
+  font-size: 2rem;
+  line-height: 3rem;
   text-align: center;
 }
 
@@ -383,7 +383,7 @@ nav ul li a:hover {
 .slide-title {
 display:inline-block;
   font-size: 5rem;
-  font-weight: 400;
+  font-weight: 800;
   color: white !important;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 10px;
