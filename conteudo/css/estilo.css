@@ -1062,12 +1062,7 @@ font-size:1.4rem;
 }
 
 /* ======================= FOOTER ======================= */
-/* Footer Container */
-.site-footer {
-  background: #6348ff;
-  color: #6348ff;
-  margin-top: 60px;
-}
+
 
 /* Grid 4 colunas */
 .footer-container {
