@@ -243,6 +243,14 @@ nav ul li a:hover {
   height: auto;
 }
 
+.swiper-slide .slide-title {
+  font-size: 1rem;
+  line-height: 1.4;
+  white-space: normal;
+  word-break: break-word;
+  max-width: 80%;
+}
+
 /* Imagem controla a altura */
 .swiper-slide img {
   width: 100%;
@@ -282,13 +290,7 @@ nav ul li a:hover {
   left: auto;
   transform: none;
 }
-.swiper-slide .slide-title {
-  font-size: 2rem;
-  line-height: 1.4;
-  white-space: normal;
-  word-break: break-word;
-  max-width: 80%;
-}
+
 /*Tablet*/
 @media (min-width: 768px) {
   .swiper-slide img {
