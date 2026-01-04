@@ -85,7 +85,6 @@
   }
 }
 
-
   .footer-info {
     align-items: center;
   }
@@ -110,7 +109,7 @@
   .logo-logo {
     order: 2;
   }
-  .footer-address {
+  .footer-info {
     order: 3;
   }
 }
