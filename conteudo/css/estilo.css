@@ -1168,7 +1168,7 @@ font-size:1.4rem;
   color: #555;
 }
 
-/* Tablet */
+/* Tablet 
 @media (max-width: 900px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
