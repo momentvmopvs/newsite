@@ -137,6 +137,7 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
+    gap: 60px;
   }
 
   .footer-info {
