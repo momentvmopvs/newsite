@@ -29,8 +29,8 @@
 }
 
 .footer-icons-center  {
- /*position: absolute;
-  left: 50%;
+ position: absolute;
+  /*left: 50%;
   transform: translateX(-50%);*/
   display: flex;
   gap: 16px;
@@ -39,7 +39,7 @@
 .footer-icons-center a {
   width: 40px;
   height: 40px;
-  display: inline-flex;/*antes era inline-flex*/
+  display: flex;/*antes era inline-flex*/
   align-items: center;
   justify-content: center;
   /*background-color: #0B004A;*/
