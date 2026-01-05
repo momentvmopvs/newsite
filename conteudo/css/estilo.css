@@ -1140,7 +1140,7 @@ font-size:1.4rem;
   box-shadow: 0 4px 20px rgba(255,255,255,0.1);
 }
 
-/* Créditos*/ 
+/* Créditos 
 .footer-bottom {
   border-top: 1px solid rgb(57, 57, 57);
   background: #b6a9ff;
@@ -1173,9 +1173,9 @@ font-size:1.4rem;
   .footer-container {
     grid-template-columns: 1fr 1fr;
   }
- /*.services-col {
+  .services-col {
     grid-column: span 2;
-  }*/
+  }
  *{
   box-sizing: border-box;
 }
@@ -1215,4 +1215,4 @@ font-size:1.4rem;
 
 #backToTop:hover {
   background: #555;
-}*/
+}
