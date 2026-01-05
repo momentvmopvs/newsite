@@ -27,7 +27,7 @@ html, body {
 
 /* Intro / Sobre */
 .intro-flex,
-.sobre-flex, {
+.sobre-flex {
   flex-direction: column;
   text-align: center;
 }
@@ -87,9 +87,9 @@ html, body {
     grid-template-columns: 1fr 1fr;
   }
 
-  .services-col {
+ /* .services-col {
     grid-column: span 2;
-  }
+  }*/
 }
 
 /* ===============================
