@@ -29,7 +29,7 @@ html, body {
 .intro-flex,
 .sobre-flex,
 .sobre-flex.invertido {
-  flex-direction: column;
+  flex-direction: row-reverse;
   text-align: left;
 }
 
