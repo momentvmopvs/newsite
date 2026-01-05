@@ -634,7 +634,7 @@ img {
 
 .intro-imagem img {
   width: 100%;
-  height:100%;
+  height:80%;
   object-fit: cover;
   display:block;
 }
@@ -711,7 +711,7 @@ img {
 
 .sobre-imagem img {
   width: 100%;
-  height:100%;
+  height:80%;
   object-fit: cover;
   display:block;
 }
@@ -1062,20 +1062,25 @@ font-size:1.4rem;
 }
 
 /* ======================= FOOTER ======================= */
+/* Footer Container */
+.site-footer {
+  background: #6348ff;
+  color: #6348ff;
+  margin-top: 60px;
+}
 
-
-/* Grid 4 colunas 
+/* Grid 4 colunas */
 .footer-container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;/*repeat(4, 1fr);
+  grid-template-columns: 1fr 2fr 1fr;/*repeat(4, 1fr);*/
   gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 0px  40px; /* top: 60px | sides: 20px | bottom: 40px 
+  padding: 60px 0px  40px; /* top: 60px | sides: 20px | bottom: 40px */
   width: 100%;
 }
 
-/* Colunas 
+/* Colunas */
 .footer-col h2 {
   font-size: 1.4rem;
   margin-bottom: 15px;
@@ -1123,18 +1128,19 @@ font-size:1.4rem;
   margin-bottom: 10px;
 }
 
-/* Logo
+/* Logo */
 .logo-col h2 {
  flex: 1;
   display:block;
-  justify-content: center; /* centraliza horizontalmente 
+  justify-content: center; /* centraliza horizontalmente */
 }
 
 .logo-col img {
   max-width: 200px;
 }
 
-/* Mapa 
+
+/* Mapa */
 .map-col iframe {
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(255,255,255,0.1);
@@ -1180,12 +1186,13 @@ font-size:1.4rem;
   box-sizing: border-box;
 }
 }
-/* Mobile
+
+/* Mobile */
 @media (max-width: 600px) {
   .footer-container {
     grid-template-columns: 1fr;
     text-align: center;
-    padding: 30px 10px 20px; /* top: 30px | sides: 10px | bottom: 20px 
+    padding: 30px 10px 20px; /* top: 30px | sides: 10px | bottom: 20px */
   }
   .services-grid {
     display:block;
@@ -1202,7 +1209,7 @@ font-size:1.4rem;
   position: fixed;
   bottom: 20px;
   left: 20px;
-  display: none; /* começa invisível
+  display: none; /* começa invisível */
   padding: 10px 15px;
   font-size: 14px;
   background: #333;
