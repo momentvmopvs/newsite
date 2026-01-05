@@ -114,4 +114,25 @@
   }
 }
 
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .footer-icons-center {
+    margin-bottom: 8px;
+  }
+
+  .footer-logo {
+    margin-bottom: 8px;
+  }
+
+  .footer-address {
+    line-height: 1.4;
+  }
+}
+
 /* ===== fim do novo footer ===== */
