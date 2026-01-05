@@ -132,7 +132,7 @@ html, body {
   }
 }
 
-/*@media (min-width: 1024px) {
+@media (min-width: 1024px) {
   .footer-container {
     flex-direction: row;
     justify-content: space-between;
@@ -140,15 +140,15 @@ html, body {
   }
 
   .footer-info {
-    order: 1; /* endereço 
+    order: 1; /* endereço */
   }
 
   .footer-icons-center {
-    order: 2; /* ícones 
+    order: 2; /* ícones */
   }
 
   .footer-logo {
-    order: 3; /* logo 
+    order: 3; /* logo */
   }
-}*/
+}
 
