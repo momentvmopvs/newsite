@@ -55,10 +55,18 @@ html, body {
 }
 
 /* Footer */
-.footer-container {
+/*.footer-container {
   grid-template-columns: 1fr;
   text-align: center;
   padding: 30px 10px 20px;
+}*/
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
 }
 
 .services-grid {
@@ -123,3 +131,24 @@ html, body {
     grid-template-columns: 1fr 2fr 1fr;
   }
 }
+
+@media (min-width: 1024px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer-info {
+    order: 1; /* endereço */
+  }
+
+  .footer-icons-center {
+    order: 2; /* ícones */
+  }
+
+  .footer-logo {
+    order: 3; /* logo */
+  }
+}
+
