@@ -30,7 +30,7 @@ html, body {
 .sobre-flex,
 .sobre-flex.invertido {
   flex-direction: column;
-  text-align: center;
+  text-align: left;
 }
 
 .intro-texto,
