@@ -9,20 +9,23 @@ document.addEventListener('DOMContentLoaded', () => {
   if (toggle && nav) {
     toggle.addEventListener('click', () => {
       nav.classList.toggle('open');
+      toggle.classList.toggle('active');
     });
   }
 
   /* =========================
      Dropdown no Mobile
   ========================= */
-  const dropdownItems = document.querySelectorAll('.dropdown-toggle');
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
-  dropdownItems.forEach(item => {
-    item.addEventListener('click', function (e) {
+  dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', e => {
       if (window.innerWidth <= 900) {
         e.preventDefault();
 
-        const submenu = this.nextElementSibling;
+        const parent = toggle.closest('.dropdown');
+        const submenu = parent?.querySelector('.dropdown-menu');
+
         if (submenu) {
           submenu.classList.toggle('open');
         }
@@ -31,3 +34,4 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
