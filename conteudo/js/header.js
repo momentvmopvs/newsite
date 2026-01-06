@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
 
   /* =========================
      Menu Mobile
-  ========================= */
+  ========================= *
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav');
 
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* =========================
      Dropdown no Mobile
-  ========================= */
+  ========================= *
   const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
   dropdownToggles.forEach(toggle => {
@@ -33,5 +33,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+});*/
+document.addEventListener('DOMContentLoaded', () => {
+
+  /* =========================
+     Menu Mobile (hambúrguer)
+  ========================= */
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  }
+
 });
+
 
