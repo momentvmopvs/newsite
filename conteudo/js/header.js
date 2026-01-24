@@ -50,4 +50,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+
+  const langContainer = document.querySelector(".lang");
+  if (!langContainer) return;
+
+  const ptLink = langContainer.querySelector('a[href="/"]');
+  const enLink = langContainer.querySelector('a[href="/en/"]');
+
+  function switchLanguage(targetLang) {
+    let path = window.location.pathname;
+
+    // Remove /en se existir
+    if (path.startsWith("/en/")) {
+      path = path.replace("/en", "");
+    }
+
+    // Se o destino for inglês, adiciona /en
+    if (targetLang === "en") {
+      path = "/en" + path;
+    }
+
+    window.location.href = path;
+  }
+
+  ptLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    switchLanguage("pt");
+  });
+
+  enLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    switchLanguage("en");
+  });
+
+});
+
 
