@@ -92,3 +92,12 @@ window.addEventListener('scroll', () => {
   btn.style.display = window.scrollY > 300 ? 'block' : 'none';
 });
 
+  const backToTop = document.querySelector('.back-to-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      backToTop.classList.add('show');
+    } else {
+      backToTop.classList.remove('show');
+    }
+  });
