@@ -44,7 +44,8 @@
 }
 
 .nav-list a:hover {
-  opacity: 0.7;
+  opacity: 1;
+  font-weight:500;
 }
 
 /* RIGHT SIDE */
@@ -196,7 +197,9 @@
 
 .dropdown-menu li a:hover {
   background: #f5f5f5;
-  text-decoration:underline;
+  font-weight:bold;
+  background-color: #0B004A;
+  text-decoration:none !important;
 }
 
 /* ABRIR NO HOVER (DESKTOP) */

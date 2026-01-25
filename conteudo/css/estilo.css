@@ -147,7 +147,8 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #B87800;
-  text-decoration:underline;
+  text-decoration:none;
+  font-weight:bold !important;
 }
 
 .menu-toggle {
