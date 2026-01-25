@@ -86,4 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+const btn = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', () => {
+  btn.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
 

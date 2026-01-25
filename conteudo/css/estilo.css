@@ -47,6 +47,21 @@ h5 {
   color: #4a4a4a;
 }
 
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 45px;
+  height: 45px;
+  background: #0B004A;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  z-index: 999;
+}
 
 
 /* ======================= TOP BAR ======================= */
@@ -463,6 +478,7 @@ display:inline-block;
   overflow: hidden;
   text-align: center;
   margin-top:30px;
+  margin-bottom:30px;
 }
 
 .texto-final {
