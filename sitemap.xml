@@ -8,85 +8,54 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://momentvmopvs.com/en/index.html</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
- 
+
   <!-- Páginas principais -->
   <url>
     <loc>https://momentvmopvs.com/sobre.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-12-04</lastmod>
     <changefreq>yearly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/sobre.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-12-04</lastmod>
     <changefreq>yearly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://momentvmopvs.com/servicos.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/servicos.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://momentvmopvs.com/faq.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/faq.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.7</priority>
   </url>
 
-    <url>
+  <url>
     <loc>https://momentvmopvs.com/blog.html</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -99,31 +68,21 @@
     <priority>0.6</priority>
   </url>
 
-   <url>
+  <url>
     <loc>https://momentvmopvs.com/parceiros.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-05-04</lastmod>
     <changefreq>yearly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/parceiros.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-05-04</lastmod>
     <changefreq>yearly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.6</priority>
-  </url> 
+  </url>
 
-<!-- Serviços específicos -->
-<url>
+  <!-- Serviços -->
+  <url>
     <loc>https://momentvmopvs.com/envelopamento.html</loc>
     <lastmod>2026-01-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -132,64 +91,33 @@
   <url>
     <loc>https://momentvmopvs.com/en/envelopamento.html</loc>
     <lastmod>2026-01-03</lastmod>
-<<<<<<< HEAD
     <changefreq>monthly</changefreq>
-=======
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://momentvmopvs.com/fachadas.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/fachadas.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://momentvmopvs.com/acrilico.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/acrilico.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://momentvmopvs.com/especiais.html</loc>
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.6</priority>
   </url>
 
@@ -203,13 +131,6 @@
     <loc>https://momentvmopvs.com/en/especiais.html</loc>
     <lastmod>2026-02-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://momentvmopvs.com/en/especiais.html</loc>
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 
@@ -225,252 +146,150 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+
+  <!-- Artigos -->
   <url>
-    <loc>https://momentvmopvs.com/en/catalogos.html</loc>
-    <lastmod>2025-09-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <!-- Matérias do blog -->
-    <url>
     <loc>https://momentvmopvs.com/articles/papel-de-parede-autoadesivo.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-12-04</lastmod>
-=======
-    <lastmod>2026-02-04</lastmod>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/articles/self-adhesive-wallpaper.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-12-04</lastmod>
-=======
-    <lastmod>2026-02-04</lastmod>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
 
-    <url>
+  <url>
     <loc>https://momentvmopvs.com/articles/envelopamento-de-moveis-renovacao-inteligente.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-12-04</lastmod>
-=======
-    <lastmod>2026-02-04</lastmod>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/articles/furniture-wrapping.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-12-04</lastmod>
-=======
-    <lastmod>2026-02-04</lastmod>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://momentvmopvs.com/articles/envelopamento-de-eletrodomesticos.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-12-04</lastmod>
-=======
-    <lastmod>2026-02-04</lastmod>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/articles/kitchen-appliance-wrapping.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-12-04</lastmod>
-=======
-    <lastmod>2026-02-04</lastmod>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://momentvmopvs.com/articles/peliculas-insulfilm-para-janelas.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-12-04</lastmod>
-=======
-    <lastmod>2026-02-04</lastmod>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/articles/insulfilm-window-films.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-12-04</lastmod>
-=======
-    <lastmod>2026-02-04</lastmod>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://momentvmopvs.com/articles/letras-caixa-em-acrilico-para-recepcoes-de-empresas.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-12-04</lastmod>
-=======
-    <lastmod>2026-02-04</lastmod>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/articles/acrylic-letters-with-LED-lighting.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-12-04</lastmod>
-=======
-    <lastmod>2026-02-04</lastmod>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://momentvmopvs.com/articles/brindes-personalizados-mdf-corte-laser.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-12-04</lastmod>
-=======
-    <lastmod>2026-02-04</lastmod>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/articles/custom-mdf-gifts-laser-cut.html</loc>
-<<<<<<< HEAD
     <lastmod>2025-12-04</lastmod>
-=======
-    <lastmod>2026-02-04</lastmod>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
 
-  <!--Lista de faqs-->
+  <!-- FAQs -->
   <url>
     <loc>https://momentvmopvs.com/faqs/faqfachadas.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/faqs/faqfachadas.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://momentvmopvs.com/faqs/faqmoveis.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/faqs/faqmoveis.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://momentvmopvs.com/faqs/faqparedes.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/faqs/faqparedes.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://momentvmopvs.com/faqs/faqpeliculas.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/faqs/faqpeliculas.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.5</priority>
   </url>
-  
+
   <url>
     <loc>https://momentvmopvs.com/faqs/faqveiculos.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/faqs/faqveiculos.html</loc>
-<<<<<<< HEAD
     <lastmod>2026-01-04</lastmod>
     <changefreq>monthly</changefreq>
-=======
-    <lastmod>2026-02-04</lastmod>
-    <changefreq>weekly</changefreq>
->>>>>>> abac29323257412e23f37539c2864df96a73c906
     <priority>0.5</priority>
   </url>
+
 </urlset>
