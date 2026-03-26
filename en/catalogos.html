@@ -452,26 +452,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   ]
 }
 </script>
-<script>
-  // pega o botão
-  const backToTop = document.getElementById("backToTop");
-
-  // mostra quando rolar 200px
-  window.onscroll = function () {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      backToTop.style.display = "block";
-    } else {
-      backToTop.style.display = "none";
-    }
-  };
-
-  // ação ao clicar
-  backToTop.onclick = function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  };
-</script>
 </body>
 </html>
