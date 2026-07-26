@@ -310,6 +310,13 @@ nav ul li a:hover {
   max-width: 70%;
 }
 
+  .slide-description {
+     font-family: 'Inconsolata', sans-serif;
+  color: #fffefe;
+  font-size: 0.8rem;
+  margin-bottom: 30px;
+  }
+
 .slide-subtitle {
   font-size: 1rem;
   line-height: 1.4rem;
@@ -339,6 +346,12 @@ nav ul li a:hover {
 
   .slide-title {
     font-size: 2.8rem;
+  }
+  .slide-description {
+     font-family: 'Inconsolata', sans-serif;
+  color: #fffefe;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
   }
 }
 
