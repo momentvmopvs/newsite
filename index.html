@@ -509,11 +509,17 @@ decoding="async" alt="Fachada do Ia Poke em ACM com iluminação LED">
   "@context": "https://schema.org",
   "@graph": [
     {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
       "@type": "Organization",
       "@id": "https://momentvmopvs.com#organization",
       "name": "Momentvm Opvs",
-      "url": "https://momentvmopvs.com",
+      "url": "https://momentvmopvs.com/",
       "logo": "https://momentvmopvs.com/images/mo-logo-header.svg",
+      "owns": {
+        "@id": "https://momentvmopvs.com#localbusiness"
+      },
       "sameAs": [
         "https://www.instagram.com/momentvm.opvs",
         "https://www.facebook.com/momentvmopvs"
@@ -521,14 +527,22 @@ decoding="async" alt="Fachada do Ia Poke em ACM com iluminação LED">
     },
     {
       "@type": [
-  "LocalBusiness",
-  "ProfessionalService"
-],
+        "LocalBusiness",
+        "ProfessionalService"
+      ],
       "@id": "https://momentvmopvs.com#localbusiness",
+      "parentOrganization": {
+        "@id": "https://momentvmopvs.com#organization"
+      },
       "name": "Momentvm Opvs",
       "image": "https://momentvmopvs.com/images/mo-logo-oficial.png",
-      "url": "https://momentvmopvs.com",
+      "logo": "https://momentvmopvs.com/images/mo-logo-header.svg",
+      "url": "https://momentvmopvs.com/",
       "telephone": "+55 11 94088-1109",
+      "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "São Paulo e Região Metropolitana"
+      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Engenheiro Heitor Antonio Eiras Garcia, 6363",
