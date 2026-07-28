@@ -524,20 +524,44 @@ display:inline-block;
   position: relative;
   overflow: hidden;
   text-align: center;
-  margin-top:30px;
+  margin-top:20px;
   margin-bottom:30px;
+}
+
+.final h3{
+    font-size: 2.6rem;
+    line-height: 1.1;
+    margin-bottom: 5px;
 }
 
 .texto-final {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 2.5rem;
-  line-height:3rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height:2rem;
   color:#0B004A;
   padding-top:20px;
   padding-bottom:20px;
 }
 
+.cta-final{
+    display:inline-block;
+    padding:15px 38px;
+    background:#0B004A;      /* sua cor de destaque */
+    color:#fff;
+    text-decoration:none;
+    font-family: 'Poppins', sans-serif;
+    border-radius:10px;
+    font-weight:600;
+    font-size:1rem;
+    transition:.3s;
+}
+
+.cta-final:hover{
+    background:#B87800;
+    color:#0B004A;
+    transform:translateY(-2px);
+}
 
 /* ===== OVERLAY DE IMAGEM ===== */
 .imagem-overlay {
