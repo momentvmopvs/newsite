@@ -563,6 +563,133 @@ display:inline-block;
     transform:translateY(-2px);
 }
 
+/* =====SERVIÇOS COMPLEMENTARES ===== */
+.servicos-relacionados{
+    max-width:1100px;
+    margin-top:0;
+    margin:50px auto;
+    padding:0 20px;
+}
+.servicos-relacionados h2{
+    text-align:center;
+    margin-bottom:10px;
+}
+.intro-servicos{
+    max-width:760px;
+    margin:0 auto 28px;
+    text-align:center;
+    line-height:1.6;
+    font-size: 1.2rem; 
+}
+.card-servico{
+    width: 100%;
+    min-height: 220px;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-size: cover;
+    background-position: center;
+    transition: .3s;
+    position: relative;
+  overflow: hidden;
+}
+.card-servico:hover{
+    transform:translateY(-6px);
+    border-color:#020243;
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+}
+.card-servico i{
+    font-size:2rem;
+    color:#e5e5ea;
+    margin-bottom:20px;
+}
+.card-servico h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight:700;
+    color:#ffa600;
+    margin-bottom:12px;
+    font-size:1.35rem;
+}
+.card-servico h3,
+.card-servico p{
+    position:relative;
+    z-index:2;
+}
+.card-servico:hover h3,
+.card-servico:hover p{
+    text-shadow:
+        0 3px 10px rgba(0,0,0,.75),
+        0 0 24px rgba(0,0,0,.75);
+}
+.card-servico p{
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+    color:#fefafa;
+    line-height:1.6;
+    flex:1;
+}
+.card-servico span{
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+    margin-top:25px;
+    font-weight:600;
+    color:#191970;
+}
+.card-servico span{
+    margin-top:25px;
+    font-weight:600;
+    color:#ffffff;
+}
+.card-servico::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.70);
+    transition: .3s;
+}
+.card-servico:hover::before{
+    background: rgba(0,0,0,.45);
+}
+.card-servico *{
+    position: relative;
+    z-index: 2;
+}
+.card-acrilico{
+    background-image:url("/images/led1.jpg")
+}
+.card-envelopamento{
+    background-image:url("/images/Cabinet-2-1170x658.webp");
+}
+.card-peliculas{
+    background-image:url("/images/Peliculas-5-1170x658.jpg");
+}
+.card-especiais{
+    background-image:url("/images/especiais-scaled.webp");
+}
+.card-servico,
+.card-servico:hover,
+.card-servico:visited{
+ text-decoration: none;
+ color: inherit;
+}
+/* ===== CARDS RESPONSIVO === */
+@media(max-width:768px){
+.grid-servicos{
+    grid-template-columns:1fr;
+}
+
+.card-servico{
+    min-height:auto;  
+}
+
+}
+
 /* ===== OVERLAY DE IMAGEM ===== */
 .imagem-overlay {
   position: relative;
