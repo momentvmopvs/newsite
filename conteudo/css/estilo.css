@@ -678,6 +678,14 @@ display:inline-block;
  text-decoration: none;
  color: inherit;
 }
+.service-card{
+    transition: transform .35s ease,
+                box-shadow .35s ease,
+                background-size .45s ease;
+}
+.service-card:hover{
+    background-size: 108%;
+}
 /* ===== CARDS RESPONSIVO === */
 @media(max-width:768px){
 .grid-servicos{

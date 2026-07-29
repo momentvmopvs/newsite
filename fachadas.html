@@ -303,66 +303,53 @@ decoding="async" alt="Pergolato envelopado com adesivo laranja">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Momentvm Opvs",
-  "url": "https://momentvmopvs.com",
-  "image": "https://momentvmopvs.com/./images/mo-logo-oficial.png",
-  "description": "Soluções criativas para arquitetura e decoração: envelopamento de móveis, fachadas, papel de parede, insulfilm e muito mais.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Av. Eng. Heitor Antonio Eiras Garcia, 6363",
-    "addressLocality": "São Paulo",
-    "addressRegion": "SP",
-    "postalCode": "05564-200",
-    "addressCountry": "BR"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "-23.5991535",
-    "longitude": "-46.783970"
-  },
-  "openingHours": "Mo-Fr 09:00-18:00",
-  "telephone": "+55-11-94088-1109",
-  "priceRange": "a consultar",
-  "areaServed": {
-    "@type": "Place",
-    "name": "São Paulo e região"
-  },
-  "keywords": [
-    "envelopamento para arquitetura",
-    "serviços para arquitetos",
-    "parcerias com decoradores",
-    "personalização de ambientes",
-    "soluções criativas para interiores"
-  ],
-  "sameAs": [
-    "https://www.instagram.com/momentvm.opvs",
-    "https://www.facebook.com/momentvmopvs"
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Organization",
       "@id": "https://momentvmopvs.com#organization",
       "name": "Momentvm Opvs",
-      "url": "https://momentvmopvs.com",
+      "url": "https://momentvmopvs.com/",
       "logo": "https://momentvmopvs.com/images/mo-logo-header.svg",
+      "owns": {
+        "@id": "https://momentvmopvs.com#localbusiness"
+      },
       "sameAs": [
         "https://www.instagram.com/momentvm.opvs",
         "https://www.facebook.com/momentvmopvs"
       ]
     },
     {
-      "@type": "LocalBusiness",
+  "@type": "WebSite",
+  "@id": "https://momentvmopvs.com#website",
+  "url": "https://momentvmopvs.com/",
+  "name": "Momentvm Opvs",
+  "publisher": {
+    "@id": "https://momentvmopvs.com#organization"
+  },
+  "inLanguage": "pt-BR"
+},
+    {
+      
+      "@type": [
+        "LocalBusiness",
+        "ProfessionalService"
+      ],
       "@id": "https://momentvmopvs.com#localbusiness",
+      "parentOrganization": {
+        "@id": "https://momentvmopvs.com#organization"
+      },
       "name": "Momentvm Opvs",
-      "image": "https://momentvmopvs.com/images/Paredes-1-1170x658.webp",
-      "url": "https://momentvmopvs.com",
+      "image": "https://momentvmopvs.com/images/mo-logo-oficial.png",
+      "logo": "https://momentvmopvs.com/images/mo-logo-header.svg",
+      "url": "https://momentvmopvs.com/",
+      "mainEntityOfPage": {
+      "@id": "https://momentvmopvs.com/fachadas.html#webpage"
+      },
       "telephone": "+55 11 94088-1109",
+      "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "São Paulo e Região Metropolitana"
+      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Engenheiro Heitor Antonio Eiras Garcia, 6363",
@@ -380,18 +367,37 @@ decoding="async" alt="Pergolato envelopado com adesivo laranja">
         "Mo-Fr 09:00-18:00",
         "Sa 09:00-13:00"
       ],
-      "priceRange": "R$",
-      "description": "Serviços de envelopamento e comunicação visual com acabamento de alto padrão em São Paulo e região metropolitana.",
+      "priceRange": "Sob consulta",
+      "description": "Empresa especializada em fachadas em ACM, comunicação visual corporativa, letras-caixa, sinalização empresarial, envelopamento arquitetônico e projetos especiais para empresas em São Paulo.",
       "sameAs": [
         "https://www.instagram.com/momentvm.opvs",
         "https://www.facebook.com/momentvmopvs"
-      ],
-      "parentOrganization": {
-        "@id": "https://momentvmopvs.com#organization"
-      }
+      ]
     },
     {
+  "@type": "WebPage",
+  "@id": "https://momentvmopvs.com/#webpage",
+  "url": "https://momentvmopvs.com/",
+  "name": "Momentvm Opvs | Comunicação Visual Corporativa",
+  "description": "Empresa especializada em fachadas em ACM, comunicação visual corporativa, letras-caixa, sinalização, envelopamento arquitetônico e projetos especiais em São Paulo.",
+  "isPartOf": {
+    "@id": "https://momentvmopvs.com#website"
+  },
+  "about": {
+    "@id": "https://momentvmopvs.com#localbusiness"
+  },
+  "breadcrumb": {
+    "@id": "https://momentvmopvs.com#breadcrumb"
+  },
+  "primaryImageOfPage": {
+  "@type": "ImageObject",
+  "url": "https://momentvmopvs.com/images/mo-logo-oficial.png"
+},
+  "inLanguage": "pt-BR"
+},
+    {
       "@type": "BreadcrumbList",
+      "@id": "https://momentvmopvs.com#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -402,95 +408,69 @@ decoding="async" alt="Pergolato envelopado com adesivo laranja">
       ]
     },
     {
-      "@type": "Service",
-      "name": "Envelopamento de Móveis",
-      "image": "https://momentvmopvs.com/images/Cabinet-1-1170x658.webp",
-      "description": "Envelopamento de móveis",
-      "url": "https://momentvmopvs.com/moveis.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Papel de Parede",
-      "image": "https://momentvmopvs.com/images/Paredes-1-1170x658.webp",
-      "description": "Aplicação de papel de parede decorativo.",
-      "url": "https://momentvmopvs.com/paredes.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Envelopamento de Portas",
-      "image": "https://momentvmopvs.com/images/Portas-1-1170x658.jpg",
-      "description": "Envelopamento decorativo de portas.",
-      "url": "https://momentvmopvs.com/portas.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Envelopamento de Veículos",
-      "image": "https://momentvmopvs.com/images/Vehicle-1-1170x658.jpg",
-      "description": "Envelopamento automotivo para proteção e personalização.",
-      "url": "https://momentvmopvs.com/veiculos.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Insulfilm e Jateados",
-      "image": "https://momentvmopvs.com/images/Peliculas-1-1170x658.jpg",
-      "description": "Instalação de películas decorativas e funcionais.",
-      "url": "https://momentvmopvs.com/peliculas.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Envelopamento de Totens",
-      "image": "https://momentvmopvs.com/images/Totens-1-1170x658.jpg",
-      "description": "Envelopamento para sinalização e publicidade em totens.",
-      "url": "https://momentvmopvs.com/totens.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Fachadas em ACM",
-      "image": "https://momentvmopvs.com/images/Fachadas-6-1170x658.jpg",
-      "description": "Fachadas modernas em ACM para comércios e empresas.",
-      "url": "https://momentvmopvs.com/fachadas.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Envelopamento de Eletrodomésticos",
-      "image": "https://momentvmopvs.com/images/Eletrodomesticos-1-1170x658.jpg",
-      "description": "Personalização e renovação visual de eletrodomésticos.",
-      "url": "https://momentvmopvs.com/eletrodomesticos.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Projetos Especiais e Cenografia",
-      "image": "https://momentvmopvs.com/images/especiais-7-1170x658.jpg",
-      "description": "Projetos personalizados para eventos, vitrines e decorações temáticas.",
-      "url": "https://momentvmopvs.com/especiais.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Letras em acrílico e corte-laser",
-      "image": "https://momentvmopvs.com/images/letras-1-1170x658.jpg",
-      "description": "Letras recortadas para fachadas, ambientes internos e sinalização.",
-      "url": "https://momentvmopvs.com/acrilico.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    }
+  "@type": "Service",
+  "serviceType": "Fachadas em ACM",
+  "@id": "https://momentvmopvs.com#fachadas-acm",
+  "name": "Fachadas em ACM",
+  "image": "https://momentvmopvs.com/images/Fachada-Contabify.webp",
+  "description": "Projeto, fabricação e instalação de fachadas em ACM para empresas, comércios, escritórios e indústrias.",
+  "url": "https://momentvmopvs.com/fachadas.html",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "São Paulo e Região Metropolitana"
+  },
+  "provider": {
+    "@id": "https://momentvmopvs.com#localbusiness"
+  }
+},
+{
+  "@type": "Service",
+  "serviceType": "Comunicação Visual Corporativa",
+  "@id": "https://momentvmopvs.com#comunicacao-visual-corporativa",
+  "name": "Comunicação Visual Corporativa",
+  "image": "https://momentvmopvs.com/images/led13.webp",
+  "description": "Projetos completos de comunicação visual corporativa, identidade visual, sinalização e ambientação empresarial.",
+  "url": "https://momentvmopvs.com/",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "São Paulo e Região Metropolitana"
+  },
+  "provider": {
+    "@id": "https://momentvmopvs.com#localbusiness"
+  }
+},
+{
+  "@type": "Service",
+  "serviceType": "Letras-caixa",
+  "@id": "https://momentvmopvs.com#letras-caixa",
+  "name": "Letras-caixa e Letreiros",
+  "image": "https://momentvmopvs.com/images/letras-1-1170x658.jpg",
+  "description": "Produção e instalação de letras-caixa em acrílico, PVC, aço inox e alumínio com ou sem iluminação LED.",
+  "url": "https://momentvmopvs.com/acrilico.html",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "São Paulo e Região Metropolitana"
+  },
+  "provider": {
+    "@id": "https://momentvmopvs.com#localbusiness"
+  }
+},
+{
+  "@type": "Service",
+  "serviceType": "Sinalização Corporativa",
+  "@id": "https://momentvmopvs.com#sinalizacao-corporativa",
+  "name": "Sinalização Corporativa",
+  "image": "https://momentvmopvs.com/images/Paredes-1-1170x658.webp",
+  "description": "Soluções completas em sinalização interna, externa e comunicação visual para empresas e ambientes corporativos.",
+  "url": "https://momentvmopvs.com/envelopamento.html",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "São Paulo e Região Metropolitana"
+  },
+  "provider": {
+    "@id": "https://momentvmopvs.com#localbusiness"
+  }
+},
   ]
 }
 </script>
