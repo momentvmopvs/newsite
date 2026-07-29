@@ -61,62 +61,143 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header class="header">
   <div class="header-container">
 
-    <!-- LOGO -->
-    <div class="logo">
-      <a href="/">
-        <img src="/images/mo-logo-header.svg" alt="Momentvm Opvs - Especialistas em Comunicação Visual, Fachadas em ACM e Envelopamento em São Paulo">
+    <!-- IDIOMAS — CANTO ESQUERDO -->
+    <div class="header-languages" aria-label="Seleção de idioma">
+      <a href="/" class="flag active" aria-label="Versão em português">
+        <img
+          src="/images/br-flag.png"
+          alt=""
+          aria-hidden="true"
+        >
+      </a>
+
+      <a href="/en/" class="flag" aria-label="Versão em inglês">
+        <img
+          src="/images/us-flag.png"
+          alt=""
+          aria-hidden="true"
+        >
       </a>
     </div>
 
-    <!-- MENU DESKTOP -->
+    <!-- MENU -->
     <nav
-    id="menu-principal"
-    class="nav"
-    aria-label="Menu principal"> <ul class="nav-list">
-        <li><a href="/">Home</a></li>
-        <li><a href="/sobre.html">Sobre Nós</a></li>
-        <li class="dropdown">
-  <a href="/servicos.html" class="dropdown-toggle">
-    Serviços
-  </a>
+  id="menu-principal"
+  class="nav"
+  aria-label="Menu principal"
+>
+  <!-- MENU ESQUERDO -->
+  <ul class="nav-list nav-list-left">
+    <li>
+      <a href="/">Home</a>
+    </li>
 
-  <ul class="dropdown-menu">
-    <li><a href="/fachadas.html">Fachadas em ACM</a></li>
-    <li><a href="/acrilico.html">Letras em Acrílico com LED</a></li>
-    <li><a href="/envelopamento.html">Envelopamento</a></li>
-    <li><a href="/peliculas.html">Películas Insulfilm</a></li>
-    <li><a href="/especiais.html">Projetos Especiais</a></li>
-  </ul>
-</li>
-        <!--li><a href="#clientes">Clientes</a></li-->
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/catalogos.html">Catálogos Virtuais</a></li>
+    <li>
+      <a href="/sobre.html">Sobre Nós</a>
+    </li>
+
+    <li class="dropdown">
+      <a
+        href="/servicos.html"
+        class="dropdown-toggle"
+        aria-haspopup="true"
+      >
+        Serviços
+      </a>
+
+      <ul class="dropdown-menu">
+        <li>
+          <a href="/fachadas.html">Fachadas em ACM</a>
+        </li>
+
+        <li>
+          <a href="/acrilico.html">Letras em Acrílico com LED</a>
+        </li>
+
+        <li>
+          <a href="/envelopamento.html">Envelopamento</a>
+        </li>
+
+        <li>
+          <a href="/peliculas.html">Películas Insulfilm</a>
+        </li>
+
+        <li>
+          <a href="/especiais.html">Projetos Especiais</a>
+        </li>
       </ul>
-    </nav>
+    </li>
+  </ul>
 
-     <!-- ICONES + IDIOMA -->
-    <div class="header-right">
-      <a href="https://wa.me/5511940881109?text=Olá,%20gostaria%20de%20receber%20mais%20informações%20sobre%20seus%20serviços." target="_blank" rel="noopener noreferrer" class="icon">
-        <img src="/images/logo-whattsapp.png" alt="Contato pelo WhatsApp">
+  <!-- MENU DIREITO -->
+  <ul class="nav-list nav-list-right">
+    <li>
+      <a href="/catalogos.html">Catálogos Virtuais</a>
+    </li>
+
+    <li>
+      <a href="/impressao-3d.html">Impressão 3D</a>
+    </li>
+
+    <li>
+      <a href="/blog.html">Blog</a>
+    </li>
+  </ul>
+</nav>
+
+    <!-- LOGO CENTRAL -->
+    <div class="logo">
+      <a href="/" aria-label="Momentvm Opvs — Página inicial">
+        <img
+          src="/images/mo-logo-header.svg"
+          alt="Momentvm Opvs"
+        >
       </a>
-
-      <a href="https://instagram.com/momentvm.opvs" target="_blank" rel="noopener noreferrer" class="icon">
-        <img src="/images/logo-instagram.png" alt="Perfil da Momentvm Opvs no Instagram">
-      </a>
-      <div class="lang">
-        <a href="/" class="active flag"><img src="/images/br-flag.png" alt="Versão em português"></a>
-        <a href="/en/" class="flag"><img src="/images/us-flag.png" alt="Versão em inglês"></a></div>
-
-      <!-- HAMBURGER -->
-      <button
-    class="menu-toggle"
-    aria-label="Abrir menu"
-    aria-controls="menu-principal"
-    aria-expanded="false">   <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
+
+    <!-- REDES SOCIAIS — CANTO DIREITO -->
+    <div class="header-social">
+      <a
+        href="https://instagram.com/momentvm.opvs"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-icon"
+        aria-label="Instagram da Momentvm Opvs"
+      >
+        <img
+          src="/images/logo-instagram.png"
+          alt=""
+          aria-hidden="true"
+        >
+      </a>
+
+      <a
+        href="https://wa.me/5511940881109?text=Olá,%20visitei%20o%20site%20da%20Momentvm%20Opvs%20e%20gostaria%20de%20receber%20mais%20informações."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-icon"
+        aria-label="Falar com a Momentvm Opvs pelo WhatsApp"
+      >
+        <img
+          src="/images/logo-whattsapp.png"
+          alt=""
+          aria-hidden="true"
+        >
+      </a>
+    </div>
+
+    <!-- MENU MOBILE -->
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Abrir menu"
+      aria-controls="menu-principal"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
   </div>
 </header>
