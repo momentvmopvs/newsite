@@ -1,0 +1,859 @@
+/* =========================================================
+   PÁGINAS DE SERVIÇOS
+   Estrutura-base compartilhada
+========================================================= */
+
+/*=========================================================
+  PÁGINA PRINCIPAL DE SERVIÇOS
+=========================================================*/
+
+.servicos-hero {
+  padding: calc(var(--header-height) + 64px) 20px 10px;
+  background-color: #ffffff;
+}
+
+.servicos-hero-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.servicos-hero h1 {
+  margin: 0 0 26px;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2.6rem, 4vw, 4.4rem);
+  font-weight: 700;
+  line-height: 1.08;
+  color: #0b004a;
+}
+
+.servicos-hero p {
+  max-width: 1080px;
+  margin: 0 0 18px;
+  font-size: 1.1rem;
+  line-height: 1.72;
+  color: #4a4a4a;
+}
+
+.servicos-vitrine {
+  padding: 40px 20px 20px;
+  background-color: #ffffff;
+}
+
+.servicos-vitrine .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicos-vitrine-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px;
+  margin-top: 42px;
+}
+
+.servicos-vitrine-card {
+  overflow: hidden;
+  border-radius: 18px;
+  background-color: #ffffff;
+  box-shadow: 0 18px 42px rgba(11, 0, 74, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicos-vitrine-card img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.servicos-vitrine-conteudo {
+  padding: 30px;
+}
+
+.servicos-vitrine-conteudo h3 {
+  margin: 0 0 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0b004a;
+}
+
+.servicos-vitrine-conteudo p {
+  margin: 0 0 22px;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+.servicos-vitrine-conteudo a {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--header-gold, #d8a600);
+  text-decoration: none;
+}
+
+.servicos-vitrine-imagem-link {
+  display: block;
+  text-decoration: none;
+}
+
+.servicos-vitrine-imagem-link img {
+  display: block;
+}
+
+@media (hover: hover) {
+  .servicos-vitrine-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 50px rgba(11, 0, 74, 0.13);
+  }
+}
+
+@media (max-width: 900px) {
+  .servicos-vitrine-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .servicos-vitrine-card img {
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .servicos-hero {
+    padding: calc(var(--header-height) + 42px) 16px 46px;
+  }
+
+  .servicos-hero h1 {
+    font-size: clamp(2.1rem, 9vw, 3rem);
+  }
+
+  .servicos-vitrine {
+    padding: 30px 16px 64px;
+  }
+
+  .servicos-vitrine-conteudo {
+    padding: 24px;
+  }
+}
+
+
+/* =========================================================
+   PÁGINAS INTERNAS
+========================================================= */
+
+.pagina-servico {
+  width: 100%;
+
+  background-color: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   BANNER PRINCIPAL
+========================================================= */
+
+.servico-banner {
+  width: 100%;
+  max-width: 1440px;
+  margin: var(--header-height) auto 0;
+  overflow: hidden;
+  background-color: #0b004a;
+}
+
+.servico-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  object-fit: initial;
+  object-position: initial;
+
+  transition: transform 0.8s ease;
+}
+
+
+/* Requinte visual discreto */
+@media (hover: hover) {
+  .servico-banner:hover img {
+    transform: scale(1.015);
+  }
+}
+
+
+/* =========================================================
+   INTRODUÇÃO
+========================================================= */
+
+.servico-intro {
+  padding: 64px 20px 16px;
+
+  background-color: #ffffff;
+}
+
+.servico-intro-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servico-intro-detalhe {
+  display: block;
+
+  width: 58px;
+  height: 2px;
+
+  margin-bottom: 22px;
+
+  background-color: var(--header-gold, #d8a600);
+}
+
+.servico-intro h1 {
+  margin: 0 0 24px;
+  padding: 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2.5rem, 3.6vw, 4rem);
+  font-weight: 700;
+  line-height: 1.08;
+
+  color: #0b004a;
+}
+
+.servico-intro p {
+  max-width: 1080px;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Inconsolata", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.75;
+
+  color: #4a4a4a;
+}
+
+.texto-geral-servicos {
+  font-family: 'Inconsolata', sans-serif;
+  color: #4a4a4a;
+   text-align:left;
+   margin-bottom:30px;
+}
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+  .servico-banner img {
+    height: clamp(310px, 48vw, 480px);
+  }
+
+  .servico-intro {
+    padding: 56px 20px 66px;
+  }
+
+  .servico-intro h1 {
+    font-size: clamp(2.2rem, 5vw, 3rem);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+  .servico-banner img {
+    height: 260px;
+
+    object-position: center;
+  }
+
+  .servico-intro {
+    padding: 42px 18px 52px;
+  }
+
+  .servico-intro-detalhe {
+    width: 46px;
+
+    margin-bottom: 18px;
+  }
+
+  .servico-intro h1 {
+    margin-bottom: 20px;
+
+    font-size: clamp(2rem, 9vw, 2.7rem);
+    line-height: 1.08;
+  }
+
+  .servico-intro p {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+}
+
+
+/* =========================================================
+   MOBILE PEQUENO
+========================================================= */
+
+@media (max-width: 430px) {
+  .servico-banner img {
+    height: 230px;
+  }
+
+  .servico-intro {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+/*=========================================================
+  CARROSSEL DE PROJETOS - PÁGINAS DE SERVIÇO
+=========================================================*/
+
+.servico-carrossel-section {
+  padding: 20px 20px 10px;
+  background-color: #ffffff;
+}
+
+.servico-carrossel-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servico-swiper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 4px;
+}
+
+.servico-swiper .swiper-slide {
+  position: relative;
+  overflow: hidden;
+
+  height: auto;
+
+  border-radius: 18px;
+  background: transparent;
+}
+
+.servico-swiper .swiper-slide::before,
+.servico-swiper .swiper-slide::after {
+  content: none !important;
+  display: none !important;
+}
+
+.servico-swiper .swiper-slide img {
+  display: block;
+
+  width: 100%;
+  height: 310px;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 18px;
+
+  background: transparent;
+
+  transition: transform 0.6s ease;
+}
+
+@media (hover: hover) {
+  .servico-swiper .swiper-slide:hover img {
+    transform: scale(1.04);
+  }
+}
+
+/*=========================================================
+  INFORMAÇÕES DO SERVIÇO - 3 COLUNAS
+=========================================================*/
+
+.servico-info-section {
+  padding: 52px 20px 20px;
+  background-color: #ffffff;
+}
+
+.servico-info-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servico-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+}
+
+.servico-info-card {
+  min-width: 0;
+}
+
+.servico-info-card .titulo-secao {
+  margin-bottom: 22px;
+}
+
+.servico-info-card .titulo-linha {
+  margin-bottom: 16px;
+}
+
+.servico-info-card h2 {
+  font-size: clamp(1.45rem, 1.55vw, 1.85rem);
+  line-height: 1.18;
+}
+
+.servico-info-card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.68;
+  color: #4a4a4a;
+}
+/*=========================================================
+  GRID DE SERVIÇOS RELACIONADOS
+=========================================================*/
+
+.grid-sobre-servicos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 42px auto 0;
+}
+
+
+/*=========================================================
+  CARD DE SERVIÇO RELACIONADO
+=========================================================*/
+
+.card-servico{
+    width: 100%;
+    min-height: 220px;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-size: cover;
+    background-position: center;
+    transition: .3s;
+    position: relative;
+  overflow: hidden;
+}
+.card-servico:hover{
+    transform:translateY(-6px);
+    border-color:#020243;
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+}
+.card-servico i{
+    font-size:2rem;
+    color:#e5e5ea;
+    margin-bottom:20px;
+}
+.card-servico h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight:700;
+    color:#ffa600;
+    margin-bottom:12px;
+    font-size:1.35rem;
+}
+.card-servico h3,
+.card-servico p{
+    position:relative;
+    z-index:2;
+}
+.card-servico:hover h3,
+.card-servico:hover p{
+    text-shadow:
+        0 3px 10px rgba(0,0,0,.75),
+        0 0 24px rgba(0,0,0,.75);
+}
+.card-servico p{
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+    color:#fefafa;
+    line-height:1.6;
+    flex:1;
+}
+.card-servico span{
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+    margin-top:25px;
+    font-weight:600;
+    color:#191970;
+}
+.card-servico span{
+    margin-top:25px;
+    font-weight:600;
+    color:#ffffff;
+}
+.card-servico::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.70);
+    transition: .3s;
+}
+.card-servico:hover::before{
+    background: rgba(0,0,0,.45);
+}
+.card-servico *{
+    position: relative;
+    z-index: 2;
+    
+}
+.card-servico {
+  background-image: var(--card-img);
+}
+.card-servico,
+.card-servico:hover,
+.card-servico:visited{
+ text-decoration: none;
+ color: inherit;
+}
+.service-card{
+    transition: transform .35s ease,
+                box-shadow .35s ease,
+                background-size .45s ease;
+}
+.service-card:hover{
+    background-size: 108%;
+}
+/* ===== CARDS RESPONSIVO === */
+@media(max-width:768px){
+.grid-sobre-servicos{
+    grid-template-columns:1fr;
+}
+
+.card-servico{
+    min-height:auto;  
+}
+
+}
+
+/*=========================================================
+  CTA FINAL - PÁGINA SERVIÇOS
+=========================================================*/
+
+.servicos-final {
+  padding: 54px 20px 58px;
+  background:
+    linear-gradient(
+      135deg,
+      #12045a 0%,
+      #0b004a 52%,
+      #070033 100%
+    );
+}
+
+.servicos-final-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.servicos-final .titulo-linha {
+  width: 46px;
+  height: 2px;
+  margin: 0 auto 18px;
+}
+
+.servicos-final h2 {
+  margin: 0 0 18px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.9rem, 2.6vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.14;
+
+  color: #ffffff;
+}
+
+.servicos-final p {
+  max-width: 720px;
+  margin: 0 auto;
+
+  font-family: "Inconsolata", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.servicos-final-acoes {
+  margin-top: 28px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.servicos-final-botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 42px;
+  padding: 11px 22px;
+
+  border-radius: 5px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.servicos-final-botao-principal {
+  border: 1px solid var(--header-gold, #B87800);
+  background-color: var(--header-gold, #B87800);
+  color: #0b004a;
+}
+
+.servicos-final-botao-secundario {
+  border: 1px solid rgba(216, 166, 0, 0.9);
+  background-color: transparent;
+  color: #ffffff;
+}
+
+@media (hover: hover) {
+  .servicos-final-botao:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+  }
+
+  .servicos-final-botao-principal:hover {
+    background-color: #f0c84a;
+    border-color: #f0c84a;
+  }
+
+  .servicos-final-botao-secundario:hover {
+    background-color: rgba(216, 166, 0, 0.14);
+    border-color: var(--header-gold, #d8a600);
+    color: var(--header-gold, #d8a600);
+  }
+}
+
+@media (max-width: 767px) {
+  .servicos-final {
+    padding: 46px 16px 52px;
+  }
+
+  .servicos-final h2 {
+    font-size: clamp(1.65rem, 7.5vw, 2.25rem);
+  }
+
+  .servicos-final p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .servicos-final-acoes {
+    margin-top: 24px;
+    gap: 12px;
+  }
+
+  .servicos-final-botao {
+    width: 100%;
+    max-width: 310px;
+  }
+}
+/* Responsivo final das 3 colunas das páginas de serviço */
+@media (max-width: 1024px) {
+  .servico-info-section .servico-info-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 42px;
+  }
+
+  .servico-info-section .servico-info-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .servico-info-section .servico-info-grid {
+    grid-template-columns: 1fr !important;
+    gap: 38px;
+  }
+}
+/*=========================================================
+  PÁGINA CATÁLOGOS / CORES E ACABAMENTOS
+=========================================================*/
+
+.catalogos-hero {
+  padding: calc(var(--header-height) + 64px) 20px 54px;
+  background-color: #ffffff;
+}
+
+.catalogos-hero-container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.catalogos-hero h1 {
+  margin: 0 0 24px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2.5rem, 4vw, 4.2rem);
+  font-weight: 700;
+  line-height: 1.08;
+
+  color: #0b004a;
+}
+
+.catalogos-hero p {
+  max-width: 980px;
+  margin: 0;
+
+  font-size: 1.1rem;
+  line-height: 1.72;
+  color: #4a4a4a;
+}
+
+
+/* Vitrine */
+
+.catalogos-vitrine {
+  padding: 24px 20px 84px;
+  background-color: #ffffff;
+}
+
+.catalogos-vitrine .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.catalogos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.catalogo-card {
+  min-width: 0;
+}
+
+.catalogo-card .titulo-linha {
+  margin-bottom: 16px;
+}
+
+.catalogo-card h2 {
+  margin: 0 0 20px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.35rem, 1.5vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: #0b004a;
+}
+
+.catalogo-card a {
+  display: block;
+  overflow: hidden;
+
+  border-radius: 18px;
+  background-color: #f5f5f8;
+  box-shadow: 0 16px 36px rgba(11, 0, 74, 0.08);
+}
+
+.catalogo-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  object-fit: initial;
+  object-position: initial;
+
+  transition: transform 0.45s ease;
+}
+
+.catalogo-card p {
+  margin: 18px 0 0;
+
+  font-family: "Inconsolata", sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.6;
+
+  color: #4a4a4a;
+}
+
+@media (hover: hover) {
+  .catalogo-card a:hover img {
+    transform: scale(1.04);
+  }
+}
+
+
+/* Responsivo */
+
+@media (max-width: 1024px) {
+  .catalogos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .catalogo-card img {
+    height: 280px;
+  }
+}
+
+@media (max-width: 767px) {
+  .catalogos-hero {
+    padding: calc(var(--header-height) + 42px) 16px 42px;
+  }
+
+  .catalogos-hero h1 {
+    font-size: clamp(2rem, 8.5vw, 2.8rem);
+  }
+
+  .catalogos-hero p {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .catalogos-vitrine {
+    padding: 20px 16px 64px;
+  }
+
+  .catalogos-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .catalogo-card h2 {
+    font-size: clamp(1.45rem, 6.5vw, 2rem);
+  }
+
+  .catalogo-card img {
+    height: auto;
+  }
+
+  .catalogo-card p {
+    font-size: 1rem;
+  }
+}

@@ -40,19 +40,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-<link rel="stylesheet" href="../conteudo/css/estilo.css" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="../conteudo/css/estilo.css"></noscript>
-<link rel="stylesheet" href="../conteudo/css/general.css" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="../conteudo/css/general.css"></noscript>
-<link rel="stylesheet" href="../conteudo/css/header.css">
-<link rel="stylesheet" href="../conteudo/css/footer.css">
-<link rel="stylesheet" href="../conteudo/css/responsive.css">
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <script src="../conteudo/js/header.js" defer></script>
 <script src="../conteudo/js/last-updated.js" defer></script>
+
+<link rel="stylesheet" href="../conteudo/css/estilo.css">
+<link rel="stylesheet" href="../conteudo/css/header.css">
+<link rel="stylesheet" href="../conteudo/css/footer.css">
+<link rel="stylesheet" href="../conteudo/css/paginas-servicos.css">
+<link rel="stylesheet" href="../conteudo/css/responsive.css">
 </head>
 
 <body id="topo">
@@ -64,60 +61,143 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header class="header">
   <div class="header-container">
 
-    <!-- LOGO -->
-    <div class="logo">
-      <a href="/en/">
-        <img src="../images/mo-logo-header.svg" alt="Momentvm Opvs">
+    <!-- IDIOMAS — CANTO ESQUERDO -->
+    <div class="header-languages" aria-label="Seleção de idioma">
+      <a href="/" class="flag" aria-label="Portuguese Version">
+        <img
+          src="/images/br-flag.png"
+          alt=""
+          aria-hidden="true"
+        >
+      </a>
+
+      <a href="/en/" class="flag active" aria-label="English Version">
+        <img
+          src="/images/us-flag.png"
+          alt=""
+          aria-hidden="true"
+        >
       </a>
     </div>
 
-    <!-- DESKTOP MENU -->
-    <nav class="nav" aria-label="Main Menu">
-      <ul class="nav-list">
-        <li><a href="/en/">Home</a></li>
-        <li><a href="/en/sobre.html">About Us</a></li>
+    <!-- MENU -->
+    <nav
+  id="menu-principal"
+  class="nav"
+  aria-label="Menu principal"
+>
+  <!-- MENU ESQUERDO -->
+  <ul class="nav-list nav-list-left">
+    <li>
+      <a href="/en/" class="active">Home</a>
+    </li>
 
-        <li class="dropdown">
-          <a href="/en/servicos.html" class="dropdown-toggle">
-            What We Do
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="/en/fachadas.html">ACM Facades</a></li>
-            <li><a href="/en/acrilico.html">Acrylic Letters with LED</a></li>
-            <li><a href="/en/envelopamento.html">Wrapping Services</a></li>
-            <li><a href="/en/peliculas.html">Window Films</a></li>
-            <li><a href="/en/especiais.html">Special Projects</a></li>
-          </ul>
+    <li>
+      <a href="/en/sobre.html">About Us</a>
+    </li>
+
+    <li class="dropdown">
+      <a
+        href="/en/servicos.html"
+        class="dropdown-toggle"
+        aria-haspopup="true"
+      >
+        Services
+      </a>
+
+      <ul class="dropdown-menu">
+        <li>
+          <a href="/en/fachadas.html">ACM Facades</a>
         </li>
 
-        <li><a href="/en/blog.html">Blog</a></li>
-        <li><a href="/en/catalogos.html">Digital Catalogues</a></li>
+        <li>
+          <a href="/en/acrilico.html">Acrylic letter with LED</a>
+        </li>
+
+        <li>
+          <a href="/en/envelopamento.html">Wrapping Services</a>
+        </li>
+
+        <li>
+          <a href="/en/peliculas.html">Window Film</a>
+        </li>
+
+        <li>
+          <a href="/en/especiais.html">Special Projects</a>
+        </li>
       </ul>
-    </nav>
+    </li>
+  </ul>
 
-    <!-- ICONS + LANGUAGE -->
-    <div class="header-right">
-      <a href="https://wa.me/5511940881109?text=Hello,%20I%20would%20like%20more%20information%20about%20your%20services.
-" target="_blank" rel="noopener noreferrer" class="icon"> 
-        <img src="../images/logo-whattsapp.png" alt="Contato pelo WhatsApp">
+  <!-- MENU DIREITO -->
+  <ul class="nav-list nav-list-right">
+    <li>
+      <a href="/en/catalogos.html">Virtual Catalogues</a>
+    </li>
+
+    <!--li>
+      <a href="/en/impressao-3d.html">Impressão 3D</a>
+    </li-->
+
+    <li>
+      <a href="/en/blog.html">Blog</a>
+    </li>
+  </ul>
+</nav>
+
+    <!-- LOGO CENTRAL -->
+    <div class="logo">
+      <a href="/en/" aria-label="Momentvm Opvs — Home Page">
+        <img
+          src="/images/mo-logo-header.svg"
+          alt="Momentvm Opvs ogo"
+        >
       </a>
-
-      <a href="https://instagram.com/momentvm.opvs" target="_blank" rel="noopener noreferrer" class="icon">
-        <img src="../images/logo-instagram.png" alt="Perfil da Momentvm Opvs no Instagram">
-      </a>
-
-      <div class="lang">
-        <a href="/" class="flag"><img src="../images/br-flag.png" alt="Portuguese"></a>
-        <a href="/en/" class="active flag"><img src="../images/us-flag.png" alt="Versão em inglês"></a>
-      </div>
-
-      <!-- HAMBURGER -->
-      <button class="menu-toggle" aria-label="Open menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
+
+    <!-- REDES SOCIAIS — CANTO DIREITO -->
+    <div class="header-social">
+      <a
+        href="https://instagram.com/momentvm.opvs"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-icon social-instagram"
+        aria-label="Momentvm Opvs Instagram"
+      >
+        <img
+          src="/images/logo-instagram.png"
+          alt=""
+          aria-hidden="true"
+        >
+      </a>
+
+      <a
+        href="https://wa.me/5511940881109?text=Hello,%20I%20visited%20Momentvm%20Opvs%20website%20Momentvm%20Opvs%20.%20I%20would%20like%20to%20receive%20more%20information."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-icon"
+        aria-label="Speak with Momentvm Opvs on WhatsApp"
+      >
+        <img
+          src="/images/logo-whattsapp.png"
+          alt=""
+          aria-hidden="true"
+        >
+      </a>
+    </div>
+
+    <!-- MENU MOBILE -->
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Abrir menu"
+      aria-controls="menu-principal"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
   </div>
 </header>
@@ -125,14 +205,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
-  		<img src="./images/Fachada-Contabify.webp" fetchpriority="high"
-decoding="async" alt="ACM commercial facade with illuminated acrylic channel letters, installed by Momentvm Opvs in São Paulo.">
+  		<img src="../images/Fachada-Contabify.webp" fetchpriority="high"
+decoding="async" width="1170" height="658" alt="ACM commercial facade with illuminated acrylic channel letters, installed by Momentvm Opvs in São Paulo.">
   		<div class="slide-content">
 			<div class="slide-overlay">
     			<div class="slide-text">
-      			<h1 class="slide-title">Modern ACM Facades</h1>
+      			<h1 class="slide-title">ACM Facades and Visual Communication for Businesses</h1>
+            <p class="slide-description">We design, manufacture, and install ACM facades, dimensional lettering, corporate signage, and vehicle wraps for businesses.</p>
       			<a href="https://wa.me/5511940881109?text=Hello,%20I%20would%20like%20more%20information%20about%20your%20services.
-" class="slide-button texto-geral">Contact us</a>
+" class="slide-button texto-geral">Ask a Quotation</a>
     			</div>
 			</div>
 		</div>
@@ -140,12 +221,13 @@ decoding="async" alt="ACM commercial facade with illuminated acrylic channel let
 
   <div class="swiper-slide">
   		<img src="../images/Cabinet-1-1170x658.webp" loading="lazy"
-decoding="async" alt="Living room cabinet wrapping with textured adhesive">
+decoding="async" width="1170" height="658" alt="Living room cabinet wrapping with textured adhesive">
   		<div class="slide-content">
 			<div class="slide-overlay">
     			<div class="slide-text">
-      			<h1 class="slide-title">Renew Your Spaces with Premium Wrapping</h1>
-      			<a href="/en/sobre.html" class="slide-button texto-geral">Learn more</a>
+      			<span class="titulo-linha"></span>
+<h2 class="slide-title">Furniture, Interior, and Corporate Wrapping</h2>
+      			<a href="/en/servicos.html" class="slide-button texto-geral">See solutions</a>
     			</div>
 			</div>
 		</div>
@@ -153,112 +235,35 @@ decoding="async" alt="Living room cabinet wrapping with textured adhesive">
 
     <div class="swiper-slide">
   		<img src="../images/especiais-scaled.webp" loading="lazy"
-decoding="async" alt="Giant popcorn bucket and soda cup for the opening of Cenópolis at Shopping Tamboré">
+decoding="async" width="1170" height="658" alt="Set design produced for a corporate event at Cinépolis, Shopping Tamboré.">
   		<div class="slide-content">
 			<div class="slide-overlay">
     			<div class="slide-text">
-      			<h2 class="slide-title">Signage and Custom Projects</h2>
-      			<a href="/en/servicos.html" class="slide-button texto-geral">Our Services</a>
+      			<span class="titulo-linha"></span>
+<h2 class="slide-title">Visual Communication for Businesses and Events</h2>
+      			<a href="/en/servicos.html" class="slide-button texto-geral">Know Our Services</a>
     			</div>
   			</div>
 		</div>
 	</div>
-
-    <div class="swiper-slide">
-    	<img src="../images/especiais-3-1170x658.jpg" loading="lazy"
-decoding="async" alt="Sink fully wrapped with matte black adhesive">
-    	<div class="slide-content">
-			<div class="slide-overlay">
-    			<div class="slide-text">
-        		<h2 class="slide-title">Decorative Adhesives and Space Wrapping</h2>
-        		<a href="https://wa.me/5511940881109?text=Hello,%20I%20would%20like%20more%20information%20about%20your%20services.
-" class="slide-button texto-geral">Contact us</a>
-        		</div>
-      		</div>
-    	</div>
-  	</div>
-
   <div class="swiper-slide">
   		<img src="../images/Paredes-1-1170x658.webp" loading="lazy"
-decoding="async" alt="Wall with Safra logo made of cut decorative adhesives">
+decoding="async" width="1170" height="658" alt="Wall with Safra logo made of cut decorative adhesives">
   		<div class="slide-content">
 			<div class="slide-overlay">
     			<div class="slide-text">
-      			<h2 class="slide-title">Wall Coverings for Businesses and Homes</h2>
-      			<a href="/en/sobre.html" class="slide-button texto-geral">Learn more</a>
-    			</div>
-			</div>
-		</div>
-	</div>
-
-    <div class="swiper-slide">
-  		<img src="../images/paredes-scaled-01.jpg" loading="lazy"
-decoding="async" alt="High-definition printed banner wall for a DER event">
-  		<div class="slide-content">
-			<div class="slide-overlay">
-    			<div class="slide-text">
-      			<h2 class="slide-title">Signage and Custom Solutions</h2>
-      			<a href="/en/servicos.html" class="slide-button texto-geral">Our Services</a>
-    			</div>
-  			</div>
-		</div>
-	</div>
-
-    <div class="swiper-slide">
-    	<img src="../images/papel_de_parede.jpg" loading="lazy"
-decoding="async" alt="Self-adhesive wallpaper covering restroom walls at It Jóias">
-    	<div class="slide-content">
-			<div class="slide-overlay">
-    			<div class="slide-text">
-        		<h2 class="slide-title">Transform Your Space Today</h2>
-        		<a href="https://wa.me/5511940881109?text=Hello,%20I%20would%20like%20more%20information%20about%20your%20services.
-" class="slide-button texto-geral">Contact us</a>
-        		</div>
-      		</div>
-    	</div>
-  	</div>
-
-  <div class="swiper-slide">
-  		<img src="../images/Cabinet-10-1170x658.jpg" loading="lazy"
-decoding="async" alt="TV stand wrapped with high-gloss white lacquer adhesive">
-  		<div class="slide-content">
-			<div class="slide-overlay">
-    			<div class="slide-text">
-      			<h2 class="slide-title">Renew Your Spaces with Premium Finishes</h2>
-      			<a href="/en/sobre.html" class="slide-button texto-geral">Learn more</a>
-    			</div>
-			</div>
-		</div>
-	</div>
-
-    <div class="swiper-slide">
-  		<img src="../images/especiais-5-1170x658.jpg" loading="lazy"
-decoding="async" alt="Surfboard wrapped with high-resolution printed varnished adhesive">
-  		<div class="slide-content">
-			<div class="slide-overlay">
-    			<div class="slide-text">
-      			<h2 class="slide-title texto-geral">We Create Exclusive Pieces for Interior Decoration</h2>
-      			<a href="/en/servicos.html" class="slide-button texto-geral">Our Services</a>
-    			</div>
-  			</div>
-		</div>
-	</div>
-
-    <div class="swiper-slide">
-    	<img src="../images/Cabinet-2-1170x658.webp" loading="lazy"
-decoding="async" alt="Complete office furniture wrapping at It Jóias with high-gloss automotive adhesive">
-    	<div class="slide-content">
-			<div class="slide-overlay">
-    			<div class="slide-text">
-        		<h2 class="slide-title texto-geral">Transform Your Space Today</h2>
-        		<a href="https://wa.me/5511940881109?text=Hello,%20I%20would%20like%20more%20information%20about%20your%20services.
-" class="slide-button texto-geral">Contact us</a>
+      			<span class="titulo-linha"></span>
+<h2 class="slide-title">Corporate Environment Design and Visual Communication</h2>
+      			<a href="https://wa.me/5511940881109?text=Hello,%20I%20would%20like%20more%20information%20about%20your%20services."
+class="cta-final"
+           target="_blank"
+           rel="noopener"
+           aria-label="Ask a quotation via WhatsApp">Speak with a Specialist</a>
         		</div>
       		</div>
     	</div>
   	</div>
   </div>
-
   <div class="swiper-pagination"></div>
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
@@ -268,52 +273,55 @@ decoding="async" alt="Complete office furniture wrapping at It Jóias with high-
 <section id="intro" class="container sobre-flex invertido">
   <div class="container intro-flex">
     <div class="intro-texto">
-      <h4 style="padding-left: 30px;">Modern ACM Facades</h4>
+      <span class="titulo-linha"></span>
+<h2 class="intro-titulo">Commercial and Corporate Facade Solutions</h2>
       <p class="texto-geral-sobre">
-        Momentvm Opvs specializes in the design, manufacturing, and installation of modern ACM (Aluminum Composite Material) facades, delivering complete architectural cladding solutions for commercial and corporate buildings. ACM is a versatile, lightweight, and highly durable material, ideal for projects that demand longevity, contemporary aesthetics, and excellent technical performance.
+        A well-designed ACM facade strengthens a company's visual identity, conveys professionalism, and enhances the perceived value of the brand. Momentvm Opvs develops, manufactures, and installs ACM facades and corporate visual communication projects for businesses, offices, retail outlets, and industrial facilities, offering comprehensive architectural cladding solutions with a premium finish.
 
-We develop custom ACM facades aligned with each company’s visual identity, focusing on brand value, visual impact, and market presence. Every project is strategically planned, combining architecture, functionality, and finishing excellence, ensuring sophisticated, high-end facades executed by specialists in ACM architectural solutions.
+Each project is custom-designed, integrating architecture, visual communication, and functionality to create modern, resilient, and durable facades. Our team oversees every stage—from design to installation—ensuring a result that adds value to the property, makes the company stand out, and reinforces its market presence.
       </p>
     </div>
     <div class="intro-imagem">
       <img src="../images/Fachada-Contabify.webp" loading="lazy"
-decoding="async" alt="Facade clad in dark gray ACM with a 6mm solid polycarbonate awning.">
+decoding="async" width="1170" height="658" alt="Facade clad in dark gray ACM with a 6mm solid polycarbonate awning.">
     </div>
   </div>
 
 <div class="container sobre-flex invertido">
     <div class="intro-texto">
-      <h4 style="padding-left: 30px;">Personalized signage Consulting</h4>
+      <span class="titulo-linha"></span>
+<h2 class="intro-titulo">Corporate Visual Communication</h2>
       <p class="texto-geral-sobre">
-        Momentvm Opvs provides comprehensive signage consulting, from technical material specification and custom project development to production, printing, and installation. We work with multiple formats and applications, always prioritizing quality, durability, and brand alignment.
+        Effective visual communication strengthens brand identity, guides customers, and lends a professional touch to any environment. Momentvm Opvs offers comprehensive corporate visual communication services, developing tailored projects for companies, offices, retail stores, clinics, and commercial spaces.
 
-Our approach is strategic and consultative, offering personalized service focused on understanding each client’s needs to deliver efficient corporate, commercial, and institutional signage solutions. Every stage is conducted with planning, technical control, and attention to detail, ensuring results that add value, strengthen brand presence, and deliver clear, functional, and impactful communication.
+Our work encompasses consulting, technical material specification, production, printing, and the installation of visual communication solutions. Each project is designed to balance aesthetics, functionality, and durability, creating organized, modern environments that align with each company's visual identity.
       </p>
     </div>
     <div class="sobre-imagem">
       <img src="../images/led13.webp" loading="lazy"
-decoding="async" alt="Channel letters with LED lighting on a vertical garden">
+decoding="async" width="1170" height="658" alt="Channel letters with LED lighting on a vertical garden">
     </div>
   </div>
 
   <div class="container intro-flex">
     <div class="intro-texto">
-      <h4 style="padding-left: 30px;">Specialists in Adhesives and Architectural Wraps</h4>
+      <span class="titulo-linha"></span>
+<h2 class="intro-titulo">Architectural and Corporate Wrapping</h2>
       <p class="texto-geral-sobre">
-        Discover Momentvm Opvs’ premium artistic wrapping service, ideal for transforming walls, floors, furniture, and residential or corporate spaces with speed, precision, and superior finishing standards. We work with decorative and architectural wraps using high-quality, durable materials suitable for multiple surfaces and applications.
+        Architectural wrapping is a practical alternative for refreshing furniture, walls, doors, glass surfaces, and interiors without the need for renovations. Momentvm Opvs executes corporate and residential wrapping projects using high-performance adhesive films designed to deliver a sophisticated finish, resilience, and long-lasting durability.
 
-We deliver residential and corporate wrapping projects with customized solutions that renew environments without construction, ensuring fast, clean, and efficient installation. Our services are executed by specialized professionals, guaranteeing artistic finishes, aesthetic sophistication, and space enhancement. Momentvm Opvs is a reference in artistic wrapping, combining design, functionality, and excellence in every detail.
-      </p>
+Each application is carried out by specialized professionals, ensuring precision in the details and an excellent finish. We develop customized solutions that transform environments, enhance the value of spaces, and offer a quick, clean, and cost-effective renovation.</p>
     </div>
     <div class="intro-imagem">
       <img src="../images/Cabinet-2-1170x658.webp" loading="lazy"
-decoding="async" alt="Complete furniture wrapping with high-gloss lacquer adhesive">
+decoding="async" width="1170" height="658" alt="Complete furniture wrapping with high-gloss lacquer adhesive">
     </div>
   </div>
 
   <div class="container sobre-flex invertido">
     <div class="intro-texto">
-      <h4 style="padding-left: 30px;">Special Projects</h4>
+      <span class="titulo-linha"></span>
+<h2 class="intro-titulo">Special Projects and 3D Printing</h2>
       <p class="texto-geral-sobre">
         Momentvm Opvs’ extensive experience in signage enables projects at various scales, from custom acrylic trophies, signage, and promotional pieces to large-scale visual installations on commercial and corporate building facades. We deliver complete solutions that integrate design, premium materials, and precise technical execution.
 
@@ -322,74 +330,90 @@ Our portfolio includes small, medium, and large-scale projects, all executed wit
     </div>
     <div class="sobre-imagem">
       <img src="../images/Fachadas-10-1170x658.jpg" loading="lazy"
-decoding="async" alt="Channel letters with LED lighting on a vertical garden">
+decoding="async" width="1170" height="658" alt="ACM facade with acrylic lettering installed at Unimed.">
     </div>
   </div>
 </section>
 
 <section class="final">
 	<div class="intro-texto">
-      <h5>You imagine it, we make it real.</h5>
+      <h3>You imagine it, we make it real.</h3>
     </div>
+     <div class="final">
+        <a href="https://wa.me/5511940881109?text=Hello,%20I%20would%20like%20more%20information%20about%20your%20services."
+           class="cta-final"
+           target="_blank"
+           rel="noopener"
+           aria-label="Solicitar orçamento pelo WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+    Ask for a Quotation
+        </a>
+    </div>
+</section>
 <div>    <a href="#topo" class="back-to-top" aria-label="Voltar ao topo">
   <img src="../images/up.svg">
 </a></div>
-</section>
+<footer id="footer">
 
-<section id="footer">
-<div class="footer">
-  <div class="footer-container">
-    
-    <div class="footer-icons-center">
+  <div class="footer">
+    <div class="footer-container">
+
+      <!-- Endereço à esquerda -->
+      <div class="footer-info texto-geral">
+        <p class="footer-address">
+          Av. Eng. Heitor Antonio Eiras Garcia, 6363.<br>
+          05564-200 • Jd. Esmeralda • São Paulo • SP
+        </p>
+      </div>
+
+      <!-- Logo no centro -->
+      <div class="footer-logo">
+        <img src="../../images/mo-logo-header.svg" alt="Momentvm Opvs">
+      </div>
+
+      <!-- Ícones à direita -->
+      <div class="footer-icons-center">
         <a href="https://wa.me/5511940881109?text=Hello,%20I%20would%20like%20more%20information%20about%20your%20services.
 " target="_blank" aria-label="WhatsApp">
-          <img src="../images/logo-whattsapp.png" alt="Contato pelo WhatsApp">
+          <img src="../../images/logo-whattsapp.png" alt="Contato pelo WhatsApp">
         </a>
 
-        <a href="https://instagram.com/momentvm.opvs" target="_blank" aria-label="Instagram">
-          <img src="../images/logo-instagram.png" alt="Perfil da Momentvm Opvs no Instagram">
+        <a href="https://instagram.com/momentvm.opvs" target="_blank" rel="noopener" aria-label="Instagram">
+          <img src="../../images/logo-instagram.png" alt="Perfil da Momentvm Opvs no Instagram">
         </a>
 
         <a href="mailto:momentvmopvs@gmail.com" aria-label="E-mail">
-          <img src="../images/logo-email.png" alt="E-mail">
+          <img src="../../images/logo-email.png" alt="E-mail">
         </a>
 
-        <a href="https://www.google.com/maps?ll=-23.599197,-46.783962&z=11&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=12266452507739055735" target="_blank" aria-label="Location">
-          <img src="../images/logo-local.png" alt="Location">
+        <a href="https://www.google.com/maps?ll=-23.599197,-46.783962&z=11&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=12266452507739055735" target="_blank" rel="noopener" aria-label="Localização">
+          <img src="../../images/logo-local.png" alt="Localização da Momentvm Opvs">
         </a>
       </div>
 
-    <div class="footer-logo">
-      <img src="../images/mo-logo-header.svg" alt="Momentvm Opvs">
     </div>
-
-    <div class="footer-info texto-geral">
-      <p class="footer-address">
-        Av. Eng. Heitor Antonio Eiras Garcia, 6363.<br>
-        05564-200 • Jd. Esmeralda • São Paulo • SP
-      </p>
-      </div>
   </div>
-</div>
 
   <div class="footer-bottom texto-geral">
-      <div class="footer-links">
-      <a href="/en/Privacy Policy.pdf" target="_blank">Privacy Policy</a>
-      <span>|</span>
-      <a href="/en/Terms of Use.pdf" target="_blank">Terms of Use</a>
-      <span>|</span>
-      <a href="/en/Cookie Policy.pdf" target="_blank">Cookies Policy</a>
-      <span>|</span>
-      <a href="/en/faq.html" target="_blank"><strong>FAQ</strong></a>
+    <div class="footer-links">
+    <a href="/en/privacy-policy.pdf" target="_blank">Privacy Policy</a>
+    <span>|</span>
+    <a href="/en/terms-of-use.pdf" target="_blank">Terms of Use</a>
+    <span>|</span>
+    <a href="/en/cookie-policy.pdf" target="_blank">Cookie Policy</a>
+    <span>|</span>
+    <a href="/en/faq.html" target="_blank"><strong>FAQ</strong></a>
+
     </div>
+
     <p>
-  <strong>
-    &copy; 2026 Momentvm Opvs. Developed by Momentvm Opvs. All rights reserved.
-    <!--<br<br>
-    &copy; 2026 Momentvm Opvs. Website developed by Momentvm Opvs. All rights reserved.-->
-  </strong><br>Website last updated on:
-    <span id="last-updated"></span></p>
+      <strong>
+        &copy; 2026 Momentvm Opvs. Development: Momentvm Opvs. All rights reserved.
+    </strong><br>Website last updated on: 
+      <span id="last-updated"></span>
+    </p>
   </div>
+
 </footer>	
 </section>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
@@ -412,48 +436,7 @@ decoding="async" alt="Channel letters with LED lighting on a vertical garden">
     });
   });
 </script>
-<script type="application/ld+json" defer>
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Momentvm Opvs",
-  "url": "https://momentvmopvs.com",
-  "image": "https://momentvmopvs.com/./images/mo-logo-oficial.png",
-  "description": "Serviços de comunicação visual com foco em fachadas em ACM e letras acrílicas com iluminação LED para recepções e ambientes corporativos, unindo design, visibilidade e acabamento profissional.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Av. Eng. Heitor Antonio Eiras Garcia, 6363",
-    "addressLocality": "São Paulo",
-    "addressRegion": "SP",
-    "postalCode": "05564-200",
-    "addressCountry": "BR"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "-23.5991535",
-    "longitude": "-46.783970"
-  },
-  "openingHours": "Mo-Fr 09:00-18:00",
-  "telephone": "+55-11-94088-1109",
-  "priceRange": "a consultar",
-  "areaServed": {
-    "@type": "Place",
-    "name": "São Paulo e região"
-  },
-  "keywords": [
-    "Fachadas em ACM",
-    "Letras Acrílicas com LED",
-    "comunicação visual corporativa",
-    "Fachadas modernas e sinalização corporativa",
-    "sinalização visual iluminada"
-  ],
-  "sameAs": [
-    "https://www.instagram.com/momentvm.opvs",
-    "https://www.facebook.com/momentvmopvs"
-  ]
-}
-</script>
-<script type="application/ld+json" defer>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -461,20 +444,48 @@ decoding="async" alt="Channel letters with LED lighting on a vertical garden">
       "@type": "Organization",
       "@id": "https://momentvmopvs.com#organization",
       "name": "Momentvm Opvs",
-      "url": "https://momentvmopvs.com",
+      "url": "https://momentvmopvs.com/",
       "logo": "https://momentvmopvs.com/images/mo-logo-header.svg",
+      "owns": {
+        "@id": "https://momentvmopvs.com#localbusiness"
+      },
       "sameAs": [
         "https://www.instagram.com/momentvm.opvs",
         "https://www.facebook.com/momentvmopvs"
       ]
     },
     {
-      "@type": "LocalBusiness",
+  "@type": "WebSite",
+  "@id": "https://momentvmopvs.com#website",
+  "url": "https://momentvmopvs.com/",
+  "name": "Momentvm Opvs",
+  "publisher": {
+    "@id": "https://momentvmopvs.com#organization"
+  },
+  "inLanguage": "pt-BR"
+},
+    {
+      
+      "@type": [
+        "LocalBusiness",
+        "ProfessionalService"
+      ],
       "@id": "https://momentvmopvs.com#localbusiness",
+      "parentOrganization": {
+        "@id": "https://momentvmopvs.com#organization"
+      },
       "name": "Momentvm Opvs",
-      "image": "https://momentvmopvs.com/images/Paredes-1-1170x658.webp",
-      "url": "https://momentvmopvs.com",
+      "image": "https://momentvmopvs.com/images/mo-logo-oficial.png",
+      "logo": "https://momentvmopvs.com/images/mo-logo-header.svg",
+      "url": "https://momentvmopvs.com/",
+      "mainEntityOfPage": {
+      "@id": "https://momentvmopvs.com#webpage"
+      },
       "telephone": "+55 11 94088-1109",
+      "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "São Paulo e Região Metropolitana"
+      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Engenheiro Heitor Antonio Eiras Garcia, 6363",
@@ -492,18 +503,37 @@ decoding="async" alt="Channel letters with LED lighting on a vertical garden">
         "Mo-Fr 09:00-18:00",
         "Sa 09:00-13:00"
       ],
-      "priceRange": "R$",
-      "description": "Serviços de envelopamento e comunicação visual com acabamento de alto padrão em São Paulo e região metropolitana.",
+      "priceRange": "Sob consulta",
+      "description": "Empresa especializada em fachadas em ACM, comunicação visual corporativa, letras-caixa, sinalização empresarial, envelopamento arquitetônico e projetos especiais para empresas em São Paulo.",
       "sameAs": [
         "https://www.instagram.com/momentvm.opvs",
         "https://www.facebook.com/momentvmopvs"
-      ],
-      "parentOrganization": {
-        "@id": "https://momentvmopvs.com#organization"
-      }
+      ]
     },
     {
+  "@type": "WebPage",
+  "@id": "https://momentvmopvs.com/#webpage",
+  "url": "https://momentvmopvs.com/",
+  "name": "Momentvm Opvs | Comunicação Visual Corporativa",
+  "description": "Empresa especializada em fachadas em ACM, comunicação visual corporativa, letras-caixa, sinalização, envelopamento arquitetônico e projetos especiais em São Paulo.",
+  "isPartOf": {
+    "@id": "https://momentvmopvs.com#website"
+  },
+  "about": {
+    "@id": "https://momentvmopvs.com#localbusiness"
+  },
+  "breadcrumb": {
+    "@id": "https://momentvmopvs.com#breadcrumb"
+  },
+  "primaryImageOfPage": {
+  "@type": "ImageObject",
+  "url": "https://momentvmopvs.com/images/mo-logo-oficial.png"
+},
+  "inLanguage": "pt-BR"
+},
+    {
       "@type": "BreadcrumbList",
+      "@id": "https://momentvmopvs.com#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -514,95 +544,117 @@ decoding="async" alt="Channel letters with LED lighting on a vertical garden">
       ]
     },
     {
-      "@type": "Service",
-      "name": "Envelopamento de Móveis",
-      "image": "https://momentvmopvs.com/images/Cabinet-1-1170x658.webp",
-      "description": "Envelopamento de móveis",
-      "url": "https://momentvmopvs.com/envelopamento.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Papel de Parede",
-      "image": "https://momentvmopvs.com/images/Paredes-1-1170x658.webp",
-      "description": "Aplicação de papel de parede decorativo.",
-      "url": "https://momentvmopvs.com/envelopamento.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Envelopamento de Portas",
-      "image": "https://momentvmopvs.com/images/Portas-1-1170x658.jpg",
-      "description": "Envelopamento decorativo de portas.",
-      "url": "https://momentvmopvs.com/envelopamento.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Envelopamento de Veículos",
-      "image": "https://momentvmopvs.com/images/Vehicle-1-1170x658.jpg",
-      "description": "Envelopamento automotivo para proteção e personalização.",
-      "url": "https://momentvmopvs.com/envelopamento.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Insulfilm e Jateados",
-      "image": "https://momentvmopvs.com/images/Peliculas-1-1170x658.jpg",
-      "description": "Instalação de películas decorativas e funcionais.",
-      "url": "https://momentvmopvs.com/peliculas.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Envelopamento de Totens",
-      "image": "https://momentvmopvs.com/images/Totens-1-1170x658.jpg",
-      "description": "Envelopamento para sinalização e publicidade em totens.",
-      "url": "https://momentvmopvs.com/envelopamento.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Fachadas em ACM",
-      "image": "https://momentvmopvs.com/images/Fachadas-6-1170x658.jpg",
-      "description": "Fachadas modernas em ACM para comércios e empresas.",
-      "url": "https://momentvmopvs.com/envelopamento.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Envelopamento de Eletrodomésticos",
-      "image": "https://momentvmopvs.com/images/Eletrodomesticos-1-1170x658.jpg",
-      "description": "Personalização e renovação visual de eletrodomésticos.",
-      "url": "https://momentvmopvs.com/envelopamento.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Projetos Especiais e Cenografia",
-      "image": "https://momentvmopvs.com/images/especiais-7-1170x658.jpg",
-      "description": "Projetos personalizados para eventos, vitrines e decorações temáticas.",
-      "url": "https://momentvmopvs.com/especiais.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    },
-    {
-      "@type": "Service",
-      "name": "Letras em acrílico e corte-laser",
-      "image": "https://momentvmopvs.com/images/letras-1-1170x658.jpg",
-      "description": "Letras recortadas para fachadas, ambientes internos e sinalização.",
-      "url": "https://momentvmopvs.com/acrilico.html",
-      "areaServed": { "@type": "Place", "name": "São Paulo, SP" },
-      "provider": { "@id": "https://momentvmopvs.com#organization" }
-    }
+  "@type": "Service",
+  "serviceType": "Fachadas em ACM",
+  "@id": "https://momentvmopvs.com#fachadas-acm",
+  "name": "Fachadas em ACM",
+  "image": "https://momentvmopvs.com/images/Fachada-Contabify.webp",
+  "description": "Projeto, fabricação e instalação de fachadas em ACM para empresas, comércios, escritórios e indústrias.",
+  "url": "https://momentvmopvs.com/fachadas.html",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "São Paulo e Região Metropolitana"
+  },
+  "provider": {
+    "@id": "https://momentvmopvs.com#localbusiness"
+  }
+},
+{
+  "@type": "Service",
+  "serviceType": "Comunicação Visual Corporativa",
+  "@id": "https://momentvmopvs.com#comunicacao-visual-corporativa",
+  "name": "Comunicação Visual Corporativa",
+  "image": "https://momentvmopvs.com/images/led13.webp",
+  "description": "Projetos completos de comunicação visual corporativa, identidade visual, sinalização e ambientação empresarial.",
+  "url": "https://momentvmopvs.com/",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "São Paulo e Região Metropolitana"
+  },
+  "provider": {
+    "@id": "https://momentvmopvs.com#localbusiness"
+  }
+},
+{
+  "@type": "Service",
+  "serviceType": "Letras-caixa",
+  "@id": "https://momentvmopvs.com#letras-caixa",
+  "name": "Letras-caixa e Letreiros",
+  "image": "https://momentvmopvs.com/images/letras-1-1170x658.jpg",
+  "description": "Produção e instalação de letras-caixa em acrílico, PVC, aço inox e alumínio com ou sem iluminação LED.",
+  "url": "https://momentvmopvs.com/acrilico.html",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "São Paulo e Região Metropolitana"
+  },
+  "provider": {
+    "@id": "https://momentvmopvs.com#localbusiness"
+  }
+},
+{
+  "@type": "Service",
+  "serviceType": "Sinalização Corporativa",
+  "@id": "https://momentvmopvs.com#sinalizacao-corporativa",
+  "name": "Sinalização Corporativa",
+  "image": "https://momentvmopvs.com/images/Paredes-1-1170x658.webp",
+  "description": "Soluções completas em sinalização interna, externa e comunicação visual para empresas e ambientes corporativos.",
+  "url": "https://momentvmopvs.com/envelopamento.html",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "São Paulo e Região Metropolitana"
+  },
+  "provider": {
+    "@id": "https://momentvmopvs.com#localbusiness"
+  }
+},
+{
+  "@type": "Service",
+  "serviceType": "Envelopamento Arquitetônico",
+  "@id": "https://momentvmopvs.com#envelopamento-arquitetonico",
+  "name": "Envelopamento Arquitetônico",
+  "image": "https://momentvmopvs.com/images/Cabinet-2-1170x658.webp",
+  "description": "Envelopamento arquitetônico de móveis, paredes, portas, vidros e ambientes corporativos utilizando adesivos de alta performance.",
+  "url": "https://momentvmopvs.com/envelopamento.html",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "São Paulo e Região Metropolitana"
+  },
+  "provider": {
+    "@id": "https://momentvmopvs.com#localbusiness"
+  }
+},
+{
+  "@type": "Service",
+  "serviceType": "Projetos Especiais",
+  "@id": "https://momentvmopvs.com#projetos-especiais",
+  "name": "Projetos Especiais",
+  "image": "https://momentvmopvs.com/images/especiais-scaled.webp",
+  "description": "Desenvolvimento de projetos especiais de comunicação visual, cenografia, peças promocionais e soluções personalizadas.",
+  "url": "https://momentvmopvs.com/especiais.html",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "São Paulo e Região Metropolitana"
+  },
+  "provider": {
+  "@id": "https://momentvmopvs.com#localbusiness"
+}
+},
+{
+  "@type": "Service",
+  "serviceType": "Impressão 3D",
+  "@id": "https://momentvmopvs.com#impressao-3d",
+  "name": "Impressão 3D",
+  "image": "https://momentvmopvs.com/images/especiais-7-1170x658.jpg",
+  "description": "Serviços de impressão 3D para peças técnicas, protótipos, componentes personalizados e soluções para empresas.",
+  "url": "https://momentvmopvs.com/especiais.html",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "São Paulo e Região Metropolitana"
+  },
+  "provider": {
+    "@id": "https://momentvmopvs.com#localbusiness"
+  }
+}
   ]
 }
 </script>
