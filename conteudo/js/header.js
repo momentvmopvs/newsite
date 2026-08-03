@@ -34,25 +34,67 @@
   });
 
 });*/
-document.addEventListener('DOMContentLoaded', () => {
-
-  /* =========================
+/* =========================
      Menu Mobile (hambúrguer)
   ========================= */
+document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav');
 
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-    });
+  if (!toggle || !nav) return;
+
+  function closeMenu() {
+    nav.classList.remove('open');
+    toggle.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Abrir menu');
   }
 
+  toggle.addEventListener('click', (event) => {
+    event.stopPropagation();
+
+    const isOpen = nav.classList.toggle('open');
+
+    toggle.classList.toggle('open', isOpen);
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    toggle.setAttribute(
+      'aria-label',
+      isOpen ? 'Fechar menu' : 'Abrir menu'
+    );
+  });
+
+  document.addEventListener('click', (event) => {
+    const clickedInsideMenu = nav.contains(event.target);
+    const clickedToggle = toggle.contains(event.target);
+
+    if (
+      nav.classList.contains('open') &&
+      !clickedInsideMenu &&
+      !clickedToggle
+    ) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && nav.classList.contains('open')) {
+      closeMenu();
+      toggle.focus();
+    }
+  });
+
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (!link.classList.contains('dropdown-toggle')) {
+        closeMenu();
+      }
+    });
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
 
-  const langContainer = document.querySelector(".lang");
+  const langContainer = document.querySelector(".header-languages");
   if (!langContainer) return;
 
   const ptLink = langContainer.querySelector('a[href="/"]');

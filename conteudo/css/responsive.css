@@ -1,11 +1,34 @@
 /* ===============================
    BASE MOBILE (até 767px)
 ================================ */
+@media (max-width: 767px) {
+  .header{
+    background: linear-gradient(
+      90deg,
+      #1b0b7c 0%,
+      #12055b 18%,
+      #070021 32%,
+      #050018 50%,
+      #070021 68%,
+      #12055b 82%,
+      #1b0b7c 100%
+    ) !important;
+  }
 
 html, body {
   overflow-x: hidden;
   max-width: 100%;
 }
+  .sobre-servicos .intro-texto {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+    .sobre-servicos h1 {
+    font-size: 2.2rem;
+    line-height: 1.15;
+  }
 
 /* Containers */
 .container {
@@ -14,7 +37,7 @@ html, body {
 }
 
 /* Grid serviços */
-.grid-servicos {
+.grid-sobre-servicos {
   grid-template-columns: 1fr;
   gap: 20px;
 }
@@ -72,14 +95,35 @@ html, body {
 .services-grid {
   display: block;
 }
-
+}
 /* ===============================
    TABLET (≥768px)
 ================================ */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
 
-  .grid-servicos {
+
+.header{
+
+background:linear-gradient(
+90deg,
+#1b0b7c 0%,
+#18086d 18%,
+#12055b 30%,
+#060022 38%,
+#040018 50%,
+#060022 62%,
+#12055b 70%,
+#18086d 82%,
+#1b0b7c 100%
+)!important;
+
+}
+
+}
+{
+
+  .grid-sobre-servicos {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -106,8 +150,9 @@ html, body {
 ================================ */
 
 @media (min-width: 1024px) {
+  
 
-  .grid-servicos {
+  .grid-sobre-servicos {
     grid-template-columns: repeat(4, 1fr);
   }
 

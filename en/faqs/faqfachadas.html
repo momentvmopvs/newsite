@@ -34,15 +34,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-<link rel="stylesheet" href="../../conteudo/css/estilo.css">
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-<link rel="stylesheet" href="../../conteudo/css/general.css" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="../../conteudo/css/general.css"></noscript>
-<link rel="stylesheet" href="../../conteudo/css/header.css">
-<link rel="stylesheet" href="../../conteudo/css/footer.css">
-<link rel="stylesheet" href="../../conteudo/css/responsive.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <script src="../../conteudo/js/header.js" defer></script>
 <script src="../../conteudo/js/last-updated.js" defer></script>
+
+<link rel="stylesheet" href="../../conteudo/css/estilo.css">
+<link rel="stylesheet" href="../../conteudo/css/header.css">
+<link rel="stylesheet" href="../../conteudo/css/footer.css">
+<link rel="stylesheet" href="../../conteudo/css/paginas-servicos.css">
+<link rel="stylesheet" href="../../conteudo/css/responsive.css">
 </head>
 <body id="topo">
 <!-- Google Tag Manager (noscript) -->
@@ -53,63 +53,143 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header class="header">
   <div class="header-container">
 
-    <!-- LOGO -->
-    <div class="logo">
-      <a href="/en/">
-        <img src="../../images/mo-logo-header.svg" alt="Momentvm Opvs">
+    <!-- IDIOMAS — CANTO ESQUERDO -->
+    <div class="header-languages" aria-label="Seleção de idioma">
+      <a href="/" class="flag" aria-label="Portuguese Version">
+        <img
+          src="/images/br-flag.png"
+          alt=""
+          aria-hidden="true"
+        >
+      </a>
+
+      <a href="/en/" class="flag active" aria-label="English Version">
+        <img
+          src="/images/us-flag.png"
+          alt=""
+          aria-hidden="true"
+        >
       </a>
     </div>
 
-    <!-- DESKTOP MENU -->
+    <!-- MENU -->
     <nav
-    id="menu-principal"
-    class="nav"
-    aria-label="Menu principal"> <ul class="nav-list">
-        <li><a href="/en/">Home</a></li>
-        <li><a href="/en/sobre.html">About Us</a></li>
-        <li class="dropdown">
-          <a href="/en/servicos.html" class="dropdown-toggle">
-            What We Do
-          </a>
+  id="menu-principal"
+  class="nav"
+  aria-label="Menu principal"
+>
+  <!-- MENU ESQUERDO -->
+  <ul class="nav-list nav-list-left">
+    <li>
+      <a href="/en/">Home</a>
+    </li>
 
-          <ul class="dropdown-menu">
-            <li><a href="/en/fachadas.html">ACM Facades</a></li>
-            <li><a href="/en/acrilico.html">Acrylic Letters with LED</a></li>
-            <li><a href="/en/envelopamento.html">Wrapping</a></li>
-            <li><a href="/en/peliculas.html">Window Films</a></li>
-            <li><a href="/en/especiais.html">Special Projects</a></li>
-          </ul>
+    <li>
+      <a href="/en/sobre.html">About Us</a>
+    </li>
+
+    <li class="dropdown">
+      <a
+        href="/en/servicos.html"
+        class="dropdown-toggle"
+        aria-haspopup="true"
+      >
+        Services
+      </a>
+
+      <ul class="dropdown-menu">
+        <li>
+          <a href="/en/fachadas.html">ACM Facades</a>
         </li>
-        <li><a href="/en/blog.html">Blog</a></li>
-        <li><a href="/en/catalogos.html">Digital Catalogues</a></li>
+
+        <li>
+          <a href="/en/acrilico.html">Acrylic letter with LED</a>
+        </li>
+
+        <li>
+          <a href="/en/envelopamento.html" class="active">Wrapping Services</a>
+        </li>
+
+        <li>
+          <a href="/en/peliculas.html">Window Film</a>
+        </li>
+
+        <li>
+          <a href="/en/especiais.html">Special Projects</a>
+        </li>
       </ul>
-    </nav>
+    </li>
+  </ul>
 
-    <!-- ICONS + LANGUAGE -->
-    <div class="header-right">
-      <a href="https://wa.me/5511940881109?text=Hello,%20I%20would%20like%20more%20information%20about%20your%20services.
-" target="_blank" rel="noopener noreferrer" class="icon">    <img src="../../images/logo-whattsapp.png" alt="Contato pelo WhatsApp">
+  <!-- MENU DIREITO -->
+  <ul class="nav-list nav-list-right">
+    <li>
+      <a href="/en/catalogos.html">Virtual Catalogues</a>
+    </li>
+
+    <!--li>
+      <a href="/en/impressao-3d.html">Impressão 3D</a>
+    </li-->
+
+    <li>
+      <a href="/en/blog.html">Blog</a>
+    </li>
+  </ul>
+</nav>
+
+    <!-- LOGO CENTRAL -->
+    <div class="logo">
+      <a href="/en/" aria-label="Momentvm Opvs — Home Page">
+        <img
+          src="/images/mo-logo-header.svg"
+          alt="Momentvm Opvs ogo"
+        >
       </a>
-
-      <a href="https://instagram.com/momentvm.opvs" target="_blank" rel="noopener noreferrer" class="icon">
-        <img src="../../images/logo-instagram.png" alt="Perfil da Momentvm Opvs no Instagram">
-      </a>
-
-      <div class="lang">
-        <a href="/" class="flag"><img src="../../images/br-flag.png" alt="Versão em português"></a>
-        <a href="/en/" class="active flag"><img src="../../images/us-flag.png" alt="Versão em inglês"></a>
-      </div>
-
-      <!-- HAMBURGER -->
-      <button
-    class="menu-toggle"
-    aria-label="Abrir menu"
-    aria-controls="menu-principal"
-    aria-expanded="false">   <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
+
+    <!-- REDES SOCIAIS — CANTO DIREITO -->
+    <div class="header-social">
+      <a
+        href="https://instagram.com/momentvm.opvs"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-icon social-instagram"
+        aria-label="Momentvm Opvs Instagram"
+      >
+        <img
+          src="/images/logo-instagram.png"
+          alt=""
+          aria-hidden="true"
+        >
+      </a>
+
+      <a
+        href="https://wa.me/5511940881109?text=Hello,%20I%20visited%20Momentvm%20Opvs%20website%20Momentvm%20Opvs%20.%20I%20would%20like%20to%20receive%20more%20information."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-icon"
+        aria-label="Speak with Momentvm Opvs on WhatsApp"
+      >
+        <img
+          src="/images/logo-whattsapp.png"
+          alt=""
+          aria-hidden="true"
+        >
+      </a>
+    </div>
+
+    <!-- MENU MOBILE -->
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Abrir menu"
+      aria-controls="menu-principal"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
   </div>
 </header>
@@ -241,16 +321,32 @@ decoding="async" alt="Ia Poke storefront in ACM with LED lighting">
     <div>    <a href="#topo" class="back-to-top" aria-label="Voltar ao topo">
   <img src="../../images/up.svg">
 </a></div>
-<section id="footer">
-<div class="footer">
-  <div class="footer-container">
-    
-    <div class="footer-icons-center">
-        <a href="https://wa.me/5511940881109?text=Olá,%20gostaria%20de%20receber%20mais%20informações%20sobre%20seus%20serviços." target="_blank" aria-label="WhatsApp">
+<footer id="footer">
+
+  <div class="footer">
+    <div class="footer-container">
+
+      <!-- Endereço à esquerda -->
+      <div class="footer-info texto-geral">
+        <p class="footer-address">
+          Av. Eng. Heitor Antonio Eiras Garcia, 6363.<br>
+          05564-200 • Jd. Esmeralda • São Paulo • SP
+        </p>
+      </div>
+
+      <!-- Logo no centro -->
+      <div class="footer-logo">
+        <img src="../../images/mo-logo-header.svg" alt="Momentvm Opvs">
+      </div>
+
+      <!-- Ícones à direita -->
+      <div class="footer-icons-center">
+        <a href="https://wa.me/5511940881109?text=Hello,%20I%20would%20like%20more%20information%20about%20your%20services.
+" target="_blank" aria-label="WhatsApp">
           <img src="../../images/logo-whattsapp.png" alt="Contato pelo WhatsApp">
         </a>
 
-        <a href="https://instagram.com/momentvm.opvs" target="_blank" aria-label="Instagram">
+        <a href="https://instagram.com/momentvm.opvs" target="_blank" rel="noopener" aria-label="Instagram">
           <img src="../../images/logo-instagram.png" alt="Perfil da Momentvm Opvs no Instagram">
         </a>
 
@@ -258,46 +354,34 @@ decoding="async" alt="Ia Poke storefront in ACM with LED lighting">
           <img src="../../images/logo-email.png" alt="E-mail">
         </a>
 
-        <a href="https://www.google.com/maps?ll=-23.599197,-46.783962&z=11&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=12266452507739055735" target="_blank" aria-label="Localização">
+        <a href="https://www.google.com/maps?ll=-23.599197,-46.783962&z=11&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=12266452507739055735" target="_blank" rel="noopener" aria-label="Localização">
           <img src="../../images/logo-local.png" alt="Localização da Momentvm Opvs">
         </a>
       </div>
 
-      <!-- Lado direito -->
-    <div class="footer-logo">
-      <img src="../../images/mo-logo-header.svg" alt="Momentvm Opvs">
     </div>
-
-    <!-- Lado esquerdo -->
-    <div class="footer-info texto-geral">
-      <p class="footer-address">
-        Av. Eng. Heitor Antonio Eiras Garcia, 6363.<br>
-        05564-200 • Jd. Esmeralda • São Paulo • SP
-      </p>
-      </div>
-      
-    </div>
-
-    
   </div>
-</div>
 
   <div class="footer-bottom texto-geral">
-      <div class="footer-links">
-      <a href="/en/Privacy Policy.pdf" target="_blank">Privacy Policy</a>
-      <span>|</span>
-      <a href="/en/Terms of Use.pdf" target="_blank">Terms of Use</a>
-      <span>|</span>
-      <a href="/en/Cookie Policy.pdf" target="_blank">Cookies Policy</a>
-      <span>|</span>
-      <a href="/en/faq.html" target="_blank"><strong>FAQ</strong></a>
+    <div class="footer-links">
+    <a href="/en/privacy-policy.pdf" target="_blank">Privacy Policy</a>
+    <span>|</span>
+    <a href="/en/terms-of-use.pdf" target="_blank">Terms of Use</a>
+    <span>|</span>
+    <a href="/en/cookie-policy.pdf" target="_blank">Cookie Policy</a>
+    <span>|</span>
+    <a href="/en/faq.html" target="_blank"><strong>FAQ</strong></a>
+
     </div>
+
     <p>
-  <strong>
-    &copy; 2026 Momentvm Opvs. Developed by Momentvm Opvs. All rights reserved.
-  </strong><br>
- Website last updated on: <span id="last-updated"></span></p>
+      <strong>
+        &copy; 2026 Momentvm Opvs. Development: Momentvm Opvs. All rights reserved.
+    </strong><br>Website last updated on: 
+      <span id="last-updated"></span>
+    </p>
   </div>
+
 </footer>	
 </section>
 <script>
