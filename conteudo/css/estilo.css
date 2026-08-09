@@ -555,6 +555,141 @@ display:inline-block;
     transform:translateY(-2px);
 }
 
+/*=========================================================
+  PARCEIROS - HOME
+=========================================================*/
+
+.parceiros-home {
+  padding: 68px 20px 74px;
+  background-color: #ffffff;
+}
+
+.parceiros-home-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.parceiros-home .titulo-secao {
+  margin-bottom: 22px;
+}
+
+.parceiros-home h2 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.12;
+  color: #0b004a;
+}
+
+.parceiros-home p {
+  max-width: 860px;
+  margin: 0 0 42px;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.68;
+  color: #4a4a4a;
+}
+
+.parceiros-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.parceiro-logo {
+  min-height: 118px;
+  padding: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(
+      135deg,
+      rgba(216, 166, 0, 0.45),
+      rgba(11, 0, 74, 0.12)
+    ) border-box;
+  border: 1px solid transparent;
+
+  box-shadow: 0 14px 34px rgba(11, 0, 74, 0.07);
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.parceiro-logo img {
+  display: block;
+  max-width: 145px;
+  max-height: 62px;
+  width: auto;
+  height: auto;
+
+  filter: grayscale(100%);
+  opacity: 0.78;
+
+  transition:
+    filter 0.28s ease,
+    opacity 0.28s ease,
+    transform 0.28s ease;
+}
+
+@media (hover: hover) {
+  .parceiro-logo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 42px rgba(11, 0, 74, 0.12);
+  }
+
+  .parceiro-logo:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+@media (max-width: 1100px) {
+  .parceiros-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .parceiros-home {
+    padding: 52px 16px 58px;
+  }
+
+  .parceiros-home h2 {
+    font-size: clamp(1.85rem, 8vw, 2.5rem);
+  }
+
+  .parceiros-home p {
+    margin-bottom: 32px;
+    font-size: 1rem;
+    line-height: 1.62;
+  }
+
+  .parceiros-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .parceiro-logo {
+    min-height: 92px;
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .parceiro-logo img {
+    max-width: 118px;
+    max-height: 48px;
+  }
+}
+
 /* =====SERVIÇOS COMPLEMENTARES ===== */
 .sobre-servicos-relacionados{
     max-width:1100px;
