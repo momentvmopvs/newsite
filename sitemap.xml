@@ -213,7 +213,19 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
+<url>
+  <loc>https://momentvmopvs.com/articles/fachada-em-acm-vantagens.html</loc>
+  <lastmod>2026-08-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
 
+<url>
+  <loc>https://momentvmopvs.com/en/articles/acm-facade-benefits.html</loc>
+  <lastmod>2026-08-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
   <!-- FAQs -->
   <url>
     <loc>https://momentvmopvs.com/faqs/faqfachadas.html</loc>
