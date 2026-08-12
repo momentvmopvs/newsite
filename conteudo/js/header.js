@@ -93,6 +93,48 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const languageLinks = document.querySelectorAll(".header-languages a");
+
+  languageLinks.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      const href = link.getAttribute("href") || "";
+
+      let targetLang = null;
+
+      if (href.includes("/en/")) {
+        targetLang = "en";
+      } else {
+        targetLang = "pt-BR";
+      }
+
+      const alternate = document.querySelector(
+        `link[rel="alternate"][hreflang="${targetLang}"]`
+      );
+
+      if (alternate && alternate.getAttribute("href")) {
+        event.preventDefault();
+
+        const alternateHref = alternate.getAttribute("href");
+
+        try {
+          const alternateUrl = new URL(alternateHref);
+
+          if (
+            window.location.hostname === "127.0.0.1" ||
+            window.location.hostname === "localhost"
+          ) {
+            window.location.href = alternateUrl.pathname;
+          } else {
+            window.location.href = alternateUrl.href;
+          }
+        } catch (error) {
+          window.location.href = alternateHref;
+        }
+      }
+    });
+  });
+});
+/*document.addEventListener("DOMContentLoaded", function () {
 
   const langContainer = document.querySelector(".header-languages");
   if (!langContainer) return;
@@ -142,4 +184,4 @@ window.addEventListener('scroll', () => {
     } else {
       backToTop.classList.remove('show');
     }
-  });
+  });*/
