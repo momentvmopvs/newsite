@@ -555,6 +555,33 @@ display:inline-block;
     transform:translateY(-2px);
 }
 
+.final-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.cta-final-secundario {
+  display: inline-block;
+  padding: 13px 36px;
+  background: transparent;
+  color: #0b004a;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid #0b004a;
+  transition: .3s;
+}
+
+.cta-final-secundario:hover {
+  background: #0b004a;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
 /*=========================================================
   PARCEIROS - HOME
 =========================================================*/
@@ -956,6 +983,23 @@ img {
   object-fit: cover;
   display:block;
 }
+
+/* Variante para exibir uma marca/logo (imagem pequena e vetorial em essência)
+   em vez de uma foto — evita esticar um arquivo pequeno até ficar borrado */
+.sobre-imagem-logo {
+  background-color: #f7f6fb;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.sobre-imagem-logo img {
+  width: auto;
+  height: auto;
+  max-width: 280px;
+  max-height: 70%;
+  object-fit: contain;
+}
 /* ===== PARCEIRO ===== */
 
 .parceiro-bullet {
@@ -1168,6 +1212,440 @@ img {
 
 .faq-item.open .faq-resposta {
   display: block;
+}
+
+/*=========================================================
+  CARROSSEL DE LOGOS - MARCAS ATENDIDAS
+=========================================================*/
+
+.marcas-home .marcas-carousel {
+  position: relative !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  padding: 8px 0 !important;
+}
+
+.marcas-home .marcas-track {
+  display: flex !important;
+  align-items: center !important;
+  gap: 18px !important;
+  width: max-content !important;
+  animation: marcas-marquee 30s linear infinite !important;
+}
+
+.marcas-home .marcas-carousel:hover .marcas-track {
+  animation-play-state: paused !important;
+}
+
+.marcas-home .marca-logo {
+  width: 180px !important;
+  min-width: 180px !important;
+  height: 104px !important;
+  padding: 18px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border-radius: 16px !important;
+  border: 1px solid rgba(11, 0, 74, 0.08) !important;
+
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(
+      135deg,
+      rgba(216, 166, 0, 0.36),
+      rgba(11, 0, 74, 0.10)
+    ) border-box !important;
+
+  box-shadow: 0 12px 28px rgba(11, 0, 74, 0.06) !important;
+  text-decoration: none !important;
+}
+
+.marcas-home .marca-logo img {
+  display: block !important;
+
+  max-width: 132px !important;
+  max-height: 64px !important;
+
+  width: auto !important;
+  height: auto !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  filter: grayscale(100%) !important;
+  opacity: 0.78 !important;
+
+  transform: none !important;
+
+  transition:
+    filter 0.28s ease,
+    opacity 0.28s ease,
+    transform 0.28s ease !important;
+}
+
+@media (hover: hover) {
+  .marcas-home .marca-logo:hover img {
+    filter: grayscale(0%) !important;
+    opacity: 1 !important;
+    transform: scale(1.04) !important;
+  }
+}
+
+@keyframes marcas-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* Responsivo */
+
+@media (max-width: 767px) {
+  .marcas-home .marcas-track {
+    gap: 14px !important;
+    animation-duration: 24s !important;
+  }
+
+  .marcas-home .marca-logo {
+    width: 150px !important;
+    min-width: 150px !important;
+    height: 88px !important;
+    padding: 14px !important;
+    border-radius: 14px !important;
+  }
+
+  .marcas-home .marca-logo img {
+    max-width: 112px !important;
+    max-height: 56px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+}
+.marcas-home .marca-logo.marca-logo-promoeventos img {
+  display: block !important;
+
+  width: 64px !important;
+  height: 64px !important;
+
+  max-width: 64px !important;
+  max-height: 64px !important;
+
+  min-width: 64px !important;
+  min-height: 64px !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  aspect-ratio: 1 / 1 !important;
+
+  transform: none !important;
+}
+
+/*=========================================================
+  FAIXA DE AUTORIDADE (30 anos / atendimento nacional)
+=========================================================*/
+
+.authority-strip {
+  background-color: #0b004a;
+  padding: 14px 20px;
+}
+
+.authority-strip-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 18px;
+  text-align: center;
+}
+
+.authority-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.authority-item i {
+  color: #d8a600;
+}
+
+.authority-sep {
+  color: #d8a600;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .authority-item {
+    font-size: 0.82rem;
+  }
+}
+
+/*=========================================================
+  FORMULÁRIO DE CONTATO B2B
+=========================================================*/
+
+.b2b-form-section {
+  background-color: #f7f6fb;
+  padding: 64px 20px;
+}
+
+.b2b-form-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.b2b-form-intro {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.b2b-form-intro h2 {
+  color: #0b004a;
+  margin: 14px 0 10px;
+}
+
+.b2b-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.b2b-form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.b2b-form-field-full {
+  grid-column: 1 / -1;
+}
+
+.b2b-form-field label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0b004a;
+  margin-bottom: 6px;
+}
+
+.b2b-form-field input,
+.b2b-form-field textarea {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  padding: 12px 14px;
+  border: 1px solid rgba(11, 0, 74, 0.18);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  resize: vertical;
+}
+
+.b2b-form-field input:focus,
+.b2b-form-field textarea:focus {
+  outline: none;
+  border-color: #d8a600;
+  box-shadow: 0 0 0 3px rgba(216, 166, 0, 0.18);
+}
+
+.b2b-form-submit {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0b004a;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.b2b-form-submit:hover {
+  background-color: #d8a600;
+  color: #0b004a;
+}
+
+.b2b-form-nota {
+  text-align: center;
+  font-size: 0.82rem;
+  color: #686868;
+  margin-top: 12px;
+}
+
+.b2b-form-container-wide {
+  max-width: 900px;
+}
+
+.b2b-form-subtitulo {
+  color: #0b004a;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  margin: 28px 0 6px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(11, 0, 74, 0.12);
+}
+
+.b2b-form-subtitulo:first-of-type {
+  margin-top: 0;
+}
+
+.b2b-form-distancia {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0 6px;
+}
+
+.b2b-form-distancia-status {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #686868;
+  transition: color 0.2s ease;
+}
+
+.b2b-form-distancia-status.status-carregando {
+  font-style: normal;
+  font-weight: 600;
+  color: #d8a600;
+}
+
+.b2b-form-distancia-status.status-ok {
+  font-style: normal;
+  font-weight: 600;
+  color: #0b004a;
+}
+
+.b2b-form-distancia-status.status-ok::before {
+  content: "✓ ";
+  color: #d8a600;
+}
+
+.b2b-form-distancia-status.status-erro {
+  font-style: normal;
+  font-weight: 500;
+  color: #a73535;
+}
+
+.b2b-form-btn-secundario {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #0b004a;
+  background-color: #ffffff;
+  border: 1px solid rgba(11, 0, 74, 0.28);
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.b2b-form-btn-secundario:hover {
+  background-color: #f0eef8;
+  border-color: #0b004a;
+}
+
+.orc-servico-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 0.7fr 1fr auto;
+  gap: 14px;
+  align-items: end;
+  padding: 16px 0;
+  border-top: 1px solid rgba(11, 0, 74, 0.12);
+}
+
+.orc-servico-row:first-of-type {
+  border-top: 0;
+}
+
+.orc-servico-row .b2b-form-field {
+  margin-bottom: 0;
+}
+
+.orc-servico-row select {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  padding: 12px 14px;
+  border: 1px solid rgba(11, 0, 74, 0.18);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.b2b-form-btn-remover {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #a73535;
+  background-color: #fff0f0;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.b2b-form-btn-remover:hover {
+  background-color: #ffe0e0;
+}
+
+@media (max-width: 900px) {
+  .orc-servico-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .b2b-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .orc-servico-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Versão compacta do carrossel de logos, usada em páginas de serviço */
+.marcas-home-compacta {
+  margin-top: var(--header-height);
+  padding: 28px 0 !important;
+}
+
+/* Quando a faixa de logos antecede o hero de "sobre-servicos",
+   remove a margem duplicada que normalmente afasta esse bloco do header fixo */
+.servicos-apos-logos {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 1050px) {
+  .marcas-home-compacta {
+    margin-top: 0;
+    padding-top: 75px !important;
+  }
+}
+
+.marcas-home-legenda {
+  text-align: center;
+  font-weight: 600;
+  color: #0b004a;
+  margin-bottom: 12px;
 }
 
 /*==========BLOG==========*/

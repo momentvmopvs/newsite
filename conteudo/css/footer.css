@@ -83,6 +83,12 @@
   height: 40px;
 }
 
+.footer-icons-center .fa-linkedin {
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 1;
+}
+
 /* Barra inferior */
 .footer-bottom {
   padding: 18px 20px 22px;
