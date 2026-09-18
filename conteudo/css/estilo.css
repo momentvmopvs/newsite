@@ -300,7 +300,7 @@ h5 {
 @media (min-width: 1024px) {
   .swiper-container,
   .swiper-slide {
-    height: calc(100svh - var(--header-height));
+    height: calc(100svh - var(--header-height) + 140px);
     overflow: hidden;
     position: relative;
   }
@@ -408,7 +408,7 @@ h5 {
 @media (min-width: 1200px) {
   .swiper-container,
   .swiper-slide {
-    height: calc(100svh - var(--header-height));
+    height: calc(100svh - var(--header-height) + 140px);
   }
 
   .swiper-slide img {
@@ -1218,11 +1218,33 @@ img {
   CARROSSEL DE LOGOS - MARCAS ATENDIDAS
 =========================================================*/
 
+.marcas-home {
+  padding: 64px 0;
+}
+
+.marcas-home-container > .texto-geral {
+  margin-bottom: 32px;
+}
+
 .marcas-home .marcas-carousel {
   position: relative !important;
   overflow: hidden !important;
   width: 100% !important;
-  padding: 8px 0 !important;
+  padding: 24px 0 !important;
+}
+
+@media (max-width: 600px) {
+  .marcas-home {
+    padding: 44px 0;
+  }
+
+  .marcas-home-container > .texto-geral {
+    margin-bottom: 24px;
+  }
+
+  .marcas-home .marcas-carousel {
+    padding: 16px 0 !important;
+  }
 }
 
 .marcas-home .marcas-track {

@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   color: #000000;
   text-align: center;
-  background: url("/images/404.jpg") no-repeat center/cover;
+  background: url("/images/404.webp") no-repeat center/cover;
 }
 
 .overlay {
