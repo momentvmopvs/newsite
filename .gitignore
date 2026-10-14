@@ -1,0 +1,8 @@
+# Arquivos compactados de backup — não devem ir pro deploy (Cloudflare Pages tem limite de 25MB por arquivo)
+*.zip
+
+# Pasta de exportação temporária pra edição em Photoshop/outras ferramentas
+images/_photoshop-export/
+
+# Pasta de arquivo com imagens sem uso no site (guardadas por segurança, não precisam estar no deploy)
+images/_arquivo-nao-usado/
