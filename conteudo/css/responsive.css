@@ -25,7 +25,8 @@ html, body {
     padding-right: 0;
   }
 
-    .sobre-servicos h1 {
+    .sobre-servicos h1,
+    .sobre-servicos h2.blog-cartao-h1 {
     font-size: 2.2rem;
     line-height: 1.15;
   }

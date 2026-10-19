@@ -470,6 +470,11 @@ display:inline-block;
   cursor: pointer;
 }
 
+/* O CSS do Swiper (carregado depois) reduzia as bolinhas para 8px; mantém a área de toque de 24px */
+.swiper-container .swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+}
 .swiper-pagination-bullet-active {
   background-color: #B8780000 !important; /* cor da bolinha ativa */
   opacity: none;
@@ -1019,7 +1024,18 @@ img {
 .parceiro-final {
   position: relative;
   overflow: hidden;
-  text-align: center;   
+  text-align: center;
+}
+
+/* Assinatura do artigo: antes um h5, mantém o mesmo visual sem quebrar a hierarquia de títulos */
+.parceiro-final .parceiro-assinatura {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #0B004A;
+  padding-bottom: 30px;
+  margin: 0;
 }
 
 /*WIDGET PARCEIRO*/
