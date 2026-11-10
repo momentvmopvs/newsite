@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "newsite",
+  "compatibility_date": "2026-10-23",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": ".",
+    // Serve o 404.html (com status 404) quando a página não existe
+    "not_found_handling": "404-page"
+  }
+}
