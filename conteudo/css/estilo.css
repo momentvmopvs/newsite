@@ -2056,3 +2056,48 @@ font-size:1.4rem;
 }*/
 
   
+
+
+/*=========================================================
+  ARTIGOS RELACIONADOS DO BLOG
+=========================================================*/
+
+.servico-artigos-section {
+  padding: 32px 20px 20px;
+  background-color: #ffffff;
+}
+
+.servico-artigos-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servico-artigos-lista {
+  margin: 0;
+  padding-left: 20px;
+  font-family: 'Inconsolata', sans-serif;
+  color: #4a4a4a;
+}
+
+.servico-artigos-lista li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.servico-artigos-lista li::marker {
+  color: #0B004A;
+}
+
+.servico-artigos-lista a {
+  display: inline-block;
+  padding: 4px 0;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+.servico-artigos-lista a:hover,
+.servico-artigos-lista a:focus-visible {
+  color: #0B004A;
+  text-decoration: underline;
+}
