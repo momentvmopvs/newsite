@@ -1,0 +1,15 @@
+# Arquivos que o Cloudflare (wrangler) NÃO deve publicar como parte do site.
+# O site é publicado a partir da raiz do repositório, então sem esta lista
+# a pasta .git (com arquivos acima do limite de 25 MiB) seria enviada junto.
+
+.git
+.gitignore
+.assetsignore
+wrangler.jsonc
+.wrangler
+node_modules
+.vscode
+.claude
+*.zip
+images/_photoshop-export/
+images/_arquivo-nao-usado/
