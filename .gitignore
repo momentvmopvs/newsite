@@ -6,3 +6,6 @@ images/_photoshop-export/
 
 # Pasta de arquivo com imagens sem uso no site (guardadas por segurança, não precisam estar no deploy)
 images/_arquivo-nao-usado/
+
+# Cache local do wrangler (Cloudflare)
+.wrangler/

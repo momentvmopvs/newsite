@@ -1,13 +1,16 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "newsite",
+  "main": "worker.js",
   "compatibility_date": "2026-10-23",
   "observability": {
     "enabled": true
   },
   "assets": {
     "directory": ".",
-    // Serve o 404.html (com status 404) quando a página não existe
-    "not_found_handling": "404-page"
+    "binding": "ASSETS",
+    // Não remove o .html das URLs (o padrão do Cloudflare redireciona
+    // /sobre.html -> /sobre); index, pastas e 404 ficam com o worker.js
+    "html_handling": "none"
   }
 }
