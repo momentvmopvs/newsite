@@ -1,15 +1,27 @@
-  // Pega a data de modificação do documento
-  const lastUpdated = new Date(document.lastModified);
+// Mostra no rodapé a data da última publicação real do site.
+// A data vem do Cloudflare (worker.js -> /ultima-atualizacao.json) e muda
+// só quando uma nova versão do site é publicada (merge na main).
+(function () {
+  const el = document.getElementById("last-updated");
+  if (!el) return;
 
-  // Formata para dia/mês/ano e hora:minuto
-  const options = {
-    day: '2-digit',
-    month: '2-digit',
-    year: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit'
-  };
+  fetch("/ultima-atualizacao.json")
+    .then((r) => (r.ok ? r.json() : null))
+    .then((info) => {
+      if (!info || !info.data) return;
+      const data = new Date(info.data);
+      if (isNaN(data)) return;
 
-  // Exibe no elemento <span id="last-updated">
-  document.getElementById("last-updated").textContent = 
-    lastUpdated.toLocaleDateString("pt-BR", options).replace(",", " |");
+      el.textContent = data
+        .toLocaleString("pt-BR", {
+          day: "2-digit",
+          month: "2-digit",
+          year: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+          timeZone: "America/Sao_Paulo",
+        })
+        .replace(",", " |");
+    })
+    .catch(() => {});
+})();

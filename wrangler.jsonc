@@ -6,11 +6,18 @@
   "observability": {
     "enabled": true
   },
+  // Data/hora da publicação atual, usada no "Site atualizado em" do rodapé
+  "version_metadata": {
+    "binding": "CF_VERSION_METADATA"
+  },
   "assets": {
     "directory": ".",
     "binding": "ASSETS",
     // Não remove o .html das URLs (o padrão do Cloudflare redireciona
     // /sobre.html -> /sobre); index, pastas e 404 ficam com o worker.js
-    "html_handling": "none"
+    "html_handling": "none",
+    // Toda requisição passa pelo worker.js primeiro, para redirecionar
+    // www e http para https://momentvmopvs.com
+    "run_worker_first": true
   }
 }
