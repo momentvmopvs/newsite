@@ -17,6 +17,14 @@ export default {
       return Response.redirect("https://" + DOMINIO + path + url.search, 301);
     }
 
+    // Data da última publicação do site (rodapé "Site atualizado em")
+    if (path === "/ultima-atualizacao.json") {
+      return Response.json(
+        { data: env.CF_VERSION_METADATA?.timestamp || null },
+        { headers: { "Cache-Control": "public, max-age=300" } }
+      );
+    }
+
     // Arquivo existente (ex.: /sobre.html, imagens, css): entrega direto
     const direto = await env.ASSETS.fetch(request);
     if (direto.status !== 404) return direto;
