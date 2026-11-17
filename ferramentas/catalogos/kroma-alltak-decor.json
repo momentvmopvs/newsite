@@ -1,0 +1,234 @@
+{
+ "linha": "Kroma",
+ "prefixo_titulo": "",
+ "fabricante": "Alltak",
+ "fabricante_exibido": "Alltak Decor",
+ "numeracao": "cartoes",
+ "corte": "nenhum",
+ "pdf": "images/catalogos/mo_kroma_forma.pdf",
+ "capa": "images/mo_kroma_forma.webp",
+ "servico_formulario": "Envelopamento arquitetônico",
+ "titulo": "Revestimento Adesivo Kroma Alltak Decor: Cores Foscas Texturizadas",
+ "meta_descricao": "Cores do revestimento adesivo Kroma Forma, Wood, Rattan e Couro da Alltak Decor, com acabamento fosco texturizado, para móveis, portas e paredes. Aplicação em São Paulo.",
+ "h1": "Revestimento Adesivo Kroma",
+ "intro": [
+  "A linha Kroma, da Alltak Decor, é um revestimento adesivo com acabamento fosco texturizado, em cores lisas (Kroma Forma), madeiras (Kroma Wood) e texturas de rattan e couro. O adesivo acrílico superpermanente adere bem até em superfícies irregulares.",
+  "O filme calandrado polimérico (140 micras, 1,22 m de largura) tem instalação limpa e sem cheiro, é antimofo e antifungo, não propaga chamas e resiste a produtos abrasivos. A durabilidade é de 7 anos em uso interno. Clique em qualquer cor para ampliar e pedir um orçamento com ela."
+ ],
+ "aviso": "As cores podem variar de acordo com o monitor. Antes de fechar o projeto, solicite a amostra física.",
+ "filtros": [
+  [
+   "forma",
+   "Kroma Forma (lisos)"
+  ],
+  [
+   "wood",
+   "Kroma Wood (madeiras)"
+  ],
+  [
+   "texturas",
+   "Rattan e Couro"
+  ]
+ ],
+ "artigo_linha": "o Kroma",
+ "uso": [
+  [
+   "Móveis planejados",
+   "Portas, gavetas e tampos com acabamento fosco aveludado, no estilo dos móveis de linha.",
+   "/articles/envelopamento-de-moveis-renovacao-inteligente.html"
+  ],
+  [
+   "Portas e paredes",
+   "Cores atuais (verde oliva, azul petróleo, fendi) para renovar portas e paredes de destaque.",
+   "/articles/papel-de-parede-autoadesivo.html"
+  ],
+  [
+   "Eletrodomésticos",
+   "O fosco texturizado também combina com geladeiras e eletros embutidos.",
+   "/articles/envelopamento-de-eletrodomesticos.html"
+  ]
+ ],
+ "cores": [
+  {
+   "img": 1,
+   "nome": "Kroma Forma Cinza Fóssil",
+   "codigo": "977KJ03",
+   "tom": "forma"
+  },
+  {
+   "img": 2,
+   "nome": "Kroma Rattan Off White",
+   "codigo": "977KR13",
+   "tom": "texturas"
+  },
+  {
+   "img": 3,
+   "nome": "Kroma Couro Off White",
+   "codigo": "977KC14",
+   "tom": "texturas"
+  },
+  {
+   "img": 4,
+   "nome": "Kroma Forma Azul Petróleo",
+   "codigo": "977KF11",
+   "tom": "forma"
+  },
+  {
+   "img": 5,
+   "nome": "Kroma Forma Verde Primavera",
+   "codigo": "977KF12",
+   "tom": "forma"
+  },
+  {
+   "img": 6,
+   "nome": "Kroma Wood Lérida",
+   "codigo": "977KW06",
+   "tom": "wood"
+  },
+  {
+   "img": 7,
+   "nome": "Kroma Wood Preto Ávila",
+   "codigo": "977KW02",
+   "tom": "wood"
+  },
+  {
+   "img": 8,
+   "nome": "Kroma Forma Cinza Neblina",
+   "codigo": "977KW07",
+   "tom": "forma"
+  },
+  {
+   "img": 9,
+   "nome": "Kroma Forma Preto Absoluto",
+   "codigo": "977KJ04",
+   "tom": "forma"
+  },
+  {
+   "img": 10,
+   "nome": "Kroma Forma Azul Urbano",
+   "codigo": "977KF30",
+   "tom": "forma"
+  },
+  {
+   "img": 11,
+   "nome": "Kroma Forma Azul Boreal",
+   "codigo": "977KF29",
+   "tom": "forma"
+  },
+  {
+   "img": 12,
+   "nome": "Kroma Forma Avelã Cremoso",
+   "codigo": "977KF32",
+   "tom": "forma"
+  },
+  {
+   "img": 13,
+   "nome": "Kroma Forma Merlot",
+   "codigo": "977KF26",
+   "tom": "forma"
+  },
+  {
+   "img": 14,
+   "nome": "Kroma Forma Olaria",
+   "codigo": "977KF25",
+   "tom": "forma"
+  },
+  {
+   "img": 15,
+   "nome": "Kroma Forma Verde Oliva",
+   "codigo": "977KF27",
+   "tom": "forma"
+  },
+  {
+   "img": 16,
+   "nome": "Kroma Forma Noz-Moscada",
+   "codigo": "977KF31",
+   "tom": "forma"
+  },
+  {
+   "img": 17,
+   "nome": "Kroma Forma Aveia",
+   "codigo": "977KJ10",
+   "tom": "forma"
+  },
+  {
+   "img": 18,
+   "nome": "Kroma Forma Gamboge",
+   "codigo": "977KF24",
+   "tom": "forma"
+  },
+  {
+   "img": 19,
+   "nome": "Kroma Forma Fendi",
+   "codigo": "977KF23",
+   "tom": "forma"
+  },
+  {
+   "img": 20,
+   "nome": "Kroma Forma Falésia",
+   "codigo": "977KF28",
+   "tom": "forma"
+  },
+  {
+   "img": 21,
+   "nome": "Kroma Forma Branco Ártico",
+   "codigo": "977KJ05",
+   "tom": "forma"
+  },
+  {
+   "img": 22,
+   "nome": "Kroma Forma Argento",
+   "codigo": "977KJ08",
+   "tom": "forma"
+  },
+  {
+   "img": 23,
+   "nome": "Kroma Forma Grafite",
+   "codigo": "977KJ09",
+   "tom": "forma"
+  }
+ ],
+ "slug": "kroma-alltak-decor",
+ "en": {
+  "titulo": "Alltak Decor Kroma Adhesive Covering: Textured Matte Colors",
+  "meta_descricao": "Colors of Alltak Decor Kroma Forma, Wood, Rattan and Leather adhesive covering, with a textured matte finish, for furniture, doors and walls. Installation in São Paulo, Brazil.",
+  "h1": "Kroma Adhesive Covering",
+  "intro": [
+   "Alltak Decor's Kroma line is an adhesive covering with a textured matte finish, in solid colors (Kroma Forma), woods (Kroma Wood) and rattan and leather textures. Its super-permanent acrylic adhesive holds well even on uneven surfaces.",
+   "The calendered polymeric film (140 microns, 1.22 m wide) installs cleanly and without odor, is anti-mold and anti-fungal, flame retardant and resistant to abrasive products. It lasts 7 years indoors. Click any color to enlarge it and request a quote with it."
+  ],
+  "aviso": "Colors may vary depending on your screen. Before closing the project, ask for the physical sample.",
+  "filtros": [
+   [
+    "forma",
+    "Kroma Forma (solid)"
+   ],
+   [
+    "wood",
+    "Kroma Wood"
+   ],
+   [
+    "texturas",
+    "Rattan and Leather"
+   ]
+  ],
+  "onde": "Where to use Kroma",
+  "uso": [
+   [
+    "Built-in furniture",
+    "Doors, drawers and tops with a velvety matte finish, like factory-made furniture.",
+    "/en/articles/furniture-wrapping.html"
+   ],
+   [
+    "Doors and walls",
+    "Current colors (olive green, petrol blue, greige) to refresh doors and feature walls.",
+    "/en/articles/self-adhesive-wallpaper.html"
+   ],
+   [
+    "Appliances",
+    "The textured matte finish also suits fridges and built-in appliances.",
+    "/en/articles/kitchen-appliance-wrapping.html"
+   ]
+  ]
+ }
+}

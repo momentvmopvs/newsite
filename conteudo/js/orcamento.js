@@ -23,6 +23,8 @@
 
   // Serviço pré-selecionado ao chegar de uma página específica (?servico=Fachada+em+ACM)
   const servicoPreSelecionado = new URLSearchParams(window.location.search).get('servico');
+  // Material/cor pré-preenchido ao chegar de uma página de catálogo (?material=Gold+Madeiras+MD+1804)
+  const materialPreSelecionado = new URLSearchParams(window.location.search).get('material');
 
   if (lista && template && addBtn) {
     const addServiceRow = () => {
@@ -31,6 +33,10 @@
         const select = node.querySelector('select');
         const opcao = Array.from(select.options).find((o) => o.value === servicoPreSelecionado);
         if (opcao) select.value = servicoPreSelecionado;
+      }
+      if (materialPreSelecionado && !lista.querySelector('.orc-servico-row')) {
+        const material = node.querySelector('input[name="servico_material[]"]');
+        if (material) material.value = materialPreSelecionado;
       }
       lista.appendChild(node);
       atualizarBotoesRemover();

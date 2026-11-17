@@ -1,0 +1,502 @@
+{
+ "linha": "Alto Brilho",
+ "prefixo_titulo": "Alto Brilho",
+ "fabricante": "Alltak",
+ "numeracao": "cartoes",
+ "corte": "nenhum",
+ "pdf": "images/catalogos/Momentum Opvs - Adesivos Alto Brilho.pdf",
+ "capa": "images/mo_alto_brilho.webp",
+ "servico_formulario": "Envelopamento (móveis, portas, veículos)",
+ "titulo": "Adesivo Alto Brilho Alltak Ultra: Cores Sólidas e Metálicas",
+ "meta_descricao": "Veja as cores do adesivo alto brilho Alltak Ultra: sólidas, metálicas, furta-cor e com glitter, para envelopar móveis, eletrodomésticos e veículos. Aplicação em São Paulo.",
+ "h1": "Adesivo Alto Brilho Ultra",
+ "intro": [
+  "A linha Ultra, da Alltak, é feita em película de PVC supercalandrada polimérica com alto brilho, em cores sólidas, metálicas, furta-cor (Illusion) e com glitter (Kosmic). O resultado é um acabamento espelhado, com aparência de pintura automotiva.",
+  "É uma das opções mais usadas para envelopar móveis, portas de armário, eletrodomésticos e veículos. Clique em qualquer cor para ampliar, ver o código e pedir um orçamento com ela."
+ ],
+ "aviso": "As cores podem variar de acordo com o monitor. Antes de fechar o projeto, solicite a amostra física.",
+ "filtros": [
+  [
+   "neutros",
+   "Brancos, cinzas e pretos"
+  ],
+  [
+   "azuis",
+   "Azuis"
+  ],
+  [
+   "verdes",
+   "Verdes"
+  ],
+  [
+   "amarelos",
+   "Amarelos e laranjas"
+  ],
+  [
+   "vermelhos",
+   "Vermelhos, rosas e roxos"
+  ],
+  [
+   "metalicos",
+   "Metálicos"
+  ],
+  [
+   "especiais",
+   "Furta-cor e glitter"
+  ]
+ ],
+ "uso": [
+  [
+   "Móveis e armários",
+   "O alto brilho moderniza portas de armário, cozinhas planejadas e móveis laqueados sem troca de peças.",
+   "/articles/envelopamento-de-moveis-renovacao-inteligente.html"
+  ],
+  [
+   "Eletrodomésticos",
+   "Geladeiras, frigobares e lava-louças ganham cor nova com acabamento de pintura.",
+   "/articles/envelopamento-de-eletrodomesticos.html"
+  ],
+  [
+   "Veículos e frotas",
+   "Cores sólidas e metálicas para personalização parcial ou envelopamento total.",
+   "/envelopamento.html"
+  ]
+ ],
+ "cores": [
+  {
+   "img": 1,
+   "nome": "Ultra Coconut White",
+   "codigo": "",
+   "desc": "branco",
+   "tom": "neutros",
+   "desc_en": "white"
+  },
+  {
+   "img": 2,
+   "nome": "Ultra Laketan Grey",
+   "codigo": "18U75",
+   "desc": "cinza claro",
+   "tom": "neutros",
+   "desc_en": "light grey"
+  },
+  {
+   "img": 3,
+   "nome": "Ultra Storm Gray",
+   "codigo": "",
+   "desc": "cinza",
+   "tom": "neutros",
+   "desc_en": "grey"
+  },
+  {
+   "img": 4,
+   "nome": "Ultra Nardo Gray",
+   "codigo": "18U72",
+   "desc": "cinza médio",
+   "tom": "neutros",
+   "desc_en": "medium grey"
+  },
+  {
+   "img": 5,
+   "nome": "Ultra Black Piano",
+   "codigo": "",
+   "desc": "preto",
+   "tom": "neutros",
+   "desc_en": "black"
+  },
+  {
+   "img": 6,
+   "nome": "Ultra Vanilla Ice Cream",
+   "codigo": "18U89",
+   "desc": "bege baunilha",
+   "tom": "neutros",
+   "desc_en": "vanilla beige"
+  },
+  {
+   "img": 7,
+   "nome": "Ultra Eldorado Pink",
+   "codigo": "18U46",
+   "desc": "rosa claro",
+   "tom": "vermelhos",
+   "desc_en": "light pink"
+  },
+  {
+   "img": 8,
+   "nome": "Ultra Angel Pink",
+   "codigo": "18U30",
+   "desc": "rosa pink",
+   "tom": "vermelhos",
+   "desc_en": "hot pink"
+  },
+  {
+   "img": 9,
+   "nome": "Ultra Açaí Berry",
+   "codigo": "",
+   "desc": "roxo açaí",
+   "tom": "vermelhos",
+   "desc_en": "açaí purple"
+  },
+  {
+   "img": 10,
+   "nome": "Ultra Sea Blue",
+   "codigo": "18U562",
+   "desc": "azul marinho escuro",
+   "tom": "azuis",
+   "desc_en": "dark navy blue"
+  },
+  {
+   "img": 11,
+   "nome": "Ultra Dark Blue",
+   "codigo": "",
+   "desc": "azul escuro",
+   "tom": "azuis",
+   "desc_en": "dark blue"
+  },
+  {
+   "img": 12,
+   "nome": "Ultra Mystique Blue",
+   "codigo": "",
+   "desc": "azul royal",
+   "tom": "azuis",
+   "desc_en": "royal blue"
+  },
+  {
+   "img": 13,
+   "nome": "Ultra Targa Blue",
+   "codigo": "18U58",
+   "desc": "azul vibrante",
+   "tom": "azuis",
+   "desc_en": "vivid blue"
+  },
+  {
+   "img": 14,
+   "nome": "Ultra Biscayne Blue",
+   "codigo": "18U57",
+   "desc": "azul piscina",
+   "tom": "azuis",
+   "desc_en": "pool blue"
+  },
+  {
+   "img": 15,
+   "nome": "Ultra Baby Blue",
+   "codigo": "",
+   "desc": "azul bebê",
+   "tom": "azuis",
+   "desc_en": "baby blue"
+  },
+  {
+   "img": 16,
+   "nome": "Ultra Turquoise Green",
+   "codigo": "",
+   "desc": "verde turquesa",
+   "tom": "verdes",
+   "desc_en": "turquoise green"
+  },
+  {
+   "img": 17,
+   "nome": "Ultra Neo Mint",
+   "codigo": "18U55",
+   "desc": "verde menta",
+   "tom": "verdes",
+   "desc_en": "mint green"
+  },
+  {
+   "img": 18,
+   "nome": "Ultra Summer Yellow",
+   "codigo": "18U20",
+   "desc": "laranja amarelado",
+   "tom": "amarelos",
+   "desc_en": "yellowish orange"
+  },
+  {
+   "img": 19,
+   "nome": "Ultra Sunrise Tangerine",
+   "codigo": "18U36",
+   "desc": "laranja tangerina",
+   "tom": "amarelos",
+   "desc_en": "tangerine orange"
+  },
+  {
+   "img": 20,
+   "nome": "Ultra Stuttgard Red",
+   "codigo": "18U35",
+   "desc": "vermelho alaranjado",
+   "tom": "vermelhos",
+   "desc_en": "orange red"
+  },
+  {
+   "img": 21,
+   "nome": "Ultra Blood Red",
+   "codigo": "",
+   "desc": "vermelho",
+   "tom": "vermelhos",
+   "desc_en": "red"
+  },
+  {
+   "img": 22,
+   "nome": "Ultra Spicy Red",
+   "codigo": "",
+   "desc": "vermelho intenso",
+   "tom": "vermelhos",
+   "desc_en": "deep red"
+  },
+  {
+   "img": 23,
+   "nome": "Ultra Malbec Red",
+   "codigo": "18U88",
+   "desc": "vinho",
+   "tom": "vermelhos",
+   "desc_en": "wine"
+  },
+  {
+   "img": 24,
+   "nome": "Ultra Brown Sugar",
+   "codigo": "18U80",
+   "desc": "marrom",
+   "tom": "neutros",
+   "desc_en": "brown"
+  },
+  {
+   "img": 25,
+   "nome": "Ultra Banana Yellow",
+   "codigo": "",
+   "desc": "amarelo",
+   "tom": "amarelos",
+   "desc_en": "yellow"
+  },
+  {
+   "img": 26,
+   "nome": "Ultra Lime Yellow",
+   "codigo": "",
+   "desc": "amarelo limão",
+   "tom": "amarelos",
+   "desc_en": "lemon yellow"
+  },
+  {
+   "img": 27,
+   "nome": "Ultra Free Yellow",
+   "codigo": "",
+   "desc": "amarelo claro",
+   "tom": "amarelos",
+   "desc_en": "light yellow"
+  },
+  {
+   "img": 28,
+   "nome": "Ultra Mandacaru",
+   "codigo": "",
+   "desc": "verde oliva claro",
+   "tom": "verdes",
+   "desc_en": "light olive green"
+  },
+  {
+   "img": 29,
+   "nome": "Ultra Garapa Green",
+   "codigo": "18U67",
+   "desc": "verde musgo",
+   "tom": "verdes",
+   "desc_en": "moss green"
+  },
+  {
+   "img": 30,
+   "nome": "Ultra Kambo Green",
+   "codigo": "",
+   "desc": "verde limão",
+   "tom": "verdes",
+   "desc_en": "lime green"
+  },
+  {
+   "img": 31,
+   "nome": "Ultra Apple Green",
+   "codigo": "",
+   "desc": "verde maçã",
+   "tom": "verdes",
+   "desc_en": "apple green"
+  },
+  {
+   "img": 32,
+   "nome": "Ultra Kosmic Valerian Gold",
+   "codigo": "18UK02M",
+   "desc": "preto com glitter dourado",
+   "tom": "especiais",
+   "desc_en": "black with gold glitter"
+  },
+  {
+   "img": 33,
+   "nome": "Ultra Illusion Blue Green",
+   "codigo": "18UI03M",
+   "desc": "furta-cor azul e verde",
+   "tom": "especiais",
+   "desc_en": "blue-green color shift"
+  },
+  {
+   "img": 34,
+   "nome": "Ultra Illusion Copper Green",
+   "codigo": "18UI02M",
+   "desc": "furta-cor cobre e verde",
+   "tom": "especiais",
+   "desc_en": "copper-green color shift"
+  },
+  {
+   "img": 35,
+   "nome": "Ultra Illusion Purple Green",
+   "codigo": "18UI01M",
+   "desc": "furta-cor roxo e verde",
+   "tom": "especiais",
+   "desc_en": "purple-green color shift"
+  },
+  {
+   "img": 36,
+   "nome": "Ultra Kosmic Starfire Purple",
+   "codigo": "18UK03M",
+   "desc": "preto com glitter roxo",
+   "tom": "especiais",
+   "desc_en": "black with purple glitter"
+  },
+  {
+   "img": 37,
+   "nome": "Ultra Kosmic Stone Garnet",
+   "codigo": "18UK01M",
+   "desc": "preto com glitter granada",
+   "tom": "especiais",
+   "desc_en": "black with garnet glitter"
+  },
+  {
+   "img": 38,
+   "nome": "Ultra Kosmic Nimbus Blue",
+   "codigo": "18UK04M",
+   "desc": "preto com glitter azul",
+   "tom": "especiais",
+   "desc_en": "black with blue glitter"
+  },
+  {
+   "img": 39,
+   "nome": "Ultra Quartz Rose Metallic",
+   "codigo": "18U51M",
+   "desc": "rosé metálico",
+   "tom": "metalicos",
+   "desc_en": "metallic rosé"
+  },
+  {
+   "img": 40,
+   "nome": "Ultra Star Red Metallic",
+   "codigo": "18US01M",
+   "desc": "vermelho metálico",
+   "tom": "metalicos",
+   "desc_en": "metallic red"
+  },
+  {
+   "img": 41,
+   "nome": "Ultra Graphite Metallic",
+   "codigo": "18U932M",
+   "desc": "grafite metálico",
+   "tom": "metalicos",
+   "desc_en": "metallic graphite"
+  },
+  {
+   "img": 42,
+   "nome": "Ultra Light Silver Metallic",
+   "codigo": "18U90M",
+   "desc": "prata metálico",
+   "tom": "metalicos",
+   "desc_en": "metallic silver"
+  },
+  {
+   "img": 43,
+   "nome": "Argent Metallic",
+   "codigo": "18UL90M",
+   "desc": "prata argent metálico",
+   "tom": "metalicos",
+   "desc_en": "argent metallic silver"
+  },
+  {
+   "img": 44,
+   "nome": "Ultra Deep Blue Metallic",
+   "codigo": "18U192M",
+   "desc": "azul escuro metálico",
+   "tom": "metalicos",
+   "desc_en": "metallic dark blue"
+  },
+  {
+   "img": 45,
+   "nome": "Ultra Blue Metallic",
+   "codigo": "18U196M",
+   "desc": "azul metálico",
+   "tom": "metalicos",
+   "desc_en": "metallic blue"
+  },
+  {
+   "img": 46,
+   "nome": "Ultra Green Metallic",
+   "codigo": "18U62M",
+   "desc": "verde metálico",
+   "tom": "metalicos",
+   "desc_en": "metallic green"
+  },
+  {
+   "img": 47,
+   "nome": "Ultra Star Yellow Metallic",
+   "codigo": "18US02M",
+   "desc": "amarelo metálico",
+   "tom": "metalicos",
+   "desc_en": "metallic yellow"
+  }
+ ],
+ "slug": "alto-brilho",
+ "en": {
+  "titulo": "Alltak Ultra High Gloss Vinyl: Solid and Metallic Colors",
+  "meta_descricao": "See the colors of Alltak Ultra high gloss vinyl: solid, metallic, color shift and glitter, to wrap furniture, appliances and vehicles. Installation in São Paulo, Brazil.",
+  "h1": "Ultra High Gloss Vinyl",
+  "intro": [
+   "Alltak's Ultra line is a super-calendered polymeric PVC film with high gloss, in solid, metallic, color shift (Illusion) and glitter (Kosmic) colors. The result is a mirror-like finish that looks like automotive paint.",
+   "It is one of the most popular choices to wrap furniture, cabinet doors, appliances and vehicles. Click any color to enlarge it, see the code and request a quote with it."
+  ],
+  "aviso": "Colors may vary depending on your screen. Before closing the project, ask for the physical sample.",
+  "filtros": [
+   [
+    "neutros",
+    "Whites, greys and blacks"
+   ],
+   [
+    "azuis",
+    "Blues"
+   ],
+   [
+    "verdes",
+    "Greens"
+   ],
+   [
+    "amarelos",
+    "Yellows and oranges"
+   ],
+   [
+    "vermelhos",
+    "Reds, pinks and purples"
+   ],
+   [
+    "metalicos",
+    "Metallics"
+   ],
+   [
+    "especiais",
+    "Color shift and glitter"
+   ]
+  ],
+  "onde": "Where to use high gloss vinyl",
+  "uso": [
+   [
+    "Furniture and cabinets",
+    "High gloss modernizes cabinet doors, kitchens and lacquered furniture without replacing parts.",
+    "/en/articles/furniture-wrapping.html"
+   ],
+   [
+    "Appliances",
+    "Fridges, mini fridges and dishwashers get a new color with a paint-like finish.",
+    "/en/articles/kitchen-appliance-wrapping.html"
+   ],
+   [
+    "Vehicles and fleets",
+    "Solid and metallic colors for partial customization or full wraps.",
+    "/en/envelopamento.html"
+   ]
+  ]
+ }
+}

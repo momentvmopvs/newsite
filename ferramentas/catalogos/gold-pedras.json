@@ -1,0 +1,347 @@
+{
+ "linha": "Gold Pedras",
+ "prefixo_titulo": "Gold Pedras",
+ "fabricante": "Imprimax",
+ "numeracao": "cartoes",
+ "corte": "legenda-embaixo",
+ "pdf": "images/catalogos/Momentum Opvs - Gold Pedras.pdf",
+ "capa": "images/mo_gold_pedras.webp",
+ "servico_formulario": "Envelopamento arquitetônico",
+ "titulo": "Adesivo Gold Pedras Imprimax: Mármore, Cimento Queimado e Tijolo",
+ "meta_descricao": "Veja todas as estampas do adesivo Gold Pedras da Imprimax: mármore Carrara, Calacatta e Nero, cimento queimado, ardósia, granilite, tijolo e cubos 3D. Aplicação em São Paulo.",
+ "h1": "Adesivo Gold Pedras",
+ "intro": [
+  "A linha Gold Pedras, da Imprimax, reproduz superfícies de pedra com estampa realista: mármores (Carrara, Calacatta, Nero, Travertino), cimento queimado, ardósia, granilite, tijolos e cubos 3D. É uma forma rápida de trocar o visual de bancadas, paredes e móveis sem quebra-quebra.",
+  "O adesivo serve para uso interno e externo, tem frontal lavável (aceita produtos de limpeza doméstica), não propaga chamas e resiste a mofo. Clique em qualquer estampa para ampliar e pedir um orçamento com ela."
+ ],
+ "aviso": "As cores podem variar de acordo com o monitor. Antes de fechar o projeto, solicite a amostra física.",
+ "filtros": [
+  [
+   "marmores",
+   "Mármores"
+  ],
+  [
+   "cimentos",
+   "Cimento queimado"
+  ],
+  [
+   "ardosias",
+   "Ardósias e pedras"
+  ],
+  [
+   "granilites",
+   "Granilites"
+  ],
+  [
+   "tijolos",
+   "Tijolos"
+  ],
+  [
+   "cubos",
+   "Cubos 3D"
+  ]
+ ],
+ "artigo_linha": "o Gold Pedras",
+ "uso": [
+  [
+   "Paredes e painéis",
+   "Cimento queimado, tijolo e mármore em paredes de salas, recepções e lojas, sem obra.",
+   "/articles/papel-de-parede-autoadesivo.html"
+  ],
+  [
+   "Bancadas e tampos",
+   "Mármores para renovar bancadas, mesas e balcões com acabamento lavável.",
+   "/articles/envelopamento-de-moveis-renovacao-inteligente.html"
+  ],
+  [
+   "Ambientes comerciais",
+   "Estampas de pedra para lojas, escritórios e estandes com instalação rápida.",
+   "/articles/comunicacao-visual-corporativa-sp.html"
+  ]
+ ],
+ "cores": [
+  {
+   "img": 1,
+   "nome": "Mármore Alba Imperial",
+   "pantone": "",
+   "tom": "marmores"
+  },
+  {
+   "img": 2,
+   "nome": "Mármore Alba Imperial Gloss",
+   "pantone": "",
+   "tom": "marmores"
+  },
+  {
+   "img": 3,
+   "nome": "Mármore Luna",
+   "pantone": "",
+   "tom": "marmores"
+  },
+  {
+   "img": 4,
+   "nome": "Mármore Luna Gloss",
+   "pantone": "",
+   "tom": "marmores"
+  },
+  {
+   "img": 5,
+   "nome": "Mármore Alba Gloss",
+   "pantone": "",
+   "tom": "marmores"
+  },
+  {
+   "img": 6,
+   "nome": "Mármore Alba",
+   "pantone": "",
+   "tom": "marmores"
+  },
+  {
+   "img": 7,
+   "nome": "Mármore Luna Imperial Gloss",
+   "pantone": "",
+   "tom": "marmores"
+  },
+  {
+   "img": 8,
+   "nome": "Mármore Luna Imperial",
+   "pantone": "",
+   "tom": "marmores"
+  },
+  {
+   "img": 9,
+   "nome": "Ardósia Cinza Escuro",
+   "pantone": "",
+   "tom": "ardosias"
+  },
+  {
+   "img": 10,
+   "nome": "Ardósia Areia",
+   "pantone": "",
+   "tom": "ardosias"
+  },
+  {
+   "img": 11,
+   "nome": "Granilite Cinza",
+   "pantone": "",
+   "tom": "granilites"
+  },
+  {
+   "img": 12,
+   "nome": "Granilite Cinza Escuro",
+   "pantone": "",
+   "tom": "granilites"
+  },
+  {
+   "img": 13,
+   "nome": "Ardósia Cinza",
+   "pantone": "",
+   "tom": "ardosias"
+  },
+  {
+   "img": 14,
+   "nome": "Cimento Queimado 1801",
+   "pantone": "Cool Gray 5 C",
+   "tom": "cimentos"
+  },
+  {
+   "img": 15,
+   "nome": "Cimento Queimado Rustic",
+   "pantone": "Cool Gray 6 C",
+   "tom": "cimentos"
+  },
+  {
+   "img": 16,
+   "nome": "Cimento Queimado Shitake",
+   "pantone": "",
+   "tom": "cimentos"
+  },
+  {
+   "img": 17,
+   "nome": "Miracema Rosa",
+   "pantone": "",
+   "tom": "ardosias"
+  },
+  {
+   "img": 18,
+   "nome": "Ardósia Verde",
+   "pantone": "",
+   "tom": "ardosias"
+  },
+  {
+   "img": 19,
+   "nome": "Cimento Queimado Terracota",
+   "pantone": "",
+   "tom": "cimentos"
+  },
+  {
+   "img": 20,
+   "nome": "Cimento Queimado Verde",
+   "pantone": "",
+   "tom": "cimentos"
+  },
+  {
+   "img": 21,
+   "nome": "Cimento Queimado Grafite",
+   "pantone": "",
+   "tom": "cimentos"
+  },
+  {
+   "img": 22,
+   "nome": "Mármore Calacata Fosco",
+   "pantone": "",
+   "tom": "marmores"
+  },
+  {
+   "img": 23,
+   "nome": "Granilite",
+   "pantone": "",
+   "tom": "granilites"
+  },
+  {
+   "img": 24,
+   "nome": "Mármore Travertino Gloss",
+   "pantone": "",
+   "tom": "marmores"
+  },
+  {
+   "img": 25,
+   "nome": "Cubo 3D Cinza Lunar",
+   "pantone": "",
+   "tom": "cubos"
+  },
+  {
+   "img": 26,
+   "nome": "Cubo 3D Cinza Médio",
+   "pantone": "",
+   "tom": "cubos"
+  },
+  {
+   "img": 27,
+   "nome": "Cubo 3D Azul Pacífico",
+   "pantone": "",
+   "tom": "cubos"
+  },
+  {
+   "img": 28,
+   "nome": "Mármore Nero",
+   "pantone": "",
+   "tom": "marmores"
+  },
+  {
+   "img": 29,
+   "nome": "Mármore Calacatta",
+   "pantone": "",
+   "tom": "marmores"
+  },
+  {
+   "img": 30,
+   "nome": "Mármore Azul Macaúbas",
+   "pantone": "",
+   "tom": "marmores"
+  },
+  {
+   "img": 31,
+   "nome": "Mármore Silver Black Gloss",
+   "pantone": "Black 6 + 877 C",
+   "tom": "marmores"
+  },
+  {
+   "img": 32,
+   "nome": "Mármore Golden Black Gloss",
+   "pantone": "Black 6 + 871 C",
+   "tom": "marmores"
+  },
+  {
+   "img": 33,
+   "nome": "Mármore Carrara",
+   "pantone": "Cool Gray 1 C",
+   "tom": "marmores"
+  },
+  {
+   "img": 34,
+   "nome": "Mármore Carrara Gloss",
+   "pantone": "Cool Gray 1 C",
+   "tom": "marmores"
+  },
+  {
+   "img": 35,
+   "nome": "Tijolo Vermelho 1801",
+   "pantone": "7522 C",
+   "tom": "tijolos"
+  },
+  {
+   "img": 36,
+   "nome": "Tijolo Cinza 1802",
+   "pantone": "Cool Gray 3 C",
+   "tom": "tijolos"
+  },
+  {
+   "img": 37,
+   "nome": "Tijolo Branco 1803",
+   "pantone": "428 C",
+   "tom": "tijolos"
+  },
+  {
+   "img": 38,
+   "nome": "Tijolo Mescla Cinza",
+   "pantone": "",
+   "tom": "tijolos"
+  }
+ ],
+ "slug": "gold-pedras",
+ "en": {
+  "titulo": "Imprimax Gold Pedras Vinyl: Marble, Concrete and Brick Patterns",
+  "meta_descricao": "See every Imprimax Gold Pedras vinyl pattern: Carrara, Calacatta and Nero marble, burnt cement, slate, terrazzo, brick and 3D cubes. Installation in São Paulo, Brazil.",
+  "h1": "Gold Pedras Stone Vinyl",
+  "intro": [
+   "Imprimax's Gold Pedras line reproduces stone surfaces with realistic prints: marbles (Carrara, Calacatta, Nero, Travertine), burnt cement, slate, terrazzo, bricks and 3D cubes. It is a fast way to change the look of countertops, walls and furniture without demolition.",
+   "The vinyl is suitable for indoor and outdoor use, has a washable surface (household cleaners are fine), is flame retardant and mold resistant. Click any pattern to enlarge it and request a quote with it."
+  ],
+  "aviso": "Colors may vary depending on your screen. Before closing the project, ask for the physical sample.",
+  "filtros": [
+   [
+    "marmores",
+    "Marble"
+   ],
+   [
+    "cimentos",
+    "Burnt cement"
+   ],
+   [
+    "ardosias",
+    "Slate and stone"
+   ],
+   [
+    "granilites",
+    "Terrazzo"
+   ],
+   [
+    "tijolos",
+    "Brick"
+   ],
+   [
+    "cubos",
+    "3D cubes"
+   ]
+  ],
+  "onde": "Where to use Gold Pedras",
+  "uso": [
+   [
+    "Walls and panels",
+    "Burnt cement, brick and marble on living room, reception and store walls, with no construction work.",
+    "/en/articles/self-adhesive-wallpaper.html"
+   ],
+   [
+    "Countertops and tabletops",
+    "Marble patterns to refresh countertops, tables and counters with a washable finish.",
+    "/en/articles/furniture-wrapping.html"
+   ],
+   [
+    "Commercial spaces",
+    "Stone patterns for stores, offices and booths with quick installation.",
+    "/en/articles/corporate-visual-communication-sao-paulo.html"
+   ]
+  ]
+ }
+}

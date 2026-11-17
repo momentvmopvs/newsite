@@ -1,0 +1,99 @@
+{
+ "linha": "Pastilhas Gold",
+ "prefixo_titulo": "Pastilhas Gold",
+ "fabricante": "Imprimax",
+ "numeracao": "cartoes",
+ "corte": "nenhum",
+ "pdf": "images/catalogos/Momentum Opvs - Pastilhas Gold.pdf",
+ "capa": "images/mo_pastilhas_gold.webp",
+ "servico_formulario": "Papel de Parede",
+ "titulo": "Adesivo de Pastilhas Gold Imprimax: Estampas para Parede",
+ "meta_descricao": "Estampas do adesivo Pastilhas Gold da Imprimax para cozinhas, banheiros e áreas comerciais: mescla azul, rosê, gengibre, mármore preto e dark inox. Aplicação em São Paulo.",
+ "h1": "Adesivo de Pastilhas Gold",
+ "intro": [
+  "A linha Gold Pastilhas, da Imprimax, é um adesivo vinílico que simula pastilhas com relevo visual realista. É uma saída rápida para renovar paredes de cozinhas, banheiros, áreas de serviço e espaços comerciais sem remover o revestimento existente.",
+  "O PVC tem tratamento antimofo e antibacteriano e não propaga chamas. A durabilidade chega a 4 anos em área externa e 8 anos em área interna. Clique em qualquer estampa para ampliar e pedir um orçamento com ela."
+ ],
+ "aviso": "As cores podem variar de acordo com o monitor. Antes de fechar o projeto, solicite a amostra física.",
+ "filtros": [],
+ "artigo_linha": "as pastilhas adesivas",
+ "uso": [
+  [
+   "Cozinhas e áreas de serviço",
+   "Paredes atrás da pia e do fogão ganham revestimento novo sem quebrar o azulejo.",
+   "/articles/papel-de-parede-autoadesivo.html"
+  ],
+  [
+   "Banheiros e lavabos",
+   "Renovação rápida de paredes em áreas secas do banheiro e lavabos.",
+   "/envelopamento.html"
+  ],
+  [
+   "Lojas e restaurantes",
+   "Detalhes decorativos em balcões, painéis e paredes de destaque.",
+   "/articles/comunicacao-visual-corporativa-sp.html"
+  ]
+ ],
+ "cores": [
+  {
+   "img": 1,
+   "nome": "Mármore Preto",
+   "desc": "pastilhas de mármore branco e preto",
+   "desc_en": "black and white marble mosaic tiles"
+  },
+  {
+   "img": 2,
+   "nome": "Mescla Rosê",
+   "desc": "pastilhas em rosê, bege e marrom",
+   "desc_en": "rosé, beige and brown mosaic tiles"
+  },
+  {
+   "img": 3,
+   "nome": "Mescla Gengibre",
+   "desc": "pastilhas em amarelo, cinza e preto",
+   "desc_en": "yellow, grey and black mosaic tiles"
+  },
+  {
+   "img": 4,
+   "nome": "Mescla Azul",
+   "desc": "pastilhas em azul, cinza e preto",
+   "desc_en": "blue, grey and black mosaic tiles"
+  },
+  {
+   "img": 5,
+   "nome": "Dark Inox",
+   "desc": "pastilhas em cinza metálico escovado",
+   "desc_en": "brushed metallic grey mosaic tiles"
+  }
+ ],
+ "slug": "pastilhas-gold",
+ "en": {
+  "titulo": "Imprimax Gold Mosaic Tile Vinyl: Wall Patterns",
+  "meta_descricao": "Imprimax Pastilhas Gold mosaic tile vinyl for kitchens, bathrooms and commercial spaces: blue, rosé, ginger, black marble and dark inox. Installation in São Paulo, Brazil.",
+  "h1": "Gold Mosaic Tile Vinyl",
+  "intro": [
+   "Imprimax's Gold Pastilhas line is a self-adhesive vinyl that looks like mosaic tiles, with a realistic printed relief. It is a quick way to refresh kitchen, bathroom, laundry and commercial walls without removing the existing tiles.",
+   "The PVC has anti-mold and antibacterial treatment and is flame retardant. It lasts up to 4 years outdoors and up to 8 years indoors. Click any pattern to enlarge it and request a quote with it."
+  ],
+  "aviso": "Colors may vary depending on your screen. Before closing the project, ask for the physical sample.",
+  "filtros": [],
+  "onde": "Where to use mosaic tile vinyl",
+  "uso": [
+   [
+    "Kitchens and laundry rooms",
+    "Backsplash walls get a new finish without breaking the old tiles.",
+    "/en/articles/self-adhesive-wallpaper.html"
+   ],
+   [
+    "Bathrooms and powder rooms",
+    "Quick refresh of walls in dry bathroom areas and powder rooms.",
+    "/en/envelopamento.html"
+   ],
+   [
+    "Stores and restaurants",
+    "Decorative details on counters, panels and feature walls.",
+    "/en/articles/corporate-visual-communication-sao-paulo.html"
+   ]
+  ]
+ }
+}

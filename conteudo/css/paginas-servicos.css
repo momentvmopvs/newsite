@@ -802,6 +802,21 @@
   color: #4a4a4a;
 }
 
+.catalogo-card .catalogo-ver-cores {
+  margin-top: 10px;
+}
+
+.catalogo-card .catalogo-ver-cores a {
+  display: inline;
+  overflow: visible;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  font-weight: 700;
+  color: #0b004a;
+  text-decoration: underline;
+}
+
 @media (hover: hover) {
   .catalogo-card a:hover img {
     transform: scale(1.04);

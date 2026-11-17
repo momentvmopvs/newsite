@@ -1,0 +1,104 @@
+{
+ "linha": "Pisomax",
+ "prefixo_titulo": "Pisomax",
+ "fabricante": "Imprimax",
+ "numeracao": "cartoes",
+ "corte": "legenda-embaixo",
+ "pdf": "images/catalogos/Momentum Opvs - Películas Adesivas - PISOMAX.pdf",
+ "capa": "images/catalogos/capa-pisomax.webp",
+ "servico_formulario": "Envelopamento arquitetônico",
+ "titulo": "Adesivo para Piso Pisomax Imprimax: Estampas e Antiderrapante",
+ "meta_descricao": "Película adesiva para piso Pisomax da Imprimax: cimento queimado, madeira, mármore Carrara e versões antiderrapantes. Renove o piso sem quebrar. Aplicação em São Paulo.",
+ "h1": "Adesivo para Piso Pisomax",
+ "intro": [
+  "A linha Pisomax, da Imprimax, é uma película adesiva para piso: renova o ambiente sem quebrar ou remover o piso e a cerâmica existentes. Há estampas realistas (cimento queimado, madeira e mármore) e versões antiderrapantes.",
+  "É indicada para áreas de pouco tráfego, como escritórios, quartos, estandes e lojas com movimento leve. Clique em qualquer opção para ampliar e pedir um orçamento com ela."
+ ],
+ "aviso": "As cores podem variar de acordo com o monitor. Antes de fechar o projeto, solicite a amostra física.",
+ "filtros": [],
+ "artigo_linha": "o Pisomax",
+ "uso": [
+  [
+   "Escritórios e salas",
+   "Troca de visual do piso em ambientes de pouco tráfego, sem obra e sem poeira.",
+   "/articles/comunicacao-visual-corporativa-sp.html"
+  ],
+  [
+   "Estandes e eventos",
+   "Piso temático aplicado e removido com rapidez.",
+   "/especiais.html"
+  ],
+  [
+   "Proteção antiderrapante",
+   "As versões antiderrapantes dão mais segurança em degraus e áreas específicas.",
+   "/envelopamento.html"
+  ]
+ ],
+ "cores": [
+  {
+   "img": 1,
+   "nome": "Cimento Queimado",
+   "pantone": ""
+  },
+  {
+   "img": 2,
+   "nome": "Madeira Tábua",
+   "pantone": "7562 C"
+  },
+  {
+   "img": 3,
+   "nome": "Mármore Carrara",
+   "pantone": "Cool Gray 1 C"
+  },
+  {
+   "img": 4,
+   "nome": "Antiderrapante Preto",
+   "pantone": ""
+  },
+  {
+   "img": 5,
+   "nome": "Antiderrapante Branco",
+   "pantone": ""
+  },
+  {
+   "img": 6,
+   "nome": "Antiderrapante Transparente",
+   "pantone": ""
+  },
+  {
+   "img": 7,
+   "nome": "Transparente",
+   "pantone": ""
+  }
+ ],
+ "slug": "pisomax",
+ "en": {
+  "titulo": "Imprimax Pisomax Floor Vinyl: Patterns and Anti-slip",
+  "meta_descricao": "Imprimax Pisomax adhesive floor film: burnt cement, wood, Carrara marble and anti-slip versions. Refresh your floor without breaking it. Installation in São Paulo, Brazil.",
+  "h1": "Pisomax Floor Vinyl",
+  "intro": [
+   "Imprimax's Pisomax line is an adhesive floor film: it refreshes a space without breaking or removing the existing floor and tiles. There are realistic patterns (burnt cement, wood and marble) and anti-slip versions.",
+   "It is meant for low-traffic areas such as offices, bedrooms, booths and stores with light foot traffic. Click any option to enlarge it and request a quote with it."
+  ],
+  "aviso": "Colors may vary depending on your screen. Before closing the project, ask for the physical sample.",
+  "filtros": [],
+  "onde": "Where to use Pisomax",
+  "uso": [
+   [
+    "Offices and rooms",
+    "A new floor look in low-traffic areas, with no construction work and no dust.",
+    "/en/articles/corporate-visual-communication-sao-paulo.html"
+   ],
+   [
+    "Booths and events",
+    "Themed floors that go on and come off quickly.",
+    "/en/especiais.html"
+   ],
+   [
+    "Anti-slip protection",
+    "The anti-slip versions add safety on steps and specific areas.",
+    "/en/envelopamento.html"
+   ]
+  ]
+ }
+}
