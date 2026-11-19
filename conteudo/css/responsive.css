@@ -68,6 +68,14 @@ html, body {
   margin-top: 20px;
 }
 
+/* Blog: todas as imagens da lista no mesmo formato (16:9), sejam elas
+   horizontais, quadradas ou verticais */
+.blog-lista .sobre-imagem img {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 /* Botões */
 .botao,
 .botao2,
