@@ -1,0 +1,485 @@
+{
+ "linha": "Gold Max e Gold Fosco",
+ "prefixo_titulo": "",
+ "fabricante": "Imprimax",
+ "numeracao": "cartoes",
+ "corte": "legenda-embaixo",
+ "pdf": "images/catalogos/Momentum Opvs - Películas Adesivas.pdf",
+ "capa": "images/mo_peliculas_adesivas.webp",
+ "servico_formulario": "Envelopamento (móveis, portas, veículos)",
+ "titulo": "Adesivo Gold Max e Gold Fosco Imprimax: Cores Foscas, Semibrilho e Brilho",
+ "meta_descricao": "Veja as 61 cores dos adesivos Gold Max e Gold Fosco da Imprimax, com referência Pantone: brancos, cinzas, pretos, azuis, verdes, vermelhos e cores perolizadas. Aplicação em São Paulo.",
+ "h1": "Adesivos Gold Max e Gold Fosco",
+ "intro": [
+  "As linhas Gold Max e Gold Fosco, da Imprimax, são películas adesivas em cores sólidas com acabamento brilho, semibrilho, fosco e perolizado. A maioria das cores tem referência Pantone, o que facilita acertar a cor da marca.",
+  "São usadas em sinalização interna e externa, estandes, decoração de frota (personalização parcial ou envelopamento total), fachadas, paredes e móveis. Use os filtros para achar a cor e clique nela para ampliar e pedir um orçamento."
+ ],
+ "aviso": "As cores podem variar de acordo com o monitor, e algumas podem sair de linha ou ficar temporariamente indisponíveis no fabricante. Consulte a disponibilidade e solicite a amostra física antes de fechar o projeto. Imagens: reproduzidas a partir do catálogo disponibilizado pela Imprimax.",
+ "filtros": [
+  [
+   "neutros",
+   "Brancos, cinzas e pretos"
+  ],
+  [
+   "azuis",
+   "Azuis"
+  ],
+  [
+   "verdes",
+   "Verdes"
+  ],
+  [
+   "amarelos",
+   "Amarelos e laranjas"
+  ],
+  [
+   "vermelhos",
+   "Vermelhos, rosas e roxos"
+  ],
+  [
+   "terrosos",
+   "Terrosos e dourados"
+  ]
+ ],
+ "artigo_linha": "o Gold Max e o Gold Fosco",
+ "uso": [
+  [
+   "Comunicação visual",
+   "Letras recortadas, faixas e sinalização interna e externa na cor exata da marca.",
+   "/articles/comunicacao-visual-corporativa-sp.html"
+  ],
+  [
+   "Móveis e paredes",
+   "Cores lisas foscas ou com brilho para envelopar móveis e cobrir paredes.",
+   "/articles/envelopamento-de-moveis-renovacao-inteligente.html"
+  ],
+  [
+   "Frotas e veículos",
+   "Personalização parcial ou envelopamento total de carros e utilitários.",
+   "/envelopamento.html"
+  ]
+ ],
+ "cores": [
+  {
+   "img": 1,
+   "nome": "Gold Fosco Branco",
+   "pantone": "",
+   "tom": "neutros"
+  },
+  {
+   "img": 2,
+   "nome": "Gold Fosco Branco Pérola",
+   "pantone": "",
+   "tom": "neutros"
+  },
+  {
+   "img": 3,
+   "nome": "Gold Fosco Prata Alumínio",
+   "pantone": "",
+   "tom": "neutros"
+  },
+  {
+   "img": 4,
+   "nome": "Gold Fosco Cinza Claro",
+   "pantone": "",
+   "tom": "neutros"
+  },
+  {
+   "img": 5,
+   "nome": "Gold Fosco Cinza Nardo",
+   "pantone": "",
+   "tom": "neutros"
+  },
+  {
+   "img": 6,
+   "nome": "Gold Fosco Cinza Pérola",
+   "pantone": "",
+   "tom": "neutros"
+  },
+  {
+   "img": 7,
+   "nome": "Gold Fosco Grafite",
+   "pantone": "",
+   "tom": "neutros"
+  },
+  {
+   "img": 8,
+   "nome": "Gold Fosco Cinza Escuro",
+   "pantone": "",
+   "tom": "neutros"
+  },
+  {
+   "img": 9,
+   "nome": "Gold Fosco Azul Night Trenton",
+   "pantone": "",
+   "tom": "azuis"
+  },
+  {
+   "img": 10,
+   "nome": "Gold Fosco Azul Pérola",
+   "pantone": "",
+   "tom": "azuis"
+  },
+  {
+   "img": 11,
+   "nome": "Gold Fosco Verde Pérola",
+   "pantone": "",
+   "tom": "verdes"
+  },
+  {
+   "img": 12,
+   "nome": "Gold Fosco Verde Limão Pérola",
+   "pantone": "",
+   "tom": "verdes"
+  },
+  {
+   "img": 14,
+   "nome": "Gold Fosco Amarelo Cítrico",
+   "pantone": "",
+   "tom": "amarelos"
+  },
+  {
+   "img": 15,
+   "nome": "Gold Fosco Amarelo Pérola",
+   "pantone": "",
+   "tom": "amarelos"
+  },
+  {
+   "img": 16,
+   "nome": "Gold Fosco Laranja Pérola",
+   "pantone": "",
+   "tom": "amarelos"
+  },
+  {
+   "img": 17,
+   "nome": "Gold Fosco Bege Taupe",
+   "pantone": "",
+   "tom": "terrosos"
+  },
+  {
+   "img": 18,
+   "nome": "Gold Max Branco",
+   "pantone": "",
+   "tom": "neutros"
+  },
+  {
+   "img": 19,
+   "nome": "Gold Max Branco Fosco",
+   "pantone": "",
+   "tom": "neutros"
+  },
+  {
+   "img": 20,
+   "nome": "Gold Max Cinza Claro",
+   "pantone": "Cool Gray 6 C",
+   "tom": "neutros"
+  },
+  {
+   "img": 21,
+   "nome": "Gold Max Prata",
+   "pantone": "877 C",
+   "tom": "neutros"
+  },
+  {
+   "img": 22,
+   "nome": "Gold Max Prata Alumínio Fosco",
+   "pantone": "877 C",
+   "tom": "neutros"
+  },
+  {
+   "img": 23,
+   "nome": "Gold Max Cinza Médio",
+   "pantone": "Cool Gray 9 C",
+   "tom": "neutros"
+  },
+  {
+   "img": 24,
+   "nome": "Gold Max Cinza Escuro",
+   "pantone": "Cool Gray 10 C",
+   "tom": "neutros"
+  },
+  {
+   "img": 25,
+   "nome": "Gold Max Grafite",
+   "pantone": "7540 C",
+   "tom": "neutros"
+  },
+  {
+   "img": 26,
+   "nome": "Gold Max Grafite Fosco",
+   "pantone": "7540 C",
+   "tom": "neutros"
+  },
+  {
+   "img": 27,
+   "nome": "Gold Max Preto",
+   "pantone": "Black 6 C",
+   "tom": "neutros"
+  },
+  {
+   "img": 28,
+   "nome": "Gold Max Preto Fosco",
+   "pantone": "Black 3 C",
+   "tom": "neutros"
+  },
+  {
+   "img": 29,
+   "nome": "Gold Max Chocolate",
+   "pantone": "7596 C",
+   "tom": "terrosos"
+  },
+  {
+   "img": 30,
+   "nome": "Gold Max Ouro",
+   "pantone": "872 C",
+   "tom": "terrosos"
+  },
+  {
+   "img": 31,
+   "nome": "Gold Max Terracota",
+   "pantone": "7587 C",
+   "tom": "terrosos"
+  },
+  {
+   "img": 32,
+   "nome": "Gold Max Laranja Botânico",
+   "pantone": "715 C",
+   "tom": "amarelos"
+  },
+  {
+   "img": 33,
+   "nome": "Gold Max Laranja Botânico Fosco",
+   "pantone": "715 C",
+   "tom": "amarelos"
+  },
+  {
+   "img": 34,
+   "nome": "Gold Max Laranja",
+   "pantone": "Orange 021 C",
+   "tom": "amarelos"
+  },
+  {
+   "img": 35,
+   "nome": "Gold Max Pink",
+   "pantone": "233 C",
+   "tom": "vermelhos"
+  },
+  {
+   "img": 36,
+   "nome": "Gold Max Roxo Berinjela",
+   "pantone": "5135 C",
+   "tom": "vermelhos"
+  },
+  {
+   "img": 37,
+   "nome": "Gold Max Vinho",
+   "pantone": "7421 C",
+   "tom": "vermelhos"
+  },
+  {
+   "img": 38,
+   "nome": "Gold Max Vermelho Cristal",
+   "pantone": "202 C",
+   "tom": "vermelhos"
+  },
+  {
+   "img": 39,
+   "nome": "Gold Max Vermelho Vivo",
+   "pantone": "1805 C",
+   "tom": "vermelhos"
+  },
+  {
+   "img": 40,
+   "nome": "Gold Max Vermelho Vivo Fosco",
+   "pantone": "1805 C",
+   "tom": "vermelhos"
+  },
+  {
+   "img": 41,
+   "nome": "Gold Max Vermelho Amaranto",
+   "pantone": "199 C",
+   "tom": "vermelhos"
+  },
+  {
+   "img": 42,
+   "nome": "Gold Max Vermelho Fogo",
+   "pantone": "7620 C",
+   "tom": "vermelhos"
+  },
+  {
+   "img": 43,
+   "nome": "Gold Max Vermelho Tomate",
+   "pantone": "180 C",
+   "tom": "vermelhos"
+  },
+  {
+   "img": 44,
+   "nome": "Gold Max Amarelo Ouro",
+   "pantone": "7549 C",
+   "tom": "amarelos"
+  },
+  {
+   "img": 45,
+   "nome": "Gold Max Amarelo Milano",
+   "pantone": "121 C",
+   "tom": "amarelos"
+  },
+  {
+   "img": 46,
+   "nome": "Gold Max Amarelo Médio",
+   "pantone": "7548 C",
+   "tom": "amarelos"
+  },
+  {
+   "img": 47,
+   "nome": "Gold Max Verde Cítrico",
+   "pantone": "382 C",
+   "tom": "verdes"
+  },
+  {
+   "img": 48,
+   "nome": "Gold Max Verde Abacate",
+   "pantone": "360 C",
+   "tom": "verdes"
+  },
+  {
+   "img": 49,
+   "nome": "Gold Max Verde Água",
+   "pantone": "Green C",
+   "tom": "verdes"
+  },
+  {
+   "img": 50,
+   "nome": "Gold Max Verde Água Fosco",
+   "pantone": "Green C",
+   "tom": "verdes"
+  },
+  {
+   "img": 51,
+   "nome": "Gold Max Verde Aquamarine Semibrilho",
+   "pantone": "353 C",
+   "tom": "verdes"
+  },
+  {
+   "img": 52,
+   "nome": "Gold Max Verde Amazonas",
+   "pantone": "348 C",
+   "tom": "verdes"
+  },
+  {
+   "img": 53,
+   "nome": "Gold Max Verde Bandeira Fosco",
+   "pantone": "7726 C",
+   "tom": "verdes"
+  },
+  {
+   "img": 54,
+   "nome": "Gold Max Verde Bandeira",
+   "pantone": "7726 C",
+   "tom": "verdes"
+  },
+  {
+   "img": 55,
+   "nome": "Gold Max Verde Escuro",
+   "pantone": "2411 C",
+   "tom": "verdes"
+  },
+  {
+   "img": 56,
+   "nome": "Gold Max Verde Floresta Semibrilho",
+   "pantone": "7727 C",
+   "tom": "verdes"
+  },
+  {
+   "img": 57,
+   "nome": "Gold Max Verde Musgo Semibrilho",
+   "pantone": "560 C",
+   "tom": "verdes"
+  },
+  {
+   "img": 58,
+   "nome": "Gold Max Azul Noturno",
+   "pantone": "295 C",
+   "tom": "azuis"
+  },
+  {
+   "img": 59,
+   "nome": "Gold Max Azul Marinho",
+   "pantone": "287 C",
+   "tom": "azuis"
+  },
+  {
+   "img": 60,
+   "nome": "Gold Max Azul Recife",
+   "pantone": "2945 C",
+   "tom": "azuis"
+  },
+  {
+   "img": 61,
+   "nome": "Gold Max Azul Riviera",
+   "pantone": "7462 C",
+   "tom": "azuis"
+  },
+  {
+   "img": 62,
+   "nome": "Gold Max Azul Céu",
+   "pantone": "Process Blue C",
+   "tom": "azuis"
+  }
+ ],
+ "slug": "gold-max-gold-fosco",
+ "en": {
+  "titulo": "Imprimax Gold Max and Gold Fosco Vinyl: Matte, Semi-gloss and Gloss Colors",
+  "meta_descricao": "See the 61 colors of Imprimax Gold Max and Gold Fosco vinyl with Pantone references: whites, greys, blacks, blues, greens, reds and pearl colors. Installation in São Paulo, Brazil.",
+  "h1": "Gold Max and Gold Fosco Vinyl",
+  "intro": [
+   "Imprimax's Gold Max and Gold Fosco lines are solid color adhesive films in gloss, semi-gloss, matte and pearl finishes. Most colors have a Pantone reference, which makes it easier to match brand colors.",
+   "They are used for indoor and outdoor signage, booths, fleet graphics (partial or full wraps), facades, walls and furniture. Use the filters to find a color and click it to enlarge and request a quote."
+  ],
+  "aviso": "Colors may vary depending on your screen, and some may be discontinued or temporarily unavailable from the manufacturer. Please check availability and ask for the physical sample before closing your project. Images: reproduced from the catalogue provided by Imprimax.",
+  "filtros": [
+   [
+    "neutros",
+    "Whites, greys and blacks"
+   ],
+   [
+    "azuis",
+    "Blues"
+   ],
+   [
+    "verdes",
+    "Greens"
+   ],
+   [
+    "amarelos",
+    "Yellows and oranges"
+   ],
+   [
+    "vermelhos",
+    "Reds, pinks and purples"
+   ],
+   [
+    "terrosos",
+    "Earth tones and gold"
+   ]
+  ],
+  "onde": "Where to use Gold Max and Gold Fosco",
+  "uso": [
+   [
+    "Visual communication",
+    "Cut letters, stripes and indoor or outdoor signage in the exact brand color.",
+    "/en/articles/corporate-visual-communication-sao-paulo.html"
+   ],
+   [
+    "Furniture and walls",
+    "Solid matte or gloss colors to wrap furniture and cover walls.",
+    "/en/articles/furniture-wrapping.html"
+   ],
+   [
+    "Fleets and vehicles",
+    "Partial customization or full wraps of cars and vans.",
+    "/en/envelopamento.html"
+   ]
+  ]
+ }
+}

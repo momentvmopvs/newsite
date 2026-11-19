@@ -9,3 +9,7 @@ images/_arquivo-nao-usado/
 
 # Cache local do wrangler (Cloudflare)
 .wrangler/
+
+# PDFs originais dos catálogos (as cores são extraídas para images/catalogos/<linha>/)
+images/catalogos/*.pdf
+__pycache__/

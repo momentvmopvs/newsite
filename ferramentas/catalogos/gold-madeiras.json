@@ -1,0 +1,419 @@
+{
+ "slug": "gold-madeiras",
+ "linha": "Gold Madeiras",
+ "fabricante": "Imprimax",
+ "pdf": "images/catalogos/Momentum Opvs - Gold Madeiras.pdf",
+ "capa": "images/mo_gold_madeiras.webp",
+ "servico_formulario": "Envelopamento (móveis, portas, veículos)",
+ "titulo": "Adesivo Gold Madeiras Imprimax: Cores e Padrões de Madeira",
+ "meta_descricao": "Veja todas as cores do adesivo Gold Madeiras da Imprimax: madeiras claras, escuras, rústicas, acinzentadas e ripadas para envelopar móveis, portas e paredes. Aplicação em São Paulo.",
+ "h1": "Adesivo Gold Madeiras",
+ "intro": [
+  "A linha Gold Madeiras, da Imprimax, reúne adesivos com estampa realista de madeira: de tons claros e acinzentados a madeiras escuras, rústicas de demolição e ripados. É uma das opções mais usadas para renovar móveis, portas, painéis e paredes sem obra.",
+  "O material é um PVC de alta qualidade, com tratamento antimofo e antibacteriano, e não propaga chamas. Clique em qualquer cor para ampliar, ver o código e pedir um orçamento com ela."
+ ],
+ "aviso": "As cores podem variar de acordo com o monitor, e algumas podem sair de linha ou ficar temporariamente indisponíveis no fabricante. Consulte a disponibilidade e solicite a amostra física antes de fechar o projeto. Imagens: reproduzidas a partir do catálogo disponibilizado pela Imprimax.",
+ "filtros": [
+  [
+   "claras",
+   "Claras"
+  ],
+  [
+   "medias",
+   "Tons médios"
+  ],
+  [
+   "escuras",
+   "Escuras"
+  ],
+  [
+   "cinzas",
+   "Acinzentadas"
+  ],
+  [
+   "rusticas",
+   "Rústicas"
+  ],
+  [
+   "ripados",
+   "Ripados"
+  ]
+ ],
+ "uso": [
+  [
+   "Móveis e armários",
+   "Portas de armário, cômodas, mesas, balcões e estantes ganham aparência de madeira natural sem troca do móvel.",
+   "/articles/envelopamento-de-moveis-renovacao-inteligente.html"
+  ],
+  [
+   "Portas e batentes",
+   "Uma das aplicações mais procuradas: renova portas internas desgastadas em poucas horas.",
+   "/envelopamento.html"
+  ],
+  [
+   "Paredes e painéis",
+   "Os ripados e as madeiras rústicas criam painéis decorativos em salas, recepções e lojas.",
+   "/articles/papel-de-parede-autoadesivo.html"
+  ]
+ ],
+ "cores": [
+  {
+   "img": 1,
+   "codigo": "MT 1901",
+   "pantone": "7562 C",
+   "tom": "rusticas",
+   "desc": "madeira rústica de tábuas envelhecidas, tom castanho natural",
+   "desc_en": "rustic weathered plank wood, natural chestnut tone"
+  },
+  {
+   "img": 2,
+   "codigo": "ML 2202",
+   "pantone": "",
+   "tom": "claras",
+   "desc": "madeira lisa clara, tom bege natural",
+   "desc_en": "smooth light wood, natural beige tone"
+  },
+  {
+   "img": 3,
+   "codigo": "MJ 2201",
+   "pantone": "",
+   "tom": "medias",
+   "desc": "madeira avermelhada de veios retos, tom cerejeira",
+   "desc_en": "reddish straight-grain wood, cherry tone"
+  },
+  {
+   "img": 4,
+   "codigo": "MT 2105",
+   "pantone": "",
+   "tom": "rusticas",
+   "desc": "madeira de demolição com pintura desgastada, tons marrom e branco",
+   "desc_en": "reclaimed wood with worn paint, brown and white tones"
+  },
+  {
+   "img": 5,
+   "codigo": "MT 2104",
+   "pantone": "",
+   "tom": "rusticas",
+   "desc": "madeira rústica patinada, tom branco envelhecido",
+   "desc_en": "rustic whitewashed wood, aged white tone"
+  },
+  {
+   "img": 6,
+   "codigo": "MT 2103",
+   "pantone": "",
+   "tom": "rusticas",
+   "desc": "madeira rústica cinza com nós aparentes",
+   "desc_en": "rustic grey wood with visible knots"
+  },
+  {
+   "img": 7,
+   "codigo": "MT 2102",
+   "pantone": "",
+   "tom": "rusticas",
+   "desc": "madeira rústica de tábuas, tom marrom acinzentado",
+   "desc_en": "rustic plank wood, greyish brown tone"
+  },
+  {
+   "img": 8,
+   "codigo": "MT 2101",
+   "pantone": "",
+   "tom": "rusticas",
+   "desc": "madeira rústica marrom escura",
+   "desc_en": "rustic dark brown wood"
+  },
+  {
+   "img": 9,
+   "codigo": "MD 1804",
+   "pantone": "4636 C",
+   "tom": "escuras",
+   "desc": "madeira escura, tom tabaco",
+   "desc_en": "dark wood, tobacco tone"
+  },
+  {
+   "img": 10,
+   "codigo": "MD 2102",
+   "pantone": "",
+   "tom": "cinzas",
+   "desc": "madeira envelhecida cinza, aspecto de concreto",
+   "desc_en": "weathered grey wood, concrete look"
+  },
+  {
+   "img": 11,
+   "codigo": "MD 2101",
+   "pantone": "",
+   "tom": "medias",
+   "desc": "madeira marrom de veios largos",
+   "desc_en": "brown wood with wide grain"
+  },
+  {
+   "img": 12,
+   "codigo": "MD 1906",
+   "pantone": "462 C",
+   "tom": "escuras",
+   "desc": "madeira escura com veios claros marcados",
+   "desc_en": "dark wood with marked light grain"
+  },
+  {
+   "img": 13,
+   "codigo": "MD 1905",
+   "pantone": "7531 C",
+   "tom": "cinzas",
+   "desc": "madeira clara acinzentada, tom fendi",
+   "desc_en": "light greyish wood, greige tone"
+  },
+  {
+   "img": 14,
+   "codigo": "MD 1904",
+   "pantone": "4675 C",
+   "tom": "claras",
+   "desc": "madeira clara, tom bege dourado",
+   "desc_en": "light wood, golden beige tone"
+  },
+  {
+   "img": 15,
+   "codigo": "MD 1903",
+   "pantone": "7527 C",
+   "tom": "cinzas",
+   "desc": "madeira clara acinzentada, quase branca",
+   "desc_en": "light greyish wood, almost white"
+  },
+  {
+   "img": 16,
+   "codigo": "MD 1902",
+   "pantone": "462 C",
+   "tom": "medias",
+   "desc": "madeira marrom média, tom nogueira",
+   "desc_en": "medium brown wood, walnut tone"
+  },
+  {
+   "img": 17,
+   "codigo": "MC 1901",
+   "pantone": "7575 C",
+   "tom": "medias",
+   "desc": "madeira dourada de veio fino, tom carvalho",
+   "desc_en": "golden fine-grain wood, oak tone"
+  },
+  {
+   "img": 19,
+   "codigo": "MD 1803",
+   "pantone": "469 C",
+   "tom": "escuras",
+   "desc": "madeira marrom avermelhada escura",
+   "desc_en": "dark reddish brown wood"
+  },
+  {
+   "img": 20,
+   "codigo": "MD 1802",
+   "pantone": "7504 C",
+   "tom": "claras",
+   "desc": "madeira clara com nós, tom areia",
+   "desc_en": "light knotty wood, sand tone"
+  },
+  {
+   "img": 21,
+   "codigo": "MD 1801",
+   "pantone": "7530 C",
+   "tom": "cinzas",
+   "desc": "madeira clara acinzentada com nós",
+   "desc_en": "light greyish knotty wood"
+  },
+  {
+   "img": 22,
+   "codigo": "MI 102",
+   "pantone": "731 C",
+   "tom": "medias",
+   "desc": "madeira marrom, tom caramelo",
+   "desc_en": "brown wood, caramel tone"
+  },
+  {
+   "img": 23,
+   "codigo": "MC 2103",
+   "pantone": "",
+   "tom": "cinzas",
+   "desc": "madeira clara acinzentada de veio fino",
+   "desc_en": "light greyish fine-grain wood"
+  },
+  {
+   "img": 24,
+   "codigo": "MI 101",
+   "pantone": "411 C",
+   "tom": "escuras",
+   "desc": "madeira marrom escura, tom café",
+   "desc_en": "dark brown wood, coffee tone"
+  },
+  {
+   "img": 25,
+   "codigo": "MC 2102",
+   "pantone": "",
+   "tom": "medias",
+   "desc": "madeira avermelhada, tom mogno",
+   "desc_en": "reddish wood, mahogany tone"
+  },
+  {
+   "img": 27,
+   "codigo": "MC 1802",
+   "pantone": "7529 C",
+   "tom": "claras",
+   "desc": "madeira branca acinzentada de veio reto",
+   "desc_en": "greyish white straight-grain wood"
+  },
+  {
+   "img": 28,
+   "codigo": "MC 1801",
+   "pantone": "7528 C",
+   "tom": "claras",
+   "desc": "madeira branca, tom marfim",
+   "desc_en": "white wood, ivory tone"
+  },
+  {
+   "img": 29,
+   "codigo": "MC 1705",
+   "pantone": "4935 C",
+   "tom": "medias",
+   "desc": "madeira alaranjada, tom mel",
+   "desc_en": "orange wood, honey tone"
+  },
+  {
+   "img": 30,
+   "codigo": "MC 1704",
+   "pantone": "4665 C",
+   "tom": "claras",
+   "desc": "madeira clara dourada",
+   "desc_en": "light golden wood"
+  },
+  {
+   "img": 31,
+   "codigo": "MC 1703",
+   "pantone": "726 C",
+   "tom": "claras",
+   "desc": "madeira clara com veios marcados, tom carvalho claro",
+   "desc_en": "light wood with marked grain, light oak tone"
+  },
+  {
+   "img": 32,
+   "codigo": "MC 1702",
+   "pantone": "7528 C",
+   "tom": "cinzas",
+   "desc": "madeira cinza clara",
+   "desc_en": "light grey wood"
+  },
+  {
+   "img": 33,
+   "codigo": "MC 1701",
+   "pantone": "482 C",
+   "tom": "claras",
+   "desc": "madeira marfim com veios dourados",
+   "desc_en": "ivory wood with golden grain"
+  },
+  {
+   "img": 34,
+   "codigo": "MR 2104",
+   "pantone": "",
+   "tom": "ripados",
+   "desc": "ripado de madeira marrom escura",
+   "desc_en": "dark brown wood slats"
+  },
+  {
+   "img": 35,
+   "codigo": "MR 2103",
+   "pantone": "",
+   "tom": "ripados",
+   "desc": "ripado de madeira marrom média",
+   "desc_en": "medium brown wood slats"
+  },
+  {
+   "img": 36,
+   "codigo": "MR 2102",
+   "pantone": "",
+   "tom": "ripados",
+   "desc": "ripado de madeira bege",
+   "desc_en": "beige wood slats"
+  },
+  {
+   "img": 37,
+   "codigo": "MR 2101",
+   "pantone": "",
+   "tom": "ripados",
+   "desc": "ripado de madeira cinza",
+   "desc_en": "grey wood slats"
+  },
+  {
+   "img": 38,
+   "codigo": "ML 2201",
+   "pantone": "",
+   "tom": "claras",
+   "desc": "madeira lisa clara, tom pinus",
+   "desc_en": "smooth light wood, pine tone"
+  },
+  {
+   "img": 39,
+   "codigo": "MC 2103 ST",
+   "pantone": "",
+   "tom": "claras",
+   "desc": "madeira clara bege de veio fino",
+   "desc_en": "light beige fine-grain wood"
+  },
+  {
+   "img": 40,
+   "codigo": "ML 2203",
+   "pantone": "",
+   "tom": "escuras",
+   "desc": "madeira lisa escura, tom grafite",
+   "desc_en": "smooth dark wood, graphite tone"
+  }
+ ],
+ "en": {
+  "titulo": "Imprimax Gold Wood Vinyl: Wood Grain Colors and Patterns",
+  "meta_descricao": "See every color of Imprimax Gold Madeiras wood grain vinyl: light, dark, rustic, grey and slatted woods to wrap furniture, doors and walls. Installation in São Paulo, Brazil.",
+  "h1": "Gold Madeiras Wood Vinyl",
+  "intro": [
+   "Imprimax's Gold Madeiras line brings self-adhesive vinyl with realistic wood prints: from light and greyish tones to dark woods, rustic reclaimed wood and slats. It is one of the most popular ways to refresh furniture, doors, panels and walls without construction work.",
+   "The material is high-quality PVC with anti-mold and antibacterial treatment, and it is flame retardant. Click any color to enlarge it, see the code and request a quote with it."
+  ],
+  "aviso": "Colors may vary depending on your screen, and some may be discontinued or temporarily unavailable from the manufacturer. Please check availability and ask for the physical sample before closing your project. Images: reproduced from the catalogue provided by Imprimax.",
+  "filtros": [
+   [
+    "claras",
+    "Light"
+   ],
+   [
+    "medias",
+    "Medium"
+   ],
+   [
+    "escuras",
+    "Dark"
+   ],
+   [
+    "cinzas",
+    "Greyish"
+   ],
+   [
+    "rusticas",
+    "Rustic"
+   ],
+   [
+    "ripados",
+    "Slats"
+   ]
+  ],
+  "onde": "Where to use Gold Madeiras",
+  "uso": [
+   [
+    "Furniture and cabinets",
+    "Cabinet doors, dressers, tables, counters and shelves get a natural wood look without replacing the furniture.",
+    "/en/articles/furniture-wrapping.html"
+   ],
+   [
+    "Doors and frames",
+    "One of the most requested applications: worn interior doors look new in a few hours.",
+    "/en/envelopamento.html"
+   ],
+   [
+    "Walls and panels",
+    "Slats and rustic woods create decorative panels in living rooms, receptions and stores.",
+    "/en/articles/self-adhesive-wallpaper.html"
+   ]
+  ]
+ }
+}

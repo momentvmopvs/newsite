@@ -1,0 +1,104 @@
+{
+ "linha": "Max Lux",
+ "prefixo_titulo": "Max Lux",
+ "fabricante": "Imprimax",
+ "numeracao": "cartoes",
+ "corte": "legenda-embaixo",
+ "pdf": "images/catalogos/Momentum Opvs - Adesivos Translúcidos.pdf",
+ "capa": "images/mo_adesivos_translucidos.webp",
+ "servico_formulario": "Sinalização / Comunicação Visual Corporativa",
+ "titulo": "Adesivo Translúcido Max Lux Imprimax: Cores para Luminosos",
+ "meta_descricao": "Cores do adesivo translúcido Max Lux da Imprimax para luminosos, letreiros, vitrines e vidros, com passagem de luz e cor uniforme. Aplicação em São Paulo.",
+ "h1": "Adesivo Translúcido Max Lux",
+ "intro": [
+  "A linha Max Lux, da Imprimax, reúne vinis calandrados translúcidos: deixam a luz passar e mantêm a cor uniforme, por isso são a escolha certa para luminosos, letreiros com iluminação interna, vitrines e vidros.",
+  "O material tem ótima ancoragem no acrílico e no vidro, com fidelidade de cor quando o luminoso está aceso. Clique em qualquer cor para ampliar e pedir um orçamento com ela."
+ ],
+ "aviso": "As cores podem variar de acordo com o monitor, e algumas podem sair de linha ou ficar temporariamente indisponíveis no fabricante. Consulte a disponibilidade e solicite a amostra física antes de fechar o projeto. Imagens: reproduzidas a partir do catálogo disponibilizado pela Imprimax.",
+ "filtros": [],
+ "artigo_linha": "o adesivo translúcido",
+ "uso": [
+  [
+   "Luminosos e letreiros",
+   "Faces de luminosos e letras com LED interno, com cor viva quando acesas.",
+   "/acrilico.html"
+  ],
+  [
+   "Fachadas comerciais",
+   "Composição de cores da marca em painéis iluminados e fachadas.",
+   "/articles/fachada-em-acm-vantagens.html"
+  ],
+  [
+   "Vitrines e vidros",
+   "Faixas e grafismos coloridos que deixam a luz passar.",
+   "/peliculas.html"
+  ]
+ ],
+ "cores": [
+  {
+   "img": 1,
+   "nome": "Branco",
+   "pantone": ""
+  },
+  {
+   "img": 2,
+   "nome": "Azul Vívido",
+   "pantone": "7693 C"
+  },
+  {
+   "img": 3,
+   "nome": "Verde Bandeira",
+   "pantone": "7726 C"
+  },
+  {
+   "img": 4,
+   "nome": "Amarelo Médio",
+   "pantone": "7408 C"
+  },
+  {
+   "img": 5,
+   "nome": "Laranja",
+   "pantone": "1585 C"
+  },
+  {
+   "img": 6,
+   "nome": "Vermelho Fogo",
+   "pantone": "1795 C"
+  },
+  {
+   "img": 7,
+   "nome": "Vermelho Tomate",
+   "pantone": "186 C"
+  }
+ ],
+ "slug": "translucidos",
+ "en": {
+  "titulo": "Imprimax Max Lux Translucent Vinyl: Colors for Illuminated Signs",
+  "meta_descricao": "Colors of Imprimax Max Lux translucent vinyl for illuminated signs, backlit letters, shop windows and glass, with even color when lit. Installation in São Paulo, Brazil.",
+  "h1": "Max Lux Translucent Vinyl",
+  "intro": [
+   "Imprimax's Max Lux line brings translucent calendered vinyl: it lets light through and keeps the color even, which makes it the right choice for illuminated signs, backlit letters, shop windows and glass.",
+   "The material bonds well to acrylic and glass and keeps color fidelity when the sign is on. Click any color to enlarge it and request a quote with it."
+  ],
+  "aviso": "Colors may vary depending on your screen, and some may be discontinued or temporarily unavailable from the manufacturer. Please check availability and ask for the physical sample before closing your project. Images: reproduced from the catalogue provided by Imprimax.",
+  "filtros": [],
+  "onde": "Where to use translucent vinyl",
+  "uso": [
+   [
+    "Illuminated signs",
+    "Light box faces and LED letters with vivid color when lit.",
+    "/en/acrilico.html"
+   ],
+   [
+    "Storefronts",
+    "Brand colors on illuminated panels and facades.",
+    "/en/articles/acm-facade-benefits.html"
+   ],
+   [
+    "Shop windows and glass",
+    "Colored stripes and graphics that let the light through.",
+    "/en/peliculas.html"
+   ]
+  ]
+ }
+}

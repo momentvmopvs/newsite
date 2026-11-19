@@ -1,0 +1,355 @@
+/*=========================================================
+  PÁGINAS DE CORES DOS CATÁLOGOS (catalogos/*.html)
+  Paleta: azul #0B004A, chumbo #4a4a4a, dourado #B87800
+=========================================================*/
+
+.cores-trilha {
+  margin-bottom: 22px;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 0.95rem;
+  color: #4a4a4a;
+}
+
+.cores-trilha a {
+  color: #0b004a;
+  text-decoration: underline;
+}
+
+.cores-fabricante {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.45em;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #b87800;
+}
+
+.catalogos-hero .texto-geral + .texto-geral {
+  margin-top: 16px;
+}
+
+/* Barra de contagem e filtros */
+
+.cores-secao {
+  padding: 8px 20px 72px;
+  background-color: #ffffff;
+}
+
+.cores-secao .container,
+.cores-uso .container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.cores-barra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.cores-contagem {
+  margin: 0;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 1.05rem;
+  color: #4a4a4a;
+}
+
+.cores-contagem strong {
+  color: #0b004a;
+}
+
+.cores-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cores-filtro {
+  padding: 8px 16px;
+  border: 1px solid #0b004a;
+  border-radius: 999px;
+  background: #ffffff;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 0.95rem;
+  color: #0b004a;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cores-filtro:hover,
+.cores-filtro.ativo {
+  background: #0b004a;
+  color: #ffffff;
+}
+
+/* Grade de cores */
+
+.cores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 26px 22px;
+}
+
+.cor-card {
+  margin: 0;
+  scroll-margin-top: calc(var(--header-height, 90px) + 20px);
+}
+
+.cor-card[hidden] {
+  display: none;
+}
+
+.cor-ampliar {
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 14px;
+  background: #f5f5f8;
+  box-shadow: 0 10px 26px rgba(11, 0, 74, 0.08);
+  cursor: zoom-in;
+}
+
+.cor-ampliar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  transition: transform 0.4s ease;
+}
+
+@media (hover: hover) {
+  .cor-ampliar:hover img {
+    transform: scale(1.06);
+  }
+}
+
+.cor-ampliar:focus-visible {
+  outline: 3px solid #b87800;
+  outline-offset: 3px;
+}
+
+.cor-card:target .cor-ampliar {
+  outline: 3px solid #b87800;
+  outline-offset: 3px;
+}
+
+.cor-card figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 12px;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #4a4a4a;
+}
+
+.cor-card figcaption strong {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.05rem;
+  color: #0b004a;
+}
+
+.cor-tom,
+.cor-codigo,
+.cor-pantone {
+  font-size: 0.85rem;
+  color: #b87800;
+}
+
+.cores-aviso {
+  margin: 36px 0 0;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #4a4a4a;
+}
+
+/* Onde aplicar */
+
+.cores-uso {
+  padding: 64px 20px;
+  background-color: #f5f5f8;
+}
+
+.cores-uso h2 {
+  margin: 0 0 28px;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+  color: #0b004a;
+}
+
+.cores-uso-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.cores-uso-item h3 {
+  margin: 0 0 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.15rem;
+  color: #0b004a;
+}
+
+.cores-uso-item p {
+  margin: 0;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+.cores-uso-item a {
+  color: #0b004a;
+  text-decoration: underline;
+}
+
+/* Ampliação (lightbox) */
+
+.cor-lightbox {
+  /* o reset do estilo.css zera a margem; margin:auto centraliza o modal */
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  height: fit-content;
+  width: min(92vw, 600px);
+  max-height: 94vh;
+  padding: 0;
+  border: 0;
+  border-radius: 18px;
+  background: #ffffff;
+  overflow: visible;
+}
+
+.cor-lightbox::backdrop {
+  background: rgba(11, 0, 74, 0.82);
+}
+
+.cor-lightbox-conteudo {
+  position: relative;
+}
+
+.cor-lightbox img {
+  display: block;
+  width: 100%;
+  max-height: 58vh;
+  object-fit: contain;
+  border-radius: 18px 18px 0 0;
+  background: #f5f5f8;
+}
+
+.cor-lightbox-fechar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #0b004a;
+  cursor: pointer;
+}
+
+.cor-lightbox-nav {
+  position: absolute;
+  top: 35%;
+  z-index: 2;
+  width: 46px;
+  height: 46px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 2rem;
+  line-height: 1;
+  color: #0b004a;
+  cursor: pointer;
+}
+
+.cor-lightbox-anterior { left: 10px; }
+.cor-lightbox-proxima { right: 10px; }
+
+.cor-lightbox-legenda {
+  padding: 18px 22px 22px;
+}
+
+.cor-lightbox-titulo {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0b004a;
+}
+
+.cor-lightbox-desc {
+  margin: 4px 0 16px;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+.cor-lightbox-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cor-lightbox-orcamento,
+.cor-lightbox-copiar {
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cor-lightbox-orcamento {
+  border: 1px solid #0b004a;
+  background: #0b004a;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cor-lightbox-copiar {
+  border: 1px solid #0b004a;
+  background: #ffffff;
+  color: #0b004a;
+}
+
+/* Responsivo */
+
+@media (max-width: 1024px) {
+  .cores-uso-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cores-secao {
+    padding: 4px 16px 56px;
+  }
+
+  .cores-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 14px;
+  }
+
+  .cores-uso {
+    padding: 48px 16px;
+  }
+
+  .cor-lightbox-nav {
+    width: 40px;
+    height: 40px;
+  }
+}
