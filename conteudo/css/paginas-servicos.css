@@ -834,14 +834,15 @@
   margin-top: 18px;
 }
 
-.catalogos-aviso {
+.catalogos-hero .catalogos-aviso {
   max-width: 980px;
   margin: 26px 0 0;
   padding: 16px 20px;
   border-left: 4px solid #b87800;
   background-color: #f5f5f8;
   font-family: "Inconsolata", sans-serif;
-  font-size: 1rem;
+  /* 15% menor que o texto do topo (1.1rem): o box e a barra já destacam */
+  font-size: 0.935rem;
   line-height: 1.6;
   color: #4a4a4a;
 }
@@ -882,6 +883,11 @@
   .catalogos-hero p {
     font-size: 1rem;
     line-height: 1.65;
+  }
+
+  .catalogos-hero .catalogos-aviso {
+    font-size: 0.85rem;
+    line-height: 1.6;
   }
 
   .catalogos-vitrine {
