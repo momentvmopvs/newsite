@@ -40,7 +40,7 @@ def cor_id(cor):
 
 
 def nome_arquivo(dados, cor):
-    return f"adesivo-{dados['slug']}-{cor_id(cor)}-{slugify(dados['fabricante'])}"
+    return f"{dados.get('prefixo_arquivo', 'adesivo')}-{dados['slug']}-{cor_id(cor)}-{slugify(dados['fabricante'])}"
 
 
 def titulo_cor(dados, cor):
@@ -142,6 +142,7 @@ UI = {
             "Envelopamento arquitetônico": "Architectural wrapping",
             "Papel de Parede": "Wallpaper",
             "Sinalização / Comunicação Visual Corporativa": "Signage / Corporate Visual Communication",
+            "Fachada em ACM": "ACM Facade",
         },
     },
 }
@@ -167,6 +168,8 @@ def gerar_html(dados, lang="pt"):
     t = UI[lang]
     # Textos da página: em inglês vêm do bloco "en" do JSON
     txt = dados if lang == "pt" else {**dados, **dados["en"]}
+    # Textos da interface que a linha pode trocar (ex.: "Chapa de ACM" no lugar de "Adesivo")
+    t = {**t, **txt.get("ui", {})}
     slug, linha, fab = dados["slug"], dados["linha"], dados["fabricante"]
     url = url_pagina(slug, lang)
     rel = t["rel"]
@@ -242,7 +245,7 @@ def gerar_html(dados, lang="pt"):
                 "caption": titulo_cor(dados, cor) + (f": {desc}" if desc else "") + (f" (Pantone {cor['pantone']})" if cor.get("pantone") else ""),
                 "contentUrl": f"{SITE}/{img_dir}/{base}.webp",
                 "thumbnailUrl": f"{SITE}/{img_dir}/{base}-300.webp",
-                "creditText": fab,
+                "creditText": dados.get("credito", fab),
             },
         })
     ld = {
@@ -422,7 +425,12 @@ if __name__ == "__main__":
         sys.exit(__doc__)
     dados = json.loads((RAIZ / "ferramentas" / "catalogos" / f"{sys.argv[1]}.json").read_text(encoding="utf-8"))
     if "--imagens" in sys.argv:
-        extrair_imagens(dados)
+        if dados.get("amostras"):
+            # Linha sem PDF: as amostras são desenhadas (ver amostras.py)
+            from amostras import gerar_amostras
+            gerar_amostras(dados, RAIZ, nome_arquivo)
+        else:
+            extrair_imagens(dados)
     gerar_html(dados, "pt")
     if "en" in dados:
         gerar_html(dados, "en")

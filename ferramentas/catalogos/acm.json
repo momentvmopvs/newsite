@@ -1,0 +1,455 @@
+{
+ "slug": "acm",
+ "linha": "ACM",
+ "prefixo_titulo": "ACM",
+ "prefixo_arquivo": "chapa",
+ "fabricante": "AlumBrasil",
+ "credito": "Momentvm Opvs",
+ "amostras": true,
+ "capa": "images/catalogos/capa-acm.webp",
+ "ordem_capa": [
+  1,
+  14,
+  3,
+  20,
+  23,
+  4,
+  9,
+  2,
+  15,
+  26,
+  24,
+  7,
+  6,
+  10,
+  22,
+  13,
+  27,
+  25,
+  5,
+  18,
+  12,
+  29,
+  16,
+  11,
+  21,
+  28,
+  8,
+  30
+ ],
+ "servico_formulario": "Fachada em ACM",
+ "ui": {
+  "adesivo": "Chapa de",
+  "lista": "Cores da chapa de",
+  "final": "Clique na cor e use o botão de orçamento: o nome da cor já vai preenchido. Se preferir, a gente leva as amostras físicas para você comparar no local."
+ },
+ "titulo": "Cores de ACM para Fachadas: Catálogo de Chapas de Alumínio Composto",
+ "meta_descricao": "Veja as cores de ACM para fachadas: branco, preto, prata metálico, champagne, azul GM, vermelho, madeira, escovado e espelhado. Chapas AlumBrasil com instalação em São Paulo.",
+ "h1": "Cores de ACM para Fachadas",
+ "fabricante_exibido": "Chapas AlumBrasil",
+ "intro": [
+  "O ACM (alumínio composto) é o revestimento mais usado em fachadas comerciais, totens, pórticos e letreiros: leve, rígido, resistente ao tempo e fácil de limpar. Trabalhamos com as chapas da AlumBrasil, em 3 e 4 mm, nas medidas 1220 × 5000 e 1500 × 5000 mm.",
+  "Aqui estão as cores e acabamentos mais pedidos: foscos, alto brilho, metálicos, escovado, espelhados e madeiras. Clique em qualquer cor para ampliar e pedir um orçamento com ela. Se a cor que você procura não estiver na lista, fale com a gente: buscamos em outros fabricantes."
+ ],
+ "aviso": "As amostras desta página são representações digitais aproximadas, criadas pela Momentvm Opvs, e não substituem a amostra física. As cores podem variar de acordo com o monitor e com o lote de fabricação, e algumas podem ficar temporariamente indisponíveis: consulte a disponibilidade antes de fechar o projeto. Nomes populares como \"azul GM\", \"vermelho Bank\" ou \"amarelo Shell\" indicam apenas o tom conhecido no mercado, sem vínculo com essas empresas.",
+ "filtros": [
+  [
+   "foscas",
+   "Foscas"
+  ],
+  [
+   "brilho",
+   "Alto brilho"
+  ],
+  [
+   "metalicas",
+   "Metálicas"
+  ],
+  [
+   "especiais",
+   "Escovado e espelhados"
+  ],
+  [
+   "madeiras",
+   "Madeiras"
+  ]
+ ],
+ "onde": "Onde aplicar o ACM",
+ "uso": [
+  [
+   "Fachadas comerciais",
+   "Revestimento completo ou faixas de fachada para lojas, clínicas, escritórios e franquias, com acabamento uniforme e duradouro.",
+   "/fachadas.html"
+  ],
+  [
+   "Totens e pórticos",
+   "Estruturas de identificação na entrada de empresas, postos, condomínios e estacionamentos.",
+   "/articles/fachada-em-acm-vantagens.html"
+  ],
+  [
+   "Letreiros e recepções",
+   "Base para letras caixa em acrílico, letreiros com LED e painéis de recepção.",
+   "/acrilico.html"
+  ]
+ ],
+ "cores": [
+  {
+   "nome": "Branco Fosco",
+   "tom": "foscas",
+   "desc": "branco puro de acabamento fosco, tom próximo ao RAL 9016; o mais usado em fachadas, totens e letreiros",
+   "desc_en": "pure white with a matte finish, close to RAL 9016; the most used on facades, pylons and signs",
+   "amostra": {
+    "tipo": "fosco",
+    "hex": "#F1F1EC"
+   }
+  },
+  {
+   "nome": "Preto Fosco",
+   "tom": "foscas",
+   "desc": "preto fosco, tom próximo ao RAL 9005",
+   "desc_en": "matte black, close to RAL 9005",
+   "amostra": {
+    "tipo": "fosco",
+    "hex": "#1F1F21"
+   }
+  },
+  {
+   "nome": "Cinza Escuro",
+   "tom": "foscas",
+   "desc": "cinza-chumbo escuro, tom próximo ao RAL 7016 (antracite)",
+   "desc_en": "dark lead grey, close to RAL 7016 (anthracite)",
+   "amostra": {
+    "tipo": "fosco",
+    "hex": "#4A4E54"
+   }
+  },
+  {
+   "nome": "Vermelho Fosco",
+   "tom": "foscas",
+   "desc": "vermelho intenso, tom conhecido no mercado como \"vermelho Bank\"",
+   "desc_en": "intense red, the shade known in Brazil as \"bank red\"",
+   "amostra": {
+    "tipo": "fosco",
+    "hex": "#B3141C"
+   }
+  },
+  {
+   "nome": "Vinho",
+   "tom": "foscas",
+   "desc": "vinho/bordô, também chamado de burgundy",
+   "desc_en": "wine/bordeaux red, also called burgundy",
+   "amostra": {
+    "tipo": "fosco",
+    "hex": "#6A1B2B"
+   }
+  },
+  {
+   "nome": "Laranja Fosco",
+   "tom": "foscas",
+   "desc": "laranja vivo de acabamento fosco",
+   "desc_en": "bright orange with a matte finish",
+   "amostra": {
+    "tipo": "fosco",
+    "hex": "#E5631D"
+   }
+  },
+  {
+   "nome": "Amarelo Fosco",
+   "tom": "foscas",
+   "desc": "amarelo ouro, tom próximo ao conhecido como \"amarelo Shell\"",
+   "desc_en": "golden yellow, close to the shade known as \"Shell yellow\"",
+   "amostra": {
+    "tipo": "fosco",
+    "hex": "#F3C300"
+   }
+  },
+  {
+   "nome": "Azul Fosco",
+   "tom": "foscas",
+   "desc": "azul médio de acabamento fosco",
+   "desc_en": "medium blue with a matte finish",
+   "amostra": {
+    "tipo": "fosco",
+    "hex": "#1E4E9C"
+   }
+  },
+  {
+   "nome": "Azul Royal",
+   "tom": "foscas",
+   "desc": "azul royal, tom conhecido no mercado como \"azul GM\"",
+   "desc_en": "royal blue, the shade known as \"GM blue\"",
+   "amostra": {
+    "tipo": "fosco",
+    "hex": "#0A3A8C"
+   }
+  },
+  {
+   "nome": "Verde Bandeira",
+   "tom": "foscas",
+   "desc": "verde bandeira, tom conhecido no mercado como \"verde BR\"",
+   "desc_en": "flag green, the shade known in Brazil as \"BR green\"",
+   "amostra": {
+    "tipo": "fosco",
+    "hex": "#00813E"
+   }
+  },
+  {
+   "nome": "Verde Pantone",
+   "tom": "foscas",
+   "desc": "verde médio e vivo, de referência Pantone",
+   "desc_en": "vivid medium green, Pantone reference",
+   "amostra": {
+    "tipo": "fosco",
+    "hex": "#00A04B"
+   }
+  },
+  {
+   "nome": "Verde Finland",
+   "tom": "foscas",
+   "desc": "verde-garrafa escuro e sóbrio (verde Finland)",
+   "desc_en": "dark, sober bottle green (Finland green)",
+   "amostra": {
+    "tipo": "fosco",
+    "hex": "#0B4A38"
+   }
+  },
+  {
+   "nome": "Café",
+   "tom": "foscas",
+   "desc": "marrom café, discreto e elegante",
+   "desc_en": "coffee brown, discreet and elegant",
+   "amostra": {
+    "tipo": "fosco",
+    "hex": "#4A3327"
+   }
+  },
+  {
+   "nome": "Branco Brilho",
+   "tom": "brilho",
+   "desc": "branco de alto brilho, reflete a luz e facilita a limpeza",
+   "desc_en": "high-gloss white, reflects light and is easy to clean",
+   "amostra": {
+    "tipo": "brilho",
+    "hex": "#F6F6F3"
+   }
+  },
+  {
+   "nome": "Preto Brilho",
+   "tom": "brilho",
+   "desc": "preto de alto brilho, conhecido como \"preto piano\"",
+   "desc_en": "high-gloss black, known as \"piano black\"",
+   "amostra": {
+    "tipo": "brilho",
+    "hex": "#141416"
+   }
+  },
+  {
+   "nome": "Vermelho Brilho",
+   "tom": "brilho",
+   "desc": "vermelho de alto brilho, muito usado em fachadas de varejo",
+   "desc_en": "high-gloss red, widely used on retail facades",
+   "amostra": {
+    "tipo": "brilho",
+    "hex": "#C0141E"
+   }
+  },
+  {
+   "nome": "Laranja Brilho",
+   "tom": "brilho",
+   "desc": "laranja de alto brilho",
+   "desc_en": "high-gloss orange",
+   "amostra": {
+    "tipo": "brilho",
+    "hex": "#EE6A1C"
+   }
+  },
+  {
+   "nome": "Amarelo Brilho",
+   "tom": "brilho",
+   "desc": "amarelo de alto brilho",
+   "desc_en": "high-gloss yellow",
+   "amostra": {
+    "tipo": "brilho",
+    "hex": "#F6C800"
+   }
+  },
+  {
+   "nome": "Azul Brilho",
+   "tom": "brilho",
+   "desc": "azul de alto brilho",
+   "desc_en": "high-gloss blue",
+   "amostra": {
+    "tipo": "brilho",
+    "hex": "#1B4FA8"
+   }
+  },
+  {
+   "nome": "Prata Metálico",
+   "tom": "metalicas",
+   "desc": "prata metálico (silver metallic), o acabamento mais tradicional de fachadas em ACM",
+   "desc_en": "silver metallic, the most traditional ACM facade finish",
+   "amostra": {
+    "tipo": "metalico",
+    "hex": "#A9ACB0"
+   }
+  },
+  {
+   "nome": "Prata Fosco",
+   "tom": "metalicas",
+   "desc": "prata de brilho suave, mais discreto que o metálico",
+   "desc_en": "soft-sheen silver, more discreet than the metallic",
+   "amostra": {
+    "tipo": "metalico",
+    "hex": "#BDBFC1"
+   }
+  },
+  {
+   "nome": "Grafite Metálico",
+   "tom": "metalicas",
+   "desc": "grafite metálico, cinza escuro com partículas de brilho",
+   "desc_en": "graphite metallic, dark grey with sparkling particles",
+   "amostra": {
+    "tipo": "metalico",
+    "hex": "#505458"
+   }
+  },
+  {
+   "nome": "Champagne Metálico",
+   "tom": "metalicas",
+   "desc": "champagne metálico, dourado claro e sofisticado",
+   "desc_en": "champagne metallic, a light and sophisticated gold",
+   "amostra": {
+    "tipo": "metalico",
+    "hex": "#C8B48E"
+   }
+  },
+  {
+   "nome": "Dourado Metálico",
+   "tom": "metalicas",
+   "desc": "dourado metálico",
+   "desc_en": "gold metallic",
+   "amostra": {
+    "tipo": "metalico",
+    "hex": "#C29A38"
+   }
+  },
+  {
+   "nome": "Bronze Metálico",
+   "tom": "metalicas",
+   "desc": "bronze metálico, tom quente com brilho",
+   "desc_en": "bronze metallic, a warm tone with sheen",
+   "amostra": {
+    "tipo": "metalico",
+    "hex": "#7B5B3B"
+   }
+  },
+  {
+   "nome": "Prata Escovado",
+   "tom": "especiais",
+   "desc": "alumínio escovado, com riscos finos na horizontal",
+   "desc_en": "brushed aluminium, with fine horizontal lines",
+   "amostra": {
+    "tipo": "escovado",
+    "hex": "#B8BABD"
+   }
+  },
+  {
+   "nome": "Espelhado Prata",
+   "tom": "especiais",
+   "desc": "espelhado prata (mirror silver), reflete como um espelho",
+   "desc_en": "silver mirror finish, reflects like a mirror",
+   "amostra": {
+    "tipo": "espelhado",
+    "hex": "#C9CCD0"
+   }
+  },
+  {
+   "nome": "Espelhado Dourado",
+   "tom": "especiais",
+   "desc": "espelhado dourado (mirror gold)",
+   "desc_en": "gold mirror finish",
+   "amostra": {
+    "tipo": "espelhado",
+    "hex": "#D2A63A"
+   }
+  },
+  {
+   "nome": "Madeira Clara",
+   "tom": "madeiras",
+   "desc": "madeira clara, tom próximo ao carvalho e ao freijó",
+   "desc_en": "light wood, close to oak and freijó",
+   "amostra": {
+    "tipo": "madeira",
+    "hex": "#C99E6E",
+    "hex2": "#9C7144"
+   }
+  },
+  {
+   "nome": "Madeira Escura",
+   "tom": "madeiras",
+   "desc": "madeira escura, tom próximo à imbuia e ao mogno",
+   "desc_en": "dark wood, close to imbuia and mahogany",
+   "amostra": {
+    "tipo": "madeira",
+    "hex": "#6A452C",
+    "hex2": "#3A2417"
+   }
+  }
+ ],
+ "en": {
+  "ui": {
+   "adesivo": "Panel",
+   "lista": "Colors of the",
+   "final": "Click the color and use the quote button: the color name is filled in for you. If you prefer, we bring the physical samples so you can compare them on site."
+  },
+  "titulo": "ACM Colors for Facades: Aluminium Composite Panel Catalogue",
+  "meta_descricao": "See ACM colors for facades: white, black, silver metallic, champagne, royal blue, red, wood, brushed and mirror finishes. AlumBrasil panels installed in São Paulo, Brazil.",
+  "h1": "ACM Colors for Facades",
+  "fabricante_exibido": "AlumBrasil panels",
+  "intro": [
+   "ACM (aluminium composite material) is the most used cladding for commercial facades, pylons, gateways and signs: light, rigid, weather resistant and easy to clean. We work with AlumBrasil panels, 3 and 4 mm thick, in 1220 × 5000 and 1500 × 5000 mm sheets.",
+   "Here are the most requested colors and finishes: matte, high gloss, metallic, brushed, mirror and wood. Click any color to enlarge it and request a quote with it. If the color you need is not listed, talk to us: we source it from other manufacturers."
+  ],
+  "aviso": "The swatches on this page are approximate digital renderings created by Momentvm Opvs and do not replace the physical sample. Colors may vary with your screen and the production batch, and some may be temporarily unavailable: please check availability before closing your project. Popular names such as \"GM blue\", \"bank red\" or \"Shell yellow\" only describe the shade known in the market, with no connection to those companies.",
+  "filtros": [
+   [
+    "foscas",
+    "Matte"
+   ],
+   [
+    "brilho",
+    "High gloss"
+   ],
+   [
+    "metalicas",
+    "Metallic"
+   ],
+   [
+    "especiais",
+    "Brushed and mirror"
+   ],
+   [
+    "madeiras",
+    "Wood"
+   ]
+  ],
+  "onde": "Where to use ACM",
+  "uso": [
+   [
+    "Commercial facades",
+    "Full cladding or facade bands for stores, clinics, offices and franchises, with a uniform, long-lasting finish.",
+    "/en/fachadas.html"
+   ],
+   [
+    "Pylons and gateways",
+    "Identification structures at the entrance of companies, gas stations, condominiums and parking lots.",
+    "/en/articles/acm-facade-benefits.html"
+   ],
+   [
+    "Signs and receptions",
+    "Base for acrylic channel letters, LED signs and reception panels.",
+    "/en/acrilico.html"
+   ]
+  ]
+ }
+}
