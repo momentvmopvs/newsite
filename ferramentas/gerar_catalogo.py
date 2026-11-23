@@ -231,6 +231,11 @@ def gerar_html(dados, lang="pt"):
     intro = "\n".join(f'    <p class="texto-geral">{e(p)}</p>' for p in txt["intro"])
     onde = txt["onde"] if "onde" in txt else f"Onde aplicar {dados.get('artigo_linha', 'o ' + linha)}"
 
+    # Autoria das imagens: o fabricante (fotos tiradas do catálogo dele) ou a
+    # própria Momentvm Opvs quando as amostras são desenhadas aqui (campo "credito").
+    credito = dados.get("credito", fab)
+    autor = ({"@id": f"{SITE}#organization"} if credito == "Momentvm Opvs"
+             else {"@type": "Organization", "name": credito})
     itens_ld = []
     for i, cor in enumerate(dados["cores"], 1):
         base = nome_arquivo(dados, cor)
@@ -245,7 +250,9 @@ def gerar_html(dados, lang="pt"):
                 "caption": titulo_cor(dados, cor) + (f": {desc}" if desc else "") + (f" (Pantone {cor['pantone']})" if cor.get("pantone") else ""),
                 "contentUrl": f"{SITE}/{img_dir}/{base}.webp",
                 "thumbnailUrl": f"{SITE}/{img_dir}/{base}-300.webp",
-                "creditText": dados.get("credito", fab),
+                "creditText": credito,
+                "creator": autor,
+                "copyrightNotice": f"© {credito}",
             },
         })
     ld = {
