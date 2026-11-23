@@ -353,6 +353,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://momentvmopvs.com/articles/adesivo-jateado-em-escritorios.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://momentvmopvs.com/images/Peliculas-9-1170x658.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://momentvmopvs.com/en/articles/frosted-glass-film-for-offices.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://momentvmopvs.com/images/Peliculas-9-1170x658.webp</image:loc></image:image>
+  </url>
 
 
   <!-- Catálogos: páginas de cores -->
