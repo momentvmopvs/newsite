@@ -58,13 +58,13 @@
 
   <url>
     <loc>https://momentvmopvs.com/blog.html</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/blog.html</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -138,13 +138,13 @@
 
   <url>
     <loc>https://momentvmopvs.com/catalogos.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/catalogos.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -344,6 +344,42 @@
 
 
   <!-- Catálogos: páginas de cores -->
+  <url>
+    <loc>https://momentvmopvs.com/catalogos/acm.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-branco-fosco-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-preto-fosco-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-cinza-escuro-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-vermelho-fosco-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-vinho-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-laranja-fosco-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-amarelo-fosco-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-azul-fosco-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-azul-royal-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-verde-bandeira-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-verde-pantone-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-verde-finland-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-cafe-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-branco-brilho-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-preto-brilho-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-vermelho-brilho-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-laranja-brilho-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-amarelo-brilho-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-azul-brilho-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-prata-metalico-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-prata-fosco-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-grafite-metalico-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-champagne-metalico-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-dourado-metalico-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-bronze-metalico-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-prata-escovado-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-espelhado-prata-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-espelhado-dourado-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-madeira-clara-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-madeira-escura-alumbrasil.webp</image:loc></image:image>
+  </url>
+
   <url>
     <loc>https://momentvmopvs.com/catalogos/gold-madeiras.html</loc>
     <lastmod>2026-11-17</lastmod>
@@ -616,6 +652,42 @@
     <image:image><image:loc>https://momentvmopvs.com/images/catalogos/pisomax/adesivo-pisomax-antiderrapante-branco-imprimax.webp</image:loc></image:image>
     <image:image><image:loc>https://momentvmopvs.com/images/catalogos/pisomax/adesivo-pisomax-antiderrapante-transparente-imprimax.webp</image:loc></image:image>
     <image:image><image:loc>https://momentvmopvs.com/images/catalogos/pisomax/adesivo-pisomax-transparente-imprimax.webp</image:loc></image:image>
+  </url>
+
+  <url>
+    <loc>https://momentvmopvs.com/en/catalogos/acm.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-branco-fosco-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-preto-fosco-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-cinza-escuro-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-vermelho-fosco-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-vinho-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-laranja-fosco-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-amarelo-fosco-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-azul-fosco-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-azul-royal-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-verde-bandeira-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-verde-pantone-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-verde-finland-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-cafe-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-branco-brilho-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-preto-brilho-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-vermelho-brilho-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-laranja-brilho-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-amarelo-brilho-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-azul-brilho-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-prata-metalico-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-prata-fosco-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-grafite-metalico-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-champagne-metalico-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-dourado-metalico-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-bronze-metalico-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-prata-escovado-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-espelhado-prata-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-espelhado-dourado-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-madeira-clara-alumbrasil.webp</image:loc></image:image>
+    <image:image><image:loc>https://momentvmopvs.com/images/catalogos/acm/chapa-acm-madeira-escura-alumbrasil.webp</image:loc></image:image>
   </url>
 
   <url>
