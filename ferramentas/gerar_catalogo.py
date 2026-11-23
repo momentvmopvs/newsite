@@ -124,6 +124,7 @@ UI = {
         "lb": "Cor ampliada", "fechar": "Fechar", "anterior": "Cor anterior", "proxima": "Próxima cor",
         "pedir": "Pedir orçamento com esta cor", "copiar": "Copiar link da cor", "copiado": "Link copiado!",
         "servicos": {},
+        "uso": "Uso das imagens",
     },
     "en": {
         "lang": "en", "modelo": "en/catalogos.html", "base": "/en", "rel": "../../",
@@ -136,6 +137,7 @@ UI = {
         "orcamento": "Request a quote", "outros": "See other catalogues",
         "lb": "Enlarged color", "fechar": "Close", "anterior": "Previous color", "proxima": "Next color",
         "pedir": "Request a quote with this color", "copiar": "Copy color link", "copiado": "Link copied!",
+        "uso": "Use of images",
         # opções do formulário de orçamento em inglês (en/servicos.html)
         "servicos": {
             "Envelopamento (móveis, portas, veículos)": "Wrapping (furniture, doors, vehicles)",
@@ -236,6 +238,10 @@ def gerar_html(dados, lang="pt"):
     credito = dados.get("credito", fab)
     autor = ({"@id": f"{SITE}#organization"} if credito == "Momentvm Opvs"
              else {"@type": "Organization", "name": credito})
+    # Página que explica de quem são as imagens e com quem pedir autorização
+    # (gerada por gerar_uso_imagens.py)
+    uso = f"{t['base']}/catalogos/uso-das-imagens.html"
+    licenca = f"{SITE}{uso}#{slugify(credito)}"
     itens_ld = []
     for i, cor in enumerate(dados["cores"], 1):
         base = nome_arquivo(dados, cor)
@@ -253,6 +259,8 @@ def gerar_html(dados, lang="pt"):
                 "creditText": credito,
                 "creator": autor,
                 "copyrightNotice": f"© {credito}",
+                "license": licenca,
+                "acquireLicensePage": licenca,
             },
         })
     ld = {
@@ -368,7 +376,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {chr(10).join(cards)}
     </div>
 
-    <p class="cores-aviso">{e(txt['aviso'])}</p>
+    <p class="cores-aviso">{e(txt['aviso'])} <a href="{uso}">{t['uso']}</a></p>
   </div>
 </section>
 
