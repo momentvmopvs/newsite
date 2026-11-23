@@ -2121,3 +2121,10 @@ font-size:1.4rem;
   color: #0B004A;
   text-decoration: underline;
 }
+
+/* Links dentro do texto dos artigos do blog */
+.link-artigo {
+  color: #0B004A;
+  font-weight: 600;
+  text-decoration: underline;
+}
