@@ -5,6 +5,7 @@ Atualiza o que depende dos artigos do blog (PT e EN):
   2. Na lista do blog (blog.html, en/blog.html): filtro por assunto e cartões da mais
      recente para a mais antiga, com o selo "Mais recente" no primeiro.
   3. Na página inicial (index.html, en/index.html): seção "Do blog" com os 3 últimos.
+  4. No sitemap.xml: inclui os artigos novos e atualiza as datas dos artigos, do blog e da home.
 
 A data vem do "datePublished" e o assunto do "articleSection" do JSON-LD de cada artigo
 (os assuntos válidos estão em IDIOMAS, abaixo). O tempo de leitura é calculado pelo
@@ -25,6 +26,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 PALAVRAS_POR_MINUTO = 200
 NA_HOME = 3
+SITE = "https://momentvmopvs.com"
 
 MESES_PT = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho",
             "agosto", "setembro", "outubro", "novembro", "dezembro"]
@@ -92,6 +94,7 @@ def dados_artigo(arquivo, t):
     return {
         "arquivo": arquivo,
         "iso": f"{a:04d}-{m:02d}-{d:02d}",
+        "modificado": max([f"{a:04d}-{m:02d}-{d:02d}"] + re.findall(r'"dateModified":\s*"(\d{4}-\d{2}-\d{2})', s)),
         "amd": (a, m, d),
         "assunto": por_nome[nome],
         "assunto_nome": nome,
@@ -250,7 +253,38 @@ def atualizar_home(t, cartoes, artigos):
 """)
 
 
+def lastmod_sitemap(s, url, data):
+    """Põe a data no endereço, sem nunca voltar para uma data anterior."""
+    padrao = re.compile(r"(<loc>" + re.escape(url) + r"</loc>\s*<lastmod>)([^<]+)")
+    if not padrao.search(s):
+        raise SystemExit(f"sitemap.xml: não achei {url} com <lastmod>")
+    return padrao.sub(lambda m: m[1] + max(m[2], data), s)
+
+
+def atualizar_sitemap(por_idioma):
+    """Inclui os artigos novos e atualiza as datas dos artigos, do blog e da home."""
+    arq = RAIZ / "sitemap.xml"
+    s = arq.read_text(encoding="utf-8")
+    for t, artigos in por_idioma:
+        base = "/en/" if t["pasta"].startswith("en/") else "/"
+        for slug, art in artigos.items():
+            url = f'{SITE}/{t["pasta"]}/{slug}.html'
+            if f"<loc>{url}</loc>" not in s:
+                novo = (f"  <url>\n    <loc>{url}</loc>\n    <lastmod>{art['modificado']}</lastmod>\n"
+                        "    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>\n")
+                s = s.replace("  <!-- Artigos -->\n", "  <!-- Artigos -->\n" + novo, 1)
+                if novo not in s:
+                    raise SystemExit("sitemap.xml: não achei o comentário <!-- Artigos -->")
+                print(f"   sitemap: incluído {url}")
+            s = lastmod_sitemap(s, url, art["modificado"])
+        ultimo = max(art["iso"] for art in artigos.values())
+        s = lastmod_sitemap(s, SITE + t["link_blog"], ultimo)
+        s = lastmod_sitemap(s, SITE + base, ultimo)
+    arq.write_text(s, encoding="utf-8")
+
+
 def main():
+    por_idioma = []
     for lang, t in IDIOMAS.items():
         artigos = {}
         for arq in sorted((RAIZ / t["pasta"]).glob("*.html")):
@@ -259,10 +293,12 @@ def main():
             atualizar_artigo(art, t)
         cartoes = atualizar_blog(t, artigos)
         atualizar_home(t, cartoes, artigos)
+        por_idioma.append((t, artigos))
         print(f"[{lang}] {len(artigos)} artigos; ordem:")
         for c in cartoes:
             art = artigos[c["slug"]]
             print(f"   {art['iso']}  {art['minutos']:>2} min  {c['slug']}")
+    atualizar_sitemap(por_idioma)
 
 
 if __name__ == "__main__":
