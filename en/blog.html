@@ -45,6 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <script src="../conteudo/js/header.js" defer></script>
 <script src="../conteudo/js/last-updated.js" defer></script>
+<script src="../conteudo/js/blog.js" defer></script>
 
 <link rel="stylesheet" href="../conteudo/css/estilo.css">
 <link rel="stylesheet" href="../conteudo/css/header.css">
@@ -209,199 +210,145 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 </header>
 <main class="sem-recuo">
-<section class="titulo-secao container">
-  <h1>Momentvm Opvs Blog</h1>
-  <p class="texto-geral">Tips, trends, and news on facades, visual communication, and corporate wrapping.</p>
+<section class="blog-topo">
+  <div class="container">
+    <span class="titulo-linha"></span>
+    <h1>Momentvm Opvs Blog</h1>
+    <p class="texto-geral">Tips, trends, and news on facades, visual communication, and corporate wrapping.</p>
+  </div>
 </section>
-<section class="sobre-servicos blog-lista">
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <span class="titulo-linha"></span>
-      <p class="artigo-meta"><span class="selo-linha"><span class="selo-recente">Latest</span></span> <time datetime="2026-11-23">November 23, 2026</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 3 min read</span></p>
-<h2 class="especialblog">Frosted Glass Film for Offices: Privacy Without Losing Natural Light</h2>
-      <p class="parceiro">
-        How to specify frosted film for glass partitions and doors: level of privacy, band height,
-        logos on frosted film and how to avoid installation defects.</p><br>
-      <div class="conteudo-blog">
-        <a href="/en/articles/frosted-glass-film-for-offices.html" class="botao-blog texto-geral">READ MORE</a>
-      </div>
+<!-- blog-recentes: gerado por ferramentas/atualizar_blog.py -->
+<section class="blog-recentes blog-lista" aria-label="Blog articles">
+  <div class="container">
+    <div class="blog-filtros" role="group" aria-label="Filter articles by topic" hidden>
+      <button type="button" class="blog-filtro" data-assunto="" aria-pressed="true">All <span>10</span></button>
+      <button type="button" class="blog-filtro" data-assunto="fachadas" aria-pressed="false">ACM Facades <span>1</span></button>
+      <button type="button" class="blog-filtro" data-assunto="letras" aria-pressed="false">Letters and Signage <span>1</span></button>
+      <button type="button" class="blog-filtro" data-assunto="envelopamento" aria-pressed="false">Wrapping <span>3</span></button>
+      <button type="button" class="blog-filtro" data-assunto="peliculas" aria-pressed="false">Window and Frosted Films <span>2</span></button>
+      <button type="button" class="blog-filtro" data-assunto="impressao-3d" aria-pressed="false">3D Printing <span>1</span></button>
+      <button type="button" class="blog-filtro" data-assunto="comunicacao-visual" aria-pressed="false">Visual Communication <span>1</span></button>
+      <button type="button" class="blog-filtro" data-assunto="especiais" aria-pressed="false">Special Projects <span>1</span></button>
     </div>
-    <div class="sobre-imagem">
-      <img src="../images/Peliculas-9-1170x658.webp" loading="lazy"
-decoding="async" alt="Office room with a glass partition treated with frosted film">
+    <div class="blog-recentes-grid">
+      <article class="blog-recente-card" data-assunto="peliculas">
+        <a class="blog-recente-imagem" href="/en/articles/frosted-glass-film-for-offices.html" tabindex="-1">
+          <img src="/images/Peliculas-9-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Office room with a glass partition treated with frosted film">
+          <span class="selo-recente">Latest</span>
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>3 min read</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Window and Frosted Films</p>
+        <h2><a href="/en/articles/frosted-glass-film-for-offices.html">Frosted Glass Film for Offices: Privacy Without Losing Natural Light</a></h2>
+        <p class="blog-recente-resumo">How to specify frosted film for glass partitions and doors: level of privacy, band height, logos on frosted film and how to avoid installation defects.</p>
+        <p class="blog-recente-data"><time datetime="2026-11-23">November 23, 2026</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="impressao-3d">
+        <a class="blog-recente-imagem" href="/en/articles/3d-printed-letters-and-logos.html" tabindex="-1">
+          <img src="/images/impressao-3d-maquete-onibus-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Large-scale bus model 3D printed in sections, joined and painted">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>4 min read</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">3D Printing</p>
+        <h2><a href="/en/articles/3d-printed-letters-and-logos.html">3D Printed Letters and Logos: When They Make Sense</a></h2>
+        <p class="blog-recente-resumo">How 3D printed letters and logos work, PLA vs PETG vs ABS, size limits, finishing and when 3D printing is the best choice in visual communication.</p>
+        <p class="blog-recente-data"><time datetime="2026-11-15">November 15, 2026</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="comunicacao-visual">
+        <a class="blog-recente-imagem" href="/en/articles/corporate-visual-communication-sao-paulo.html" tabindex="-1">
+          <img src="/images/Paredes-11-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Corporate glass wall with custom adhesive print showing Metacons construction company&#x27;s development map">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>3 min read</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Visual Communication</p>
+        <h2><a href="/en/articles/corporate-visual-communication-sao-paulo.html">Corporate Visual Communication in São Paulo: Projects for Architects and Builders</a></h2>
+        <p class="blog-recente-resumo">From specification to installation: architectural wrapping, building signage, corporate visual identity and custom projects for architects, builders and companies in São Paulo.</p>
+        <p class="blog-recente-data"><time datetime="2026-10-14">October 14, 2026</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="fachadas">
+        <a class="blog-recente-imagem" href="/en/articles/acm-facade-benefits.html" tabindex="-1">
+          <img src="/images/fachadas-scaled-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Signage totem for Hospital Geral de Pedreira in São Paulo, produced and installed by Momentvm Opvs">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>2 min read</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">ACM Facades</p>
+        <h2><a href="/en/articles/acm-facade-benefits.html">ACM Facade: What It Is and When It Is Worth Investing In</a></h2>
+        <p class="blog-recente-resumo">A company’s facade is one of the first points of contact between the brand and the public. Before someone even enters the space, it already communicates professionalism, care and visual identity. That is why an ACM facade has become one of the most requested solutions for companies that want to modernize their visual presence with a clean, durable and sophisticated finish.</p>
+        <p class="blog-recente-data"><time datetime="2026-08-11">August 11, 2026</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="especiais">
+        <a class="blog-recente-imagem" href="/en/articles/custom-mdf-gifts-laser-cut.html" tabindex="-1">
+          <img src="/images/laser-cut-bull-head-wall-decor-3D-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Decorative bull head in laser-cut MDF">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>4 min read</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Special Projects</p>
+        <h2><a href="/en/articles/custom-mdf-gifts-laser-cut.html">End-of-Year MDF Gifts: Purposeful Personalization and Timeless Beauty for Display.</a></h2>
+        <p class="blog-recente-resumo">At the end of the year, companies look for gifts that convey gratitude, strengthen their brand, and create genuine connections with clients, partners, and employees. But in a world saturated with disposable giveaways — calendars that last only a few months, keychains that disappear into drawers, and pens no one remembers receiving — an elegant and sustainable alternative emerges: custom laser-cut MDF gifts.</p>
+        <p class="blog-recente-data"><time datetime="2026-01-23">January 23, 2026</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="envelopamento">
+        <a class="blog-recente-imagem" href="/en/articles/kitchen-appliance-wrapping.html" tabindex="-1">
+          <img src="/images/Eletrodomesticos-10-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Refrigerator wrapped in matte black vinyl">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>2 min read</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Wrapping</p>
+        <h2><a href="/en/articles/kitchen-appliance-wrapping.html">Appliance Wrapping: Refresh Your Refrigerator with Style and Protection.</a></h2>
+        <p class="blog-recente-resumo">Have you ever thought about giving your refrigerator or other household or office appliances a new look without buying a new unit? Appliance wrapping is the perfect solution for those who want to renew, customize, and protect their equipment with a unique design touch.</p>
+        <p class="blog-recente-data"><time datetime="2026-01-23">January 23, 2026</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="envelopamento">
+        <a class="blog-recente-imagem" href="/en/articles/furniture-wrapping.html" tabindex="-1">
+          <img src="/images/Cabinet-5-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Bathroom cabinet wrapped with matte yellow automotive vinyl">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>2 min read</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Wrapping</p>
+        <h2><a href="/en/articles/furniture-wrapping.html">Furniture Wrapping: Smart Renovation Without Carpentry.</a></h2>
+        <p class="blog-recente-resumo">Are you an architect, decorator, or interior designer looking for creative solutions to renovate spaces without exceeding your client’s budget? Furniture wrapping may be exactly what you need to incorporate into your next projects.</p>
+        <p class="blog-recente-data"><time datetime="2026-01-23">January 23, 2026</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="peliculas">
+        <a class="blog-recente-imagem" href="/en/articles/insulfilm-window-films.html" tabindex="-1">
+          <img src="/images/Peliculas-7-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Glass covered with transparent Insulfilm window film for temperature control">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>2 min read</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Window and Frosted Films</p>
+        <h2><a href="/en/articles/insulfilm-window-films.html">Insulfilm Window Films: 7 Incredible Benefits for Your Home or Office</a></h2>
+        <p class="blog-recente-resumo">If you are looking for greater comfort, privacy, and protection for your space, applying Insulfilm window films is an excellent choice. Far beyond aesthetics, Insulfilm offers practical advantages that make a real difference in everyday life — whether in residential or commercial settings.</p>
+        <p class="blog-recente-data"><time datetime="2026-01-23">January 23, 2026</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="letras">
+        <a class="blog-recente-imagem" href="/en/articles/acrylic-letters-with-LED-lighting.html" tabindex="-1">
+          <img src="/images/led1-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Illuminated Bio Mundo sign on a green wall">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>2 min read</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Letters and Signage</p>
+        <h2><a href="/en/articles/acrylic-letters-with-LED-lighting.html">Acrylic Letters with LED Lighting: Highlight Your Brand with Style and Sophistication</a></h2>
+        <p class="blog-recente-resumo">Are you looking for an elegant, modern, and impactful way to showcase your brand? Acrylic letters with LED lighting are the perfect choice. Increasingly used on commercial facades, reception areas, storefronts, and interior spaces, they combine refined design, durability, and high visibility, day and night.</p>
+        <p class="blog-recente-data"><time datetime="2026-01-23">January 23, 2026</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="envelopamento">
+        <a class="blog-recente-imagem" href="/en/articles/self-adhesive-wallpaper.html" tabindex="-1">
+          <img src="/images/Paredes-1-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Indoor pool wall covered with a printed underwater mural">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>2 min read</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Wrapping</p>
+        <h2><a href="/en/articles/self-adhesive-wallpaper.html">Self-Adhesive Wallpaper: Style, Practicality, and Safety for Your Projects</a></h2>
+        <p class="blog-recente-resumo">Wallpaper is a classic resource in interior design. However, with advancements in materials, the self-adhesive version has gained increasing popularity among architects and decorators who seek practicality, durability, and strong visual impact.</p>
+        <p class="blog-recente-data"><time datetime="2025-05-23">May 23, 2025</time></p>
+      </article>
     </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <span class="titulo-linha"></span>
-      <p class="artigo-meta"><time datetime="2026-11-15">November 15, 2026</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 4 min read</span></p>
-<h2 class="especialblog">3D Printed Letters and Logos: When They Make Sense</h2>
-      <p class="parceiro">
-        How 3D printed letters and logos work, PLA vs PETG vs ABS, size limits, finishing and when 3D printing
-        is the best choice in visual communication.</p><br>
-      <div class="conteudo-blog">
-        <a href="/en/articles/3d-printed-letters-and-logos.html" class="botao-blog texto-geral">READ MORE</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="../images/impressao-3d-maquete-onibus-1170x658.webp" loading="lazy"
-decoding="async" alt="Large-scale bus model 3D printed in sections, joined and painted">
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <span class="titulo-linha"></span>
-      <p class="artigo-meta"><time datetime="2026-10-14">October 14, 2026</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 3 min read</span></p>
-<h2 class="especialblog">Corporate Visual Communication in São Paulo: Projects for Architects and Builders</h2>
-      <p class="parceiro">
-        From specification to installation: architectural wrapping, building signage, corporate visual identity
-        and custom projects for architects, builders and companies in São Paulo.</p><br>
-      <div class="conteudo-blog">
-        <a href="/en/articles/corporate-visual-communication-sao-paulo.html" class="botao-blog texto-geral">READ MORE</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="../images/Paredes-11-1170x658.webp" loading="lazy"
-decoding="async" alt="Corporate glass wall with custom adhesive print showing Metacons construction company's development map">
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <p class="artigo-meta"><time datetime="2026-08-11">August 11, 2026</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 2 min read</span></p>
-      <h2 class="especialblog">ACM Facade: What It Is and When It Is Worth Investing In</h2>
-
-      <p class="parceiro">
-        A company’s facade is one of the first points of contact between the brand and the public.
-        Before someone even enters the space, it already communicates professionalism,
-        care and visual identity. That is why an ACM facade has become one of the most requested
-        solutions for companies that want to modernize their visual presence with a clean,
-        durable and sophisticated finish.
-      </p><br>
-
-      <div class="conteudo-blog">
-        <a href="/en/articles/acm-facade-benefits.html" class="botao-blog texto-geral">READ MORE</a>
-      </div>
-    </div>
-
-    <div class="sobre-imagem">
-      <img
-        src="../images/fachadas-scaled.webp"
-        loading="lazy"
-        decoding="async"
-        alt="Signage totem for Hospital Geral de Pedreira in São Paulo, produced and installed by Momentvm Opvs"
-      >
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <p class="artigo-meta"><time datetime="2026-01-23">January 23, 2026</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 4 min read</span></p>
-      <h2 class="especialblog blog-cartao-h1">End-of-Year MDF Gifts: Purposeful Personalization and Timeless Beauty for Display.</h2>
-      <p class="parceiro">
-        At the end of the year, companies look for gifts that convey gratitude, strengthen their brand, and create genuine connections with
-        clients, partners, and employees. But in a world saturated with disposable giveaways — calendars that last only a few
-        months, keychains that disappear into drawers, and pens no one remembers receiving — an elegant and sustainable alternative emerges:
-        custom laser-cut MDF gifts.
-      </p><br>
-      <div class="conteudo-blog">
-        <a href="/en/articles/custom-mdf-gifts-laser-cut.html" class="botao-blog texto-geral">READ MORE</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="../images/laser-cut-bull-head-wall-decor-3D.webp" loading="lazy"
-decoding="async" alt="Decorated environment with laser-cut MDF wall décor">
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <p class="artigo-meta"><time datetime="2026-01-23">January 23, 2026</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 2 min read</span></p>
-      <h2 class="especialblog blog-cartao-h1">Appliance Wrapping: Refresh Your Refrigerator with Style and Protection.</h2>
-      <p class="parceiro">
-        Have you ever thought about giving your refrigerator or other household or office appliances a new look without buying a new unit?
-        Appliance wrapping is the perfect solution for those who want to renew, customize, and protect their equipment with a unique design touch.
-      </p><br>
-      <div class="conteudo-blog">
-        <a href="/en/articles/kitchen-appliance-wrapping.html" class="botao-blog texto-geral">READ MORE</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="../images/Eletrodomesticos-10-1170x658.webp" loading="lazy"
-decoding="async" alt="Wrapped household appliances with decorative finish">
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <span class="titulo-linha"></span>
-      <p class="artigo-meta"><time datetime="2026-01-23">January 23, 2026</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 2 min read</span></p>
-<h2 class="especialblog">Furniture Wrapping: Smart Renovation Without Carpentry.</h2>
-      <p class="parceiro">
-        Are you an architect, decorator, or interior designer looking for creative solutions to renovate spaces without exceeding your
-        client’s budget? Furniture wrapping may be exactly what you need to incorporate into your next projects.
-      </p><br>
-      <div class="conteudo-blog">
-        <a href="/en/articles/furniture-wrapping.html" class="botao-blog texto-geral">READ MORE</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="../images/Cabinet-5-1170x658.webp" loading="lazy"
-decoding="async" alt="Bathroom cabinet wrapped with matte yellow automotive vinyl">
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <span class="titulo-linha"></span>
-      <p class="artigo-meta"><time datetime="2026-01-23">January 23, 2026</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 2 min read</span></p>
-<h2 class="especialblog">Insulfilm Window Films: 7 Incredible Benefits for Your Home or Office</h2>
-      <p class="parceiro">
-        If you are looking for greater comfort, privacy, and protection for your space, applying Insulfilm window films is an excellent choice.
-        Far beyond aesthetics, Insulfilm offers practical advantages that make a real difference in everyday life — whether in residential or commercial settings.
-      </p><br>
-      <div class="conteudo-blog">
-        <a href="/en/articles/insulfilm-window-films.html" class="botao-blog texto-geral">READ MORE</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="../images/Peliculas-7-1170x658.webp" loading="lazy"
-decoding="async" alt="Glass covered with transparent Insulfilm window film for temperature control">
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <span class="titulo-linha"></span>
-      <p class="artigo-meta"><time datetime="2026-01-23">January 23, 2026</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 2 min read</span></p>
-<h2 class="especialblog">Acrylic Letters with LED Lighting: Highlight Your Brand with Style and Sophistication</h2>
-      <p class="parceiro">
-        Are you looking for an elegant, modern, and impactful way to showcase your brand?
-        <strong>Acrylic letters with LED lighting</strong> are the perfect choice.
-        Increasingly used on commercial facades, reception areas, storefronts, and interior spaces, they combine
-        <strong>refined design, durability, and high visibility</strong>, day and night.
-      </p><br>
-      <div class="conteudo-blog">
-        <a href="/en/articles/acrylic-letters-with-LED-lighting.html" class="botao-blog texto-geral">READ MORE</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="../images/led1.webp" loading="lazy"
-decoding="async" alt="Acrylic letters with internal LED lighting">
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <p class="artigo-meta"><time datetime="2025-05-23">May 23, 2025</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 2 min read</span></p>
-      <h2 class="especialblog blog-cartao-h1">Self-Adhesive Wallpaper: Style, Practicality, and Safety for Your Projects</h2>
-      <p class="parceiro">
-        Wallpaper is a classic resource in interior design. However, with advancements in materials, the self-adhesive version has gained
-        increasing popularity among architects and decorators who seek practicality, durability, and strong visual impact.
-      </p><br>
-      <div class="conteudo-blog">
-        <a href="/en/articles/self-adhesive-wallpaper.html" class="botao-blog texto-geral">READ MORE</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="../images/Paredes-1-1170x658.webp" loading="lazy"
-decoding="async" alt="Interior decorated with self-adhesive wallpaper">
+    <div class="blog-recentes-todos" id="blog-mais" hidden>
+      <button type="button" class="botao-blog texto-geral">Show more articles</button>
     </div>
   </div>
 </section>
+<!-- /blog-recentes -->
 
 <section>
   <div class="parceiro-final" style="padding-bottom:2rem;">

@@ -2148,25 +2148,49 @@ font-size:1.4rem;
   white-space: nowrap;
 }
 
-/* O selo fica numa linha só dele, acima da data */
-.selo-linha {
-  flex-basis: 100%;
-}
-
 .selo-recente {
-  display: inline-block;
-  padding: 3px 10px;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  padding: 4px 12px;
   border-radius: 999px;
-  background-color: #0b004a;
+  background-color: #f0cf68;
   font-family: "Poppins", sans-serif;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #0b004a;
 }
 
-/* ===== Home: seção "Do blog" ===== */
+.icone-relogio {
+  flex: none;
+}
+
+.artigo-meta-leitura {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  color: #0b004a;
+}
+
+.artigo-assunto {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a5a00;
+  text-decoration: none;
+}
+
+.artigo-assunto:hover {
+  color: #0b004a;
+}
+
+/* ===== Cartões do blog (lista e seção "Do blog" da home) ===== */
 .blog-recentes {
   padding: 64px 0;
 }
@@ -2190,9 +2214,10 @@ font-size:1.4rem;
 }
 
 .blog-recente-imagem {
+  position: relative;
   display: block;
   overflow: hidden;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   border-radius: 18px;
   box-shadow: 0 16px 36px rgba(11, 0, 74, 0.08);
 }
@@ -2210,30 +2235,77 @@ font-size:1.4rem;
   transform: scale(1.04);
 }
 
-.blog-recente-card .artigo-meta {
-  margin-bottom: 10px;
+/* Véu azul sobre a foto: discreto embaixo, inteiro ao passar o mouse */
+.blog-recente-imagem::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(11, 0, 74, 0.88) 0%, rgba(11, 0, 74, 0) 50%);
+  transition: background-color 0.3s ease;
 }
 
-.blog-recente-card h3 {
+.blog-recente-card:hover .blog-recente-imagem::after {
+  background-color: rgba(11, 0, 74, 0.55);
+}
+
+.blog-recente-leitura {
+  position: absolute;
+  bottom: 14px;
+  left: 16px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.blog-recente-leitura .icone-relogio {
+  width: 22px;
+  height: 22px;
+}
+
+.blog-recente-card .titulo-linha {
+  margin-bottom: 12px;
+}
+
+.blog-recente-assunto {
+  margin: 0 0 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a5a00;
+}
+
+.blog-recentes .blog-recente-card h2,
+.blog-recentes .blog-recente-card h3 {
   margin: 0 0 10px;
+  padding: 0;
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.3;
 }
 
+.blog-recente-card h2 a,
 .blog-recente-card h3 a {
   color: #0b004a;
   text-decoration: none;
 }
 
+.blog-recente-card h2 a:hover,
 .blog-recente-card h3 a:hover {
   color: #b87800;
 }
 
 .blog-recente-resumo {
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin: 0;
@@ -2243,20 +2315,12 @@ font-size:1.4rem;
   color: #4a4a4a;
 }
 
-.blog-recente-ler {
-  margin: 14px 0 0;
-}
-
-.blog-recente-ler a {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #0b004a;
-  text-decoration: none;
-}
-
-.blog-recente-ler a:hover {
-  color: #b87800;
+.blog-recente-data {
+  margin: auto 0 0;
+  padding-top: 14px;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 0.95rem;
+  color: #4a4a4a;
 }
 
 .blog-recentes-todos {
@@ -2273,5 +2337,99 @@ font-size:1.4rem;
   .blog-recentes-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+}
+
+/* ===== Página do blog: topo e filtro por assunto ===== */
+.blog-topo {
+  padding: calc(var(--header-height, 90px) + 48px) 0 0;
+}
+
+.blog-topo .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.blog-topo h1 {
+  margin: 0 0 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1.15;
+  color: #0b004a;
+}
+
+.blog-topo .texto-geral {
+  margin: 0;
+  color: #4a4a4a;
+}
+
+.blog-recentes.blog-lista {
+  padding-top: 32px;
+}
+
+.blog-lista .blog-recentes-grid {
+  gap: 52px 32px;
+}
+
+.blog-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.blog-filtros[hidden],
+.blog-recente-card[hidden],
+.blog-recentes-todos[hidden] {
+  display: none;
+}
+
+.blog-filtro {
+  padding: 9px 18px;
+  border: 1px solid #0b004a;
+  border-radius: 999px;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #0b004a;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.blog-filtro span {
+  margin-left: 4px;
+  opacity: 0.7;
+}
+
+.blog-filtro:hover,
+.blog-filtro[aria-pressed="true"] {
+  background-color: #0b004a;
+  color: #ffffff;
+}
+
+.blog-recentes-todos button {
+  cursor: pointer;
+}
+
+@media (min-width: 621px) and (max-width: 900px) {
+  .blog-lista .blog-recentes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* No celular, os assuntos ficam numa linha só, que rola para o lado */
+@media (max-width: 620px) {
+  .blog-filtros {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0 -20px 28px;
+    padding: 0 20px 8px;
+    scrollbar-width: thin;
+  }
+
+  .blog-filtro {
+    flex: none;
   }
 }
