@@ -1,20 +1,23 @@
 """
-Atualiza o que depende das datas dos artigos do blog (PT e EN):
+Atualiza o que depende dos artigos do blog (PT e EN):
 
-  1. No topo de cada artigo: data de publicação e tempo de leitura.
-  2. Na lista do blog (blog.html, en/blog.html): cartões da mais recente para a mais
-     antiga, com data, tempo de leitura e o selo "Mais recente" no primeiro.
+  1. No topo de cada artigo: assunto, data de publicação e tempo de leitura.
+  2. Na lista do blog (blog.html, en/blog.html): filtro por assunto e cartões da mais
+     recente para a mais antiga, com o selo "Mais recente" no primeiro.
   3. Na página inicial (index.html, en/index.html): seção "Do blog" com os 3 últimos.
 
-A data vem do "datePublished" do JSON-LD de cada artigo; o tempo de leitura é
-calculado pelo número de palavras do texto (200 palavras por minuto).
+A data vem do "datePublished" e o assunto do "articleSection" do JSON-LD de cada artigo
+(os assuntos válidos estão em IDIOMAS, abaixo). O tempo de leitura é calculado pelo
+número de palavras (200 por minuto).
 
-Ao publicar um artigo novo: crie a página em articles/ (e en/articles/), coloque o
-cartão dele em qualquer posição da lista do blog e rode, na raiz do site:
+Ao publicar um artigo novo: crie a página em articles/ (e en/articles/) e rode, na raiz:
     python ferramentas/atualizar_blog.py
+O cartão é criado com o título, a descrição e a imagem do JSON-LD; depois disso, o título
+e o resumo podem ser editados na própria lista. A miniatura 640x360 também é criada.
 """
 
 import html
+import json
 import math
 import re
 from pathlib import Path
@@ -33,15 +36,31 @@ IDIOMAS = {
         "pasta": "articles", "blog": "blog.html", "home": "index.html",
         "data": lambda a, m, d: f"{d} de {MESES_PT[m - 1]} de {a}",
         "leitura": "min de leitura", "recente": "Mais recente",
-        "do_blog": "Do blog", "ler": "Ler artigo →", "todos": "Ver todos os artigos",
+        "do_blog": "Do blog", "todos": "Ver todos os artigos",
         "link_blog": "/blog.html", "rotulo_secao": "Artigos mais recentes do blog",
+        "todos_assuntos": "Todos", "filtrar": "Filtrar artigos por assunto",
+        "mais": "Mostrar mais artigos", "rotulo_lista": "Artigos do blog",
+        "assuntos": {
+            "fachadas": "Fachadas em ACM", "letras": "Letras e Sinalização",
+            "envelopamento": "Envelopamento", "peliculas": "Películas e Jateados",
+            "impressao-3d": "Impressão 3D", "comunicacao-visual": "Comunicação Visual",
+            "especiais": "Projetos Especiais",
+        },
     },
     "en": {
         "pasta": "en/articles", "blog": "en/blog.html", "home": "en/index.html",
         "data": lambda a, m, d: f"{MESES_EN[m - 1]} {d}, {a}",
         "leitura": "min read", "recente": "Latest",
-        "do_blog": "From the blog", "ler": "Read article →", "todos": "See all articles",
+        "do_blog": "From the blog", "todos": "See all articles",
         "link_blog": "/en/blog.html", "rotulo_secao": "Latest blog articles",
+        "todos_assuntos": "All", "filtrar": "Filter articles by topic",
+        "mais": "Show more articles", "rotulo_lista": "Blog articles",
+        "assuntos": {
+            "fachadas": "ACM Facades", "letras": "Letters and Signage",
+            "envelopamento": "Wrapping", "peliculas": "Window and Frosted Films",
+            "impressao-3d": "3D Printing", "comunicacao-visual": "Visual Communication",
+            "especiais": "Special Projects",
+        },
     },
 }
 
@@ -54,11 +73,16 @@ def texto_puro(trecho):
     return html.unescape(re.sub(r"<[^>]+>", " ", trecho))
 
 
-def dados_artigo(arquivo):
+def dados_artigo(arquivo, t):
     s = arquivo.read_text(encoding="utf-8")
     data = re.search(r'"datePublished":\s*"(\d{4})-(\d{2})-(\d{2})', s)
     if not data:
         raise SystemExit(f"{arquivo}: sem datePublished no JSON-LD")
+    secao = re.search(r'"articleSection":\s*"([^"]+)"', s)
+    nome = secao[1] if secao else ""
+    por_nome = {v: k for k, v in t["assuntos"].items()}
+    if nome not in por_nome:
+        raise SystemExit(f'{arquivo}: "articleSection" no JSON-LD deve ser um destes: {", ".join(por_nome)}')
     ini = s.index("<h1")
     fim = s.find('class="parceiro-final"', ini)
     if fim < 0:
@@ -69,126 +93,168 @@ def dados_artigo(arquivo):
         "arquivo": arquivo,
         "iso": f"{a:04d}-{m:02d}-{d:02d}",
         "amd": (a, m, d),
+        "assunto": por_nome[nome],
+        "assunto_nome": nome,
         "minutos": max(1, math.ceil(palavras / PALAVRAS_POR_MINUTO)),
     }
 
 
-def meta_html(art, t, recente=False):
-    a, m, d = art["amd"]
-    selo = f'<span class="selo-linha"><span class="selo-recente">{t["recente"]}</span></span> ' if recente else ""
-    return (f'<p class="artigo-meta">{selo}<time datetime="{art["iso"]}">{t["data"](a, m, d)}</time>'
-            f' <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> {art["minutos"]} {t["leitura"]}</span></p>')
+RELOGIO = ('<svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">'
+           '<path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" '
+           'd="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>')
+
+
+def data_html(art, t):
+    return f'<time datetime="{art["iso"]}">{t["data"](*art["amd"])}</time>'
+
+
+def leitura_html(art, t, classe):
+    return f'<span class="{classe}">{RELOGIO}{art["minutos"]} {t["leitura"]}</span>'
 
 
 def atualizar_artigo(art, t):
+    """Assunto, data e tempo de leitura logo abaixo do título do artigo."""
     s = art["arquivo"].read_text(encoding="utf-8")
     s = RE_META.sub("", s)
+    meta = (f'<p class="artigo-meta"><a class="artigo-assunto" href="{t["link_blog"]}#{art["assunto"]}">'
+            f'{html.escape(art["assunto_nome"])}</a> {data_html(art, t)} '
+            f'{leitura_html(art, t, "artigo-meta-leitura")}</p>')
     fim_h1 = s.index("</h1>") + len("</h1>")
-    s = s[:fim_h1] + "\n\n      " + meta_html(art, t) + s[fim_h1:]
+    s = s[:fim_h1] + "\n\n      " + meta + "\n\n" + s[fim_h1:].lstrip("\n")
     art["arquivo"].write_text(s, encoding="utf-8")
 
 
-def cartoes_do_blog(t, artigos):
-    """Lê a lista do blog, ordena por data e devolve (página, início, fim, cartões)."""
-    arq = RAIZ / t["blog"]
-    s = arq.read_text(encoding="utf-8")
-    abre = '<section class="sobre-servicos blog-lista">\n'
-    i = s.index(abre) + len(abre)
-    j = s.index("</section>", i)
-    partes = re.split(r'(?m)^[ \t]*(?=<div class="container sobre-flex">)', s[i:j])
-    if partes[0].strip():
-        raise SystemExit(f"{arq}: conteúdo inesperado antes do primeiro cartão")
+def miniatura(src):
+    """Nome da versão 640x360 da imagem (criada em images/ se ainda não existir)."""
+    nome = src.rsplit("/", 1)[-1]
+    base = re.sub(r"-(1170x658|640x360)$", "", nome.rsplit(".", 1)[0])
+    menor = RAIZ / "images" / f"{base}-640x360.webp"
+    if not menor.exists():
+        from PIL import Image, ImageOps
+        with Image.open(RAIZ / "images" / nome) as im:
+            ImageOps.fit(im.convert("RGB"), (640, 360), Image.LANCZOS).save(menor, quality=80, method=6)
+        print(f"   miniatura criada: {menor.name}")
+    return menor.name
+
+
+def cartao_do_artigo(slug, art):
+    """Cartão inicial de um artigo que ainda não está na lista, com os dados do JSON-LD."""
+    s = art["arquivo"].read_text(encoding="utf-8")
+    ld = s[s.index('"BlogPosting"'):]
+    titulo = json.loads(re.search(r'"headline":\s*("(?:[^"\\]|\\.)*")', ld)[1])
+    resumo = json.loads(re.search(r'"description":\s*("(?:[^"\\]|\\.)*")', ld)[1])
+    img = re.search(r'"image":\s*"([^"]+)"', ld)[1].rsplit("/", 1)[-1]
+    alt = titulo
+    for tag in re.findall(r"<img\b.*?>", s, re.S):
+        a = re.search(r'alt="([^"]+)"', tag)
+        if img in tag and a:
+            alt = html.unescape(a[1])
+            break
+    return {"slug": slug, "titulo": titulo, "resumo": resumo, "img": img, "alt": alt, "ordem": -1}
+
+
+def ler_cartoes(t, artigos):
+    """Lê os cartões da lista do blog, acrescenta os artigos novos e ordena por data."""
+    s = (RAIZ / t["blog"]).read_text(encoding="utf-8")
     cartoes = []
-    for k, c in enumerate(partes[1:]):
-        slug = re.search(r'articles/([^"/]+)\.html" class="botao-blog', c).group(1)
+    for k, c in enumerate(re.findall(r'<article class="blog-recente-card".*?</article>', s, re.S)):
+        um = lambda padrao: html.unescape(re.sub(r"\s+", " ", re.search(padrao, c, re.S)[1]).strip())
+        slug = um(r'href="[^"]*articles/([^"/]+)\.html"')
         if slug not in artigos:
-            raise SystemExit(f"{arq}: cartão aponta para artigo inexistente ({slug})")
-        cartoes.append({"slug": slug, "html": "  " + RE_META.sub("", c).rstrip() + "\n", "ordem": k})
-    faltando = set(artigos) - {c["slug"] for c in cartoes}
-    if faltando:
-        raise SystemExit(f"{arq}: artigos sem cartão na lista do blog: {', '.join(sorted(faltando))}")
+            raise SystemExit(f"{t['blog']}: cartão aponta para artigo inexistente ({slug})")
+        cartoes.append({"slug": slug, "titulo": um(r"<h2><a[^>]*>(.*?)</a></h2>"),
+                        "resumo": um(r'<p class="blog-recente-resumo">(.*?)</p>'),
+                        "img": um(r'<img src="([^"]+)"'), "alt": um(r'alt="([^"]*)"'), "ordem": k})
+    ja = {c["slug"] for c in cartoes}
+    for slug, art in artigos.items():
+        if slug not in ja:
+            print(f"   cartão novo: {slug}")
+            cartoes.append(cartao_do_artigo(slug, art))
     # Mais recente primeiro; na mesma data, mantém a ordem que já estava
     cartoes.sort(key=lambda c: (tuple(-x for x in artigos[c["slug"]]["amd"]), c["ordem"]))
-    return arq, s, i, j, cartoes
-
-
-def atualizar_blog(t, artigos):
-    arq, s, i, j, cartoes = cartoes_do_blog(t, artigos)
-    novos = []
-    for n, c in enumerate(cartoes):
-        meta = meta_html(artigos[c["slug"]], t, recente=(n == 0))
-        h = re.sub(r'(\n)([ \t]*)(<h2 class="especialblog[^"]*">)', lambda m: f"{m[1]}      {meta}\n{m[2]}{m[3]}", c["html"], count=1)
-        if h == c["html"]:
-            raise SystemExit(f"{arq}: cartão de {c['slug']} sem <h2 class=\"especialblog\">")
-        novos.append(h)
-    arq.write_text(s[:i] + "".join(novos) + s[j:], encoding="utf-8")
     return cartoes
 
 
-def secao_home(t, cartoes, artigos):
-    itens = []
-    for c in cartoes[:NA_HOME]:
-        h = c["html"]
-        titulo = re.sub(r"\s+", " ", texto_puro(re.search(r'<h2 class="especialblog[^"]*">(.*?)</h2>', h, re.S)[1])).strip()
-        desc = re.sub(r"\s+", " ", texto_puro(re.search(r'<p class="parceiro">(.*?)</p>', h, re.S)[1])).strip()
-        link = re.search(r'<a href="([^"]+)" class="botao-blog', h)[1]
-        img = re.search(r'<img\b(.*?)>', h, re.S)[1]
-        src = re.search(r'src="([^"]+)"', img)[1]
-        alt = re.search(r'alt="([^"]*)"', img)[1]
-        # Versão menor da imagem, se existir (ex.: -640x360.webp ao lado da -1170x658.webp)
-        menor = src.replace("-1170x658.", "-640x360.")
-        pasta_rel = RAIZ / t["home"]
-        if menor != src and (pasta_rel.parent / menor).resolve().exists():
-            src = menor
-        e = html.escape
-        itens.append(f'''      <article class="blog-recente-card">
-        <a class="blog-recente-imagem" href="{link}" tabindex="-1" aria-hidden="true">
-          <img src="{src}" width="640" height="360" loading="lazy" decoding="async" alt="{alt}">
+def cartao_html(c, art, t, nivel, recente=False):
+    e = html.escape
+    link = f'/{t["pasta"]}/{c["slug"]}.html'
+    selo = f'\n          <span class="selo-recente">{t["recente"]}</span>' if recente else ""
+    return f"""      <article class="blog-recente-card" data-assunto="{art["assunto"]}">
+        <a class="blog-recente-imagem" href="{link}" tabindex="-1">
+          <img src="/images/{miniatura(c["img"])}" width="640" height="360" loading="lazy" decoding="async" alt="{e(c["alt"])}">{selo}
+          {leitura_html(art, t, "blog-recente-leitura")}
         </a>
-        {meta_html(artigos[c["slug"]], t)}
-        <h3><a href="{link}">{e(titulo)}</a></h3>
-        <p class="blog-recente-resumo">{e(desc)}</p>
-        <p class="blog-recente-ler"><a href="{link}">{t["ler"]}</a></p>
-      </article>''')
-    return f'''<!-- blog-recentes: gerado por ferramentas/atualizar_blog.py -->
-<section class="blog-recentes" aria-label="{t["rotulo_secao"]}">
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">{e(art["assunto_nome"])}</p>
+        <{nivel}><a href="{link}">{e(c["titulo"], quote=False)}</a></{nivel}>
+        <p class="blog-recente-resumo">{e(c["resumo"], quote=False)}</p>
+        <p class="blog-recente-data">{data_html(art, t)}</p>
+      </article>"""
+
+
+def trocar_bloco(arq, conteudo):
+    s = arq.read_text(encoding="utf-8")
+    bloco = re.compile(r"<!-- blog-recentes:.*?<!-- /blog-recentes -->\n", re.S)
+    if len(bloco.findall(s)) != 1:
+        raise SystemExit(f"{arq}: não achei o bloco <!-- blog-recentes: -->")
+    novo = ("<!-- blog-recentes: gerado por ferramentas/atualizar_blog.py -->\n"
+            + conteudo + "<!-- /blog-recentes -->\n")
+    arq.write_text(bloco.sub(lambda _: novo, s), encoding="utf-8")
+
+
+def atualizar_blog(t, artigos):
+    cartoes = ler_cartoes(t, artigos)
+    quantos = {}
+    for a in artigos.values():
+        quantos[a["assunto"]] = quantos.get(a["assunto"], 0) + 1
+    botoes = [f'      <button type="button" class="blog-filtro" data-assunto="" aria-pressed="true">'
+              f'{t["todos_assuntos"]} <span>{len(artigos)}</span></button>']
+    for slug, nome in t["assuntos"].items():
+        if slug in quantos:  # só aparecem os assuntos que já têm artigo
+            botoes.append(f'      <button type="button" class="blog-filtro" data-assunto="{slug}" aria-pressed="false">'
+                          f'{html.escape(nome)} <span>{quantos[slug]}</span></button>')
+    grade = "\n".join(cartao_html(c, artigos[c["slug"]], t, "h2", n == 0) for n, c in enumerate(cartoes))
+    trocar_bloco(RAIZ / t["blog"], f"""<section class="blog-recentes blog-lista" aria-label="{t["rotulo_lista"]}">
+  <div class="container">
+    <div class="blog-filtros" role="group" aria-label="{t["filtrar"]}" hidden>
+{chr(10).join(botoes)}
+    </div>
+    <div class="blog-recentes-grid">
+{grade}
+    </div>
+    <div class="blog-recentes-todos" id="blog-mais" hidden>
+      <button type="button" class="botao-blog texto-geral">{t["mais"]}</button>
+    </div>
+  </div>
+</section>
+""")
+    return cartoes
+
+
+def atualizar_home(t, cartoes, artigos):
+    grade = "\n".join(cartao_html(c, artigos[c["slug"]], t, "h3") for c in cartoes[:NA_HOME])
+    trocar_bloco(RAIZ / t["home"], f"""<section class="blog-recentes" aria-label="{t["rotulo_secao"]}">
   <div class="container">
     <div class="titulo-secao">
       <span class="titulo-linha"></span>
       <h2>{t["do_blog"]}</h2>
     </div>
     <div class="blog-recentes-grid">
-{chr(10).join(itens)}
+{grade}
     </div>
     <div class="blog-recentes-todos">
       <a href="{t["link_blog"]}" class="botao-blog texto-geral">{t["todos"]}</a>
     </div>
   </div>
 </section>
-<!-- /blog-recentes -->
-'''
-
-
-def atualizar_home(t, cartoes, artigos):
-    arq = RAIZ / t["home"]
-    s = arq.read_text(encoding="utf-8")
-    secao = secao_home(t, cartoes, artigos)
-    existente = re.compile(r"<!-- blog-recentes:.*?<!-- /blog-recentes -->\n", re.S)
-    if existente.search(s):
-        s = existente.sub(lambda _: secao, s)
-    else:
-        alvo = '<section class="final">'
-        if s.count(alvo) != 1:
-            raise SystemExit(f"{arq}: não achei onde colocar a seção do blog")
-        s = s.replace(alvo, secao + alvo)
-    arq.write_text(s, encoding="utf-8")
+""")
 
 
 def main():
     for lang, t in IDIOMAS.items():
         artigos = {}
         for arq in sorted((RAIZ / t["pasta"]).glob("*.html")):
-            art = dados_artigo(arq)
+            art = dados_artigo(arq, t)
             artigos[arq.stem] = art
             atualizar_artigo(art, t)
         cartoes = atualizar_blog(t, artigos)

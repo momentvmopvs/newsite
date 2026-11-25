@@ -41,6 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <script src="./conteudo/js/header.js" defer></script>
 <script src="./conteudo/js/last-updated.js" defer></script>
+<script src="./conteudo/js/blog.js" defer></script>
 
 <link rel="stylesheet" href="./conteudo/css/estilo.css">
 <link rel="stylesheet" href="./conteudo/css/header.css">
@@ -202,193 +203,145 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </header>
 <main class="sem-recuo">
-<section class="titulo-secao container">
-  <h1>Blog Momentvm Opvs</h1>
-  <p class="texto-geral">Dicas, tendências e novidades em fachadas, comunicação visual e envelopamento corporativo.</p>
+<section class="blog-topo">
+  <div class="container">
+    <span class="titulo-linha"></span>
+    <h1>Blog Momentvm Opvs</h1>
+    <p class="texto-geral">Dicas, tendências e novidades em fachadas, comunicação visual e envelopamento corporativo.</p>
+  </div>
 </section>
-<section class="sobre-servicos blog-lista">
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <span class="titulo-linha"></span>
-      <p class="artigo-meta"><span class="selo-linha"><span class="selo-recente">Mais recente</span></span> <time datetime="2026-11-23">23 de novembro de 2026</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 3 min de leitura</span></p>
-<h2 class="especialblog">Adesivo Jateado em Escritórios: Privacidade sem Perder a Luz Natural</h2>
-      <p class="parceiro">
-        Como especificar adesivo jateado em divisórias e portas de vidro: grau de privacidade, altura das faixas,
-        logotipo no jateado e cuidados para evitar falhas na aplicação.</p><br>
-      <div class="conteudo-blog">
-        <a href="./articles/adesivo-jateado-em-escritorios.html" class="botao-blog texto-geral">LEIA MAIS</a>
-      </div>
+<!-- blog-recentes: gerado por ferramentas/atualizar_blog.py -->
+<section class="blog-recentes blog-lista" aria-label="Artigos do blog">
+  <div class="container">
+    <div class="blog-filtros" role="group" aria-label="Filtrar artigos por assunto" hidden>
+      <button type="button" class="blog-filtro" data-assunto="" aria-pressed="true">Todos <span>10</span></button>
+      <button type="button" class="blog-filtro" data-assunto="fachadas" aria-pressed="false">Fachadas em ACM <span>1</span></button>
+      <button type="button" class="blog-filtro" data-assunto="letras" aria-pressed="false">Letras e Sinalização <span>1</span></button>
+      <button type="button" class="blog-filtro" data-assunto="envelopamento" aria-pressed="false">Envelopamento <span>3</span></button>
+      <button type="button" class="blog-filtro" data-assunto="peliculas" aria-pressed="false">Películas e Jateados <span>2</span></button>
+      <button type="button" class="blog-filtro" data-assunto="impressao-3d" aria-pressed="false">Impressão 3D <span>1</span></button>
+      <button type="button" class="blog-filtro" data-assunto="comunicacao-visual" aria-pressed="false">Comunicação Visual <span>1</span></button>
+      <button type="button" class="blog-filtro" data-assunto="especiais" aria-pressed="false">Projetos Especiais <span>1</span></button>
     </div>
-    <div class="sobre-imagem">
-      <img src="./images/Peliculas-9-1170x658.webp" loading="lazy"
-decoding="async" alt="Sala de escritório com divisória de vidro tratada com adesivo jateado">
+    <div class="blog-recentes-grid">
+      <article class="blog-recente-card" data-assunto="peliculas">
+        <a class="blog-recente-imagem" href="/articles/adesivo-jateado-em-escritorios.html" tabindex="-1">
+          <img src="/images/Peliculas-9-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Sala de escritório com divisória de vidro tratada com adesivo jateado">
+          <span class="selo-recente">Mais recente</span>
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>3 min de leitura</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Películas e Jateados</p>
+        <h2><a href="/articles/adesivo-jateado-em-escritorios.html">Adesivo Jateado em Escritórios: Privacidade sem Perder a Luz Natural</a></h2>
+        <p class="blog-recente-resumo">Como especificar adesivo jateado em divisórias e portas de vidro: grau de privacidade, altura das faixas, logotipo no jateado e cuidados para evitar falhas na aplicação.</p>
+        <p class="blog-recente-data"><time datetime="2026-11-23">23 de novembro de 2026</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="impressao-3d">
+        <a class="blog-recente-imagem" href="/articles/letras-e-logos-em-impressao-3d.html" tabindex="-1">
+          <img src="/images/impressao-3d-maquete-onibus-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Maquete de ônibus em grande escala impressa em 3D em partes, emendada e pintada">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>4 min de leitura</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Impressão 3D</p>
+        <h2><a href="/articles/letras-e-logos-em-impressao-3d.html">Letras e Logos em Impressão 3D: Quando Vale a Pena</a></h2>
+        <p class="blog-recente-resumo">Como funcionam letras e logotipos impressos em 3D, diferenças entre PLA, PETG e ABS, limite de tamanho, acabamento e quando a impressão 3D é a melhor escolha na comunicação visual.</p>
+        <p class="blog-recente-data"><time datetime="2026-11-15">15 de novembro de 2026</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="comunicacao-visual">
+        <a class="blog-recente-imagem" href="/articles/comunicacao-visual-corporativa-sp.html" tabindex="-1">
+          <img src="/images/Paredes-11-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Vidro corporativo com adesivo personalizado mostrando mapa de empreendimentos da construtora Metacons">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>4 min de leitura</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Comunicação Visual</p>
+        <h2><a href="/articles/comunicacao-visual-corporativa-sp.html">Comunicação Visual Corporativa em São Paulo: Projetos para Arquitetos e Construtoras</a></h2>
+        <p class="blog-recente-resumo">Da especificação à instalação: adesivação arquitetônica, sinalização predial, identidade visual corporativa e projetos personalizados para arquitetos, construtoras e empresas em São Paulo.</p>
+        <p class="blog-recente-data"><time datetime="2026-10-14">14 de outubro de 2026</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="fachadas">
+        <a class="blog-recente-imagem" href="/articles/fachada-em-acm-vantagens.html" tabindex="-1">
+          <img src="/images/fachadas-scaled-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Totem de sinalização para o Hospital Geral de Pedreira em São Paulo, produzido e instalado pela Momentvm Opvs">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>2 min de leitura</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Fachadas em ACM</p>
+        <h2><a href="/articles/fachada-em-acm-vantagens.html">Fachada em ACM: o que é e quando vale a pena investir</a></h2>
+        <p class="blog-recente-resumo">A fachada de uma empresa é um dos primeiros contatos entre a marca e o público. Antes mesmo de alguém entrar no espaço, ela já comunica profissionalismo, cuidado e identidade visual. Por isso, a fachada em ACM se tornou uma das soluções mais procuradas por empresas que desejam modernizar sua presença visual com um acabamento limpo, resistente e sofisticado.</p>
+        <p class="blog-recente-data"><time datetime="2026-08-11">11 de agosto de 2026</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="especiais">
+        <a class="blog-recente-imagem" href="/articles/brindes-personalizados-mdf-corte-laser.html" tabindex="-1">
+          <img src="/images/laser-cut-bull-head-wall-decor-3D-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Cabeça de touro decorativa em MDF recortado a laser">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>4 min de leitura</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Projetos Especiais</p>
+        <h2><a href="/articles/brindes-personalizados-mdf-corte-laser.html">Brindes de Fim de Ano em MDF: Personalização com Propósito e Beleza que Fica na Estante.</a></h2>
+        <p class="blog-recente-resumo">No fim de ano, empresas buscam presentes que transmitam gratidão, reforcem a marca e criem conexão verdadeira com clientes, parceiros e colaboradores. Mas, num mundo saturado de brindes descartáveis — calendários que duram poucos meses, chaveiros que somem na gaveta e canetas que ninguém lembra de onde vieram — surge uma alternativa elegante e sustentável: brindes personalizados em MDF recortado a laser.</p>
+        <p class="blog-recente-data"><time datetime="2025-05-23">23 de maio de 2025</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="envelopamento">
+        <a class="blog-recente-imagem" href="/articles/envelopamento-de-eletrodomesticos.html" tabindex="-1">
+          <img src="/images/Eletrodomesticos-10-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Geladeira envelopada com adesivo preto fosco">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>2 min de leitura</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Envelopamento</p>
+        <h2><a href="/articles/envelopamento-de-eletrodomesticos.html">Envelopamento de Eletrodomésticos: Renove sua Geladeira com Estilo e Proteção.</a></h2>
+        <p class="blog-recente-resumo">Você já pensou em dar uma cara nova para sua geladeira ou outros eletrodomésticos da sua casa ou escritório, sem precisar comprar um aparelho novo? O envelopamento de eletrodomésticos é a solução perfeita para quem quer renovar, personalizar e proteger seus equipamentos com um toque de design único.</p>
+        <p class="blog-recente-data"><time datetime="2025-05-23">23 de maio de 2025</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="envelopamento">
+        <a class="blog-recente-imagem" href="/articles/papel-de-parede-autoadesivo.html" tabindex="-1">
+          <img src="/images/Paredes-1-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Parede de piscina coberta revestida com adesivo impresso de fundo do mar">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>2 min de leitura</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Envelopamento</p>
+        <h2><a href="/articles/papel-de-parede-autoadesivo.html">Papel de Parede Autoadesivo: Estilo, Praticidade e Segurança para Seus Projetos</a></h2>
+        <p class="blog-recente-resumo">O papel de parede é um recurso clássico no design de interiores. Mas com os avanços dos materiais, a versão autoadesiva tem conquistado cada vez mais espaço entre arquitetos e decoradores exigentes que buscam praticidade, durabilidade e impacto visual.</p>
+        <p class="blog-recente-data"><time datetime="2025-05-23">23 de maio de 2025</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="envelopamento">
+        <a class="blog-recente-imagem" href="/articles/envelopamento-de-moveis-renovacao-inteligente.html" tabindex="-1">
+          <img src="/images/Cabinet-5-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Gabinete de banheiro envelopado com adesivo automotivo amarelo fosco">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>2 min de leitura</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Envelopamento</p>
+        <h2><a href="/articles/envelopamento-de-moveis-renovacao-inteligente.html">Envelopamento de Móveis: Renovação Inteligente Sem Marcenaria.</a></h2>
+        <p class="blog-recente-resumo">Você é arquiteto, decorador ou designer de interiores e está buscando soluções criativas para renovar ambientes sem estourar o orçamento do cliente? O envelopamento de móveis pode ser exatamente o que você precisa incorporar aos seus próximos projetos.</p>
+        <p class="blog-recente-data"><time datetime="2025-05-23">23 de maio de 2025</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="peliculas">
+        <a class="blog-recente-imagem" href="/articles/peliculas-insulfilm-para-janelas.html" tabindex="-1">
+          <img src="/images/Peliculas-7-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Vidro revestido com película Insulfilm transparente com controle de temperatura">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>2 min de leitura</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Películas e Jateados</p>
+        <h2><a href="/articles/peliculas-insulfilm-para-janelas.html">Películas Insulfilm para Janelas: 7 Benefícios Incríveis para Sua Casa ou Escritório</a></h2>
+        <p class="blog-recente-resumo">Se você busca mais conforto, privacidade e proteção para seu ambiente, aplicar películas insulfilm em janelas é uma excelente escolha. Muito além da estética, o insulfilm traz vantagens práticas que fazem a diferença no dia a dia — seja em residências ou empresas.</p>
+        <p class="blog-recente-data"><time datetime="2025-05-23">23 de maio de 2025</time></p>
+      </article>
+      <article class="blog-recente-card" data-assunto="letras">
+        <a class="blog-recente-imagem" href="/articles/letras-caixa-em-acrilico-para-recepcoes-de-empresas.html" tabindex="-1">
+          <img src="/images/led1-640x360.webp" width="640" height="360" loading="lazy" decoding="async" alt="Letreiro iluminado da Bio Mundo em parede de jardim vertical">
+          <span class="blog-recente-leitura"><svg class="icone-relogio" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2h6M12 2v3M12 9v4.5l3 1.8M18.5 6.5l1.2 1.2M12 5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z"/></svg>2 min de leitura</span>
+        </a>
+        <span class="titulo-linha"></span>
+        <p class="blog-recente-assunto">Letras e Sinalização</p>
+        <h2><a href="/articles/letras-caixa-em-acrilico-para-recepcoes-de-empresas.html">Letras em Acrílico com Iluminação LED: Destaque sua Marca com Estilo e Sofisticação</a></h2>
+        <p class="blog-recente-resumo">Você está à procura de uma forma elegante, moderna e impactante para destacar sua marca? As letras em acrílico com iluminação LED são a escolha perfeita. Cada vez mais utilizadas em fachadas comerciais, recepções, vitrines e ambientes internos, elas combinam design refinado, durabilidade e alta visibilidade, dia e noite.</p>
+        <p class="blog-recente-data"><time datetime="2025-05-23">23 de maio de 2025</time></p>
+      </article>
     </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <span class="titulo-linha"></span>
-      <p class="artigo-meta"><time datetime="2026-11-15">15 de novembro de 2026</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 4 min de leitura</span></p>
-<h2 class="especialblog">Letras e Logos em Impressão 3D: Quando Vale a Pena</h2>
-      <p class="parceiro">
-        Como funcionam letras e logotipos impressos em 3D, diferenças entre PLA, PETG e ABS, limite de tamanho, acabamento
-        e quando a impressão 3D é a melhor escolha na comunicação visual.</p><br>
-      <div class="conteudo-blog">
-        <a href="./articles/letras-e-logos-em-impressao-3d.html" class="botao-blog texto-geral">LEIA MAIS</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="./images/impressao-3d-maquete-onibus-1170x658.webp" loading="lazy"
-decoding="async" alt="Maquete de ônibus em grande escala impressa em 3D em partes, emendada e pintada">
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <span class="titulo-linha"></span>
-      <p class="artigo-meta"><time datetime="2026-10-14">14 de outubro de 2026</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 4 min de leitura</span></p>
-<h2 class="especialblog">Comunicação Visual Corporativa em São Paulo: Projetos para Arquitetos e Construtoras</h2>
-      <p class="parceiro">
-        Da especificação à instalação: adesivação arquitetônica, sinalização predial, identidade visual corporativa e
-        projetos personalizados para arquitetos, construtoras e empresas em São Paulo.</p><br>
-     <div class="conteudo-blog">
-        <a href="./articles/comunicacao-visual-corporativa-sp.html" class="botao-blog texto-geral">LEIA MAIS</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="./images/Paredes-11-1170x658.webp" loading="lazy"
-decoding="async" alt="Vidro corporativo com adesivo personalizado mostrando mapa de empreendimentos da construtora Metacons">
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <p class="artigo-meta"><time datetime="2026-08-11">11 de agosto de 2026</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 2 min de leitura</span></p>
-      <h2 class="especialblog">Fachada em ACM: o que é e quando vale a pena investir</h2>
-
-      <p class="parceiro">
-        A fachada de uma empresa é um dos primeiros contatos entre a marca e o público.
-        Antes mesmo de alguém entrar no espaço, ela já comunica profissionalismo,
-        cuidado e identidade visual. Por isso, a fachada em ACM se tornou uma das
-        soluções mais procuradas por empresas que desejam modernizar sua presença visual
-        com um acabamento limpo, resistente e sofisticado.
-      </p><br>
-
-      <div class="conteudo-blog">
-        <a href="./articles/fachada-em-acm-vantagens.html" class="botao-blog texto-geral">LEIA MAIS</a>
-      </div>
-    </div>
-
-    <div class="sobre-imagem">
-      <img
-        src="./images/fachadas-scaled.webp"
-        loading="lazy"
-        decoding="async"
-        alt="Totem de sinalização para o Hospital Geral de Pedreira em São Paulo, produzido e instalado pela Momentvm Opvs"
-      >
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <p class="artigo-meta"><time datetime="2025-05-23">23 de maio de 2025</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 4 min de leitura</span></p>
-      <h2 class="especialblog">Brindes de Fim de Ano em MDF: Personalização com Propósito e Beleza que Fica na Estante.</h2>
-      <p class="parceiro">
-        No fim de ano, empresas buscam presentes que transmitam gratidão, reforcem a marca e criem conexão verdadeira com 
-        clientes, parceiros e colaboradores. Mas, num mundo saturado de brindes descartáveis — calendários que duram poucos
-         meses, chaveiros que somem na gaveta e canetas que ninguém lembra de onde vieram — surge uma alternativa elegante e 
-         sustentável: brindes personalizados em MDF recortado a laser.</p><br>
-      <div class="conteudo-blog">
-        <a href="./articles/brindes-personalizados-mdf-corte-laser.html" class="botao-blog texto-geral">LEIA MAIS</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="./images/laser-cut-bull-head-wall-decor-3D.webp" loading="lazy"
-decoding="async" alt="Ambiente decorado com papel de parede impresso e com proteção contra riscos">
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <p class="artigo-meta"><time datetime="2025-05-23">23 de maio de 2025</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 2 min de leitura</span></p>
-      <h2 class="especialblog">Envelopamento de Eletrodomésticos: Renove sua Geladeira com Estilo e Proteção.</h2>
-      <p class="parceiro">
-        Você já pensou em dar uma cara nova para sua geladeira ou outros eletrodomésticos da sua casa ou escritório, sem precisar comprar um aparelho novo? O envelopamento 
-        de eletrodomésticos é a solução perfeita para quem quer renovar, personalizar e proteger seus equipamentos com um toque de design único.</p><br>
-      <div class="conteudo-blog">
-        <a href="./articles/envelopamento-de-eletrodomesticos.html" class="botao-blog texto-geral">LEIA MAIS</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="./images/Eletrodomesticos-10-1170x658.webp" loading="lazy"
-decoding="async" alt="Ambiente decorado com papel de parede impresso e com proteção contra riscos">
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <p class="artigo-meta"><time datetime="2025-05-23">23 de maio de 2025</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 2 min de leitura</span></p>
-      <h2 class="especialblog">Papel de Parede Autoadesivo: Estilo, Praticidade e Segurança para Seus Projetos</h2>
-      <p class="parceiro">
-        O papel de parede é um recurso clássico no design de interiores. Mas com os avanços dos materiais, a versão autoadesiva tem 
-        conquistado cada vez mais espaço entre arquitetos e decoradores exigentes que buscam praticidade, durabilidade e impacto visual.</p><br>
-      <div class="conteudo-blog">
-        <a href="./articles/papel-de-parede-autoadesivo.html" class="botao-blog texto-geral">LEIA MAIS</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="./images/Paredes-1-1170x658.webp" loading="lazy"
-decoding="async" alt="Ambiente decorado com papel de parede impresso e com proteção contra riscos">
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <span class="titulo-linha"></span>
-      <p class="artigo-meta"><time datetime="2025-05-23">23 de maio de 2025</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 2 min de leitura</span></p>
-<h2 class="especialblog">Envelopamento de Móveis: Renovação Inteligente Sem Marcenaria.</h2>
-      <p class="parceiro">
-        Você é arquiteto, decorador ou designer de interiores e está buscando soluções criativas para renovar
-         ambientes sem estourar o orçamento do cliente? O envelopamento de móveis pode ser exatamente o que você
-          precisa incorporar aos seus próximos projetos.</p><br>
-      <div class="conteudo-blog">
-        <a href="./articles/envelopamento-de-moveis-renovacao-inteligente.html" class="botao-blog texto-geral">LEIA MAIS</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="./images/Cabinet-5-1170x658.webp" loading="lazy"
-decoding="async" alt="Gabinete de banheiro envelopado com adesivo automotivo amarelo fosco">
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <span class="titulo-linha"></span>
-      <p class="artigo-meta"><time datetime="2025-05-23">23 de maio de 2025</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 2 min de leitura</span></p>
-<h2 class="especialblog">Películas Insulfilm para Janelas: 7 Benefícios Incríveis para Sua Casa ou Escritório</h2>
-      <p class="parceiro">
-        Se você busca mais conforto, privacidade e proteção para seu ambiente, aplicar películas insulfilm em janelas é uma excelente escolha. 
-        Muito além da estética, o insulfilm traz vantagens práticas que fazem a diferença no dia a dia — seja em residências ou empresas.</p><br>
-     <div class="conteudo-blog">
-        <a href="./articles/peliculas-insulfilm-para-janelas.html" class="botao-blog texto-geral">LEIA MAIS</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="./images/Peliculas-7-1170x658.webp" loading="lazy"
-decoding="async" alt="Vidro revestido com película Insulfilm transparente com controle de temperatura">
-    </div>
-  </div>
-  <div class="container sobre-flex">
-    <div class="intro-texto">
-      <span class="titulo-linha"></span>
-      <p class="artigo-meta"><time datetime="2025-05-23">23 de maio de 2025</time> <span class="artigo-meta-leitura"><span aria-hidden="true">·</span> 2 min de leitura</span></p>
-<h2 class="especialblog">Letras em Acrílico com Iluminação LED: Destaque sua Marca com Estilo e Sofisticação</h2>
-      <p class="parceiro">
-        Você está à procura de uma forma elegante, moderna e impactante para destacar sua marca? As <strong>letras em acrílico com iluminação LED</strong> são a 
-        escolha perfeita. Cada vez mais utilizadas em fachadas comerciais, recepções, vitrines e ambientes internos, elas combinam 
-        <strong>design refinado, durabilidade e alta visibilidade,</strong> dia e noite.</p><br>
-     <div class="conteudo-blog">
-        <a href="./articles/letras-caixa-em-acrilico-para-recepcoes-de-empresas.html" class="botao-blog texto-geral">LEIA MAIS</a>
-      </div>
-    </div>
-    <div class="sobre-imagem">
-      <img src="./images/led1.webp" loading="lazy"
-decoding="async" alt="Vidro revestido com película Insulfilm transparente com controle de temperatura">
+    <div class="blog-recentes-todos" id="blog-mais" hidden>
+      <button type="button" class="botao-blog texto-geral">Mostrar mais artigos</button>
     </div>
   </div>
 </section>
+<!-- /blog-recentes -->
     <section>
     <div class="parceiro-final" style="padding-bottom:2rem;">
       <h5>Envie-nos uma mensagem!<br></h5>
