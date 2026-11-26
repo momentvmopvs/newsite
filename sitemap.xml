@@ -5,13 +5,13 @@
   <!-- Página inicial -->
   <url>
     <loc>https://momentvmopvs.com/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -58,13 +58,13 @@
 
   <url>
     <loc>https://momentvmopvs.com/blog.html</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://momentvmopvs.com/en/blog.html</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -162,6 +162,18 @@
   </url>
 
   <!-- Artigos -->
+  <url>
+    <loc>https://momentvmopvs.com/en/articles/mirrored-window-film-at-night.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://momentvmopvs.com/articles/pelicula-espelhada-a-noite.html</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://momentvmopvs.com/articles/papel-de-parede-autoadesivo.html</loc>
     <lastmod>2025-12-04</lastmod>
